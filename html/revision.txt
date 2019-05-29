@@ -1770,7 +1770,7 @@ Repo: stack-docs
 --------------------------------------------------------------------------------
   Combining logs and metrics from Google Cloud's Anthos GKE On-Prem with traditional on premises systems in the Elastic Stack/docs/en/gke-on-prem/master 182d5e4b   Revert "Remove duplication of title in gke-on-prem"
   Elastic Stack and Google Cloud Anthos/docs/en/gke-on-prem/master 62c5bb6a   Typo in gke-on-prem-introduction (#321)
-  Elastic Stack and Google Cloud's Anthos/docs/en/gke-on-prem/master 5eee1374   [DOCS] Adds ML SSE4.2 limitation (#344)
+  Elastic Stack and Google Cloud's Anthos/docs/en/gke-on-prem/master local|as   local changes
   Getting Started/docs/en/6.3         9b6b736a   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Getting Started/docs/en/6.4         58a0c576   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Getting Started/docs/en/6.5         619c796b   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
@@ -1782,8 +1782,8 @@ Repo: stack-docs
   Getting Started/docs/en/7.1         b012c6c1   Updating terminology used when describing the privileges `kibana_user` has (#340)
   Getting Started/docs/en/7.2         d92778e5   Updating terminology used when describing the privileges `kibana_user` has (#340)
   Getting Started/docs/en/7.x         c9c35bbf   Updating terminology used when describing the privileges `kibana_user` has (#340)
-  Getting Started/docs/en/master      85c72b84   Updating terminology used when describing the privileges `kibana_user` has (#340)
-  Glossary/docs/en/master             85c72b84   Updating terminology used when describing the privileges `kibana_user` has (#340)
+  Getting Started/docs/en/master      local|as   local changes
+  Glossary/docs/en/master             local|as   local changes
   Infrastructure Monitoring Guide/docs/en/6.5 619c796b   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Infrastructure Monitoring Guide/docs/en/6.6 5b85608a   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Infrastructure Monitoring Guide/docs/en/6.7 928b9417   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
@@ -1793,7 +1793,7 @@ Repo: stack-docs
   Infrastructure Monitoring Guide/docs/en/7.1 b012c6c1   Updating terminology used when describing the privileges `kibana_user` has (#340)
   Infrastructure Monitoring Guide/docs/en/7.2 d92778e5   Updating terminology used when describing the privileges `kibana_user` has (#340)
   Infrastructure Monitoring Guide/docs/en/7.x c9c35bbf   Updating terminology used when describing the privileges `kibana_user` has (#340)
-  Infrastructure Monitoring Guide/docs/en/master 85c72b84   Updating terminology used when describing the privileges `kibana_user` has (#340)
+  Infrastructure Monitoring Guide/docs/en/master local|as   local changes
   Installation and Upgrade Guide/docs/5.0 cda8d4c4   [DOCS] Fixes broken link to Cloud documentation
   Installation and Upgrade Guide/docs/5.1 b0ac575c   [DOCS] Fixes broken link to Cloud documentation
   Installation and Upgrade Guide/docs/5.2 05c6d638   [DOCS] Fixes broken link to Cloud documentation
@@ -1832,7 +1832,7 @@ Repo: stack-docs
   Installation and Upgrade Guide/docs/en/7.1 b012c6c1   Updating terminology used when describing the privileges `kibana_user` has (#340)
   Installation and Upgrade Guide/docs/en/7.2 d92778e5   Updating terminology used when describing the privileges `kibana_user` has (#340)
   Installation and Upgrade Guide/docs/en/7.x c9c35bbf   Updating terminology used when describing the privileges `kibana_user` has (#340)
-  Installation and Upgrade Guide/docs/en/master 85c72b84   Updating terminology used when describing the privileges `kibana_user` has (#340)
+  Installation and Upgrade Guide/docs/en/master local|as   local changes
   Installation and Upgrade Guide/docs/master 36453a51   Merge pull request #210 from simianhacker/fixes-156
   Stack Overview/docs/en/stack/6.3    9b6b736a   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Stack Overview/docs/en/stack/6.4    58a0c576   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
@@ -1845,7 +1845,7 @@ Repo: stack-docs
   Stack Overview/docs/en/stack/7.1    b012c6c1   Updating terminology used when describing the privileges `kibana_user` has (#340)
   Stack Overview/docs/en/stack/7.2    d92778e5   Updating terminology used when describing the privileges `kibana_user` has (#340)
   Stack Overview/docs/en/stack/7.x    c9c35bbf   Updating terminology used when describing the privileges `kibana_user` has (#340)
-  Stack Overview/docs/en/stack/master 85c72b84   Updating terminology used when describing the privileges `kibana_user` has (#340)
+  Stack Overview/docs/en/stack/master local|as   local changes
 
 Repo: swiftype
 --------------------------------------------------------------------------------
