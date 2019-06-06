@@ -24,7 +24,7 @@ apm-agent-python:
 apm-agent-ruby:
   APM Ruby Agent/docs/1.x: dcce7440f9c9ca31f0dfae969d7345825dc3922f|asciidoctor
   APM Ruby Agent/docs/2.x: aa81dfcb49de86a35e16f6e132827932daa4ce38|asciidoctor
-  APM Ruby Agent/docs/master: 06d3240b0792040c59f95dbb5d9e3b12a6d17fbc|asciidoctor
+  APM Ruby Agent/docs/master: local|asciidoctor
 apm-agent-rum-js:
   APM Real User Monitoring JavaScript Agent/docs/0.x: 888348f32eb3e02669cfc87a1122b8770e7cd0e0|asciidoctor
   APM Real User Monitoring JavaScript Agent/docs/1.x: 2ceccedcd03c07aa71a33e7493910a9a533438dd|asciidoctor

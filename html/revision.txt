@@ -34,7 +34,7 @@ Repo: apm-agent-ruby
 --------------------------------------------------------------------------------
   APM Ruby Agent/docs/1.x             dcce7440   docs: version cross doc links (#270)
   APM Ruby Agent/docs/2.x             aa81dfcb   v2.8.1
-  APM Ruby Agent/docs/master          06d3240b   Add transaction.type to errors (#434)
+  APM Ruby Agent/docs/master          local|as   local changes
 
 Repo: apm-agent-rum-js
 --------------------------------------------------------------------------------
