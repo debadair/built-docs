@@ -1718,7 +1718,7 @@ sense:
 stack-docs:
   Combining logs and metrics from Google Cloud's Anthos GKE On-Prem with traditional on premises systems in the Elastic Stack/docs/en/gke-on-prem/master: 182d5e4b089e9b3f226f0e52a60d1058e3866db2|asciidoctor
   Elastic Stack and Google Cloud Anthos/docs/en/gke-on-prem/master: 62c5bb6a75344e6a8101455baee2645c9d9476a8|asciidoctor
-  Elastic Stack and Google Cloud's Anthos/docs/en/gke-on-prem/master: 34f350792982375f0913066904e42ea125c31bda|asciidoctor
+  Elastic Stack and Google Cloud's Anthos/docs/en/gke-on-prem/master: local|asciidoctor
   Getting Started/docs/en/6.3: 9b6b736a73c25818fe6abbd758a7585b7a0c3c91|asciidoctor
   Getting Started/docs/en/6.4: 58a0c5766a393ef60730ac37671f3c50db45e044|asciidoctor
   Getting Started/docs/en/6.5: 619c796b3bcc9859e18fb1bf85d302f632c43b1c|asciidoctor
@@ -1730,8 +1730,8 @@ stack-docs:
   Getting Started/docs/en/7.1: be2e3774ee281a051f5cc8a3515d1fd5d73167ba|asciidoctor
   Getting Started/docs/en/7.2: 25b010a76a22175dbbd7e61559941ba36083b494|asciidoctor
   Getting Started/docs/en/7.x: a9856be7bae85179b35080aba96996ad3d42a218|asciidoctor
-  Getting Started/docs/en/master: 3712d6df238ede4f960c995485cb7d80b9d49ffe|asciidoctor
-  Glossary/docs/en/master: 3712d6df238ede4f960c995485cb7d80b9d49ffe|asciidoctor
+  Getting Started/docs/en/master: local|asciidoctor
+  Glossary/docs/en/master: local|asciidoctor
   Infrastructure Monitoring Guide/docs/en/6.5: 619c796b3bcc9859e18fb1bf85d302f632c43b1c|asciidoctor
   Infrastructure Monitoring Guide/docs/en/6.6: 5b85608a693a4761824c0706be207ba521bfd06b|asciidoctor
   Infrastructure Monitoring Guide/docs/en/6.7: 928b9417aa233bdc9201e1fa5303c995d29a12e8|asciidoctor
@@ -1741,7 +1741,7 @@ stack-docs:
   Infrastructure Monitoring Guide/docs/en/7.1: be2e3774ee281a051f5cc8a3515d1fd5d73167ba|asciidoctor
   Infrastructure Monitoring Guide/docs/en/7.2: 25b010a76a22175dbbd7e61559941ba36083b494|asciidoctor
   Infrastructure Monitoring Guide/docs/en/7.x: a9856be7bae85179b35080aba96996ad3d42a218|asciidoctor
-  Infrastructure Monitoring Guide/docs/en/master: 3712d6df238ede4f960c995485cb7d80b9d49ffe|asciidoctor
+  Infrastructure Monitoring Guide/docs/en/master: local|asciidoctor
   Installation and Upgrade Guide/docs/5.0: cda8d4c42e382a27483b7226c3bf0527476306c6
   Installation and Upgrade Guide/docs/5.1: b0ac575c0ebb0305afa1adda09ad8e1132eba666
   Installation and Upgrade Guide/docs/5.2: 05c6d638214f4a6f20a43b8d156480a6861d4a47
@@ -1780,11 +1780,11 @@ stack-docs:
   Installation and Upgrade Guide/docs/en/7.1: be2e3774ee281a051f5cc8a3515d1fd5d73167ba|asciidoctor
   Installation and Upgrade Guide/docs/en/7.2: 25b010a76a22175dbbd7e61559941ba36083b494|asciidoctor
   Installation and Upgrade Guide/docs/en/7.x: a9856be7bae85179b35080aba96996ad3d42a218|asciidoctor
-  Installation and Upgrade Guide/docs/en/master: 3712d6df238ede4f960c995485cb7d80b9d49ffe|asciidoctor
+  Installation and Upgrade Guide/docs/en/master: local|asciidoctor
   Installation and Upgrade Guide/docs/master: 36453a51e6e4873e28bd838db03f4149130ac695
   SIEM Guide/docs/en/7.2: 25b010a76a22175dbbd7e61559941ba36083b494|asciidoctor
   SIEM Guide/docs/en/7.x: a9856be7bae85179b35080aba96996ad3d42a218|asciidoctor
-  SIEM Guide/docs/en/master: 3712d6df238ede4f960c995485cb7d80b9d49ffe|asciidoctor
+  SIEM Guide/docs/en/master: local|asciidoctor
   Stack Overview/docs/en/stack/6.3: 9b6b736a73c25818fe6abbd758a7585b7a0c3c91|asciidoctor
   Stack Overview/docs/en/stack/6.4: 58a0c5766a393ef60730ac37671f3c50db45e044|asciidoctor
   Stack Overview/docs/en/stack/6.5: 619c796b3bcc9859e18fb1bf85d302f632c43b1c|asciidoctor
@@ -1796,7 +1796,7 @@ stack-docs:
   Stack Overview/docs/en/stack/7.1: be2e3774ee281a051f5cc8a3515d1fd5d73167ba|asciidoctor
   Stack Overview/docs/en/stack/7.2: 25b010a76a22175dbbd7e61559941ba36083b494|asciidoctor
   Stack Overview/docs/en/stack/7.x: a9856be7bae85179b35080aba96996ad3d42a218|asciidoctor
-  Stack Overview/docs/en/stack/master: 3712d6df238ede4f960c995485cb7d80b9d49ffe|asciidoctor
+  Stack Overview/docs/en/stack/master: local|asciidoctor
 swiftype:
   App Search Reference/docs/master: 0f5d915010123a7266545bd45e2a38e375ad6df2
   Site Search Reference/docs/master: 0f5d915010123a7266545bd45e2a38e375ad6df2
