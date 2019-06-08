@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>SIEM UI
         | SIEM Guide [master]
       | Elastic
-    </title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="SIEM Guide [master]" /><link rel="up" href="index.html" title="SIEM Guide [master]" /><link rel="prev" href="_enable_modules_and_configuration_options.html" title="Enable modules and configuration options" /><link rel="next" href="hosts-ui.html" title="Hosts" /><meta name="description" content="Get started with the documentation for Elasticsearch, Kibana, Logstash, Beats, X-Pack, Elastic Cloud, Elasticsearch for Apache Hadoop, and our language clients." /><meta name="DC.type" content="Learn/Docs/SIEM/Guide/master" /><meta name="DC.subject" content="SIEM" /><meta name="DC.identifier" content="master" />
+    </title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="SIEM Guide [master]" /><link rel="up" href="index.html" title="SIEM Guide [master]" /><link rel="prev" href="install-siem.html" title="Get up and running" /><meta name="description" content="Get started with the documentation for Elasticsearch, Kibana, Logstash, Beats, X-Pack, Elastic Cloud, Elasticsearch for Apache Hadoop, and our language clients." /><meta name="DC.type" content="Learn/Docs/SIEM/Guide/master" /><meta name="DC.subject" content="SIEM" /><meta name="DC.identifier" content="master" />
     
 
     
@@ -696,25 +696,24 @@
             <!-- start body -->
 <div class="breadcrumbs"><span class="breadcrumb-link"><a href="index.html">SIEM Guide
       [master]
-    </a></span> » <span class="breadcrumb-node">SIEM UI</span></div><div class="navheader"><span class="prev"><a href="_enable_modules_and_configuration_options.html">
+    </a></span> » <span class="breadcrumb-node">SIEM UI</span></div><div class="navheader"><span class="prev"><a href="install-siem.html">
               « 
-              Enable modules and configuration options</a>
+              Get up and running</a>
            
         </span><span class="next">
            
-          <a href="hosts-ui.html">Hosts
-               »
-            </a></span></div><div class="xpack chapter"><div class="titlepage"><div><div><h1 class="title"><a id="siem-ui-overview"></a>SIEM UI<a href="https://github.com/elastic/stack-docs/edit/master/docs/en/siem/siem-ui.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a><a class="xpack_tag" href="/subscriptions"></a></h1></div></div></div><div class="warning admon"><div class="icon"><img alt="Warning" src="images/icons/warning.png" /></div><div class="admon_content"><p>This functionality is in beta and is subject to change. The design and code is less mature than official GA features and is being provided as-is with no warranties. Beta features are not subject to the support SLA of official GA features.</p></div></div><p>After you have security monitoring <a class="link" href="install-siem.html" title="Get up and running">up and
-running</a> and data is streaming to Elasticsearch, use the SIEM UI in Kibana to monitor
-and identify security problems in real time.</p></div><div class="navfooter"><span class="prev"><a href="_enable_modules_and_configuration_options.html">
+          </span></div><div class="xpack chapter"><div class="titlepage"><div><div><h1 class="title"><a id="siem-ui-overview"></a>SIEM UI<a href="https://github.com/elastic/stack-docs/edit/master/docs/en/siem/siem-ui.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a><a class="xpack_tag" href="/subscriptions"></a></h1></div></div></div><div class="warning admon"><div class="icon"><img alt="Warning" src="images/icons/warning.png" /></div><div class="admon_content"><p>This functionality is in beta and is subject to change. The design and code is less mature than official GA features and is being provided as-is with no warranties. Beta features are not subject to the support SLA of official GA features.</p></div></div><p>After you have security monitoring <a class="link" href="install-siem.html" title="Get up and running">up and running</a> and data is
+streaming to Elasticsearch, use the SIEM UI in Kibana to monitor, identify, and track
+security problems in real time.</p><h3><a id="hosts-ui"></a>Hosts<a href="https://github.com/elastic/stack-docs/edit/master/docs/en/siem/siem-ui.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>Hosts UI</p><h3><a id="network-ui"></a>Network<a href="https://github.com/elastic/stack-docs/edit/master/docs/en/siem/siem-ui.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>Network UI</p><h3><a id="timelines-ui"></a>Timeline<a href="https://github.com/elastic/stack-docs/edit/master/docs/en/siem/siem-ui.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>Timelines help you to collect pieces of evidence during an investigation. You
+can hand a timeline off to another person or team, and  link to them from a ticketing
+system.</p><h4><a id="narrow-expand"></a>Narrow or expand your search with drag and drop<a href="https://github.com/elastic/stack-docs/edit/master/docs/en/siem/siem-ui.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>AND and OR</p><p>Horizontal filters are ANDed together</p><p>Vertical filters (or set of filters) are ORed together</p><p>Additional filtering or search with the KQL bar in Timeline</p><p>Ability to expand events to look at raw data incl. raw Elasticsearch JSON</p><p>Ability to add/remove columns</p><p>Short blurb on row renderers, but maybe not go into detail on each</p><p>Save/Open and list of saved timeline</p><p>Notes</p><h5><a id="_highlight"></a>Highlight<a href="https://github.com/elastic/stack-docs/edit/master/docs/en/siem/siem-ui.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h5><p>Works in SIEM app</p><p>any highlightable pieces in the SIEM app (Does not work outside the SIEM app.)
+including hostnames, IPs, user and process names</p><h3><a id="_sample_workflow"></a>Sample workflow<a href="https://github.com/elastic/stack-docs/edit/master/docs/en/siem/siem-ui.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>Include 2-3 examples of a possible workflow  (videos for GA???)</p></div><div class="navfooter"><span class="prev"><a href="install-siem.html">
               « 
-              Enable modules and configuration options</a>
+              Get up and running</a>
            
         </span><span class="next">
            
-          <a href="hosts-ui.html">Hosts
-               »
-            </a></span></div>
+          </span></div>
 <!-- end body -->
 
             </div>
