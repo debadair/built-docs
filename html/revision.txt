@@ -20,7 +20,7 @@ Repo: apm-agent-nodejs
   APM Node.js Agent/docs/0.x          635eae53   0.12.0
   APM Node.js Agent/docs/1.x          e757d1b3   docs: fix Asciidoctor link (#923)
   APM Node.js Agent/docs/2.x          97dfd65b   2.11.6
-  APM Node.js Agent/docs/master       2ae22955   chore(package): bump all devDependencies (#1139)
+  APM Node.js Agent/docs/master       local|as   local changes
 
 Repo: apm-agent-python
 --------------------------------------------------------------------------------
