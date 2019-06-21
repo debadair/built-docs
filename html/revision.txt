@@ -28,7 +28,7 @@ Repo: apm-agent-python
   APM Python Agent/docs/2.x           87131809   docs: version links to 6.4 (#357)
   APM Python Agent/docs/3.x           77622366   bumped version to 3.0.5
   APM Python Agent/docs/4.x           b3b0ba42   update CHANGELOG and bump version to 4.2.2
-  APM Python Agent/docs/master        f38b5d74   [docs][7.2] update config-environment (#488)
+  APM Python Agent/docs/master        local|as   local changes
 
 Repo: apm-agent-ruby
 --------------------------------------------------------------------------------
