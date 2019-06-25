@@ -1,6 +1,6 @@
 Repo: apm-agent-dotnet
 --------------------------------------------------------------------------------
-  APM .NET Agent/docs/master          1dd00dc2   Apply changes brought by review
+  APM .NET Agent/docs/master          local|as   local changes
 
 Repo: apm-agent-go
 --------------------------------------------------------------------------------
