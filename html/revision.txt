@@ -1783,7 +1783,7 @@ Repo: stack-docs
 --------------------------------------------------------------------------------
   Combining logs and metrics from Google Cloud's Anthos GKE On-Prem with traditional on premises systems in the Elastic Stack/docs/en/gke-on-prem/master 182d5e4b   Revert "Remove duplication of title in gke-on-prem"
   Elastic Stack and Google Cloud Anthos/docs/en/gke-on-prem/master 62c5bb6a   Typo in gke-on-prem-introduction (#321)
-  Elastic Stack and Google Cloud's Anthos/docs/en/gke-on-prem/master 43e814ba   [DOCS] Add steps for homebrew (#384)
+  Elastic Stack and Google Cloud's Anthos/docs/en/gke-on-prem/master local|as   local changes
   Getting Started/docs/en/6.3         9b6b736a   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Getting Started/docs/en/6.4         58a0c576   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Getting Started/docs/en/6.5         619c796b   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
@@ -1795,8 +1795,8 @@ Repo: stack-docs
   Getting Started/docs/en/7.1         146252b8   Updates Kibana breaking changes (#390)
   Getting Started/docs/en/7.2         14bf72d9   Updates title for Stack Monitoring app (#393)
   Getting Started/docs/en/7.x         d0905f27   Updates title for Stack Monitoring app (#393)
-  Getting Started/docs/en/master      6c262f55   Updates title for Stack Monitoring app (#393)
-  Glossary/docs/en/master             6c262f55   Updates title for Stack Monitoring app (#393)
+  Getting Started/docs/en/master      local|as   local changes
+  Glossary/docs/en/master             local|as   local changes
   Infrastructure Monitoring Guide/docs/en/6.5 619c796b   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Infrastructure Monitoring Guide/docs/en/6.6 5b85608a   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Infrastructure Monitoring Guide/docs/en/6.7 928b9417   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
@@ -1806,7 +1806,7 @@ Repo: stack-docs
   Infrastructure Monitoring Guide/docs/en/7.1 146252b8   Updates Kibana breaking changes (#390)
   Infrastructure Monitoring Guide/docs/en/7.2 14bf72d9   Updates title for Stack Monitoring app (#393)
   Infrastructure Monitoring Guide/docs/en/7.x d0905f27   Updates title for Stack Monitoring app (#393)
-  Infrastructure Monitoring Guide/docs/en/master 6c262f55   Updates title for Stack Monitoring app (#393)
+  Infrastructure Monitoring Guide/docs/en/master local|as   local changes
   Installation and Upgrade Guide/docs/5.0 cda8d4c4   [DOCS] Fixes broken link to Cloud documentation
   Installation and Upgrade Guide/docs/5.1 b0ac575c   [DOCS] Fixes broken link to Cloud documentation
   Installation and Upgrade Guide/docs/5.2 05c6d638   [DOCS] Fixes broken link to Cloud documentation
@@ -1845,11 +1845,11 @@ Repo: stack-docs
   Installation and Upgrade Guide/docs/en/7.1 146252b8   Updates Kibana breaking changes (#390)
   Installation and Upgrade Guide/docs/en/7.2 14bf72d9   Updates title for Stack Monitoring app (#393)
   Installation and Upgrade Guide/docs/en/7.x d0905f27   Updates title for Stack Monitoring app (#393)
-  Installation and Upgrade Guide/docs/en/master 6c262f55   Updates title for Stack Monitoring app (#393)
+  Installation and Upgrade Guide/docs/en/master local|as   local changes
   Installation and Upgrade Guide/docs/master 36453a51   Merge pull request #210 from simianhacker/fixes-156
   SIEM Guide/docs/en/7.2              14bf72d9   Updates title for Stack Monitoring app (#393)
   SIEM Guide/docs/en/7.x              d0905f27   Updates title for Stack Monitoring app (#393)
-  SIEM Guide/docs/en/master           6c262f55   Updates title for Stack Monitoring app (#393)
+  SIEM Guide/docs/en/master           local|as   local changes
   SecOps Guide/docs/en/7.2            3ec64aef   Removes coming tags (#374)
   SecOps Guide/docs/en/7.x            9711efd5   [DOCS][7.x] Backport #384 and catchup missing backports (#386)
   SecOps Guide/docs/en/master         43e814ba   [DOCS] Add steps for homebrew (#384)
@@ -1864,7 +1864,7 @@ Repo: stack-docs
   Stack Overview/docs/en/stack/7.1    146252b8   Updates Kibana breaking changes (#390)
   Stack Overview/docs/en/stack/7.2    14bf72d9   Updates title for Stack Monitoring app (#393)
   Stack Overview/docs/en/stack/7.x    d0905f27   Updates title for Stack Monitoring app (#393)
-  Stack Overview/docs/en/stack/master 6c262f55   Updates title for Stack Monitoring app (#393)
+  Stack Overview/docs/en/stack/master local|as   local changes
 
 Repo: swiftype
 --------------------------------------------------------------------------------
