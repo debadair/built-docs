@@ -1,6 +1,6 @@
 Repo: apm-agent-dotnet
 --------------------------------------------------------------------------------
-  APM .NET Agent/docs/master          2f5d7bf2   Implement service.runtime.{name and version} (#314)
+  APM .NET Agent/docs/master          local|as   local changes
 
 Repo: apm-agent-go
 --------------------------------------------------------------------------------

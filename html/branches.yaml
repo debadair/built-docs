@@ -1,6 +1,6 @@
 ---
 apm-agent-dotnet:
-  APM .NET Agent/docs/master: 2f5d7bf262e4e73d8d9c06dc110ca7367f801b62|asciidoctor
+  APM .NET Agent/docs/master: local|asciidoctor
 apm-agent-go:
   APM Go Agent/docs/0.5: 6cd2ec7386d7723ea78094e4b46bcbe66c1798b3|asciidoctor
   APM Go Agent/docs/1.x: c497b72e76dcd8d846c3935be0883004b81ecb72|asciidoctor
