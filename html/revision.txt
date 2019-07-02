@@ -34,7 +34,7 @@ Repo: apm-agent-ruby
 --------------------------------------------------------------------------------
   APM Ruby Agent/docs/1.x             dcce7440   docs: version cross doc links (#270)
   APM Ruby Agent/docs/2.x             77bae0b7   v2.9.0
-  APM Ruby Agent/docs/master          c1ae6af0   ci: fix syntax errors on downstream job (#455)
+  APM Ruby Agent/docs/master          local|as   local changes
 
 Repo: apm-agent-rum-js
 --------------------------------------------------------------------------------
