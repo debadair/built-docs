@@ -20,7 +20,7 @@ apm-agent-python:
   APM Python Agent/docs/2.x: 87131809d4e9cb17a22d86f81b8742b45ff15b3a|asciidoctor
   APM Python Agent/docs/3.x: 77622366256f001fd76088ae0d30f4c4ba3230d4|asciidoctor
   APM Python Agent/docs/4.x: d0d9028e6b90ef03107519c05c9ec6be630576aa|asciidoctor
-  APM Python Agent/docs/master: 2a95a041c92f22dce164a99399ad2440532949fd|asciidoctor
+  APM Python Agent/docs/master: local|asciidoctor
 apm-agent-ruby:
   APM Ruby Agent/docs/1.x: dcce7440f9c9ca31f0dfae969d7345825dc3922f|asciidoctor
   APM Ruby Agent/docs/2.x: 198ebf2ceebf635af2c3e2ea3b2b12c8a28643b5|asciidoctor
