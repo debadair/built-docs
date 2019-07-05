@@ -1810,7 +1810,7 @@ sense:
 stack-docs:
   Combining logs and metrics from Google Cloud's Anthos GKE On-Prem with traditional on premises systems in the Elastic Stack/docs/en/gke-on-prem/master: 182d5e4b089e9b3f226f0e52a60d1058e3866db2|asciidoctor
   Elastic Stack and Google Cloud Anthos/docs/en/gke-on-prem/master: 62c5bb6a75344e6a8101455baee2645c9d9476a8|asciidoctor
-  Elastic Stack and Google Cloud's Anthos/docs/en/gke-on-prem/master: a3c3f35c3c93cc441759d7dc35c4ff4091978592|asciidoctor
+  Elastic Stack and Google Cloud's Anthos/docs/en/gke-on-prem/master: local|asciidoctor
   Getting Started/docs/en/6.3: 26718b972da6c7defefbd1be85cec17dd9c24fc6|asciidoctor
   Getting Started/docs/en/6.4: 24188604061df9e4f3d8a62a6e1483beaaa2c4db|asciidoctor
   Getting Started/docs/en/6.5: e58430dc0f3282c6412a3ddfe02e011728c3a59a|asciidoctor
@@ -1823,8 +1823,8 @@ stack-docs:
   Getting Started/docs/en/7.2: 06b081b44ebe2c07c1d6919db63047ab59f1d68b|asciidoctor
   Getting Started/docs/en/7.3: f57ab0dd66bb8aa8d4f1b3990f2b6de9d3bfad6b|asciidoctor
   Getting Started/docs/en/7.x: 92ca96fd0fd5df760cb76bdce0a05913c58798ed|asciidoctor
-  Getting Started/docs/en/master: 95344b172a08b696cfa6bbf3376fbaf9b1f5349f|asciidoctor
-  Glossary/docs/en/master: 95344b172a08b696cfa6bbf3376fbaf9b1f5349f|asciidoctor
+  Getting Started/docs/en/master: local|asciidoctor
+  Glossary/docs/en/master: local|asciidoctor
   Infrastructure Monitoring Guide/docs/en/6.5: e58430dc0f3282c6412a3ddfe02e011728c3a59a|asciidoctor
   Infrastructure Monitoring Guide/docs/en/6.6: cae0716eb834c4c932d55fef0820a26d27776838|asciidoctor
   Infrastructure Monitoring Guide/docs/en/6.7: aa0629764187dd9bdfaa7dca4e4a99fa71714bdf|asciidoctor
@@ -1835,7 +1835,7 @@ stack-docs:
   Infrastructure Monitoring Guide/docs/en/7.2: 06b081b44ebe2c07c1d6919db63047ab59f1d68b|asciidoctor
   Infrastructure Monitoring Guide/docs/en/7.3: f57ab0dd66bb8aa8d4f1b3990f2b6de9d3bfad6b|asciidoctor
   Infrastructure Monitoring Guide/docs/en/7.x: 92ca96fd0fd5df760cb76bdce0a05913c58798ed|asciidoctor
-  Infrastructure Monitoring Guide/docs/en/master: 95344b172a08b696cfa6bbf3376fbaf9b1f5349f|asciidoctor
+  Infrastructure Monitoring Guide/docs/en/master: local|asciidoctor
   Installation and Upgrade Guide/docs/5.0: cda8d4c42e382a27483b7226c3bf0527476306c6
   Installation and Upgrade Guide/docs/5.1: b0ac575c0ebb0305afa1adda09ad8e1132eba666
   Installation and Upgrade Guide/docs/5.2: 05c6d638214f4a6f20a43b8d156480a6861d4a47
@@ -1875,12 +1875,12 @@ stack-docs:
   Installation and Upgrade Guide/docs/en/7.2: 06b081b44ebe2c07c1d6919db63047ab59f1d68b|asciidoctor
   Installation and Upgrade Guide/docs/en/7.3: f57ab0dd66bb8aa8d4f1b3990f2b6de9d3bfad6b|asciidoctor
   Installation and Upgrade Guide/docs/en/7.x: 92ca96fd0fd5df760cb76bdce0a05913c58798ed|asciidoctor
-  Installation and Upgrade Guide/docs/en/master: 95344b172a08b696cfa6bbf3376fbaf9b1f5349f|asciidoctor
+  Installation and Upgrade Guide/docs/en/master: local|asciidoctor
   Installation and Upgrade Guide/docs/master: 36453a51e6e4873e28bd838db03f4149130ac695
   SIEM Guide/docs/en/7.2: 06b081b44ebe2c07c1d6919db63047ab59f1d68b|asciidoctor
   SIEM Guide/docs/en/7.3: f57ab0dd66bb8aa8d4f1b3990f2b6de9d3bfad6b|asciidoctor
   SIEM Guide/docs/en/7.x: 92ca96fd0fd5df760cb76bdce0a05913c58798ed|asciidoctor
-  SIEM Guide/docs/en/master: 95344b172a08b696cfa6bbf3376fbaf9b1f5349f|asciidoctor
+  SIEM Guide/docs/en/master: local|asciidoctor
   SecOps Guide/docs/en/7.2: 3ec64aef0832ff3ff1a330229d5ef9171d2bec80|asciidoctor
   SecOps Guide/docs/en/7.x: 9711efd5d98ed68335690ef577ea8867091bec8b|asciidoctor
   SecOps Guide/docs/en/master: 43e814ba5963fb6f9624262e9a01bf5a16ee6345|asciidoctor
@@ -1896,7 +1896,7 @@ stack-docs:
   Stack Overview/docs/en/stack/7.2: 06b081b44ebe2c07c1d6919db63047ab59f1d68b|asciidoctor
   Stack Overview/docs/en/stack/7.3: f57ab0dd66bb8aa8d4f1b3990f2b6de9d3bfad6b|asciidoctor
   Stack Overview/docs/en/stack/7.x: 92ca96fd0fd5df760cb76bdce0a05913c58798ed|asciidoctor
-  Stack Overview/docs/en/stack/master: 95344b172a08b696cfa6bbf3376fbaf9b1f5349f|asciidoctor
+  Stack Overview/docs/en/stack/master: local|asciidoctor
 swiftype:
   App Search Reference/docs/master: 0f5d915010123a7266545bd45e2a38e375ad6df2
   Site Search Reference/docs/master: 0f5d915010123a7266545bd45e2a38e375ad6df2

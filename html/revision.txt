@@ -1864,7 +1864,7 @@ Repo: stack-docs
 --------------------------------------------------------------------------------
   Combining logs and metrics from Google Cloud's Anthos GKE On-Prem with traditional on premises systems in the Elastic Stack/docs/en/gke-on-prem/master 182d5e4b   Revert "Remove duplication of title in gke-on-prem"
   Elastic Stack and Google Cloud Anthos/docs/en/gke-on-prem/master 62c5bb6a   Typo in gke-on-prem-introduction (#321)
-  Elastic Stack and Google Cloud's Anthos/docs/en/gke-on-prem/master a3c3f35c   Document "manage_api_key" cluster privilege (#395)
+  Elastic Stack and Google Cloud's Anthos/docs/en/gke-on-prem/master local|as   local changes
   Getting Started/docs/en/6.3         26718b97   [DOCS] Removes the term: tutorial from the Getting started with the Elastic Stack page (#392)
   Getting Started/docs/en/6.4         24188604   [DOCS] Removes the term: tutorial from the Getting started with the Elastic Stack page (#392)
   Getting Started/docs/en/6.5         e58430dc   [DOCS] Removes the term: tutorial from the Getting started with the Elastic Stack page (#392)
@@ -1877,8 +1877,8 @@ Repo: stack-docs
   Getting Started/docs/en/7.2         06b081b4   [DOCS] Creates a data frame examples page (#389)
   Getting Started/docs/en/7.3         f57ab0dd   Updates ML job terminology (#401)
   Getting Started/docs/en/7.x         92ca96fd   Updates ML job terminology (#401)
-  Getting Started/docs/en/master      95344b17   Updates ML job terminology (#401)
-  Glossary/docs/en/master             95344b17   Updates ML job terminology (#401)
+  Getting Started/docs/en/master      local|as   local changes
+  Glossary/docs/en/master             local|as   local changes
   Infrastructure Monitoring Guide/docs/en/6.5 e58430dc   [DOCS] Removes the term: tutorial from the Getting started with the Elastic Stack page (#392)
   Infrastructure Monitoring Guide/docs/en/6.6 cae0716e   [DOCS] Removes the term: tutorial from the Getting started with the Elastic Stack page (#392)
   Infrastructure Monitoring Guide/docs/en/6.7 aa062976   [DOCS] Removes the term: tutorial from the Getting started with the Elastic Stack page (#392)
@@ -1889,7 +1889,7 @@ Repo: stack-docs
   Infrastructure Monitoring Guide/docs/en/7.2 06b081b4   [DOCS] Creates a data frame examples page (#389)
   Infrastructure Monitoring Guide/docs/en/7.3 f57ab0dd   Updates ML job terminology (#401)
   Infrastructure Monitoring Guide/docs/en/7.x 92ca96fd   Updates ML job terminology (#401)
-  Infrastructure Monitoring Guide/docs/en/master 95344b17   Updates ML job terminology (#401)
+  Infrastructure Monitoring Guide/docs/en/master local|as   local changes
   Installation and Upgrade Guide/docs/5.0 cda8d4c4   [DOCS] Fixes broken link to Cloud documentation
   Installation and Upgrade Guide/docs/5.1 b0ac575c   [DOCS] Fixes broken link to Cloud documentation
   Installation and Upgrade Guide/docs/5.2 05c6d638   [DOCS] Fixes broken link to Cloud documentation
@@ -1929,12 +1929,12 @@ Repo: stack-docs
   Installation and Upgrade Guide/docs/en/7.2 06b081b4   [DOCS] Creates a data frame examples page (#389)
   Installation and Upgrade Guide/docs/en/7.3 f57ab0dd   Updates ML job terminology (#401)
   Installation and Upgrade Guide/docs/en/7.x 92ca96fd   Updates ML job terminology (#401)
-  Installation and Upgrade Guide/docs/en/master 95344b17   Updates ML job terminology (#401)
+  Installation and Upgrade Guide/docs/en/master local|as   local changes
   Installation and Upgrade Guide/docs/master 36453a51   Merge pull request #210 from simianhacker/fixes-156
   SIEM Guide/docs/en/7.2              06b081b4   [DOCS] Creates a data frame examples page (#389)
   SIEM Guide/docs/en/7.3              f57ab0dd   Updates ML job terminology (#401)
   SIEM Guide/docs/en/7.x              92ca96fd   Updates ML job terminology (#401)
-  SIEM Guide/docs/en/master           95344b17   Updates ML job terminology (#401)
+  SIEM Guide/docs/en/master           local|as   local changes
   SecOps Guide/docs/en/7.2            3ec64aef   Removes coming tags (#374)
   SecOps Guide/docs/en/7.x            9711efd5   [DOCS][7.x] Backport #384 and catchup missing backports (#386)
   SecOps Guide/docs/en/master         43e814ba   [DOCS] Add steps for homebrew (#384)
@@ -1950,7 +1950,7 @@ Repo: stack-docs
   Stack Overview/docs/en/stack/7.2    06b081b4   [DOCS] Creates a data frame examples page (#389)
   Stack Overview/docs/en/stack/7.3    f57ab0dd   Updates ML job terminology (#401)
   Stack Overview/docs/en/stack/7.x    92ca96fd   Updates ML job terminology (#401)
-  Stack Overview/docs/en/stack/master 95344b17   Updates ML job terminology (#401)
+  Stack Overview/docs/en/stack/master local|as   local changes
 
 Repo: swiftype
 --------------------------------------------------------------------------------

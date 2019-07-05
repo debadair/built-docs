@@ -715,7 +715,9 @@ terms <code class="literal">foo</code> and <code class="literal">bar</code>. The
 the index.</p><p class="simpara">A full text query (not a <a class="link" href="terms.html#glossary-term">term</a> query) for <code class="literal">FoO:bAR</code> will
 also be analyzed to the terms <code class="literal">foo</code>,<code class="literal">bar</code> and will thus match the
 terms stored in the index.</p><p class="simpara">It is this process of analysis (both at index time and at search time)
-that allows Elasticsearch to perform full text queries.</p><p class="simpara">Also see <a class="link" href="terms.html#glossary-text">text</a> and <a class="link" href="terms.html#glossary-term">term</a>.</p></dd><dt><span class="term"><a id="glossary-zone"></a> availability zone </span></dt><dd>Contains resources available to a Elastic Cloud Enterprise installation that are isolated from
+that allows Elasticsearch to perform full text queries.</p><p class="simpara">Also see <a class="link" href="terms.html#glossary-text">text</a> and <a class="link" href="terms.html#glossary-term">term</a>.</p></dd><dt><span class="term"><a id="glossary-anomaly-detection-job"></a> anomaly detection job </span></dt><dd>Anomaly detection jobs contain the configuration information and metadata
+necessary to perform an analytics task. See
+<a class="ulink" href="https://www.elastic.co/guide/en/elastic-stack-overview/master/ml-jobs.html" target="_top">Machine learning jobs</a>.</dd><dt><span class="term"><a id="glossary-zone"></a> availability zone </span></dt><dd>Contains resources available to a Elastic Cloud Enterprise installation that are isolated from
 other availability zones to safeguard against failure. Could be a rack, a server
 zone or some other logical constraint that creates a failure boundary. In a
 highly available cluster, the nodes of a cluster are spread across two or three
@@ -723,7 +725,7 @@ availability zones to ensure that the cluster can survive the failure of an
 entire availability zone. Also see
 <a class="ulink" href="https://www.elastic.co/guide/en/cloud-enterprise/current/ece-ha.html" target="_top">Fault Tolerance (High Availability)</a>.</dd><dt><span class="term"><a id="glossary-beats-runner"></a> beats runner </span></dt><dd>Used to send Filebeat and Metricbeat information to the logging cluster.</dd><dt><span class="term"><a id="glossary-ml-bucket"></a> bucket </span></dt><dd>The machine learning features use the concept of a bucket to divide the time
 series into batches for processing. The <span class="emphasis"><em>bucket span</em></span> is part of the
-configuration information for a job. It defines the time interval that is used
+configuration information for anomaly detection jobs. It defines the time interval that is used
 to summarize and model the data. This is typically between 5 minutes to 1 hour
 and it depends on your data characteristics. When you set the bucket span,
 take into account the granularity at which you want to analyze, the frequency
@@ -753,8 +755,8 @@ coordination system and resource scheduler.</dd><dt><span class="term"><a id="gl
 local cluster. For more information, see <a class="ulink" href="https://www.elastic.co/guide/en/elastic-stack-overview/master/xpack-ccr.html" target="_top">Cross-cluster replication</a>.</dd><dt><span class="term"><a id="glossary-ccs"></a> cross-cluster search (CCS)</span></dt><dd>The cross-cluster search feature enables any node to act as a federated client across
 multiple clusters. See <a class="ulink" href="https://www.elastic.co/guide/en/elasticsearch/reference/master/modules-cross-cluster-search.html" target="_top">Cross-cluster search</a>.</dd></dl></div><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a id="glossary-ml-datafeed"></a> datafeed </span></dt><dd>Anomaly detection jobs can analyze either a one-off batch of data or
 continuously in real time. Datafeeds retrieve data from Elasticsearch for analysis.
-Alternatively you can post data from any source directly to a machine learning API.</dd><dt><span class="term"><a id="glossary-ml-detector"></a> detector </span></dt><dd>As part of the configuration information that is associated with an
-anomaly detection job, detectors define the type of analysis that needs to be done. They
+Alternatively you can post data from any source directly to a machine learning API.</dd><dt><span class="term"><a id="glossary-dataframe-job"></a> data frame analytics job </span></dt><dd>TBD</dd><dt><span class="term"><a id="glossary-ml-detector"></a> detector </span></dt><dd>As part of the configuration information that is associated with anomaly detection jobs,
+detectors define the type of analysis that needs to be done. They
 also specify which fields to analyze. You can have more than one detector in a
 job, which is more efficient than running multiple jobs against the same data.</dd><dt><span class="term"><a id="glossary-director"></a> director </span></dt><dd>Manages the <a class="link" href="terms.html#glossary-zookeeper">ZooKeeper</a> datastore. This role is often
 shared with the <a class="link" href="terms.html#glossary-coordinator">coordinator</a>, though in production
@@ -812,7 +814,7 @@ which contains the <a class="link" href="terms.html#glossary-field">fields</a> i
 order to index <a class="link" href="terms.html#glossary-event">event</a> data.</dd><dt><span class="term"><a id="glossary-input-plugin"></a> input plugin </span></dt><dd>A Logstash <a class="link" href="terms.html#glossary-plugin">plugin</a> that reads <a class="link" href="terms.html#glossary-event">event</a> data
 from a specific source. Input plugins are the first stage in the Logstash
 event processing <a class="link" href="terms.html#glossary-pipeline">pipeline</a>. Popular input plugins include
-file, syslog, redis, and beats.</dd><dt><span class="term"><a id="glossary-ml-job"></a> job </span></dt><dd>Machine learning jobs contain the configuration information and metadata
+file, syslog, redis, and beats.</dd><dt><span class="term"><a id="glossary-ml-job"></a><a id="glossary-job"></a> job </span></dt><dd>Machine learning jobs contain the configuration information and metadata
 necessary to perform an analytics task. There are two types: anomaly detection jobs and
 data frame analytics jobs.</dd><dt><span class="term"><a id="glossary-leader-index"></a> leader index </span></dt><dd>Leader indices are the source indices for <a class="link" href="terms.html#glossary-ccr">cross-cluster replication</a>. They exist
 on remote clusters and are replicated to
@@ -874,7 +876,8 @@ replicas can be changed dynamically on an existing index. A replica
 shard will never be started on the same node as its primary shard.</p></li></ol></div></dd><dt><span class="term"><a id="glossary-roles-token"></a> roles token </span></dt><dd>Enables a host to join an existing Elastic Cloud Enterprise installation and grants permission to
 hosts to hold certain roles, such as the <a class="link" href="terms.html#glossary-allocator">allocator</a> role.
 Used when installing Elastic Cloud Enterprise on additional hosts, a roles token helps secure Elastic Cloud Enterprise
-by making sure that only authorized hosts become part of the installation.</dd><dt><span class="term"><a id="glossary-routing"></a> routing </span></dt><dd><p class="simpara">When you index a document, it is stored on a single
+by making sure that only authorized hosts become part of the installation.</dd><dt><span class="term"><a id="glossary-rollup-job"></a> rollup job</span></dt><dd>Rollup jobs contain the configuration information and metadata necessary to roll
+up specific indices. See <a class="ulink" href="https://www.elastic.co/guide/en/elasticsearch/reference/master/xpack-rollup.html" target="_top">Rolling up historical data</a>.</dd><dt><span class="term"><a id="glossary-routing"></a> routing </span></dt><dd><p class="simpara">When you index a document, it is stored on a single
 <a class="link" href="terms.html#glossary-primary-shard">primary shard</a>. That shard is chosen by hashing
 the <code class="literal">routing</code> value. By default, the <code class="literal">routing</code> value is derived from
 the ID of the document or, if the document has a specified parent
