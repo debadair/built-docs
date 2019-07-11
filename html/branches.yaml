@@ -111,13 +111,6 @@ azure-marketplace:
   Azure Marketplace and Resource Manager (ARM) template/docs/7.0: 6c22807090d1c27073462d5a6a753c47b6ad8f6b|asciidoctor
   Azure Marketplace and Resource Manager (ARM) template/docs/7.1: ff0f9878b770b88cf495ff1ac42119f7a64f0c4a|asciidoctor
   Azure Marketplace and Resource Manager (ARM) template/docs/master: 0685e64b938f3bdc358287fa08aad26fc9b899b7|asciidoctor
-  Deploying with Azure Marketplace and Resource Manager (ARM) template/docs/6.3: 7f83bedc39fa11161d554a5eb38362cdaf403c96|asciidoctor
-  Deploying with Azure Marketplace and Resource Manager (ARM) template/docs/6.4: e0d10b2d63c72e0ca093b0c5f3821b133309ce9f|asciidoctor
-  Deploying with Azure Marketplace and Resource Manager (ARM) template/docs/6.5: 495d8050549528d19cb14e036cbabf896850ad12|asciidoctor
-  Deploying with Azure Marketplace and Resource Manager (ARM) template/docs/6.6: b7f80814d0629f2d320f195da42073758e2f1263|asciidoctor
-  Deploying with Azure Marketplace and Resource Manager (ARM) template/docs/6.7: fae51fe8d4db051fb0eb258b5da06a934795babb|asciidoctor
-  Deploying with Azure Marketplace and Resource Manager (ARM) template/docs/7.0: 6c22807090d1c27073462d5a6a753c47b6ad8f6b|asciidoctor
-  Deploying with Azure Marketplace and Resource Manager (ARM) template/docs/master: 7524e95a9d00dbcb7691b93dc1fcdbbb9f96131f|asciidoctor
 beats:
   Auditbeat Reference/CHANGELOG.asciidoc/6.0: 26f59334880368e3f46c5e91656f11d91e97345a
   Auditbeat Reference/CHANGELOG.asciidoc/6.1: 1ef2ae7ef65b4f1c1b71757cf2853628b47b0e48
@@ -128,7 +121,6 @@ beats:
   Auditbeat Reference/CHANGELOG.asciidoc/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Auditbeat Reference/CHANGELOG.asciidoc/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Auditbeat Reference/CHANGELOG.asciidoc/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Auditbeat Reference/CHANGELOG.asciidoc/6.x: 3f5b1abf28ab2b9bab869ccc932468bf6a0d4c68
   Auditbeat Reference/CHANGELOG.asciidoc/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Auditbeat Reference/CHANGELOG.asciidoc/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Auditbeat Reference/CHANGELOG.asciidoc/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -143,7 +135,6 @@ beats:
   Auditbeat Reference/auditbeat/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Auditbeat Reference/auditbeat/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Auditbeat Reference/auditbeat/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Auditbeat Reference/auditbeat/6.x: 3f5b1abf28ab2b9bab869ccc932468bf6a0d4c68
   Auditbeat Reference/auditbeat/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Auditbeat Reference/auditbeat/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Auditbeat Reference/auditbeat/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -157,7 +148,6 @@ beats:
   Auditbeat Reference/auditbeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Auditbeat Reference/auditbeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Auditbeat Reference/auditbeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Auditbeat Reference/auditbeat/docs/6.x: 3f5b1abf28ab2b9bab869ccc932468bf6a0d4c68
   Auditbeat Reference/auditbeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Auditbeat Reference/auditbeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Auditbeat Reference/auditbeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -173,7 +163,6 @@ beats:
   Auditbeat Reference/auditbeat/module/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Auditbeat Reference/auditbeat/module/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Auditbeat Reference/auditbeat/module/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Auditbeat Reference/auditbeat/module/6.x: 3f5b1abf28ab2b9bab869ccc932468bf6a0d4c68
   Auditbeat Reference/auditbeat/module/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Auditbeat Reference/auditbeat/module/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Auditbeat Reference/auditbeat/module/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -188,7 +177,6 @@ beats:
   Auditbeat Reference/auditbeat/scripts/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Auditbeat Reference/auditbeat/scripts/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Auditbeat Reference/auditbeat/scripts/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Auditbeat Reference/auditbeat/scripts/6.x: 3f5b1abf28ab2b9bab869ccc932468bf6a0d4c68
   Auditbeat Reference/auditbeat/scripts/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Auditbeat Reference/auditbeat/scripts/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Auditbeat Reference/auditbeat/scripts/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -203,7 +191,6 @@ beats:
   Auditbeat Reference/libbeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Auditbeat Reference/libbeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Auditbeat Reference/libbeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Auditbeat Reference/libbeat/docs/6.x: 3f5b1abf28ab2b9bab869ccc932468bf6a0d4c68
   Auditbeat Reference/libbeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Auditbeat Reference/libbeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Auditbeat Reference/libbeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -212,7 +199,6 @@ beats:
   Auditbeat Reference/x-pack/auditbeat/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Auditbeat Reference/x-pack/auditbeat/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Auditbeat Reference/x-pack/auditbeat/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Auditbeat Reference/x-pack/auditbeat/6.x: 3f5b1abf28ab2b9bab869ccc932468bf6a0d4c68
   Auditbeat Reference/x-pack/auditbeat/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Auditbeat Reference/x-pack/auditbeat/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Auditbeat Reference/x-pack/auditbeat/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -227,7 +213,6 @@ beats:
   Beats Developer Guide/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Beats Developer Guide/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Beats Developer Guide/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Beats Developer Guide/docs/6.x: 7e675b7a9421abb3830851f9c04c86f556ef81ab
   Beats Developer Guide/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Beats Developer Guide/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Beats Developer Guide/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -242,7 +227,6 @@ beats:
   Beats Developer Guide/libbeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Beats Developer Guide/libbeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Beats Developer Guide/libbeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Beats Developer Guide/libbeat/docs/6.x: 7e675b7a9421abb3830851f9c04c86f556ef81ab
   Beats Developer Guide/libbeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Beats Developer Guide/libbeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Beats Developer Guide/libbeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -257,7 +241,6 @@ beats:
   Beats Developer Guide/metricbeat/module/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Beats Developer Guide/metricbeat/module/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Beats Developer Guide/metricbeat/module/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Beats Developer Guide/metricbeat/module/6.x: 7e675b7a9421abb3830851f9c04c86f556ef81ab
   Beats Developer Guide/metricbeat/module/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Beats Developer Guide/metricbeat/module/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Beats Developer Guide/metricbeat/module/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -272,7 +255,6 @@ beats:
   Beats Developer Guide/metricbeat/scripts/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Beats Developer Guide/metricbeat/scripts/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Beats Developer Guide/metricbeat/scripts/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Beats Developer Guide/metricbeat/scripts/6.x: 7e675b7a9421abb3830851f9c04c86f556ef81ab
   Beats Developer Guide/metricbeat/scripts/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Beats Developer Guide/metricbeat/scripts/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Beats Developer Guide/metricbeat/scripts/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -298,7 +280,6 @@ beats:
   Beats Platform Reference/CHANGELOG.asciidoc/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Beats Platform Reference/CHANGELOG.asciidoc/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Beats Platform Reference/CHANGELOG.asciidoc/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Beats Platform Reference/CHANGELOG.asciidoc/6.x: 07211dd8251e7277dc6c5583234d61a51d5b7003
   Beats Platform Reference/CHANGELOG.asciidoc/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Beats Platform Reference/CHANGELOG.asciidoc/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Beats Platform Reference/CHANGELOG.asciidoc/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -324,7 +305,6 @@ beats:
   Beats Platform Reference/libbeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Beats Platform Reference/libbeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Beats Platform Reference/libbeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Beats Platform Reference/libbeat/docs/6.x: 07211dd8251e7277dc6c5583234d61a51d5b7003
   Beats Platform Reference/libbeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Beats Platform Reference/libbeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Beats Platform Reference/libbeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -350,7 +330,6 @@ beats:
   Filebeat Reference/CHANGELOG.asciidoc/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Filebeat Reference/CHANGELOG.asciidoc/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Filebeat Reference/CHANGELOG.asciidoc/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Filebeat Reference/CHANGELOG.asciidoc/6.x: dc26a2e62c861e41d31ea965496ab80611c4711e
   Filebeat Reference/CHANGELOG.asciidoc/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Filebeat Reference/CHANGELOG.asciidoc/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Filebeat Reference/CHANGELOG.asciidoc/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -376,7 +355,6 @@ beats:
   Filebeat Reference/filebeat/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Filebeat Reference/filebeat/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Filebeat Reference/filebeat/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Filebeat Reference/filebeat/6.x: dc26a2e62c861e41d31ea965496ab80611c4711e
   Filebeat Reference/filebeat/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Filebeat Reference/filebeat/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Filebeat Reference/filebeat/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -401,7 +379,6 @@ beats:
   Filebeat Reference/filebeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Filebeat Reference/filebeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Filebeat Reference/filebeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Filebeat Reference/filebeat/docs/6.x: dc26a2e62c861e41d31ea965496ab80611c4711e
   Filebeat Reference/filebeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Filebeat Reference/filebeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Filebeat Reference/filebeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -428,7 +405,6 @@ beats:
   Filebeat Reference/libbeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Filebeat Reference/libbeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Filebeat Reference/libbeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Filebeat Reference/libbeat/docs/6.x: dc26a2e62c861e41d31ea965496ab80611c4711e
   Filebeat Reference/libbeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Filebeat Reference/libbeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Filebeat Reference/libbeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -437,7 +413,6 @@ beats:
   Filebeat Reference/x-pack/filebeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Filebeat Reference/x-pack/filebeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Filebeat Reference/x-pack/filebeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Filebeat Reference/x-pack/filebeat/docs/6.x: dc26a2e62c861e41d31ea965496ab80611c4711e
   Filebeat Reference/x-pack/filebeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Filebeat Reference/x-pack/filebeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Filebeat Reference/x-pack/filebeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -447,7 +422,6 @@ beats:
   Functionbeat Reference/CHANGELOG.asciidoc/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Functionbeat Reference/CHANGELOG.asciidoc/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Functionbeat Reference/CHANGELOG.asciidoc/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Functionbeat Reference/CHANGELOG.asciidoc/6.x: 1ab2ed0fed812bd1a1207ba45aebd9da41e2adcc
   Functionbeat Reference/CHANGELOG.asciidoc/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Functionbeat Reference/CHANGELOG.asciidoc/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Functionbeat Reference/CHANGELOG.asciidoc/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -457,7 +431,6 @@ beats:
   Functionbeat Reference/libbeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Functionbeat Reference/libbeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Functionbeat Reference/libbeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Functionbeat Reference/libbeat/docs/6.x: 1ab2ed0fed812bd1a1207ba45aebd9da41e2adcc
   Functionbeat Reference/libbeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Functionbeat Reference/libbeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Functionbeat Reference/libbeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -467,7 +440,6 @@ beats:
   Functionbeat Reference/x-pack/functionbeat/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Functionbeat Reference/x-pack/functionbeat/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Functionbeat Reference/x-pack/functionbeat/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Functionbeat Reference/x-pack/functionbeat/6.x: 1ab2ed0fed812bd1a1207ba45aebd9da41e2adcc
   Functionbeat Reference/x-pack/functionbeat/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Functionbeat Reference/x-pack/functionbeat/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Functionbeat Reference/x-pack/functionbeat/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -476,7 +448,6 @@ beats:
   Functionbeat Reference/x-pack/functionbeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Functionbeat Reference/x-pack/functionbeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Functionbeat Reference/x-pack/functionbeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Functionbeat Reference/x-pack/functionbeat/docs/6.x: 1ab2ed0fed812bd1a1207ba45aebd9da41e2adcc
   Functionbeat Reference/x-pack/functionbeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Functionbeat Reference/x-pack/functionbeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Functionbeat Reference/x-pack/functionbeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -497,7 +468,6 @@ beats:
   Heartbeat Reference/CHANGELOG.asciidoc/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Heartbeat Reference/CHANGELOG.asciidoc/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Heartbeat Reference/CHANGELOG.asciidoc/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Heartbeat Reference/CHANGELOG.asciidoc/6.x: 07211dd8251e7277dc6c5583234d61a51d5b7003
   Heartbeat Reference/CHANGELOG.asciidoc/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Heartbeat Reference/CHANGELOG.asciidoc/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Heartbeat Reference/CHANGELOG.asciidoc/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -517,7 +487,6 @@ beats:
   Heartbeat Reference/heartbeat/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Heartbeat Reference/heartbeat/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Heartbeat Reference/heartbeat/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Heartbeat Reference/heartbeat/6.x: 07211dd8251e7277dc6c5583234d61a51d5b7003
   Heartbeat Reference/heartbeat/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Heartbeat Reference/heartbeat/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Heartbeat Reference/heartbeat/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -536,7 +505,6 @@ beats:
   Heartbeat Reference/heartbeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Heartbeat Reference/heartbeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Heartbeat Reference/heartbeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Heartbeat Reference/heartbeat/docs/6.x: 07211dd8251e7277dc6c5583234d61a51d5b7003
   Heartbeat Reference/heartbeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Heartbeat Reference/heartbeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Heartbeat Reference/heartbeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -557,7 +525,6 @@ beats:
   Heartbeat Reference/libbeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Heartbeat Reference/libbeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Heartbeat Reference/libbeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Heartbeat Reference/libbeat/docs/6.x: 07211dd8251e7277dc6c5583234d61a51d5b7003
   Heartbeat Reference/libbeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Heartbeat Reference/libbeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Heartbeat Reference/libbeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -587,7 +554,6 @@ beats:
   Journalbeat Reference/CHANGELOG.asciidoc/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Journalbeat Reference/CHANGELOG.asciidoc/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Journalbeat Reference/CHANGELOG.asciidoc/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Journalbeat Reference/CHANGELOG.asciidoc/6.x: 1ab2ed0fed812bd1a1207ba45aebd9da41e2adcc
   Journalbeat Reference/CHANGELOG.asciidoc/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Journalbeat Reference/CHANGELOG.asciidoc/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Journalbeat Reference/CHANGELOG.asciidoc/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -597,7 +563,6 @@ beats:
   Journalbeat Reference/journalbeat/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Journalbeat Reference/journalbeat/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Journalbeat Reference/journalbeat/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Journalbeat Reference/journalbeat/6.x: 1ab2ed0fed812bd1a1207ba45aebd9da41e2adcc
   Journalbeat Reference/journalbeat/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Journalbeat Reference/journalbeat/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Journalbeat Reference/journalbeat/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -606,7 +571,6 @@ beats:
   Journalbeat Reference/journalbeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Journalbeat Reference/journalbeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Journalbeat Reference/journalbeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Journalbeat Reference/journalbeat/docs/6.x: 1ab2ed0fed812bd1a1207ba45aebd9da41e2adcc
   Journalbeat Reference/journalbeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Journalbeat Reference/journalbeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Journalbeat Reference/journalbeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -617,7 +581,6 @@ beats:
   Journalbeat Reference/libbeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Journalbeat Reference/libbeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Journalbeat Reference/libbeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Journalbeat Reference/libbeat/docs/6.x: 1ab2ed0fed812bd1a1207ba45aebd9da41e2adcc
   Journalbeat Reference/libbeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Journalbeat Reference/libbeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Journalbeat Reference/libbeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -651,7 +614,6 @@ beats:
   Metricbeat Reference/CHANGELOG.asciidoc/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Metricbeat Reference/CHANGELOG.asciidoc/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Metricbeat Reference/CHANGELOG.asciidoc/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Metricbeat Reference/CHANGELOG.asciidoc/6.x: 7e675b7a9421abb3830851f9c04c86f556ef81ab
   Metricbeat Reference/CHANGELOG.asciidoc/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Metricbeat Reference/CHANGELOG.asciidoc/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Metricbeat Reference/CHANGELOG.asciidoc/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -673,7 +635,6 @@ beats:
   Metricbeat Reference/libbeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Metricbeat Reference/libbeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Metricbeat Reference/libbeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Metricbeat Reference/libbeat/docs/6.x: 7e675b7a9421abb3830851f9c04c86f556ef81ab
   Metricbeat Reference/libbeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Metricbeat Reference/libbeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Metricbeat Reference/libbeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -695,7 +656,6 @@ beats:
   Metricbeat Reference/metricbeat/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Metricbeat Reference/metricbeat/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Metricbeat Reference/metricbeat/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Metricbeat Reference/metricbeat/6.x: 7e675b7a9421abb3830851f9c04c86f556ef81ab
   Metricbeat Reference/metricbeat/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Metricbeat Reference/metricbeat/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Metricbeat Reference/metricbeat/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -716,7 +676,6 @@ beats:
   Metricbeat Reference/metricbeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Metricbeat Reference/metricbeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Metricbeat Reference/metricbeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Metricbeat Reference/metricbeat/docs/6.x: 7e675b7a9421abb3830851f9c04c86f556ef81ab
   Metricbeat Reference/metricbeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Metricbeat Reference/metricbeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Metricbeat Reference/metricbeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -739,7 +698,6 @@ beats:
   Metricbeat Reference/metricbeat/module/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Metricbeat Reference/metricbeat/module/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Metricbeat Reference/metricbeat/module/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Metricbeat Reference/metricbeat/module/6.x: 7e675b7a9421abb3830851f9c04c86f556ef81ab
   Metricbeat Reference/metricbeat/module/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Metricbeat Reference/metricbeat/module/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Metricbeat Reference/metricbeat/module/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -761,7 +719,6 @@ beats:
   Metricbeat Reference/metricbeat/scripts/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Metricbeat Reference/metricbeat/scripts/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Metricbeat Reference/metricbeat/scripts/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Metricbeat Reference/metricbeat/scripts/6.x: 7e675b7a9421abb3830851f9c04c86f556ef81ab
   Metricbeat Reference/metricbeat/scripts/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Metricbeat Reference/metricbeat/scripts/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Metricbeat Reference/metricbeat/scripts/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -792,7 +749,6 @@ beats:
   Packetbeat Reference/CHANGELOG.asciidoc/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Packetbeat Reference/CHANGELOG.asciidoc/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Packetbeat Reference/CHANGELOG.asciidoc/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Packetbeat Reference/CHANGELOG.asciidoc/6.x: 07211dd8251e7277dc6c5583234d61a51d5b7003
   Packetbeat Reference/CHANGELOG.asciidoc/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Packetbeat Reference/CHANGELOG.asciidoc/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Packetbeat Reference/CHANGELOG.asciidoc/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -818,7 +774,6 @@ beats:
   Packetbeat Reference/libbeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Packetbeat Reference/libbeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Packetbeat Reference/libbeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Packetbeat Reference/libbeat/docs/6.x: 07211dd8251e7277dc6c5583234d61a51d5b7003
   Packetbeat Reference/libbeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Packetbeat Reference/libbeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Packetbeat Reference/libbeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -844,7 +799,6 @@ beats:
   Packetbeat Reference/packetbeat/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Packetbeat Reference/packetbeat/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Packetbeat Reference/packetbeat/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Packetbeat Reference/packetbeat/6.x: 07211dd8251e7277dc6c5583234d61a51d5b7003
   Packetbeat Reference/packetbeat/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Packetbeat Reference/packetbeat/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Packetbeat Reference/packetbeat/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -869,7 +823,6 @@ beats:
   Packetbeat Reference/packetbeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Packetbeat Reference/packetbeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Packetbeat Reference/packetbeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Packetbeat Reference/packetbeat/docs/6.x: 07211dd8251e7277dc6c5583234d61a51d5b7003
   Packetbeat Reference/packetbeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Packetbeat Reference/packetbeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Packetbeat Reference/packetbeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -895,7 +848,6 @@ beats:
   Winlogbeat Reference/CHANGELOG.asciidoc/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Winlogbeat Reference/CHANGELOG.asciidoc/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Winlogbeat Reference/CHANGELOG.asciidoc/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Winlogbeat Reference/CHANGELOG.asciidoc/6.x: 07211dd8251e7277dc6c5583234d61a51d5b7003
   Winlogbeat Reference/CHANGELOG.asciidoc/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Winlogbeat Reference/CHANGELOG.asciidoc/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Winlogbeat Reference/CHANGELOG.asciidoc/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -920,7 +872,6 @@ beats:
   Winlogbeat Reference/libbeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Winlogbeat Reference/libbeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Winlogbeat Reference/libbeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Winlogbeat Reference/libbeat/docs/6.x: 07211dd8251e7277dc6c5583234d61a51d5b7003
   Winlogbeat Reference/libbeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Winlogbeat Reference/libbeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Winlogbeat Reference/libbeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -945,7 +896,6 @@ beats:
   Winlogbeat Reference/winlogbeat/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Winlogbeat Reference/winlogbeat/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Winlogbeat Reference/winlogbeat/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Winlogbeat Reference/winlogbeat/6.x: 07211dd8251e7277dc6c5583234d61a51d5b7003
   Winlogbeat Reference/winlogbeat/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Winlogbeat Reference/winlogbeat/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Winlogbeat Reference/winlogbeat/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -969,7 +919,6 @@ beats:
   Winlogbeat Reference/winlogbeat/docs/6.6: b804a8c0ad5fef54d96b2a5a2c47ee00c237bb9c
   Winlogbeat Reference/winlogbeat/docs/6.7: 9dab70c3a71d5a8f628104f68f740acf7d5993f9
   Winlogbeat Reference/winlogbeat/docs/6.8: b1b70e52a62bd00517ed4d0992987e4f16ef3de3
-  Winlogbeat Reference/winlogbeat/docs/6.x: 07211dd8251e7277dc6c5583234d61a51d5b7003
   Winlogbeat Reference/winlogbeat/docs/7.0: 8620da85f9586b71643950650ddd2021455e0775
   Winlogbeat Reference/winlogbeat/docs/7.1: 55cc514cf677a9ad01065aeef05b2ecd18718b0a
   Winlogbeat Reference/winlogbeat/docs/7.2: 14c59496e3762d504e16726fd28741a6228bf8d1
@@ -977,13 +926,6 @@ beats:
   Winlogbeat Reference/winlogbeat/docs/master: 40dcaef58b9e31c2f19f0419de27cdd3a280780e
   Winlogbeat Reference/winlogbeat/master: 40dcaef58b9e31c2f19f0419de27cdd3a280780e
 cloud:
-  'Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/cloud-enterprise/1.0': 0078e16122179e9eb9ea290b4f0acce87e37e173
-  'Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/cloud-enterprise/1.1': 2f43a989463574f83b2e8010102b5247f05113b8
-  'Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/cloud-enterprise/2.0': 399144597b948f3f901b10734d0d02699fbf3e95
-  'Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/cloud-enterprise/2.1': ec55476bfa31ab6ead296d11691a72fb0ac9478b
-  'Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/shared/1.1': 2f43a989463574f83b2e8010102b5247f05113b8
-  'Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/shared/2.0': 399144597b948f3f901b10734d0d02699fbf3e95
-  'Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/shared/2.1': ec55476bfa31ab6ead296d11691a72fb0ac9478b
   'Elastic Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/cloud-enterprise/1.0': 6655df69abb49f7206b69710d4182dd567060754
   'Elastic Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/cloud-enterprise/1.1': c5d854972ea84b9f6b1e597baf32c0c7632aa745
   'Elastic Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/cloud-enterprise/2.0': a52b25bd1b9e066e7b9bdb185855ce7188189703
@@ -993,25 +935,7 @@ cloud:
   'Elastic Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/shared/2.0': a52b25bd1b9e066e7b9bdb185855ce7188189703
   'Elastic Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/shared/2.1': 5df3ef51fb5f745751a67ea53eaf732f640548aa
   'Elastic Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/shared/2.2': 6016a37034b9418c8ee925dc6ce8bd2e580a4fd9
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/release-ms-13': 75fd020118ec22adac44ed5c8740960ae51a58c5
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/release-ms-14': 8fc6dd3200bc9717e4651d178772790a2276f19d
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/release-ms-15': 496e1bc5114bc2d17ff3579defe238a282643c2c
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/release-ms-17': fe783c7bbeb2d2a762d92f3c00f727d52b417428
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/release-ms-18': f905c386395de0170e442fb13575be5d4f8037c0
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/release-ms-19': 2193f2f523d2716810d91be2a256e66857bb7451
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/release-ms-20': 6263e1f41a95e61e4660a372da498860ab8563b2
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/release-ms-21': 7d0b747fbf27f2804fff48fabe1a72dc002b1220
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/saas-release': e72024ac06a3bf87fc00039375e9370c4b0f34f5
   'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/saas-release-heroku': 066841648ce1390bf109051e1806a0142e2b2a3d
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/release-ms-13': 75fd020118ec22adac44ed5c8740960ae51a58c5
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/release-ms-14': 8fc6dd3200bc9717e4651d178772790a2276f19d
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/release-ms-15': 496e1bc5114bc2d17ff3579defe238a282643c2c
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/release-ms-17': fe783c7bbeb2d2a762d92f3c00f727d52b417428
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/release-ms-18': f905c386395de0170e442fb13575be5d4f8037c0
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/release-ms-19': 2193f2f523d2716810d91be2a256e66857bb7451
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/release-ms-20': 6263e1f41a95e61e4660a372da498860ab8563b2
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/release-ms-21': 7d0b747fbf27f2804fff48fabe1a72dc002b1220
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/saas-release': e72024ac06a3bf87fc00039375e9370c4b0f34f5
 cloud-on-k8s:
   Elastic Cloud on Kubernetes/docs/0.8: f9d2b799c05f55988c203572eabe3b9fbc47943b
   Elastic Cloud on Kubernetes/docs/master: c4e193e1cab30d590a57642e06336e2dfe94e2af
@@ -1053,7 +977,6 @@ elasticsearch:
   Elasticsearch Reference/docs/Versions.asciidoc/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Elasticsearch Reference/docs/Versions.asciidoc/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Elasticsearch Reference/docs/Versions.asciidoc/6.8: 362a346b5f0d7abdfd19a71df960c631379ab528|asciidoctor
-  Elasticsearch Reference/docs/Versions.asciidoc/6.x: 3a0c896618b10e950c75b3d7c9d23e27954619e7
   Elasticsearch Reference/docs/Versions.asciidoc/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Elasticsearch Reference/docs/Versions.asciidoc/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Elasticsearch Reference/docs/Versions.asciidoc/7.2: a9b944102c4c48bc84beb45a6c4823f142509c21|asciidoctor
@@ -1070,7 +993,6 @@ elasticsearch:
   Elasticsearch Reference/docs/painless/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Elasticsearch Reference/docs/painless/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Elasticsearch Reference/docs/painless/6.8: 362a346b5f0d7abdfd19a71df960c631379ab528|asciidoctor
-  Elasticsearch Reference/docs/painless/6.x: 3a0c896618b10e950c75b3d7c9d23e27954619e7
   Elasticsearch Reference/docs/painless/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Elasticsearch Reference/docs/painless/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Elasticsearch Reference/docs/painless/7.2: a9b944102c4c48bc84beb45a6c4823f142509c21|asciidoctor
@@ -1103,7 +1025,6 @@ elasticsearch:
   Elasticsearch Reference/docs/reference/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Elasticsearch Reference/docs/reference/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Elasticsearch Reference/docs/reference/6.8: 362a346b5f0d7abdfd19a71df960c631379ab528|asciidoctor
-  Elasticsearch Reference/docs/reference/6.x: 3a0c896618b10e950c75b3d7c9d23e27954619e7
   Elasticsearch Reference/docs/reference/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Elasticsearch Reference/docs/reference/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Elasticsearch Reference/docs/reference/7.2: a9b944102c4c48bc84beb45a6c4823f142509c21|asciidoctor
@@ -1122,7 +1043,6 @@ elasticsearch:
   Elasticsearch Reference/docs/src/test/cluster/config/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Elasticsearch Reference/docs/src/test/cluster/config/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Elasticsearch Reference/docs/src/test/cluster/config/6.8: 362a346b5f0d7abdfd19a71df960c631379ab528|asciidoctor
-  Elasticsearch Reference/docs/src/test/cluster/config/6.x: 3a0c896618b10e950c75b3d7c9d23e27954619e7
   Elasticsearch Reference/docs/src/test/cluster/config/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Elasticsearch Reference/docs/src/test/cluster/config/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Elasticsearch Reference/docs/src/test/cluster/config/7.2: a9b944102c4c48bc84beb45a6c4823f142509c21|asciidoctor
@@ -1139,7 +1059,6 @@ elasticsearch:
   Elasticsearch Reference/plugins/examples/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Elasticsearch Reference/plugins/examples/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Elasticsearch Reference/plugins/examples/6.8: 362a346b5f0d7abdfd19a71df960c631379ab528|asciidoctor
-  Elasticsearch Reference/plugins/examples/6.x: 3a0c896618b10e950c75b3d7c9d23e27954619e7
   Elasticsearch Reference/plugins/examples/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Elasticsearch Reference/plugins/examples/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Elasticsearch Reference/plugins/examples/7.2: a9b944102c4c48bc84beb45a6c4823f142509c21|asciidoctor
@@ -1151,7 +1070,6 @@ elasticsearch:
   Elasticsearch Reference/x-pack/docs/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Elasticsearch Reference/x-pack/docs/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Elasticsearch Reference/x-pack/docs/6.8: 362a346b5f0d7abdfd19a71df960c631379ab528|asciidoctor
-  Elasticsearch Reference/x-pack/docs/6.x: 3a0c896618b10e950c75b3d7c9d23e27954619e7
   Elasticsearch Reference/x-pack/docs/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Elasticsearch Reference/x-pack/docs/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Elasticsearch Reference/x-pack/docs/7.2: a9b944102c4c48bc84beb45a6c4823f142509c21|asciidoctor
@@ -1160,7 +1078,6 @@ elasticsearch:
   Elasticsearch Reference/x-pack/plugin/sql/qa/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Elasticsearch Reference/x-pack/plugin/sql/qa/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Elasticsearch Reference/x-pack/plugin/sql/qa/6.8: 362a346b5f0d7abdfd19a71df960c631379ab528|asciidoctor
-  Elasticsearch Reference/x-pack/plugin/sql/qa/6.x: 3a0c896618b10e950c75b3d7c9d23e27954619e7
   Elasticsearch Reference/x-pack/plugin/sql/qa/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Elasticsearch Reference/x-pack/plugin/sql/qa/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Elasticsearch Reference/x-pack/plugin/sql/qa/7.2: a9b944102c4c48bc84beb45a6c4823f142509c21|asciidoctor
@@ -1178,9 +1095,7 @@ elasticsearch:
   Elasticsearchリファレンス/docs/5.4: c10964587d2333c5d1cc04225d103252bb3c262d
   Elasticsearchリファレンス/docs/jp/reference/5.3: b6691a11bac734fa71210ad48140afafa683c2d5
   Elasticsearchリファレンス/docs/jp/reference/5.4: c10964587d2333c5d1cc04225d103252bb3c262d
-  GO API/docs/go/master: 58515c302216f13346e142009da5e1e9b1337d71|asciidoctor
   Go API/docs/go/master: 5f6321aacb95d2b842c74b6f7dc064c70a15e33c|asciidoctor
-  Groovy API/docs/Versions.asciidoc/master: 0db0e1330c55b6c5a4c529d6a4f6ecdca7dc4449|asciidoctor
   Groovy API/docs/groovy-api/0.90: d6287897b6c3af608b4da4aab06a07195f84475d|asciidoctor
   Groovy API/docs/groovy-api/1.3: 628c18f4fc55a5b863fba25dd2501371b173e7b0|asciidoctor
   Groovy API/docs/groovy-api/1.4: 383e525ef1cef4e474bdad501bc74504840d3255|asciidoctor
@@ -1192,7 +1107,6 @@ elasticsearch:
   Groovy API/docs/groovy-api/2.2: 703ac71a557602d3e0545333803c72bc5e85e18f|asciidoctor
   Groovy API/docs/groovy-api/2.3: 1e4faeb89a198f7905b9f8d0f6142ba28ec56c11|asciidoctor
   Groovy API/docs/groovy-api/2.4: 3d32f3e9b0ac3b3f1b63e8ac815a5087f667ab3b|asciidoctor
-  Groovy API/docs/groovy-api/master: 0db0e1330c55b6c5a4c529d6a4f6ecdca7dc4449|asciidoctor
   Installation and Upgrade Guide/docs/5.0: 0ae0b29c376782b2e8d65e3db7b521830cdf8c63|asciidoctor
   Installation and Upgrade Guide/docs/5.1: 2fe6b7b89c177b174496403f2c8a43619c64b5c9|asciidoctor
   Installation and Upgrade Guide/docs/5.2: 0f50f120f08792349ed34345370c88ce46762384|asciidoctor
@@ -1209,7 +1123,6 @@ elasticsearch:
   Installation and Upgrade Guide/docs/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Installation and Upgrade Guide/docs/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Installation and Upgrade Guide/docs/6.8: 362a346b5f0d7abdfd19a71df960c631379ab528|asciidoctor
-  Installation and Upgrade Guide/docs/6.x: 3a0c896618b10e950c75b3d7c9d23e27954619e7
   Installation and Upgrade Guide/docs/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Installation and Upgrade Guide/docs/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Installation and Upgrade Guide/docs/7.2: a9b944102c4c48bc84beb45a6c4823f142509c21|asciidoctor
@@ -1224,12 +1137,10 @@ elasticsearch:
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/6.8: 4e0f1971e18399d7245ecee07b8c7bce969b1696|asciidoctor
-  Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/6.x: 65f807cc475318f2b7fce759b4dbc2d02c22aa1f
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/7.2: 58a1a1d9a5d2dc43c991fa031ace6a56ccca45e8|asciidoctor
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/7.x: 9a3c86d4220eb561d95bbed292e8279af5c4b1d2|asciidoctor
-  Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/master: c26122014f772b7f2c50d6029d680c09e56e2e88|asciidoctor
   Java API/docs/Versions.asciidoc/5.0: 0ae0b29c376782b2e8d65e3db7b521830cdf8c63|asciidoctor
   Java API/docs/Versions.asciidoc/5.1: 2fe6b7b89c177b174496403f2c8a43619c64b5c9|asciidoctor
   Java API/docs/Versions.asciidoc/5.2: 0f50f120f08792349ed34345370c88ce46762384|asciidoctor
@@ -1246,12 +1157,10 @@ elasticsearch:
   Java API/docs/Versions.asciidoc/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Java API/docs/Versions.asciidoc/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Java API/docs/Versions.asciidoc/6.8: 4e0f1971e18399d7245ecee07b8c7bce969b1696|asciidoctor
-  Java API/docs/Versions.asciidoc/6.x: 65f807cc475318f2b7fce759b4dbc2d02c22aa1f
   Java API/docs/Versions.asciidoc/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Java API/docs/Versions.asciidoc/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Java API/docs/Versions.asciidoc/7.2: 58a1a1d9a5d2dc43c991fa031ace6a56ccca45e8|asciidoctor
   Java API/docs/Versions.asciidoc/7.x: 9a3c86d4220eb561d95bbed292e8279af5c4b1d2|asciidoctor
-  Java API/docs/Versions.asciidoc/master: c26122014f772b7f2c50d6029d680c09e56e2e88|asciidoctor
   Java API/docs/java-api/0.90: d6287897b6c3af608b4da4aab06a07195f84475d|asciidoctor
   Java API/docs/java-api/1.3: 628c18f4fc55a5b863fba25dd2501371b173e7b0|asciidoctor
   Java API/docs/java-api/1.4: 383e525ef1cef4e474bdad501bc74504840d3255|asciidoctor
@@ -1279,12 +1188,10 @@ elasticsearch:
   Java API/docs/java-api/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Java API/docs/java-api/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Java API/docs/java-api/6.8: 4e0f1971e18399d7245ecee07b8c7bce969b1696|asciidoctor
-  Java API/docs/java-api/6.x: 65f807cc475318f2b7fce759b4dbc2d02c22aa1f
   Java API/docs/java-api/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Java API/docs/java-api/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Java API/docs/java-api/7.2: 58a1a1d9a5d2dc43c991fa031ace6a56ccca45e8|asciidoctor
   Java API/docs/java-api/7.x: 9a3c86d4220eb561d95bbed292e8279af5c4b1d2|asciidoctor
-  Java API/docs/java-api/master: c26122014f772b7f2c50d6029d680c09e56e2e88|asciidoctor
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/5.6: 674f7dc44c483ed55330144600618a7d220ede05|asciidoctor
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/6.0: 40fbdff5dc04f52f7f614a393fae0c19e9a9a52c|asciidoctor
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/6.1: cfa1b4537172f108bcc7a30d1d29f43d5ba568f7|asciidoctor
@@ -1295,12 +1202,10 @@ elasticsearch:
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/6.8: 4e0f1971e18399d7245ecee07b8c7bce969b1696|asciidoctor
-  Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/6.x: 65f807cc475318f2b7fce759b4dbc2d02c22aa1f
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/7.2: 58a1a1d9a5d2dc43c991fa031ace6a56ccca45e8|asciidoctor
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/7.x: 9a3c86d4220eb561d95bbed292e8279af5c4b1d2|asciidoctor
-  Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/master: c26122014f772b7f2c50d6029d680c09e56e2e88|asciidoctor
   Java API/server/src/test/java/org/elasticsearch/client/documentation/6.0: 40fbdff5dc04f52f7f614a393fae0c19e9a9a52c|asciidoctor
   Java API/server/src/test/java/org/elasticsearch/client/documentation/6.1: cfa1b4537172f108bcc7a30d1d29f43d5ba568f7|asciidoctor
   Java API/server/src/test/java/org/elasticsearch/client/documentation/6.2: aaf3e0689719cd496e108e6c0a49fb82a69bae82|asciidoctor
@@ -1310,12 +1215,10 @@ elasticsearch:
   Java API/server/src/test/java/org/elasticsearch/client/documentation/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Java API/server/src/test/java/org/elasticsearch/client/documentation/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Java API/server/src/test/java/org/elasticsearch/client/documentation/6.8: 4e0f1971e18399d7245ecee07b8c7bce969b1696|asciidoctor
-  Java API/server/src/test/java/org/elasticsearch/client/documentation/6.x: 65f807cc475318f2b7fce759b4dbc2d02c22aa1f
   Java API/server/src/test/java/org/elasticsearch/client/documentation/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Java API/server/src/test/java/org/elasticsearch/client/documentation/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Java API/server/src/test/java/org/elasticsearch/client/documentation/7.2: 58a1a1d9a5d2dc43c991fa031ace6a56ccca45e8|asciidoctor
   Java API/server/src/test/java/org/elasticsearch/client/documentation/7.x: 9a3c86d4220eb561d95bbed292e8279af5c4b1d2|asciidoctor
-  Java API/server/src/test/java/org/elasticsearch/client/documentation/master: c26122014f772b7f2c50d6029d680c09e56e2e88|asciidoctor
   Java REST Client/client/5.6: 674f7dc44c483ed55330144600618a7d220ede05|asciidoctor
   Java REST Client/client/6.0: 40fbdff5dc04f52f7f614a393fae0c19e9a9a52c|asciidoctor
   Java REST Client/client/6.1: cfa1b4537172f108bcc7a30d1d29f43d5ba568f7|asciidoctor
@@ -1326,7 +1229,6 @@ elasticsearch:
   Java REST Client/client/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Java REST Client/client/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Java REST Client/client/6.8: 4e0f1971e18399d7245ecee07b8c7bce969b1696|asciidoctor
-  Java REST Client/client/6.x: 65f807cc475318f2b7fce759b4dbc2d02c22aa1f
   Java REST Client/client/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Java REST Client/client/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Java REST Client/client/7.2: 58a1a1d9a5d2dc43c991fa031ace6a56ccca45e8|asciidoctor
@@ -1348,7 +1250,6 @@ elasticsearch:
   Java REST Client/docs/Versions.asciidoc/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Java REST Client/docs/Versions.asciidoc/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Java REST Client/docs/Versions.asciidoc/6.8: 4e0f1971e18399d7245ecee07b8c7bce969b1696|asciidoctor
-  Java REST Client/docs/Versions.asciidoc/6.x: 65f807cc475318f2b7fce759b4dbc2d02c22aa1f
   Java REST Client/docs/Versions.asciidoc/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Java REST Client/docs/Versions.asciidoc/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Java REST Client/docs/Versions.asciidoc/7.2: 58a1a1d9a5d2dc43c991fa031ace6a56ccca45e8|asciidoctor
@@ -1370,7 +1271,6 @@ elasticsearch:
   Java REST Client/docs/java-rest/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Java REST Client/docs/java-rest/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Java REST Client/docs/java-rest/6.8: 4e0f1971e18399d7245ecee07b8c7bce969b1696|asciidoctor
-  Java REST Client/docs/java-rest/6.x: 65f807cc475318f2b7fce759b4dbc2d02c22aa1f
   Java REST Client/docs/java-rest/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Java REST Client/docs/java-rest/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Java REST Client/docs/java-rest/7.2: 58a1a1d9a5d2dc43c991fa031ace6a56ccca45e8|asciidoctor
@@ -1387,7 +1287,6 @@ elasticsearch:
   Painless Scripting Language/docs/Versions.asciidoc/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Painless Scripting Language/docs/Versions.asciidoc/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Painless Scripting Language/docs/Versions.asciidoc/6.8: 4e0f1971e18399d7245ecee07b8c7bce969b1696|asciidoctor
-  Painless Scripting Language/docs/Versions.asciidoc/6.x: 34aede672092a5a1c046b43e1530217ebce5f19f
   Painless Scripting Language/docs/Versions.asciidoc/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Painless Scripting Language/docs/Versions.asciidoc/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Painless Scripting Language/docs/Versions.asciidoc/7.2: 58a1a1d9a5d2dc43c991fa031ace6a56ccca45e8|asciidoctor
@@ -1404,7 +1303,6 @@ elasticsearch:
   Painless Scripting Language/docs/painless/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Painless Scripting Language/docs/painless/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Painless Scripting Language/docs/painless/6.8: 4e0f1971e18399d7245ecee07b8c7bce969b1696|asciidoctor
-  Painless Scripting Language/docs/painless/6.x: 34aede672092a5a1c046b43e1530217ebce5f19f
   Painless Scripting Language/docs/painless/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Painless Scripting Language/docs/painless/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Painless Scripting Language/docs/painless/7.2: 58a1a1d9a5d2dc43c991fa031ace6a56ccca45e8|asciidoctor
@@ -1418,7 +1316,6 @@ elasticsearch:
   Plugins and Integrations/buildSrc/src/main/resources/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Plugins and Integrations/buildSrc/src/main/resources/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Plugins and Integrations/buildSrc/src/main/resources/6.8: 4e0f1971e18399d7245ecee07b8c7bce969b1696|asciidoctor
-  Plugins and Integrations/buildSrc/src/main/resources/6.x: 34aede672092a5a1c046b43e1530217ebce5f19f
   Plugins and Integrations/buildSrc/src/main/resources/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Plugins and Integrations/buildSrc/src/main/resources/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Plugins and Integrations/buildSrc/src/main/resources/7.2: 58a1a1d9a5d2dc43c991fa031ace6a56ccca45e8|asciidoctor
@@ -1440,7 +1337,6 @@ elasticsearch:
   Plugins and Integrations/docs/Versions.asciidoc/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Plugins and Integrations/docs/Versions.asciidoc/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Plugins and Integrations/docs/Versions.asciidoc/6.8: 4e0f1971e18399d7245ecee07b8c7bce969b1696|asciidoctor
-  Plugins and Integrations/docs/Versions.asciidoc/6.x: 34aede672092a5a1c046b43e1530217ebce5f19f
   Plugins and Integrations/docs/Versions.asciidoc/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Plugins and Integrations/docs/Versions.asciidoc/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Plugins and Integrations/docs/Versions.asciidoc/7.2: 58a1a1d9a5d2dc43c991fa031ace6a56ccca45e8|asciidoctor
@@ -1468,7 +1364,6 @@ elasticsearch:
   Plugins and Integrations/docs/plugins/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Plugins and Integrations/docs/plugins/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Plugins and Integrations/docs/plugins/6.8: 4e0f1971e18399d7245ecee07b8c7bce969b1696|asciidoctor
-  Plugins and Integrations/docs/plugins/6.x: 34aede672092a5a1c046b43e1530217ebce5f19f
   Plugins and Integrations/docs/plugins/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Plugins and Integrations/docs/plugins/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Plugins and Integrations/docs/plugins/7.2: 58a1a1d9a5d2dc43c991fa031ace6a56ccca45e8|asciidoctor
@@ -1482,7 +1377,6 @@ elasticsearch:
   Stack Overview/docs/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Stack Overview/docs/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Stack Overview/docs/6.8: 362a346b5f0d7abdfd19a71df960c631379ab528|asciidoctor
-  Stack Overview/docs/6.x: 3a0c896618b10e950c75b3d7c9d23e27954619e7
   Stack Overview/docs/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Stack Overview/docs/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Stack Overview/docs/7.2: a9b944102c4c48bc84beb45a6c4823f142509c21|asciidoctor
@@ -1494,7 +1388,6 @@ elasticsearch:
   Stack Overview/x-pack/docs/6.6: ffb4e66dc3806ef8992a062486abd7e6b42e0f4f|asciidoctor
   Stack Overview/x-pack/docs/6.7: 4696ebbb820e22fa96c64eb4d4a8719b948bb566|asciidoctor
   Stack Overview/x-pack/docs/6.8: 362a346b5f0d7abdfd19a71df960c631379ab528|asciidoctor
-  Stack Overview/x-pack/docs/6.x: 3a0c896618b10e950c75b3d7c9d23e27954619e7
   Stack Overview/x-pack/docs/7.0: b5e102dc73b4a9b6ed6c79f535b026a8607e971a|asciidoctor
   Stack Overview/x-pack/docs/7.1: ee7e72b18b94666fb7c64d62b1ad475d21b6c4e4|asciidoctor
   Stack Overview/x-pack/docs/7.2: a9b944102c4c48bc84beb45a6c4823f142509c21|asciidoctor
@@ -1522,7 +1415,6 @@ elasticsearch-hadoop:
   Elasticsearch for Apache Hadoop and Spark/docs/src/reference/asciidoc/6.6: 9258c638ee498e83a094406966cc066760aecaff|asciidoctor
   Elasticsearch for Apache Hadoop and Spark/docs/src/reference/asciidoc/6.7: 266c6a568f3df49f4dac46e8271902e5a0dcebdf|asciidoctor
   Elasticsearch for Apache Hadoop and Spark/docs/src/reference/asciidoc/6.8: 831c1942cdb1137049c3527031038f658e18b700|asciidoctor
-  Elasticsearch for Apache Hadoop and Spark/docs/src/reference/asciidoc/6.x: 4fdf4b8b73e3508670b90486c63c66d5005f0167
   Elasticsearch for Apache Hadoop and Spark/docs/src/reference/asciidoc/7.0: 2acafc08c61ddacfbd14aaac4ab52aca670c9103|asciidoctor
   Elasticsearch for Apache Hadoop and Spark/docs/src/reference/asciidoc/7.1: e05e400fd9a57d16a2c30f15f24e5f3e1873e0e3|asciidoctor
   Elasticsearch for Apache Hadoop and Spark/docs/src/reference/asciidoc/7.2: 5620c5647409c79f0fce69efd2a7e800e9df6b78|asciidoctor
@@ -1534,7 +1426,6 @@ elasticsearch-hadoop:
   Installation and Upgrade Guide/docs/src/reference/asciidoc/7.x: ae77e1c9bf1412c11929214119455f107f4d5396|asciidoctor
   Installation and Upgrade Guide/docs/src/reference/asciidoc/master: 25a67d00b7eaab473037cec5e96da66379888ea5|asciidoctor
 elasticsearch-js:
-  JavaScript API/docs/15.x: ba6912cb8238c136a33a7046ea815417190bb503|asciidoctor
   JavaScript API/docs/16.x: 4e0f785e89b6f093106b2de0816671c85e307751|asciidoctor
   JavaScript API/docs/5.x: 39bbd77bec420268f555825a24b0ade2fd6a5eae|asciidoctor
   JavaScript API/docs/6.x: bef1604a8d7279acf8ddae511d606f7f9b882e9e|asciidoctor
@@ -1552,7 +1443,6 @@ elasticsearch-php:
   PHP API/docs/1.0: eaf6e4ab03e5472a7e85ba99f540f94c22a8afec|asciidoctor
   PHP API/docs/2.0: 546332c9cb6d86d8febcb65ba4ce3956ba20175b|asciidoctor
   PHP API/docs/5.0: d3c5b55ad94f5053ca76c48585b4cde2cdc6bc59|asciidoctor
-  PHP API/docs/6.0: b237a37b2cdf23a5a17fd3576cdea771394ad00d|asciidoctor
   PHP API/docs/6.5.x: 5d5f418f2566e60fbc05569fd2b12e2ef1cc36c4|asciidoctor
   PHP API/docs/6.7.x: 3331fe5d3055bed71bca345353c9b26da37b8fe6|asciidoctor
   PHP API/docs/master: 53b4cec63473b967d88fec28c4fe81afcb366f43|asciidoctor
@@ -1609,7 +1499,6 @@ kibana:
   Kibana Reference/docs/6.6: aef5fa7eff5639f850016b17466bd79aae507755
   Kibana Reference/docs/6.7: 2d2b37f54565029d29dad3003d7a22a3a4f60c0c
   Kibana Reference/docs/6.8: 1f355db987eb90072b84a297ce5bb591dbbe7768
-  Kibana Reference/docs/6.x: 3bf33a6e68d41da086c4fe1df2d5061fb7540d21
   Kibana Reference/docs/7.0: f7eb9e4bfe8051160bb9cf3a974901852c39b6ee
   Kibana Reference/docs/7.1: 05102672c0f3e8b08fce03986d484277347f1d57
   Kibana Reference/docs/7.2: e2d5a3a4077aa9808f76e106b1108fea5a03525e
@@ -1625,7 +1514,6 @@ kibana:
   Stack Overview/docs/6.6: aef5fa7eff5639f850016b17466bd79aae507755|asciidoctor
   Stack Overview/docs/6.7: 2d2b37f54565029d29dad3003d7a22a3a4f60c0c|asciidoctor
   Stack Overview/docs/6.8: 1f355db987eb90072b84a297ce5bb591dbbe7768|asciidoctor
-  Stack Overview/docs/6.x: 2080a2bced095c45713efebd7aaf7f96df88c6b6
   Stack Overview/docs/7.0: f7eb9e4bfe8051160bb9cf3a974901852c39b6ee|asciidoctor
   Stack Overview/docs/7.1: 05102672c0f3e8b08fce03986d484277347f1d57|asciidoctor
   Stack Overview/docs/7.2: e2d5a3a4077aa9808f76e106b1108fea5a03525e|asciidoctor
@@ -1682,7 +1570,6 @@ logstash:
   Logstash Reference/docs/6.6: 9dde296d6567eac67aac1e445974e87a583c96a8
   Logstash Reference/docs/6.7: 85a59b37e393bd5eb6705c3c28c2220cdf439eb9
   Logstash Reference/docs/6.8: e06d2dfab6fa43043c3318c22132291aefa1b7f0
-  Logstash Reference/docs/6.x: c639fea76444ad6e43c8a961292761b17463883b
   Logstash Reference/docs/7.0: a2a20f99e7401ec5770bb217b1e48322a9509e10
   Logstash Reference/docs/7.1: ef861e04b3b0928389ff24a7a842d1d99c8f712d
   Logstash Reference/docs/7.2: 49281aede83b1b784ad374c9e5d798e1209ae0cc
@@ -1715,7 +1602,6 @@ logstash-docs:
   Logstash Reference/docs/6.6: 725cbcd9197f9ec116d2f885a6a4b9407b8a23cb
   Logstash Reference/docs/6.7: 3779fc94960716df269f91507b97b3847ad31e9d
   Logstash Reference/docs/6.8: ec1a9f4eb3698d3d6de55f0d31e1b8457dc6b236
-  Logstash Reference/docs/6.x: a8140f375888cce70bc11906c32867d7fbe65b09
   Logstash Reference/docs/7.0: 10d5576f1f8bc28c0581662120d62d55eebacace
   Logstash Reference/docs/7.1: 5a88a607a6e77f4ed16ab8437b8a19a35b1b5e9f
   Logstash Reference/docs/7.2: f35b77c8b3716ccc7122ce2ebf554c1c96f24599
@@ -1725,8 +1611,6 @@ logstash-docs:
 sense:
   Sense Editor for 4.x/docs/master: e4b27640c79c102d1e09941c4430092522338cff|asciidoctor
 stack-docs:
-  Combining logs and metrics from Google Cloud's Anthos GKE On-Prem with traditional on premises systems in the Elastic Stack/docs/en/gke-on-prem/master: 182d5e4b089e9b3f226f0e52a60d1058e3866db2|asciidoctor
-  Elastic Stack and Google Cloud Anthos/docs/en/gke-on-prem/master: 62c5bb6a75344e6a8101455baee2645c9d9476a8|asciidoctor
   Elastic Stack and Google Cloud's Anthos/docs/en/gke-on-prem/master: 43e814ba5963fb6f9624262e9a01bf5a16ee6345|asciidoctor
   Getting Started/docs/en/6.3: 9b6b736a73c25818fe6abbd758a7585b7a0c3c91|asciidoctor
   Getting Started/docs/en/6.4: 58a0c5766a393ef60730ac37671f3c50db45e044|asciidoctor
@@ -1734,7 +1618,6 @@ stack-docs:
   Getting Started/docs/en/6.6: 5b85608a693a4761824c0706be207ba521bfd06b|asciidoctor
   Getting Started/docs/en/6.7: 928b9417aa233bdc9201e1fa5303c995d29a12e8|asciidoctor
   Getting Started/docs/en/6.8: 52e4c25172f610536f9d67dccf79434cceb64b7a|asciidoctor
-  Getting Started/docs/en/6.x: ad806236cca094c0a2bad9527c0d87bc826febef
   Getting Started/docs/en/7.0: 7dfe52d1d32677ad5e938505bc7e94df1cec4222|asciidoctor
   Getting Started/docs/en/7.1: 9040a3743c1f1cd4e67a25ea6f0bcb558dfdd9d5|asciidoctor
   Getting Started/docs/en/7.2: 07621a0e7da6e507a9a9fa441dd0a414a7dfe55f|asciidoctor
@@ -1745,30 +1628,11 @@ stack-docs:
   Infrastructure Monitoring Guide/docs/en/6.6: 5b85608a693a4761824c0706be207ba521bfd06b|asciidoctor
   Infrastructure Monitoring Guide/docs/en/6.7: 928b9417aa233bdc9201e1fa5303c995d29a12e8|asciidoctor
   Infrastructure Monitoring Guide/docs/en/6.8: 52e4c25172f610536f9d67dccf79434cceb64b7a|asciidoctor
-  Infrastructure Monitoring Guide/docs/en/6.x: ad806236cca094c0a2bad9527c0d87bc826febef
   Infrastructure Monitoring Guide/docs/en/7.0: 7dfe52d1d32677ad5e938505bc7e94df1cec4222|asciidoctor
   Infrastructure Monitoring Guide/docs/en/7.1: 9040a3743c1f1cd4e67a25ea6f0bcb558dfdd9d5|asciidoctor
   Infrastructure Monitoring Guide/docs/en/7.2: 07621a0e7da6e507a9a9fa441dd0a414a7dfe55f|asciidoctor
   Infrastructure Monitoring Guide/docs/en/7.x: 9711efd5d98ed68335690ef577ea8867091bec8b|asciidoctor
   Infrastructure Monitoring Guide/docs/en/master: 43e814ba5963fb6f9624262e9a01bf5a16ee6345|asciidoctor
-  Installation and Upgrade Guide/docs/5.0: cda8d4c42e382a27483b7226c3bf0527476306c6
-  Installation and Upgrade Guide/docs/5.1: b0ac575c0ebb0305afa1adda09ad8e1132eba666
-  Installation and Upgrade Guide/docs/5.2: 05c6d638214f4a6f20a43b8d156480a6861d4a47
-  Installation and Upgrade Guide/docs/5.3: a2f8068c39759d58c7b3ede081693bcdb78bb9ba
-  Installation and Upgrade Guide/docs/5.4: 5e3a4d5bc138d629659f5e38d4907f91893a50de
-  Installation and Upgrade Guide/docs/5.5: 0cf4f3db50d16c6a8ec58fff1f5be77bd7790b05
-  Installation and Upgrade Guide/docs/5.6: 96601a54dd5f0dfd3793fe97ab5e4be4590bbfe2
-  Installation and Upgrade Guide/docs/6.0: 757d272259d373a5605f1eeee861db86b3fd1620
-  Installation and Upgrade Guide/docs/6.1: 58edb1bb70633a82b2c8d8bcb08629d72a614a88
-  Installation and Upgrade Guide/docs/6.2: 9e4a9cb2a5c8300bceb1bdb2427ba75da5cea8da
-  Installation and Upgrade Guide/docs/6.3: 76de8a65b51957b1069d8a7513d5c9a3de887b6a
-  Installation and Upgrade Guide/docs/6.4: 9d01c85a77c3584c1795f9a52172fe1b25c2b608
-  Installation and Upgrade Guide/docs/6.5: cd44c45a4f2863c8ed8480e4505684fec4279ba2
-  Installation and Upgrade Guide/docs/6.6: 0bef554fb5a0fae831025e1c85c660af4b898328
-  Installation and Upgrade Guide/docs/6.7: b5ab58f70ffac70d50ddb8ba83f37c5d4cb35bd1
-  Installation and Upgrade Guide/docs/6.x: ad806236cca094c0a2bad9527c0d87bc826febef
-  Installation and Upgrade Guide/docs/7.0: 92b2f8d4a14dddded9bca06caca5657969ab9880
-  Installation and Upgrade Guide/docs/7.x: c20fc14815ad430a94700b628342c40b82d4ff4f
   Installation and Upgrade Guide/docs/en/5.0: 1613c41b448eec18272e02f708bff28c2f98e105|asciidoctor
   Installation and Upgrade Guide/docs/en/5.1: 835c567c1b7980618c7f758dc9cd6e94bde8f05e|asciidoctor
   Installation and Upgrade Guide/docs/en/5.2: 3726978415f81fe1f1b304049145ee8b3e0efcac|asciidoctor
@@ -1790,20 +1654,15 @@ stack-docs:
   Installation and Upgrade Guide/docs/en/7.2: 07621a0e7da6e507a9a9fa441dd0a414a7dfe55f|asciidoctor
   Installation and Upgrade Guide/docs/en/7.x: 9711efd5d98ed68335690ef577ea8867091bec8b|asciidoctor
   Installation and Upgrade Guide/docs/en/master: 43e814ba5963fb6f9624262e9a01bf5a16ee6345|asciidoctor
-  Installation and Upgrade Guide/docs/master: 36453a51e6e4873e28bd838db03f4149130ac695
   SIEM Guide/docs/en/7.2: 07621a0e7da6e507a9a9fa441dd0a414a7dfe55f|asciidoctor
   SIEM Guide/docs/en/7.x: 9711efd5d98ed68335690ef577ea8867091bec8b|asciidoctor
   SIEM Guide/docs/en/master: 43e814ba5963fb6f9624262e9a01bf5a16ee6345|asciidoctor
-  SecOps Guide/docs/en/7.2: 3ec64aef0832ff3ff1a330229d5ef9171d2bec80|asciidoctor
-  SecOps Guide/docs/en/7.x: 9711efd5d98ed68335690ef577ea8867091bec8b|asciidoctor
-  SecOps Guide/docs/en/master: 43e814ba5963fb6f9624262e9a01bf5a16ee6345|asciidoctor
   Stack Overview/docs/en/stack/6.3: 9b6b736a73c25818fe6abbd758a7585b7a0c3c91|asciidoctor
   Stack Overview/docs/en/stack/6.4: 58a0c5766a393ef60730ac37671f3c50db45e044|asciidoctor
   Stack Overview/docs/en/stack/6.5: 619c796b3bcc9859e18fb1bf85d302f632c43b1c|asciidoctor
   Stack Overview/docs/en/stack/6.6: 5b85608a693a4761824c0706be207ba521bfd06b|asciidoctor
   Stack Overview/docs/en/stack/6.7: 928b9417aa233bdc9201e1fa5303c995d29a12e8|asciidoctor
   Stack Overview/docs/en/stack/6.8: 52e4c25172f610536f9d67dccf79434cceb64b7a|asciidoctor
-  Stack Overview/docs/en/stack/6.x: ad806236cca094c0a2bad9527c0d87bc826febef
   Stack Overview/docs/en/stack/7.0: 7dfe52d1d32677ad5e938505bc7e94df1cec4222|asciidoctor
   Stack Overview/docs/en/stack/7.1: 9040a3743c1f1cd4e67a25ea6f0bcb558dfdd9d5|asciidoctor
   Stack Overview/docs/en/stack/7.2: 07621a0e7da6e507a9a9fa441dd0a414a7dfe55f|asciidoctor
