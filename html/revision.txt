@@ -127,13 +127,6 @@ Repo: azure-marketplace
   Azure Marketplace and Resource Manager (ARM) template/docs/7.0 6c228070   Update images and documentation
   Azure Marketplace and Resource Manager (ARM) template/docs/7.1 ff0f9878   Add link to elasticsearch-certutil
   Azure Marketplace and Resource Manager (ARM) template/docs/master 0685e64b   Update links
-  Deploying with Azure Marketplace and Resource Manager (ARM) template/docs/6.3 7f83bedc   Remove adding role claim to SAML attributes (#260)
-  Deploying with Azure Marketplace and Resource Manager (ARM) template/docs/6.4 e0d10b2d   Remove adding role claim to SAML attributes (#260)
-  Deploying with Azure Marketplace and Resource Manager (ARM) template/docs/6.5 495d8050   Remove adding role claim to SAML attributes (#260)
-  Deploying with Azure Marketplace and Resource Manager (ARM) template/docs/6.6 b7f80814   Add support for Elastic Stack 6.6.1 (#264)
-  Deploying with Azure Marketplace and Resource Manager (ARM) template/docs/6.7 fae51fe8   small doc improvements
-  Deploying with Azure Marketplace and Resource Manager (ARM) template/docs/7.0 6c228070   Update images and documentation
-  Deploying with Azure Marketplace and Resource Manager (ARM) template/docs/master 7524e95a   Add link to elasticsearch-certutil
 
 Repo: beats
 --------------------------------------------------------------------------------
@@ -146,7 +139,6 @@ Repo: beats
   Auditbeat Reference/CHANGELOG.asciidoc/6.6 b804a8c0   Update newdashboards.asciidoc
   Auditbeat Reference/CHANGELOG.asciidoc/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Auditbeat Reference/CHANGELOG.asciidoc/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Auditbeat Reference/CHANGELOG.asciidoc/6.x 3f5b1abf   [Auditbeat] Cherry-pick #10511 to 6.x: System module dashboards (#10574)
   Auditbeat Reference/CHANGELOG.asciidoc/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Auditbeat Reference/CHANGELOG.asciidoc/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Auditbeat Reference/CHANGELOG.asciidoc/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -161,7 +153,6 @@ Repo: beats
   Auditbeat Reference/auditbeat/6.6   b804a8c0   Update newdashboards.asciidoc
   Auditbeat Reference/auditbeat/6.7   9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Auditbeat Reference/auditbeat/6.8   b1b70e52   Bump version to 6.8.2 (#12519)
-  Auditbeat Reference/auditbeat/6.x   3f5b1abf   [Auditbeat] Cherry-pick #10511 to 6.x: System module dashboards (#10574)
   Auditbeat Reference/auditbeat/7.0   8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Auditbeat Reference/auditbeat/7.1   55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Auditbeat Reference/auditbeat/7.2   14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -175,7 +166,6 @@ Repo: beats
   Auditbeat Reference/auditbeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Auditbeat Reference/auditbeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Auditbeat Reference/auditbeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Auditbeat Reference/auditbeat/docs/6.x 3f5b1abf   [Auditbeat] Cherry-pick #10511 to 6.x: System module dashboards (#10574)
   Auditbeat Reference/auditbeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Auditbeat Reference/auditbeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Auditbeat Reference/auditbeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -191,7 +181,6 @@ Repo: beats
   Auditbeat Reference/auditbeat/module/6.6 b804a8c0   Update newdashboards.asciidoc
   Auditbeat Reference/auditbeat/module/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Auditbeat Reference/auditbeat/module/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Auditbeat Reference/auditbeat/module/6.x 3f5b1abf   [Auditbeat] Cherry-pick #10511 to 6.x: System module dashboards (#10574)
   Auditbeat Reference/auditbeat/module/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Auditbeat Reference/auditbeat/module/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Auditbeat Reference/auditbeat/module/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -206,7 +195,6 @@ Repo: beats
   Auditbeat Reference/auditbeat/scripts/6.6 b804a8c0   Update newdashboards.asciidoc
   Auditbeat Reference/auditbeat/scripts/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Auditbeat Reference/auditbeat/scripts/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Auditbeat Reference/auditbeat/scripts/6.x 3f5b1abf   [Auditbeat] Cherry-pick #10511 to 6.x: System module dashboards (#10574)
   Auditbeat Reference/auditbeat/scripts/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Auditbeat Reference/auditbeat/scripts/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Auditbeat Reference/auditbeat/scripts/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -221,7 +209,6 @@ Repo: beats
   Auditbeat Reference/libbeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Auditbeat Reference/libbeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Auditbeat Reference/libbeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Auditbeat Reference/libbeat/docs/6.x 3f5b1abf   [Auditbeat] Cherry-pick #10511 to 6.x: System module dashboards (#10574)
   Auditbeat Reference/libbeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Auditbeat Reference/libbeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Auditbeat Reference/libbeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -230,7 +217,6 @@ Repo: beats
   Auditbeat Reference/x-pack/auditbeat/6.6 b804a8c0   Update newdashboards.asciidoc
   Auditbeat Reference/x-pack/auditbeat/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Auditbeat Reference/x-pack/auditbeat/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Auditbeat Reference/x-pack/auditbeat/6.x 3f5b1abf   [Auditbeat] Cherry-pick #10511 to 6.x: System module dashboards (#10574)
   Auditbeat Reference/x-pack/auditbeat/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Auditbeat Reference/x-pack/auditbeat/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Auditbeat Reference/x-pack/auditbeat/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -245,7 +231,6 @@ Repo: beats
   Beats Developer Guide/docs/6.6      b804a8c0   Update newdashboards.asciidoc
   Beats Developer Guide/docs/6.7      9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Beats Developer Guide/docs/6.8      b1b70e52   Bump version to 6.8.2 (#12519)
-  Beats Developer Guide/docs/6.x      7e675b7a   Fix list formatting in redis key metricset (#10580) (#10584)
   Beats Developer Guide/docs/7.0      8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Beats Developer Guide/docs/7.1      55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Beats Developer Guide/docs/7.2      14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -260,7 +245,6 @@ Repo: beats
   Beats Developer Guide/libbeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Beats Developer Guide/libbeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Beats Developer Guide/libbeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Beats Developer Guide/libbeat/docs/6.x 7e675b7a   Fix list formatting in redis key metricset (#10580) (#10584)
   Beats Developer Guide/libbeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Beats Developer Guide/libbeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Beats Developer Guide/libbeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -275,7 +259,6 @@ Repo: beats
   Beats Developer Guide/metricbeat/module/6.6 b804a8c0   Update newdashboards.asciidoc
   Beats Developer Guide/metricbeat/module/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Beats Developer Guide/metricbeat/module/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Beats Developer Guide/metricbeat/module/6.x 7e675b7a   Fix list formatting in redis key metricset (#10580) (#10584)
   Beats Developer Guide/metricbeat/module/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Beats Developer Guide/metricbeat/module/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Beats Developer Guide/metricbeat/module/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -290,7 +273,6 @@ Repo: beats
   Beats Developer Guide/metricbeat/scripts/6.6 b804a8c0   Update newdashboards.asciidoc
   Beats Developer Guide/metricbeat/scripts/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Beats Developer Guide/metricbeat/scripts/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Beats Developer Guide/metricbeat/scripts/6.x 7e675b7a   Fix list formatting in redis key metricset (#10580) (#10584)
   Beats Developer Guide/metricbeat/scripts/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Beats Developer Guide/metricbeat/scripts/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Beats Developer Guide/metricbeat/scripts/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -316,7 +298,6 @@ Repo: beats
   Beats Platform Reference/CHANGELOG.asciidoc/6.6 b804a8c0   Update newdashboards.asciidoc
   Beats Platform Reference/CHANGELOG.asciidoc/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Beats Platform Reference/CHANGELOG.asciidoc/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Beats Platform Reference/CHANGELOG.asciidoc/6.x 07211dd8   Update beats to fpm 1.11.0 (#10527) (#10545)
   Beats Platform Reference/CHANGELOG.asciidoc/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Beats Platform Reference/CHANGELOG.asciidoc/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Beats Platform Reference/CHANGELOG.asciidoc/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -342,7 +323,6 @@ Repo: beats
   Beats Platform Reference/libbeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Beats Platform Reference/libbeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Beats Platform Reference/libbeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Beats Platform Reference/libbeat/docs/6.x 07211dd8   Update beats to fpm 1.11.0 (#10527) (#10545)
   Beats Platform Reference/libbeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Beats Platform Reference/libbeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Beats Platform Reference/libbeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -368,7 +348,6 @@ Repo: beats
   Filebeat Reference/CHANGELOG.asciidoc/6.6 b804a8c0   Update newdashboards.asciidoc
   Filebeat Reference/CHANGELOG.asciidoc/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Filebeat Reference/CHANGELOG.asciidoc/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Filebeat Reference/CHANGELOG.asciidoc/6.x dc26a2e6   [Filebeat] Remove Santa module directory accidentally backported to 6.x (#10610)
   Filebeat Reference/CHANGELOG.asciidoc/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Filebeat Reference/CHANGELOG.asciidoc/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Filebeat Reference/CHANGELOG.asciidoc/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -394,7 +373,6 @@ Repo: beats
   Filebeat Reference/filebeat/6.6     b804a8c0   Update newdashboards.asciidoc
   Filebeat Reference/filebeat/6.7     9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Filebeat Reference/filebeat/6.8     b1b70e52   Bump version to 6.8.2 (#12519)
-  Filebeat Reference/filebeat/6.x     dc26a2e6   [Filebeat] Remove Santa module directory accidentally backported to 6.x (#10610)
   Filebeat Reference/filebeat/7.0     8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Filebeat Reference/filebeat/7.1     55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Filebeat Reference/filebeat/7.2     14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -419,7 +397,6 @@ Repo: beats
   Filebeat Reference/filebeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Filebeat Reference/filebeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Filebeat Reference/filebeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Filebeat Reference/filebeat/docs/6.x dc26a2e6   [Filebeat] Remove Santa module directory accidentally backported to 6.x (#10610)
   Filebeat Reference/filebeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Filebeat Reference/filebeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Filebeat Reference/filebeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -446,7 +423,6 @@ Repo: beats
   Filebeat Reference/libbeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Filebeat Reference/libbeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Filebeat Reference/libbeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Filebeat Reference/libbeat/docs/6.x dc26a2e6   [Filebeat] Remove Santa module directory accidentally backported to 6.x (#10610)
   Filebeat Reference/libbeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Filebeat Reference/libbeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Filebeat Reference/libbeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -455,7 +431,6 @@ Repo: beats
   Filebeat Reference/x-pack/filebeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Filebeat Reference/x-pack/filebeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Filebeat Reference/x-pack/filebeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Filebeat Reference/x-pack/filebeat/docs/6.x dc26a2e6   [Filebeat] Remove Santa module directory accidentally backported to 6.x (#10610)
   Filebeat Reference/x-pack/filebeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Filebeat Reference/x-pack/filebeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Filebeat Reference/x-pack/filebeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -465,7 +440,6 @@ Repo: beats
   Functionbeat Reference/CHANGELOG.asciidoc/6.6 b804a8c0   Update newdashboards.asciidoc
   Functionbeat Reference/CHANGELOG.asciidoc/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Functionbeat Reference/CHANGELOG.asciidoc/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Functionbeat Reference/CHANGELOG.asciidoc/6.x 1ab2ed0f   Cherry-pick #10564 to 6.x: Remove experimental flags and mark most of the AWS provider trigger stable. (#10588)
   Functionbeat Reference/CHANGELOG.asciidoc/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Functionbeat Reference/CHANGELOG.asciidoc/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Functionbeat Reference/CHANGELOG.asciidoc/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -475,7 +449,6 @@ Repo: beats
   Functionbeat Reference/libbeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Functionbeat Reference/libbeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Functionbeat Reference/libbeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Functionbeat Reference/libbeat/docs/6.x 1ab2ed0f   Cherry-pick #10564 to 6.x: Remove experimental flags and mark most of the AWS provider trigger stable. (#10588)
   Functionbeat Reference/libbeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Functionbeat Reference/libbeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Functionbeat Reference/libbeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -485,7 +458,6 @@ Repo: beats
   Functionbeat Reference/x-pack/functionbeat/6.6 b804a8c0   Update newdashboards.asciidoc
   Functionbeat Reference/x-pack/functionbeat/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Functionbeat Reference/x-pack/functionbeat/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Functionbeat Reference/x-pack/functionbeat/6.x 1ab2ed0f   Cherry-pick #10564 to 6.x: Remove experimental flags and mark most of the AWS provider trigger stable. (#10588)
   Functionbeat Reference/x-pack/functionbeat/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Functionbeat Reference/x-pack/functionbeat/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Functionbeat Reference/x-pack/functionbeat/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -494,7 +466,6 @@ Repo: beats
   Functionbeat Reference/x-pack/functionbeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Functionbeat Reference/x-pack/functionbeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Functionbeat Reference/x-pack/functionbeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Functionbeat Reference/x-pack/functionbeat/docs/6.x 1ab2ed0f   Cherry-pick #10564 to 6.x: Remove experimental flags and mark most of the AWS provider trigger stable. (#10588)
   Functionbeat Reference/x-pack/functionbeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Functionbeat Reference/x-pack/functionbeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Functionbeat Reference/x-pack/functionbeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -515,7 +486,6 @@ Repo: beats
   Heartbeat Reference/CHANGELOG.asciidoc/6.6 b804a8c0   Update newdashboards.asciidoc
   Heartbeat Reference/CHANGELOG.asciidoc/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Heartbeat Reference/CHANGELOG.asciidoc/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Heartbeat Reference/CHANGELOG.asciidoc/6.x 07211dd8   Update beats to fpm 1.11.0 (#10527) (#10545)
   Heartbeat Reference/CHANGELOG.asciidoc/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Heartbeat Reference/CHANGELOG.asciidoc/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Heartbeat Reference/CHANGELOG.asciidoc/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -535,7 +505,6 @@ Repo: beats
   Heartbeat Reference/heartbeat/6.6   b804a8c0   Update newdashboards.asciidoc
   Heartbeat Reference/heartbeat/6.7   9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Heartbeat Reference/heartbeat/6.8   b1b70e52   Bump version to 6.8.2 (#12519)
-  Heartbeat Reference/heartbeat/6.x   07211dd8   Update beats to fpm 1.11.0 (#10527) (#10545)
   Heartbeat Reference/heartbeat/7.0   8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Heartbeat Reference/heartbeat/7.1   55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Heartbeat Reference/heartbeat/7.2   14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -554,7 +523,6 @@ Repo: beats
   Heartbeat Reference/heartbeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Heartbeat Reference/heartbeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Heartbeat Reference/heartbeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Heartbeat Reference/heartbeat/docs/6.x 07211dd8   Update beats to fpm 1.11.0 (#10527) (#10545)
   Heartbeat Reference/heartbeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Heartbeat Reference/heartbeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Heartbeat Reference/heartbeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -575,7 +543,6 @@ Repo: beats
   Heartbeat Reference/libbeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Heartbeat Reference/libbeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Heartbeat Reference/libbeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Heartbeat Reference/libbeat/docs/6.x 07211dd8   Update beats to fpm 1.11.0 (#10527) (#10545)
   Heartbeat Reference/libbeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Heartbeat Reference/libbeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Heartbeat Reference/libbeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -605,7 +572,6 @@ Repo: beats
   Journalbeat Reference/CHANGELOG.asciidoc/6.6 b804a8c0   Update newdashboards.asciidoc
   Journalbeat Reference/CHANGELOG.asciidoc/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Journalbeat Reference/CHANGELOG.asciidoc/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Journalbeat Reference/CHANGELOG.asciidoc/6.x 1ab2ed0f   Cherry-pick #10564 to 6.x: Remove experimental flags and mark most of the AWS provider trigger stable. (#10588)
   Journalbeat Reference/CHANGELOG.asciidoc/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Journalbeat Reference/CHANGELOG.asciidoc/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Journalbeat Reference/CHANGELOG.asciidoc/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -615,7 +581,6 @@ Repo: beats
   Journalbeat Reference/journalbeat/6.6 b804a8c0   Update newdashboards.asciidoc
   Journalbeat Reference/journalbeat/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Journalbeat Reference/journalbeat/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Journalbeat Reference/journalbeat/6.x 1ab2ed0f   Cherry-pick #10564 to 6.x: Remove experimental flags and mark most of the AWS provider trigger stable. (#10588)
   Journalbeat Reference/journalbeat/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Journalbeat Reference/journalbeat/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Journalbeat Reference/journalbeat/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -624,7 +589,6 @@ Repo: beats
   Journalbeat Reference/journalbeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Journalbeat Reference/journalbeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Journalbeat Reference/journalbeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Journalbeat Reference/journalbeat/docs/6.x 1ab2ed0f   Cherry-pick #10564 to 6.x: Remove experimental flags and mark most of the AWS provider trigger stable. (#10588)
   Journalbeat Reference/journalbeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Journalbeat Reference/journalbeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Journalbeat Reference/journalbeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -635,7 +599,6 @@ Repo: beats
   Journalbeat Reference/libbeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Journalbeat Reference/libbeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Journalbeat Reference/libbeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Journalbeat Reference/libbeat/docs/6.x 1ab2ed0f   Cherry-pick #10564 to 6.x: Remove experimental flags and mark most of the AWS provider trigger stable. (#10588)
   Journalbeat Reference/libbeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Journalbeat Reference/libbeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Journalbeat Reference/libbeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -669,7 +632,6 @@ Repo: beats
   Metricbeat Reference/CHANGELOG.asciidoc/6.6 b804a8c0   Update newdashboards.asciidoc
   Metricbeat Reference/CHANGELOG.asciidoc/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Metricbeat Reference/CHANGELOG.asciidoc/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Metricbeat Reference/CHANGELOG.asciidoc/6.x 7e675b7a   Fix list formatting in redis key metricset (#10580) (#10584)
   Metricbeat Reference/CHANGELOG.asciidoc/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Metricbeat Reference/CHANGELOG.asciidoc/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Metricbeat Reference/CHANGELOG.asciidoc/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -691,7 +653,6 @@ Repo: beats
   Metricbeat Reference/libbeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Metricbeat Reference/libbeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Metricbeat Reference/libbeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Metricbeat Reference/libbeat/docs/6.x 7e675b7a   Fix list formatting in redis key metricset (#10580) (#10584)
   Metricbeat Reference/libbeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Metricbeat Reference/libbeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Metricbeat Reference/libbeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -713,7 +674,6 @@ Repo: beats
   Metricbeat Reference/metricbeat/6.6 b804a8c0   Update newdashboards.asciidoc
   Metricbeat Reference/metricbeat/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Metricbeat Reference/metricbeat/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Metricbeat Reference/metricbeat/6.x 7e675b7a   Fix list formatting in redis key metricset (#10580) (#10584)
   Metricbeat Reference/metricbeat/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Metricbeat Reference/metricbeat/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Metricbeat Reference/metricbeat/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -734,7 +694,6 @@ Repo: beats
   Metricbeat Reference/metricbeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Metricbeat Reference/metricbeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Metricbeat Reference/metricbeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Metricbeat Reference/metricbeat/docs/6.x 7e675b7a   Fix list formatting in redis key metricset (#10580) (#10584)
   Metricbeat Reference/metricbeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Metricbeat Reference/metricbeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Metricbeat Reference/metricbeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -757,7 +716,6 @@ Repo: beats
   Metricbeat Reference/metricbeat/module/6.6 b804a8c0   Update newdashboards.asciidoc
   Metricbeat Reference/metricbeat/module/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Metricbeat Reference/metricbeat/module/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Metricbeat Reference/metricbeat/module/6.x 7e675b7a   Fix list formatting in redis key metricset (#10580) (#10584)
   Metricbeat Reference/metricbeat/module/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Metricbeat Reference/metricbeat/module/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Metricbeat Reference/metricbeat/module/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -779,7 +737,6 @@ Repo: beats
   Metricbeat Reference/metricbeat/scripts/6.6 b804a8c0   Update newdashboards.asciidoc
   Metricbeat Reference/metricbeat/scripts/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Metricbeat Reference/metricbeat/scripts/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Metricbeat Reference/metricbeat/scripts/6.x 7e675b7a   Fix list formatting in redis key metricset (#10580) (#10584)
   Metricbeat Reference/metricbeat/scripts/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Metricbeat Reference/metricbeat/scripts/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Metricbeat Reference/metricbeat/scripts/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -810,7 +767,6 @@ Repo: beats
   Packetbeat Reference/CHANGELOG.asciidoc/6.6 b804a8c0   Update newdashboards.asciidoc
   Packetbeat Reference/CHANGELOG.asciidoc/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Packetbeat Reference/CHANGELOG.asciidoc/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Packetbeat Reference/CHANGELOG.asciidoc/6.x 07211dd8   Update beats to fpm 1.11.0 (#10527) (#10545)
   Packetbeat Reference/CHANGELOG.asciidoc/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Packetbeat Reference/CHANGELOG.asciidoc/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Packetbeat Reference/CHANGELOG.asciidoc/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -836,7 +792,6 @@ Repo: beats
   Packetbeat Reference/libbeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Packetbeat Reference/libbeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Packetbeat Reference/libbeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Packetbeat Reference/libbeat/docs/6.x 07211dd8   Update beats to fpm 1.11.0 (#10527) (#10545)
   Packetbeat Reference/libbeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Packetbeat Reference/libbeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Packetbeat Reference/libbeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -862,7 +817,6 @@ Repo: beats
   Packetbeat Reference/packetbeat/6.6 b804a8c0   Update newdashboards.asciidoc
   Packetbeat Reference/packetbeat/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Packetbeat Reference/packetbeat/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Packetbeat Reference/packetbeat/6.x 07211dd8   Update beats to fpm 1.11.0 (#10527) (#10545)
   Packetbeat Reference/packetbeat/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Packetbeat Reference/packetbeat/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Packetbeat Reference/packetbeat/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -887,7 +841,6 @@ Repo: beats
   Packetbeat Reference/packetbeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Packetbeat Reference/packetbeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Packetbeat Reference/packetbeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Packetbeat Reference/packetbeat/docs/6.x 07211dd8   Update beats to fpm 1.11.0 (#10527) (#10545)
   Packetbeat Reference/packetbeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Packetbeat Reference/packetbeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Packetbeat Reference/packetbeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -913,7 +866,6 @@ Repo: beats
   Winlogbeat Reference/CHANGELOG.asciidoc/6.6 b804a8c0   Update newdashboards.asciidoc
   Winlogbeat Reference/CHANGELOG.asciidoc/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Winlogbeat Reference/CHANGELOG.asciidoc/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Winlogbeat Reference/CHANGELOG.asciidoc/6.x 07211dd8   Update beats to fpm 1.11.0 (#10527) (#10545)
   Winlogbeat Reference/CHANGELOG.asciidoc/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Winlogbeat Reference/CHANGELOG.asciidoc/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Winlogbeat Reference/CHANGELOG.asciidoc/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -938,7 +890,6 @@ Repo: beats
   Winlogbeat Reference/libbeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Winlogbeat Reference/libbeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Winlogbeat Reference/libbeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Winlogbeat Reference/libbeat/docs/6.x 07211dd8   Update beats to fpm 1.11.0 (#10527) (#10545)
   Winlogbeat Reference/libbeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Winlogbeat Reference/libbeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Winlogbeat Reference/libbeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -963,7 +914,6 @@ Repo: beats
   Winlogbeat Reference/winlogbeat/6.6 b804a8c0   Update newdashboards.asciidoc
   Winlogbeat Reference/winlogbeat/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Winlogbeat Reference/winlogbeat/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Winlogbeat Reference/winlogbeat/6.x 07211dd8   Update beats to fpm 1.11.0 (#10527) (#10545)
   Winlogbeat Reference/winlogbeat/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Winlogbeat Reference/winlogbeat/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Winlogbeat Reference/winlogbeat/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -987,7 +937,6 @@ Repo: beats
   Winlogbeat Reference/winlogbeat/docs/6.6 b804a8c0   Update newdashboards.asciidoc
   Winlogbeat Reference/winlogbeat/docs/6.7 9dab70c3   Remove systemd v233 requirement because it's no longer true (#12076) (#12113)
   Winlogbeat Reference/winlogbeat/docs/6.8 b1b70e52   Bump version to 6.8.2 (#12519)
-  Winlogbeat Reference/winlogbeat/docs/6.x 07211dd8   Update beats to fpm 1.11.0 (#10527) (#10545)
   Winlogbeat Reference/winlogbeat/docs/7.0 8620da85   Add warning for logging configuration on systemd (#12577) (#12662)
   Winlogbeat Reference/winlogbeat/docs/7.1 55cc514c   Add example for setting kafka topic dynamically (#12058) (#12678)
   Winlogbeat Reference/winlogbeat/docs/7.2 14c59496   [DOCS] Remove logstash from main flow of Filebeat getting started (#12658) (#12682)
@@ -997,13 +946,6 @@ Repo: beats
 
 Repo: cloud
 --------------------------------------------------------------------------------
-  Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/cloud-enterprise/1.0 0078e161   remove glob from rm command (#26807) (#27028)
-  Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/cloud-enterprise/1.1 2f43a989   Update docs for 5.6.15 and 6.6.1 for ECE (#27553)
-  Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/cloud-enterprise/2.0 39914459   Separate our RHEL and CentOS Docker install instructions better (#28231)
-  Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/cloud-enterprise/2.1 ec55476b   Separate our RHEL and CentOS Docker install instructions better (#28231) (#28412)
-  Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/shared/1.1 2f43a989   Update docs for 5.6.15 and 6.6.1 for ECE (#27553)
-  Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/shared/2.0 39914459   Separate our RHEL and CentOS Docker install instructions better (#28231)
-  Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/shared/2.1 ec55476b   Separate our RHEL and CentOS Docker install instructions better (#28231) (#28412)
   Elastic Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/cloud-enterprise/1.0 6655df69   00045 - Fix broken link blocking build (#35203)
   Elastic Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/cloud-enterprise/1.1 c5d85497   Fix doc build break due to stale link (#35140)
   Elastic Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/cloud-enterprise/2.0 a52b25bd   Fix doc build break due to stale link (#35142)
@@ -1013,25 +955,7 @@ Repo: cloud
   Elastic Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/shared/2.0 a52b25bd   Fix doc build break due to stale link (#35142)
   Elastic Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/shared/2.1 5df3ef51   Merge branch '2.0' into 2.1
   Elastic Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/shared/2.2 6016a370   Update docs with 7.2.0 stack version
-  Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/release-ms-13 75fd0201   stack release (#24464)
-  Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/release-ms-14 8fc6dd32   Apm comment out (#25939)
-  Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/release-ms-15 496e1bc5   Setting version to 2.1.0-SNAPSHOT
-  Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/release-ms-17 fe783c7b   Add 5.6.16 (#29288)
-  Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/release-ms-18 f905c386   Merge branch 'release-ms-17' into release-ms-18
-  Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/release-ms-19 2193f2f5   password hint (#31507)
-  Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/release-ms-20 6263e1f4   Added API console content (#32936)
-  Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/release-ms-21 7d0b747f   000000 - Fix stale link (#35216)
-  Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/saas-release e72024ac   Update header (#34530)
   Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/saas-release-heroku 06684164   Update hardcoded 6.x link with link attribute [saas-release-heroku] (#26850)
-  Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/release-ms-13 75fd0201   stack release (#24464)
-  Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/release-ms-14 8fc6dd32   Apm comment out (#25939)
-  Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/release-ms-15 496e1bc5   Setting version to 2.1.0-SNAPSHOT
-  Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/release-ms-17 fe783c7b   Add 5.6.16 (#29288)
-  Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/release-ms-18 f905c386   Merge branch 'release-ms-17' into release-ms-18
-  Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/release-ms-19 2193f2f5   password hint (#31507)
-  Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/release-ms-20 6263e1f4   Added API console content (#32936)
-  Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/release-ms-21 7d0b747f   000000 - Fix stale link (#35216)
-  Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/saas-release e72024ac   Update header (#34530)
 
 Repo: cloud-on-k8s
 --------------------------------------------------------------------------------
@@ -1081,7 +1005,6 @@ Repo: elasticsearch
   Elasticsearch Reference/docs/Versions.asciidoc/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Elasticsearch Reference/docs/Versions.asciidoc/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Elasticsearch Reference/docs/Versions.asciidoc/6.8 362a346b   [ML] Introduce a setting for the process connect timeout (#43234)
-  Elasticsearch Reference/docs/Versions.asciidoc/6.x 3a0c8966   Allow custom authorization with an authorization engine (#38228)
   Elasticsearch Reference/docs/Versions.asciidoc/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Elasticsearch Reference/docs/Versions.asciidoc/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Elasticsearch Reference/docs/Versions.asciidoc/7.2 a9b94410   [ML] Introduce a setting for the process connect timeout (#43234)
@@ -1098,7 +1021,6 @@ Repo: elasticsearch
   Elasticsearch Reference/docs/painless/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Elasticsearch Reference/docs/painless/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Elasticsearch Reference/docs/painless/6.8 362a346b   [ML] Introduce a setting for the process connect timeout (#43234)
-  Elasticsearch Reference/docs/painless/6.x 3a0c8966   Allow custom authorization with an authorization engine (#38228)
   Elasticsearch Reference/docs/painless/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Elasticsearch Reference/docs/painless/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Elasticsearch Reference/docs/painless/7.2 a9b94410   [ML] Introduce a setting for the process connect timeout (#43234)
@@ -1131,7 +1053,6 @@ Repo: elasticsearch
   Elasticsearch Reference/docs/reference/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Elasticsearch Reference/docs/reference/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Elasticsearch Reference/docs/reference/6.8 362a346b   [ML] Introduce a setting for the process connect timeout (#43234)
-  Elasticsearch Reference/docs/reference/6.x 3a0c8966   Allow custom authorization with an authorization engine (#38228)
   Elasticsearch Reference/docs/reference/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Elasticsearch Reference/docs/reference/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Elasticsearch Reference/docs/reference/7.2 a9b94410   [ML] Introduce a setting for the process connect timeout (#43234)
@@ -1150,7 +1071,6 @@ Repo: elasticsearch
   Elasticsearch Reference/docs/src/test/cluster/config/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Elasticsearch Reference/docs/src/test/cluster/config/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Elasticsearch Reference/docs/src/test/cluster/config/6.8 362a346b   [ML] Introduce a setting for the process connect timeout (#43234)
-  Elasticsearch Reference/docs/src/test/cluster/config/6.x 3a0c8966   Allow custom authorization with an authorization engine (#38228)
   Elasticsearch Reference/docs/src/test/cluster/config/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Elasticsearch Reference/docs/src/test/cluster/config/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Elasticsearch Reference/docs/src/test/cluster/config/7.2 a9b94410   [ML] Introduce a setting for the process connect timeout (#43234)
@@ -1167,7 +1087,6 @@ Repo: elasticsearch
   Elasticsearch Reference/plugins/examples/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Elasticsearch Reference/plugins/examples/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Elasticsearch Reference/plugins/examples/6.8 362a346b   [ML] Introduce a setting for the process connect timeout (#43234)
-  Elasticsearch Reference/plugins/examples/6.x 3a0c8966   Allow custom authorization with an authorization engine (#38228)
   Elasticsearch Reference/plugins/examples/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Elasticsearch Reference/plugins/examples/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Elasticsearch Reference/plugins/examples/7.2 a9b94410   [ML] Introduce a setting for the process connect timeout (#43234)
@@ -1179,7 +1098,6 @@ Repo: elasticsearch
   Elasticsearch Reference/x-pack/docs/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Elasticsearch Reference/x-pack/docs/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Elasticsearch Reference/x-pack/docs/6.8 362a346b   [ML] Introduce a setting for the process connect timeout (#43234)
-  Elasticsearch Reference/x-pack/docs/6.x 3a0c8966   Allow custom authorization with an authorization engine (#38228)
   Elasticsearch Reference/x-pack/docs/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Elasticsearch Reference/x-pack/docs/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Elasticsearch Reference/x-pack/docs/7.2 a9b94410   [ML] Introduce a setting for the process connect timeout (#43234)
@@ -1188,7 +1106,6 @@ Repo: elasticsearch
   Elasticsearch Reference/x-pack/plugin/sql/qa/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Elasticsearch Reference/x-pack/plugin/sql/qa/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Elasticsearch Reference/x-pack/plugin/sql/qa/6.8 362a346b   [ML] Introduce a setting for the process connect timeout (#43234)
-  Elasticsearch Reference/x-pack/plugin/sql/qa/6.x 3a0c8966   Allow custom authorization with an authorization engine (#38228)
   Elasticsearch Reference/x-pack/plugin/sql/qa/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Elasticsearch Reference/x-pack/plugin/sql/qa/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Elasticsearch Reference/x-pack/plugin/sql/qa/7.2 a9b94410   [ML] Introduce a setting for the process connect timeout (#43234)
@@ -1206,9 +1123,7 @@ Repo: elasticsearch
   Elasticsearchリファレンス/docs/5.4        c1096458   [DOCS] Add missing endif conditional for Asciidoctor
   Elasticsearchリファレンス/docs/jp/reference/5.3 b6691a11   [DOCS] Add missing endif conditional for Asciidoctor
   Elasticsearchリファレンス/docs/jp/reference/5.4 c1096458   [DOCS] Add missing endif conditional for Asciidoctor
-  GO API/docs/go/master               58515c30   Fix merging of text field mapper (#40627)
   Go API/docs/go/master               5f6321aa   [DOCS] Rewrite `range` query (#43282)
-  Groovy API/docs/Versions.asciidoc/master 0db0e133   [ML Data Frame] Set DF task state when stopping  (#42516)
   Groovy API/docs/groovy-api/0.90     d6287897   [DOCS] Set explicit anchors in 1.7 for Asciidoctor (#42470) (Fixup)
   Groovy API/docs/groovy-api/1.3      628c18f4   [DOCS] Set literal anchors in 5.0 for Asciidoctor (#42475)
   Groovy API/docs/groovy-api/1.4      383e525e   [DOCS] Set literal anchors in 5.0 for Asciidoctor (#42475)
@@ -1220,7 +1135,6 @@ Repo: elasticsearch
   Groovy API/docs/groovy-api/2.2      703ac71a   [DOCS] Set literal anchors in 5.0 for Asciidoctor (#42475)
   Groovy API/docs/groovy-api/2.3      1e4faeb8   [DOCS] Set explicit anchors for Asciidoctor (#42521)
   Groovy API/docs/groovy-api/2.4      3d32f3e9   [DOCS] Set explicit anchors for Asciidoctor (#42521)
-  Groovy API/docs/groovy-api/master   0db0e133   [ML Data Frame] Set DF task state when stopping  (#42516)
   Installation and Upgrade Guide/docs/5.0 0ae0b29c   [DOCS] Add missing endif conditional for Asciidoctor
   Installation and Upgrade Guide/docs/5.1 2fe6b7b8   [DOCS] Add missing endif conditional for Asciidoctor
   Installation and Upgrade Guide/docs/5.2 0f50f120   [DOCS] Add missing endif conditional for Asciidoctor
@@ -1237,7 +1151,6 @@ Repo: elasticsearch
   Installation and Upgrade Guide/docs/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Installation and Upgrade Guide/docs/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Installation and Upgrade Guide/docs/6.8 362a346b   [ML] Introduce a setting for the process connect timeout (#43234)
-  Installation and Upgrade Guide/docs/6.x 3a0c8966   Allow custom authorization with an authorization engine (#38228)
   Installation and Upgrade Guide/docs/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Installation and Upgrade Guide/docs/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Installation and Upgrade Guide/docs/7.2 a9b94410   [ML] Introduce a setting for the process connect timeout (#43234)
@@ -1252,12 +1165,10 @@ Repo: elasticsearch
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/6.8 4e0f1971   [ML] Improve message when native controller cannot connect (#43565)
-  Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/6.x 65f807cc   Update IndexTemplateMetaData to allow unknown fields (#38448) (#38493)
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/7.2 58a1a1d9   [ML][Data Frame] re-ordering format priorities in dest mapping (#43602)
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/7.x 9a3c86d4   include 7.2.1 as a version (#43584)
-  Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/master c2612201   Added param ignore_throttled=false when indicesOptions.ignoreThrottled() is false (#42393)
   Java API/docs/Versions.asciidoc/5.0 0ae0b29c   [DOCS] Add missing endif conditional for Asciidoctor
   Java API/docs/Versions.asciidoc/5.1 2fe6b7b8   [DOCS] Add missing endif conditional for Asciidoctor
   Java API/docs/Versions.asciidoc/5.2 0f50f120   [DOCS] Add missing endif conditional for Asciidoctor
@@ -1274,12 +1185,10 @@ Repo: elasticsearch
   Java API/docs/Versions.asciidoc/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Java API/docs/Versions.asciidoc/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Java API/docs/Versions.asciidoc/6.8 4e0f1971   [ML] Improve message when native controller cannot connect (#43565)
-  Java API/docs/Versions.asciidoc/6.x 65f807cc   Update IndexTemplateMetaData to allow unknown fields (#38448) (#38493)
   Java API/docs/Versions.asciidoc/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Java API/docs/Versions.asciidoc/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Java API/docs/Versions.asciidoc/7.2 58a1a1d9   [ML][Data Frame] re-ordering format priorities in dest mapping (#43602)
   Java API/docs/Versions.asciidoc/7.x 9a3c86d4   include 7.2.1 as a version (#43584)
-  Java API/docs/Versions.asciidoc/master c2612201   Added param ignore_throttled=false when indicesOptions.ignoreThrottled() is false (#42393)
   Java API/docs/java-api/0.90         d6287897   [DOCS] Set explicit anchors in 1.7 for Asciidoctor (#42470) (Fixup)
   Java API/docs/java-api/1.3          628c18f4   [DOCS] Set literal anchors in 5.0 for Asciidoctor (#42475)
   Java API/docs/java-api/1.4          383e525e   [DOCS] Set literal anchors in 5.0 for Asciidoctor (#42475)
@@ -1307,12 +1216,10 @@ Repo: elasticsearch
   Java API/docs/java-api/6.6          ffb4e66d   Document wildcard for network interfaces (#28839)
   Java API/docs/java-api/6.7          4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Java API/docs/java-api/6.8          4e0f1971   [ML] Improve message when native controller cannot connect (#43565)
-  Java API/docs/java-api/6.x          65f807cc   Update IndexTemplateMetaData to allow unknown fields (#38448) (#38493)
   Java API/docs/java-api/7.0          b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Java API/docs/java-api/7.1          ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Java API/docs/java-api/7.2          58a1a1d9   [ML][Data Frame] re-ordering format priorities in dest mapping (#43602)
   Java API/docs/java-api/7.x          9a3c86d4   include 7.2.1 as a version (#43584)
-  Java API/docs/java-api/master       c2612201   Added param ignore_throttled=false when indicesOptions.ignoreThrottled() is false (#42393)
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/5.6 674f7dc4   Add breaking change about analyze_wildcard (#42706)
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/6.0 40fbdff5   [DOCS] Fix table cols value order for Asciidoctor
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/6.1 cfa1b453   [DOCS] Fix table cols value order for Asciidoctor
@@ -1323,12 +1230,10 @@ Repo: elasticsearch
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/6.8 4e0f1971   [ML] Improve message when native controller cannot connect (#43565)
-  Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/6.x 65f807cc   Update IndexTemplateMetaData to allow unknown fields (#38448) (#38493)
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/7.2 58a1a1d9   [ML][Data Frame] re-ordering format priorities in dest mapping (#43602)
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/7.x 9a3c86d4   include 7.2.1 as a version (#43584)
-  Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/master c2612201   Added param ignore_throttled=false when indicesOptions.ignoreThrottled() is false (#42393)
   Java API/server/src/test/java/org/elasticsearch/client/documentation/6.0 40fbdff5   [DOCS] Fix table cols value order for Asciidoctor
   Java API/server/src/test/java/org/elasticsearch/client/documentation/6.1 cfa1b453   [DOCS] Fix table cols value order for Asciidoctor
   Java API/server/src/test/java/org/elasticsearch/client/documentation/6.2 aaf3e068   Document wildcard for network interfaces (#28839)
@@ -1338,12 +1243,10 @@ Repo: elasticsearch
   Java API/server/src/test/java/org/elasticsearch/client/documentation/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Java API/server/src/test/java/org/elasticsearch/client/documentation/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Java API/server/src/test/java/org/elasticsearch/client/documentation/6.8 4e0f1971   [ML] Improve message when native controller cannot connect (#43565)
-  Java API/server/src/test/java/org/elasticsearch/client/documentation/6.x 65f807cc   Update IndexTemplateMetaData to allow unknown fields (#38448) (#38493)
   Java API/server/src/test/java/org/elasticsearch/client/documentation/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Java API/server/src/test/java/org/elasticsearch/client/documentation/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Java API/server/src/test/java/org/elasticsearch/client/documentation/7.2 58a1a1d9   [ML][Data Frame] re-ordering format priorities in dest mapping (#43602)
   Java API/server/src/test/java/org/elasticsearch/client/documentation/7.x 9a3c86d4   include 7.2.1 as a version (#43584)
-  Java API/server/src/test/java/org/elasticsearch/client/documentation/master c2612201   Added param ignore_throttled=false when indicesOptions.ignoreThrottled() is false (#42393)
   Java REST Client/client/5.6         674f7dc4   Add breaking change about analyze_wildcard (#42706)
   Java REST Client/client/6.0         40fbdff5   [DOCS] Fix table cols value order for Asciidoctor
   Java REST Client/client/6.1         cfa1b453   [DOCS] Fix table cols value order for Asciidoctor
@@ -1354,7 +1257,6 @@ Repo: elasticsearch
   Java REST Client/client/6.6         ffb4e66d   Document wildcard for network interfaces (#28839)
   Java REST Client/client/6.7         4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Java REST Client/client/6.8         4e0f1971   [ML] Improve message when native controller cannot connect (#43565)
-  Java REST Client/client/6.x         65f807cc   Update IndexTemplateMetaData to allow unknown fields (#38448) (#38493)
   Java REST Client/client/7.0         b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Java REST Client/client/7.1         ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Java REST Client/client/7.2         58a1a1d9   [ML][Data Frame] re-ordering format priorities in dest mapping (#43602)
@@ -1376,7 +1278,6 @@ Repo: elasticsearch
   Java REST Client/docs/Versions.asciidoc/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Java REST Client/docs/Versions.asciidoc/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Java REST Client/docs/Versions.asciidoc/6.8 4e0f1971   [ML] Improve message when native controller cannot connect (#43565)
-  Java REST Client/docs/Versions.asciidoc/6.x 65f807cc   Update IndexTemplateMetaData to allow unknown fields (#38448) (#38493)
   Java REST Client/docs/Versions.asciidoc/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Java REST Client/docs/Versions.asciidoc/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Java REST Client/docs/Versions.asciidoc/7.2 58a1a1d9   [ML][Data Frame] re-ordering format priorities in dest mapping (#43602)
@@ -1398,7 +1299,6 @@ Repo: elasticsearch
   Java REST Client/docs/java-rest/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Java REST Client/docs/java-rest/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Java REST Client/docs/java-rest/6.8 4e0f1971   [ML] Improve message when native controller cannot connect (#43565)
-  Java REST Client/docs/java-rest/6.x 65f807cc   Update IndexTemplateMetaData to allow unknown fields (#38448) (#38493)
   Java REST Client/docs/java-rest/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Java REST Client/docs/java-rest/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Java REST Client/docs/java-rest/7.2 58a1a1d9   [ML][Data Frame] re-ordering format priorities in dest mapping (#43602)
@@ -1415,7 +1315,6 @@ Repo: elasticsearch
   Painless Scripting Language/docs/Versions.asciidoc/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Painless Scripting Language/docs/Versions.asciidoc/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Painless Scripting Language/docs/Versions.asciidoc/6.8 4e0f1971   [ML] Improve message when native controller cannot connect (#43565)
-  Painless Scripting Language/docs/Versions.asciidoc/6.x 34aede67   Deprecate implicit security on trial licenses (#38295)
   Painless Scripting Language/docs/Versions.asciidoc/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Painless Scripting Language/docs/Versions.asciidoc/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Painless Scripting Language/docs/Versions.asciidoc/7.2 58a1a1d9   [ML][Data Frame] re-ordering format priorities in dest mapping (#43602)
@@ -1432,7 +1331,6 @@ Repo: elasticsearch
   Painless Scripting Language/docs/painless/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Painless Scripting Language/docs/painless/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Painless Scripting Language/docs/painless/6.8 4e0f1971   [ML] Improve message when native controller cannot connect (#43565)
-  Painless Scripting Language/docs/painless/6.x 34aede67   Deprecate implicit security on trial licenses (#38295)
   Painless Scripting Language/docs/painless/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Painless Scripting Language/docs/painless/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Painless Scripting Language/docs/painless/7.2 58a1a1d9   [ML][Data Frame] re-ordering format priorities in dest mapping (#43602)
@@ -1446,7 +1344,6 @@ Repo: elasticsearch
   Plugins and Integrations/buildSrc/src/main/resources/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Plugins and Integrations/buildSrc/src/main/resources/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Plugins and Integrations/buildSrc/src/main/resources/6.8 4e0f1971   [ML] Improve message when native controller cannot connect (#43565)
-  Plugins and Integrations/buildSrc/src/main/resources/6.x 34aede67   Deprecate implicit security on trial licenses (#38295)
   Plugins and Integrations/buildSrc/src/main/resources/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Plugins and Integrations/buildSrc/src/main/resources/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Plugins and Integrations/buildSrc/src/main/resources/7.2 58a1a1d9   [ML][Data Frame] re-ordering format priorities in dest mapping (#43602)
@@ -1468,7 +1365,6 @@ Repo: elasticsearch
   Plugins and Integrations/docs/Versions.asciidoc/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Plugins and Integrations/docs/Versions.asciidoc/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Plugins and Integrations/docs/Versions.asciidoc/6.8 4e0f1971   [ML] Improve message when native controller cannot connect (#43565)
-  Plugins and Integrations/docs/Versions.asciidoc/6.x 34aede67   Deprecate implicit security on trial licenses (#38295)
   Plugins and Integrations/docs/Versions.asciidoc/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Plugins and Integrations/docs/Versions.asciidoc/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Plugins and Integrations/docs/Versions.asciidoc/7.2 58a1a1d9   [ML][Data Frame] re-ordering format priorities in dest mapping (#43602)
@@ -1496,7 +1392,6 @@ Repo: elasticsearch
   Plugins and Integrations/docs/plugins/6.6 ffb4e66d   Document wildcard for network interfaces (#28839)
   Plugins and Integrations/docs/plugins/6.7 4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Plugins and Integrations/docs/plugins/6.8 4e0f1971   [ML] Improve message when native controller cannot connect (#43565)
-  Plugins and Integrations/docs/plugins/6.x 34aede67   Deprecate implicit security on trial licenses (#38295)
   Plugins and Integrations/docs/plugins/7.0 b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Plugins and Integrations/docs/plugins/7.1 ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Plugins and Integrations/docs/plugins/7.2 58a1a1d9   [ML][Data Frame] re-ordering format priorities in dest mapping (#43602)
@@ -1510,7 +1405,6 @@ Repo: elasticsearch
   Stack Overview/docs/6.6             ffb4e66d   Document wildcard for network interfaces (#28839)
   Stack Overview/docs/6.7             4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Stack Overview/docs/6.8             362a346b   [ML] Introduce a setting for the process connect timeout (#43234)
-  Stack Overview/docs/6.x             3a0c8966   Allow custom authorization with an authorization engine (#38228)
   Stack Overview/docs/7.0             b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Stack Overview/docs/7.1             ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Stack Overview/docs/7.2             a9b94410   [ML] Introduce a setting for the process connect timeout (#43234)
@@ -1522,7 +1416,6 @@ Repo: elasticsearch
   Stack Overview/x-pack/docs/6.6      ffb4e66d   Document wildcard for network interfaces (#28839)
   Stack Overview/x-pack/docs/6.7      4696ebbb   [DOCS] Updated the URL for starting in the cloud.
   Stack Overview/x-pack/docs/6.8      362a346b   [ML] Introduce a setting for the process connect timeout (#43234)
-  Stack Overview/x-pack/docs/6.x      3a0c8966   Allow custom authorization with an authorization engine (#38228)
   Stack Overview/x-pack/docs/7.0      b5e102dc   [DOCS] Rewrite `range` query (#43282)
   Stack Overview/x-pack/docs/7.1      ee7e72b1   [DOCS] Rewrite `range` query (#43282)
   Stack Overview/x-pack/docs/7.2      a9b94410   [ML] Introduce a setting for the process connect timeout (#43234)
@@ -1552,7 +1445,6 @@ Repo: elasticsearch-hadoop
   Elasticsearch for Apache Hadoop and Spark/docs/src/reference/asciidoc/6.6 9258c638   Docs: Clean up for asciidoctor (#1275)
   Elasticsearch for Apache Hadoop and Spark/docs/src/reference/asciidoc/6.7 266c6a56   Bump 6.7 branch to 6.7.3-SNAPSHOT
   Elasticsearch for Apache Hadoop and Spark/docs/src/reference/asciidoc/6.8 831c1942   Fix compile errors
-  Elasticsearch for Apache Hadoop and Spark/docs/src/reference/asciidoc/6.x 4fdf4b8b   Fix KDC related integration test issue
   Elasticsearch for Apache Hadoop and Spark/docs/src/reference/asciidoc/7.0 2acafc08   Bump 7.0 branch to 7.0.2-SNAPSHOT
   Elasticsearch for Apache Hadoop and Spark/docs/src/reference/asciidoc/7.1 e05e400f   Bump 7.1 branch to 7.1.2
   Elasticsearch for Apache Hadoop and Spark/docs/src/reference/asciidoc/7.2 5620c564   version bump to 7.2.1 (#1309)
@@ -1566,7 +1458,6 @@ Repo: elasticsearch-hadoop
 
 Repo: elasticsearch-js
 --------------------------------------------------------------------------------
-  JavaScript API/docs/15.x            ba6912cb   Docs: Fix link in changelog (#797)
   JavaScript API/docs/16.x            4e0f785e   Docs: Fix link in changelog (#797)
   JavaScript API/docs/5.x             39bbd77b   Updated type definitions (#882)
   JavaScript API/docs/6.x             bef1604a   Updated type definitions (#882)
@@ -1588,7 +1479,6 @@ Repo: elasticsearch-php
   PHP API/docs/1.0                    eaf6e4ab   Update travis
   PHP API/docs/2.0                    546332c9   Update Changelog
   PHP API/docs/5.0                    d3c5b55a   Update Changelog
-  PHP API/docs/6.0                    b237a37b   Update Changelog
   PHP API/docs/6.5.x                  5d5f418f   Updated CHANGELOG
   PHP API/docs/6.7.x                  3331fe5d   Fixed a typo version in docs
   PHP API/docs/master                 53b4cec6   Merge branch '7.0'
@@ -1653,7 +1543,6 @@ Repo: kibana
   Kibana Reference/docs/6.6           aef5fa7e   [DOCS] Clarify Data Visualizer limitation (#37143)
   Kibana Reference/docs/6.7           2d2b37f5   [Canvas] Fix: no stuck hover on key based page back/forth (#33631) (#33682)
   Kibana Reference/docs/6.8           1f355db9   Update upgrade assistant docs (#37862)
-  Kibana Reference/docs/6.x           3bf33a6e   [DOCS] Adds descriptions and examples to spaces security doc (#30113)
   Kibana Reference/docs/7.0           f7eb9e4b   [docs/production] multiple es nodes (#30276)
   Kibana Reference/docs/7.1           05102672   [docs/production] multiple es nodes (#30276)
   Kibana Reference/docs/7.2           e2d5a3a4   pin to 7.2.0 until 7.2.1 snapshot is available
@@ -1669,7 +1558,6 @@ Repo: kibana
   Stack Overview/docs/6.6             aef5fa7e   [DOCS] Clarify Data Visualizer limitation (#37143)
   Stack Overview/docs/6.7             2d2b37f5   [Canvas] Fix: no stuck hover on key based page back/forth (#33631) (#33682)
   Stack Overview/docs/6.8             1f355db9   Update upgrade assistant docs (#37862)
-  Stack Overview/docs/6.x             2080a2bc   [Maps] Clear missing style props on source change and join change (#30112) (#30176)
   Stack Overview/docs/7.0             f7eb9e4b   [docs/production] multiple es nodes (#30276)
   Stack Overview/docs/7.1             05102672   [docs/production] multiple es nodes (#30276)
   Stack Overview/docs/7.2             e2d5a3a4   pin to 7.2.0 until 7.2.1 snapshot is available
@@ -1730,7 +1618,6 @@ Repo: logstash
   Logstash Reference/docs/6.6         9dde296d   plugin type in Ruby module name should be uppercase
   Logstash Reference/docs/6.7         85a59b37   Remove note about j11
   Logstash Reference/docs/6.8         e06d2dfa   bump version to 6.8.2 (#10877)
-  Logstash Reference/docs/6.x         c639fea7   support old config options and add deprecation warnings (#10390)
   Logstash Reference/docs/7.0         a2a20f99   Remove note about j11
   Logstash Reference/docs/7.1         ef861e04   Add homebrew as installation option
   Logstash Reference/docs/7.2         49281aed   Remove debug code for p2p plus formatting
@@ -1765,7 +1652,6 @@ Repo: logstash-docs
   Logstash Reference/docs/6.6         725cbcd9   Fix link to repo
   Logstash Reference/docs/6.7         3779fc94   Fix link to repo
   Logstash Reference/docs/6.8         ec1a9f4e   update docs for 6.8.1 (#728)
-  Logstash Reference/docs/6.x         a8140f37   Add filter-http and filter-memcached
   Logstash Reference/docs/7.0         10d5576f   Fix link to repo
   Logstash Reference/docs/7.1         5a88a607   Fix link to repo
   Logstash Reference/docs/7.2         f35b77c8   Add google_cloud_storage to list of inputs
@@ -1779,8 +1665,6 @@ Repo: sense
 
 Repo: stack-docs
 --------------------------------------------------------------------------------
-  Combining logs and metrics from Google Cloud's Anthos GKE On-Prem with traditional on premises systems in the Elastic Stack/docs/en/gke-on-prem/master 182d5e4b   Revert "Remove duplication of title in gke-on-prem"
-  Elastic Stack and Google Cloud Anthos/docs/en/gke-on-prem/master 62c5bb6a   Typo in gke-on-prem-introduction (#321)
   Elastic Stack and Google Cloud's Anthos/docs/en/gke-on-prem/master 43e814ba   [DOCS] Add steps for homebrew (#384)
   Getting Started/docs/en/6.3         9b6b736a   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Getting Started/docs/en/6.4         58a0c576   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
@@ -1788,7 +1672,6 @@ Repo: stack-docs
   Getting Started/docs/en/6.6         5b85608a   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Getting Started/docs/en/6.7         928b9417   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Getting Started/docs/en/6.8         52e4c251   [DOCS] Fix link to ML node description
-  Getting Started/docs/en/6.x         ad806236   [DOCS] Replace use of custom-roles-provider.asciidoc
   Getting Started/docs/en/7.0         7dfe52d1   [DOCS] Fix link to ML node description
   Getting Started/docs/en/7.1         9040a374   [DOCS] Add steps for homebrew (#384) (#385)
   Getting Started/docs/en/7.2         07621a0e   [7.2] Adds APM release highlights to Installation Upgrade Guide (#382)
@@ -1799,30 +1682,11 @@ Repo: stack-docs
   Infrastructure Monitoring Guide/docs/en/6.6 5b85608a   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Infrastructure Monitoring Guide/docs/en/6.7 928b9417   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Infrastructure Monitoring Guide/docs/en/6.8 52e4c251   [DOCS] Fix link to ML node description
-  Infrastructure Monitoring Guide/docs/en/6.x ad806236   [DOCS] Replace use of custom-roles-provider.asciidoc
   Infrastructure Monitoring Guide/docs/en/7.0 7dfe52d1   [DOCS] Fix link to ML node description
   Infrastructure Monitoring Guide/docs/en/7.1 9040a374   [DOCS] Add steps for homebrew (#384) (#385)
   Infrastructure Monitoring Guide/docs/en/7.2 07621a0e   [7.2] Adds APM release highlights to Installation Upgrade Guide (#382)
   Infrastructure Monitoring Guide/docs/en/7.x 9711efd5   [DOCS][7.x] Backport #384 and catchup missing backports (#386)
   Infrastructure Monitoring Guide/docs/en/master 43e814ba   [DOCS] Add steps for homebrew (#384)
-  Installation and Upgrade Guide/docs/5.0 cda8d4c4   [DOCS] Fixes broken link to Cloud documentation
-  Installation and Upgrade Guide/docs/5.1 b0ac575c   [DOCS] Fixes broken link to Cloud documentation
-  Installation and Upgrade Guide/docs/5.2 05c6d638   [DOCS] Fixes broken link to Cloud documentation
-  Installation and Upgrade Guide/docs/5.3 a2f8068c   [DOCS] Fixes broken link to Cloud documentation
-  Installation and Upgrade Guide/docs/5.4 5e3a4d5b   [DOCS] Fixes broken link to Cloud documentation
-  Installation and Upgrade Guide/docs/5.5 0cf4f3db   [DOCS] Fixes broken link to Cloud documentation
-  Installation and Upgrade Guide/docs/5.6 96601a54   [DOCS] Fixes broken link to Cloud documentation
-  Installation and Upgrade Guide/docs/6.0 757d2722   [DOCS] Updated attributes file
-  Installation and Upgrade Guide/docs/6.1 58edb1bb   [DOCS] Updated attributes file
-  Installation and Upgrade Guide/docs/6.2 9e4a9cb2   [DOCS] Updated attributes file
-  Installation and Upgrade Guide/docs/6.3 76de8a65   [DOCS] Adds manage_saml privilege
-  Installation and Upgrade Guide/docs/6.4 9d01c85a   [DOCS] Adds manage_saml privilege
-  Installation and Upgrade Guide/docs/6.5 cd44c45a   [DOCS] Adds manage_saml privilege
-  Installation and Upgrade Guide/docs/6.6 0bef554f   Add links to Kibana docs (#181) (#217)
-  Installation and Upgrade Guide/docs/6.7 b5ab58f7   Add links to Kibana docs (#181) (#218)
-  Installation and Upgrade Guide/docs/6.x ad806236   [DOCS] Replace use of custom-roles-provider.asciidoc
-  Installation and Upgrade Guide/docs/7.0 92b2f8d4   Merge pull request #210 from simianhacker/fixes-156 (#215)
-  Installation and Upgrade Guide/docs/7.x c20fc148   Merge pull request #210 from simianhacker/fixes-156 (#216)
   Installation and Upgrade Guide/docs/en/5.0 1613c41b   [DOCS] Fix broken Cloud link for 5.0 (#295)
   Installation and Upgrade Guide/docs/en/5.1 835c567c   [DOCS] Fix broken Cloud link for 5.0 (#296)
   Installation and Upgrade Guide/docs/en/5.2 37269784   [DOCS] Fix broken Cloud link for 5.2 (#297)
@@ -1844,20 +1708,15 @@ Repo: stack-docs
   Installation and Upgrade Guide/docs/en/7.2 07621a0e   [7.2] Adds APM release highlights to Installation Upgrade Guide (#382)
   Installation and Upgrade Guide/docs/en/7.x 9711efd5   [DOCS][7.x] Backport #384 and catchup missing backports (#386)
   Installation and Upgrade Guide/docs/en/master 43e814ba   [DOCS] Add steps for homebrew (#384)
-  Installation and Upgrade Guide/docs/master 36453a51   Merge pull request #210 from simianhacker/fixes-156
   SIEM Guide/docs/en/7.2              07621a0e   [7.2] Adds APM release highlights to Installation Upgrade Guide (#382)
   SIEM Guide/docs/en/7.x              9711efd5   [DOCS][7.x] Backport #384 and catchup missing backports (#386)
   SIEM Guide/docs/en/master           43e814ba   [DOCS] Add steps for homebrew (#384)
-  SecOps Guide/docs/en/7.2            3ec64aef   Removes coming tags (#374)
-  SecOps Guide/docs/en/7.x            9711efd5   [DOCS][7.x] Backport #384 and catchup missing backports (#386)
-  SecOps Guide/docs/en/master         43e814ba   [DOCS] Add steps for homebrew (#384)
   Stack Overview/docs/en/stack/6.3    9b6b736a   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Stack Overview/docs/en/stack/6.4    58a0c576   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Stack Overview/docs/en/stack/6.5    619c796b   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Stack Overview/docs/en/stack/6.6    5b85608a   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Stack Overview/docs/en/stack/6.7    928b9417   [DOCS] Recommended dedicated Kibana for dedicated monitoring cluster. (#330)
   Stack Overview/docs/en/stack/6.8    52e4c251   [DOCS] Fix link to ML node description
-  Stack Overview/docs/en/stack/6.x    ad806236   [DOCS] Replace use of custom-roles-provider.asciidoc
   Stack Overview/docs/en/stack/7.0    7dfe52d1   [DOCS] Fix link to ML node description
   Stack Overview/docs/en/stack/7.1    9040a374   [DOCS] Add steps for homebrew (#384) (#385)
   Stack Overview/docs/en/stack/7.2    07621a0e   [7.2] Adds APM release highlights to Installation Upgrade Guide (#382)
