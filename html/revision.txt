@@ -58,7 +58,7 @@ Repo: apm-server
   APM Overview/docs/6.8               6f52d242   start 6.8.2 (#2307)
   APM Overview/docs/7.0               82d252ed   [docs] APM Overview structure and content improvements (#2171) (#2426)
   APM Overview/docs/7.1               43ca2921   [docs] APM Overview structure and content improvements (#2171) (#2425)
-  APM Overview/docs/7.2               489f8be2   [docs] APM Overview structure and content (#2171) (#2422)
+  APM Overview/docs/7.2               local|as   local changes
   APM Overview/docs/7.3               f32f9366   [docs] Agent configuration documentation (#2366) (#2429)
   APM Overview/docs/guide/6.0         ae191ba5   Merge remote-tracking branch 'upstream/6.0' into 6.0
   APM Overview/docs/guide/6.1         e5bfd578   maintain changelog per minor release (#1365)
@@ -71,7 +71,7 @@ Repo: apm-server
   APM Overview/docs/guide/6.8         6f52d242   start 6.8.2 (#2307)
   APM Overview/docs/guide/7.0         82d252ed   [docs] APM Overview structure and content improvements (#2171) (#2426)
   APM Overview/docs/guide/7.1         43ca2921   [docs] APM Overview structure and content improvements (#2171) (#2425)
-  APM Overview/docs/guide/7.2         489f8be2   [docs] APM Overview structure and content (#2171) (#2422)
+  APM Overview/docs/guide/7.2         local|as   local changes
   APM Overview/docs/guide/7.3         f32f9366   [docs] Agent configuration documentation (#2366) (#2429)
   APM Overview/docs/guide/master      e3f61a48   [docs] Update ILM enabled to “auto” (#2437)
   APM Overview/docs/master            e3f61a48   [docs] Update ILM enabled to “auto” (#2437)
@@ -86,7 +86,7 @@ Repo: apm-server
   APM Server Reference/CHANGELOG.asciidoc/6.8 6f52d242   start 6.8.2 (#2307)
   APM Server Reference/CHANGELOG.asciidoc/7.0 82d252ed   [docs] APM Overview structure and content improvements (#2171) (#2426)
   APM Server Reference/CHANGELOG.asciidoc/7.1 43ca2921   [docs] APM Overview structure and content improvements (#2171) (#2425)
-  APM Server Reference/CHANGELOG.asciidoc/7.2 489f8be2   [docs] APM Overview structure and content (#2171) (#2422)
+  APM Server Reference/CHANGELOG.asciidoc/7.2 local   local changes
   APM Server Reference/CHANGELOG.asciidoc/7.3 7cd8bdc6   Disable overwriting ingest pipelines by default. (#2452) (#2455)
   APM Server Reference/CHANGELOG.asciidoc/master e3f61a48   [docs] Update ILM enabled to “auto” (#2437)
   APM Server Reference/changelogs/6.1 e5bfd578   maintain changelog per minor release (#1365)
@@ -99,7 +99,7 @@ Repo: apm-server
   APM Server Reference/changelogs/6.8 6f52d242   start 6.8.2 (#2307)
   APM Server Reference/changelogs/7.0 82d252ed   [docs] APM Overview structure and content improvements (#2171) (#2426)
   APM Server Reference/changelogs/7.1 43ca2921   [docs] APM Overview structure and content improvements (#2171) (#2425)
-  APM Server Reference/changelogs/7.2 489f8be2   [docs] APM Overview structure and content (#2171) (#2422)
+  APM Server Reference/changelogs/7.2 local   local changes
   APM Server Reference/changelogs/7.3 7cd8bdc6   Disable overwriting ingest pipelines by default. (#2452) (#2455)
   APM Server Reference/changelogs/master e3f61a48   [docs] Update ILM enabled to “auto” (#2437)
   APM Server Reference/docs/6.0       ae191ba5   Merge remote-tracking branch 'upstream/6.0' into 6.0
@@ -113,12 +113,12 @@ Repo: apm-server
   APM Server Reference/docs/6.8       6f52d242   start 6.8.2 (#2307)
   APM Server Reference/docs/7.0       82d252ed   [docs] APM Overview structure and content improvements (#2171) (#2426)
   APM Server Reference/docs/7.1       43ca2921   [docs] APM Overview structure and content improvements (#2171) (#2425)
-  APM Server Reference/docs/7.2       489f8be2   [docs] APM Overview structure and content (#2171) (#2422)
+  APM Server Reference/docs/7.2       local   local changes
   APM Server Reference/docs/7.3       7cd8bdc6   Disable overwriting ingest pipelines by default. (#2452) (#2455)
   APM Server Reference/docs/master    e3f61a48   [docs] Update ILM enabled to “auto” (#2437)
   Installation and Upgrade Guide/docs/guide/7.0 82d252ed   [docs] APM Overview structure and content improvements (#2171) (#2426)
   Installation and Upgrade Guide/docs/guide/7.1 43ca2921   [docs] APM Overview structure and content improvements (#2171) (#2425)
-  Installation and Upgrade Guide/docs/guide/7.2 489f8be2   [docs] APM Overview structure and content (#2171) (#2422)
+  Installation and Upgrade Guide/docs/guide/7.2 local|as   local changes
   Installation and Upgrade Guide/docs/guide/7.3 7cd8bdc6   Disable overwriting ingest pipelines by default. (#2452) (#2455)
   Installation and Upgrade Guide/docs/guide/7.x 953b1e27   Disable overwriting ingest pipelines by default. (#2452) (#2454)
   Installation and Upgrade Guide/docs/guide/master e3f61a48   [docs] Update ILM enabled to “auto” (#2437)
