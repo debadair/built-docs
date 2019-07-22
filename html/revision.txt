@@ -1767,7 +1767,7 @@ Repo: stack-docs
   Getting Started/docs/en/6.8         5e6fcfb5   Removes edit_url attributes (#414) (#424)
   Getting Started/docs/en/7.0         35327077   Removes edit_url attributes (#414) (#420)
   Getting Started/docs/en/7.1         dab4579a   Removes edit_url attributes (#414) (#419)
-  Getting Started/docs/en/7.2         4e04a85a   Renames data frame transform overview
+  Getting Started/docs/en/7.2         local|as   local changes
   Getting Started/docs/en/7.3         02398228   Renames data frame transform overview
   Getting Started/docs/en/7.x         8ab59004   Renames data frame transform overview
   Getting Started/docs/en/master      b2d28238   Renames data frame transform overview
@@ -1778,7 +1778,7 @@ Repo: stack-docs
   Infrastructure Monitoring Guide/docs/en/6.8 5e6fcfb5   Removes edit_url attributes (#414) (#424)
   Infrastructure Monitoring Guide/docs/en/7.0 35327077   Removes edit_url attributes (#414) (#420)
   Infrastructure Monitoring Guide/docs/en/7.1 dab4579a   Removes edit_url attributes (#414) (#419)
-  Infrastructure Monitoring Guide/docs/en/7.2 4e04a85a   Renames data frame transform overview
+  Infrastructure Monitoring Guide/docs/en/7.2 local|as   local changes
   Infrastructure Monitoring Guide/docs/en/7.3 02398228   Renames data frame transform overview
   Infrastructure Monitoring Guide/docs/en/7.x 8ab59004   Renames data frame transform overview
   Infrastructure Monitoring Guide/docs/en/master b2d28238   Renames data frame transform overview
@@ -1800,11 +1800,11 @@ Repo: stack-docs
   Installation and Upgrade Guide/docs/en/6.8 5e6fcfb5   Removes edit_url attributes (#414) (#424)
   Installation and Upgrade Guide/docs/en/7.0 35327077   Removes edit_url attributes (#414) (#420)
   Installation and Upgrade Guide/docs/en/7.1 dab4579a   Removes edit_url attributes (#414) (#419)
-  Installation and Upgrade Guide/docs/en/7.2 4e04a85a   Renames data frame transform overview
+  Installation and Upgrade Guide/docs/en/7.2 local|as   local changes
   Installation and Upgrade Guide/docs/en/7.3 02398228   Renames data frame transform overview
   Installation and Upgrade Guide/docs/en/7.x 8ab59004   Renames data frame transform overview
   Installation and Upgrade Guide/docs/en/master b2d28238   Renames data frame transform overview
-  SIEM Guide/docs/en/7.2              4e04a85a   Renames data frame transform overview
+  SIEM Guide/docs/en/7.2              local|as   local changes
   SIEM Guide/docs/en/7.3              02398228   Renames data frame transform overview
   SIEM Guide/docs/en/7.x              8ab59004   Renames data frame transform overview
   SIEM Guide/docs/en/master           b2d28238   Renames data frame transform overview
@@ -1816,7 +1816,7 @@ Repo: stack-docs
   Stack Overview/docs/en/stack/6.8    5e6fcfb5   Removes edit_url attributes (#414) (#424)
   Stack Overview/docs/en/stack/7.0    35327077   Removes edit_url attributes (#414) (#420)
   Stack Overview/docs/en/stack/7.1    dab4579a   Removes edit_url attributes (#414) (#419)
-  Stack Overview/docs/en/stack/7.2    4e04a85a   Renames data frame transform overview
+  Stack Overview/docs/en/stack/7.2    local|as   local changes
   Stack Overview/docs/en/stack/7.3    02398228   Renames data frame transform overview
   Stack Overview/docs/en/stack/7.x    8ab59004   Renames data frame transform overview
   Stack Overview/docs/en/stack/master b2d28238   Renames data frame transform overview

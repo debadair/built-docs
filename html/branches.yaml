@@ -1713,7 +1713,7 @@ stack-docs:
   Getting Started/docs/en/6.8: 5e6fcfb51b3956d1eb088e44cdf72e866aa5ce2d|asciidoctor
   Getting Started/docs/en/7.0: 353270779bf5e970702c833aee07fa33ff03e9f3|asciidoctor
   Getting Started/docs/en/7.1: dab4579a46c45b9ff5b9a394ea95ce101ee6f824|asciidoctor
-  Getting Started/docs/en/7.2: 4e04a85a695668ea3acccafdd3a4708dda1e57fa|asciidoctor
+  Getting Started/docs/en/7.2: local|asciidoctor
   Getting Started/docs/en/7.3: 023982286aec8cacd843fb94774f08556e15f083|asciidoctor
   Getting Started/docs/en/7.x: 8ab59004384415f08f493b9ffa3597f5c442b83d|asciidoctor
   Getting Started/docs/en/master: b2d282383efce705bcff210d1350c6fa5b390d46|asciidoctor
@@ -1724,7 +1724,7 @@ stack-docs:
   Infrastructure Monitoring Guide/docs/en/6.8: 5e6fcfb51b3956d1eb088e44cdf72e866aa5ce2d|asciidoctor
   Infrastructure Monitoring Guide/docs/en/7.0: 353270779bf5e970702c833aee07fa33ff03e9f3|asciidoctor
   Infrastructure Monitoring Guide/docs/en/7.1: dab4579a46c45b9ff5b9a394ea95ce101ee6f824|asciidoctor
-  Infrastructure Monitoring Guide/docs/en/7.2: 4e04a85a695668ea3acccafdd3a4708dda1e57fa|asciidoctor
+  Infrastructure Monitoring Guide/docs/en/7.2: local|asciidoctor
   Infrastructure Monitoring Guide/docs/en/7.3: 023982286aec8cacd843fb94774f08556e15f083|asciidoctor
   Infrastructure Monitoring Guide/docs/en/7.x: 8ab59004384415f08f493b9ffa3597f5c442b83d|asciidoctor
   Infrastructure Monitoring Guide/docs/en/master: b2d282383efce705bcff210d1350c6fa5b390d46|asciidoctor
@@ -1746,11 +1746,11 @@ stack-docs:
   Installation and Upgrade Guide/docs/en/6.8: 5e6fcfb51b3956d1eb088e44cdf72e866aa5ce2d|asciidoctor
   Installation and Upgrade Guide/docs/en/7.0: 353270779bf5e970702c833aee07fa33ff03e9f3|asciidoctor
   Installation and Upgrade Guide/docs/en/7.1: dab4579a46c45b9ff5b9a394ea95ce101ee6f824|asciidoctor
-  Installation and Upgrade Guide/docs/en/7.2: 4e04a85a695668ea3acccafdd3a4708dda1e57fa|asciidoctor
+  Installation and Upgrade Guide/docs/en/7.2: local|asciidoctor
   Installation and Upgrade Guide/docs/en/7.3: 023982286aec8cacd843fb94774f08556e15f083|asciidoctor
   Installation and Upgrade Guide/docs/en/7.x: 8ab59004384415f08f493b9ffa3597f5c442b83d|asciidoctor
   Installation and Upgrade Guide/docs/en/master: b2d282383efce705bcff210d1350c6fa5b390d46|asciidoctor
-  SIEM Guide/docs/en/7.2: 4e04a85a695668ea3acccafdd3a4708dda1e57fa|asciidoctor
+  SIEM Guide/docs/en/7.2: local|asciidoctor
   SIEM Guide/docs/en/7.3: 023982286aec8cacd843fb94774f08556e15f083|asciidoctor
   SIEM Guide/docs/en/7.x: 8ab59004384415f08f493b9ffa3597f5c442b83d|asciidoctor
   SIEM Guide/docs/en/master: b2d282383efce705bcff210d1350c6fa5b390d46|asciidoctor
@@ -1762,7 +1762,7 @@ stack-docs:
   Stack Overview/docs/en/stack/6.8: 5e6fcfb51b3956d1eb088e44cdf72e866aa5ce2d|asciidoctor
   Stack Overview/docs/en/stack/7.0: 353270779bf5e970702c833aee07fa33ff03e9f3|asciidoctor
   Stack Overview/docs/en/stack/7.1: dab4579a46c45b9ff5b9a394ea95ce101ee6f824|asciidoctor
-  Stack Overview/docs/en/stack/7.2: 4e04a85a695668ea3acccafdd3a4708dda1e57fa|asciidoctor
+  Stack Overview/docs/en/stack/7.2: local|asciidoctor
   Stack Overview/docs/en/stack/7.3: 023982286aec8cacd843fb94774f08556e15f083|asciidoctor
   Stack Overview/docs/en/stack/7.x: 8ab59004384415f08f493b9ffa3597f5c442b83d|asciidoctor
   Stack Overview/docs/en/stack/master: b2d282383efce705bcff210d1350c6fa5b390d46|asciidoctor
