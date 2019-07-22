@@ -1,4 +1,4 @@
-PUT /example
+PUT /locations
 {
     "mappings": {
         "properties": {
@@ -6,14 +6,5 @@ PUT /example
                 "type": "geo_shape"
             }
         }
-    }
-}
-
-POST /example/_doc?refresh
-{
-    "name": "Wind & Wetter, Berlin, Germany",
-    "location": {
-        "type": "point",
-        "coordinates": [13.400544, 52.530286]
     }
 }

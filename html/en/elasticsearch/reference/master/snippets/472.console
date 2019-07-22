@@ -1,8 +1,12 @@
-GET /_search
+GET _search
 {
     "query": {
-        "regexp":{
-            "name.first": "s.*y"
+        "range" : {
+            "age" : {
+                "gte" : 10,
+                "lte" : 20,
+                "boost" : 2.0
+            }
         }
     }
 }

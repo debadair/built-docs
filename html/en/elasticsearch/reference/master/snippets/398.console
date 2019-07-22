@@ -1,17 +1,7 @@
-GET /my_index/_search
+PUT /shapes/_doc/deu?refresh
 {
-    "query": {
-        "nested" : {
-            "path" : "obj1",
-            "query" : {
-                "bool" : {
-                    "must" : [
-                    { "match" : {"obj1.name" : "blue"} },
-                    { "range" : {"obj1.count" : {"gt" : 5}} }
-                    ]
-                }
-            },
-            "score_mode" : "avg"
-        }
+    "location": {
+        "type": "envelope",
+        "coordinates" : [[13.0, 53.0], [14.0, 52.0]]
     }
 }

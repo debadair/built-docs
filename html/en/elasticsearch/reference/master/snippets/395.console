@@ -1,21 +1,8 @@
-GET /example/_search
+POST /locations/_doc?refresh
 {
-    "query":{
-        "bool": {
-            "must": {
-                "match_all": {}
-            },
-            "filter": {
-                "geo_shape": {
-                    "location": {
-                        "shape": {
-                            "type": "envelope",
-                            "coordinates" : [[13.0, 53.0], [14.0, 52.0]]
-                        },
-                        "relation": "within"
-                    }
-                }
-            }
-        }
+    "name": "Wind & Wetter, Berlin, Germany",
+    "location": {
+        "type": "point",
+        "coordinates": [13.400544, 52.530286]
     }
 }
