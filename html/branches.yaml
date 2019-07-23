@@ -1033,7 +1033,7 @@ elasticsearch:
   Elasticsearch Reference/docs/Versions.asciidoc/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Elasticsearch Reference/docs/Versions.asciidoc/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Elasticsearch Reference/docs/Versions.asciidoc/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Elasticsearch Reference/docs/Versions.asciidoc/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Elasticsearch Reference/docs/Versions.asciidoc/6.8: local|asciidoctor
   Elasticsearch Reference/docs/Versions.asciidoc/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Elasticsearch Reference/docs/Versions.asciidoc/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Elasticsearch Reference/docs/Versions.asciidoc/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1050,7 +1050,7 @@ elasticsearch:
   Elasticsearch Reference/docs/painless/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Elasticsearch Reference/docs/painless/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Elasticsearch Reference/docs/painless/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Elasticsearch Reference/docs/painless/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Elasticsearch Reference/docs/painless/6.8: local|asciidoctor
   Elasticsearch Reference/docs/painless/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Elasticsearch Reference/docs/painless/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Elasticsearch Reference/docs/painless/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1083,7 +1083,7 @@ elasticsearch:
   Elasticsearch Reference/docs/reference/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Elasticsearch Reference/docs/reference/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Elasticsearch Reference/docs/reference/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Elasticsearch Reference/docs/reference/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Elasticsearch Reference/docs/reference/6.8: local|asciidoctor
   Elasticsearch Reference/docs/reference/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Elasticsearch Reference/docs/reference/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Elasticsearch Reference/docs/reference/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1102,7 +1102,7 @@ elasticsearch:
   Elasticsearch Reference/docs/src/test/cluster/config/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Elasticsearch Reference/docs/src/test/cluster/config/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Elasticsearch Reference/docs/src/test/cluster/config/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Elasticsearch Reference/docs/src/test/cluster/config/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Elasticsearch Reference/docs/src/test/cluster/config/6.8: local|asciidoctor
   Elasticsearch Reference/docs/src/test/cluster/config/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Elasticsearch Reference/docs/src/test/cluster/config/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Elasticsearch Reference/docs/src/test/cluster/config/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1119,7 +1119,7 @@ elasticsearch:
   Elasticsearch Reference/plugins/examples/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Elasticsearch Reference/plugins/examples/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Elasticsearch Reference/plugins/examples/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Elasticsearch Reference/plugins/examples/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Elasticsearch Reference/plugins/examples/6.8: local|asciidoctor
   Elasticsearch Reference/plugins/examples/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Elasticsearch Reference/plugins/examples/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Elasticsearch Reference/plugins/examples/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1131,7 +1131,7 @@ elasticsearch:
   Elasticsearch Reference/x-pack/docs/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Elasticsearch Reference/x-pack/docs/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Elasticsearch Reference/x-pack/docs/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Elasticsearch Reference/x-pack/docs/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Elasticsearch Reference/x-pack/docs/6.8: local|asciidoctor
   Elasticsearch Reference/x-pack/docs/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Elasticsearch Reference/x-pack/docs/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Elasticsearch Reference/x-pack/docs/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1140,7 +1140,7 @@ elasticsearch:
   Elasticsearch Reference/x-pack/docs/master: d1ff21482beb702e2c1a9db34c5a6dab4ee45566|asciidoctor
   Elasticsearch Reference/x-pack/plugin/sql/qa/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Elasticsearch Reference/x-pack/plugin/sql/qa/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Elasticsearch Reference/x-pack/plugin/sql/qa/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Elasticsearch Reference/x-pack/plugin/sql/qa/6.8: local|asciidoctor
   Elasticsearch Reference/x-pack/plugin/sql/qa/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Elasticsearch Reference/x-pack/plugin/sql/qa/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Elasticsearch Reference/x-pack/plugin/sql/qa/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1186,7 +1186,7 @@ elasticsearch:
   Installation and Upgrade Guide/docs/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Installation and Upgrade Guide/docs/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Installation and Upgrade Guide/docs/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Installation and Upgrade Guide/docs/6.8: b506955f8d442c5c1659fd3840d8db14b3f969d1|asciidoctor
+  Installation and Upgrade Guide/docs/6.8: local|asciidoctor
   Installation and Upgrade Guide/docs/7.0: 58f22b25d4b4e4b4948709e2745a1bf72fc2b338|asciidoctor
   Installation and Upgrade Guide/docs/7.1: 5de1d51c20d32b757b43061d6631b5ab1974477b|asciidoctor
   Installation and Upgrade Guide/docs/7.2: 7264a1bbcfc815427806392208d7c69d6a3d6b74|asciidoctor
@@ -1201,7 +1201,7 @@ elasticsearch:
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/6.8: local|asciidoctor
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1222,7 +1222,7 @@ elasticsearch:
   Java API/docs/Versions.asciidoc/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Java API/docs/Versions.asciidoc/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Java API/docs/Versions.asciidoc/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Java API/docs/Versions.asciidoc/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Java API/docs/Versions.asciidoc/6.8: local|asciidoctor
   Java API/docs/Versions.asciidoc/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Java API/docs/Versions.asciidoc/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Java API/docs/Versions.asciidoc/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1254,7 +1254,7 @@ elasticsearch:
   Java API/docs/java-api/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Java API/docs/java-api/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Java API/docs/java-api/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Java API/docs/java-api/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Java API/docs/java-api/6.8: local|asciidoctor
   Java API/docs/java-api/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Java API/docs/java-api/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Java API/docs/java-api/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1269,7 +1269,7 @@ elasticsearch:
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/6.8: local|asciidoctor
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Java API/modules/reindex/src/test/java/org/elasticsearch/client/documentation/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1283,7 +1283,7 @@ elasticsearch:
   Java API/server/src/test/java/org/elasticsearch/client/documentation/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Java API/server/src/test/java/org/elasticsearch/client/documentation/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Java API/server/src/test/java/org/elasticsearch/client/documentation/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Java API/server/src/test/java/org/elasticsearch/client/documentation/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Java API/server/src/test/java/org/elasticsearch/client/documentation/6.8: local|asciidoctor
   Java API/server/src/test/java/org/elasticsearch/client/documentation/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Java API/server/src/test/java/org/elasticsearch/client/documentation/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Java API/server/src/test/java/org/elasticsearch/client/documentation/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1298,7 +1298,7 @@ elasticsearch:
   Java REST Client/client/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Java REST Client/client/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Java REST Client/client/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Java REST Client/client/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Java REST Client/client/6.8: local|asciidoctor
   Java REST Client/client/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Java REST Client/client/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Java REST Client/client/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1320,7 +1320,7 @@ elasticsearch:
   Java REST Client/docs/Versions.asciidoc/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Java REST Client/docs/Versions.asciidoc/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Java REST Client/docs/Versions.asciidoc/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Java REST Client/docs/Versions.asciidoc/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Java REST Client/docs/Versions.asciidoc/6.8: local|asciidoctor
   Java REST Client/docs/Versions.asciidoc/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Java REST Client/docs/Versions.asciidoc/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Java REST Client/docs/Versions.asciidoc/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1342,7 +1342,7 @@ elasticsearch:
   Java REST Client/docs/java-rest/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Java REST Client/docs/java-rest/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Java REST Client/docs/java-rest/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Java REST Client/docs/java-rest/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Java REST Client/docs/java-rest/6.8: local|asciidoctor
   Java REST Client/docs/java-rest/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Java REST Client/docs/java-rest/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Java REST Client/docs/java-rest/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1359,7 +1359,7 @@ elasticsearch:
   Painless Scripting Language/docs/Versions.asciidoc/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Painless Scripting Language/docs/Versions.asciidoc/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Painless Scripting Language/docs/Versions.asciidoc/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Painless Scripting Language/docs/Versions.asciidoc/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Painless Scripting Language/docs/Versions.asciidoc/6.8: local|asciidoctor
   Painless Scripting Language/docs/Versions.asciidoc/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Painless Scripting Language/docs/Versions.asciidoc/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Painless Scripting Language/docs/Versions.asciidoc/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1376,7 +1376,7 @@ elasticsearch:
   Painless Scripting Language/docs/painless/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Painless Scripting Language/docs/painless/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Painless Scripting Language/docs/painless/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Painless Scripting Language/docs/painless/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Painless Scripting Language/docs/painless/6.8: local|asciidoctor
   Painless Scripting Language/docs/painless/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Painless Scripting Language/docs/painless/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Painless Scripting Language/docs/painless/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1390,7 +1390,7 @@ elasticsearch:
   Plugins and Integrations/buildSrc/src/main/resources/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Plugins and Integrations/buildSrc/src/main/resources/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Plugins and Integrations/buildSrc/src/main/resources/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Plugins and Integrations/buildSrc/src/main/resources/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Plugins and Integrations/buildSrc/src/main/resources/6.8: local|asciidoctor
   Plugins and Integrations/buildSrc/src/main/resources/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Plugins and Integrations/buildSrc/src/main/resources/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Plugins and Integrations/buildSrc/src/main/resources/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1412,7 +1412,7 @@ elasticsearch:
   Plugins and Integrations/docs/Versions.asciidoc/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Plugins and Integrations/docs/Versions.asciidoc/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Plugins and Integrations/docs/Versions.asciidoc/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Plugins and Integrations/docs/Versions.asciidoc/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Plugins and Integrations/docs/Versions.asciidoc/6.8: local|asciidoctor
   Plugins and Integrations/docs/Versions.asciidoc/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Plugins and Integrations/docs/Versions.asciidoc/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Plugins and Integrations/docs/Versions.asciidoc/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1440,7 +1440,7 @@ elasticsearch:
   Plugins and Integrations/docs/plugins/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Plugins and Integrations/docs/plugins/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Plugins and Integrations/docs/plugins/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Plugins and Integrations/docs/plugins/6.8: c03fea394fcbaaf8b554b9f84752fa23b26b7d69|asciidoctor
+  Plugins and Integrations/docs/plugins/6.8: local|asciidoctor
   Plugins and Integrations/docs/plugins/7.0: c7dfd1cf3bfc0c2e188713220c97cc009b0dae41|asciidoctor
   Plugins and Integrations/docs/plugins/7.1: 98ebcd77cf7478699bf4c9cc2cb7712fb2a39e5f|asciidoctor
   Plugins and Integrations/docs/plugins/7.2: 893544392ae6dbfef79eb001a49388e1be1aea3c|asciidoctor
@@ -1454,7 +1454,7 @@ elasticsearch:
   Stack Overview/docs/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Stack Overview/docs/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Stack Overview/docs/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Stack Overview/docs/6.8: b506955f8d442c5c1659fd3840d8db14b3f969d1|asciidoctor
+  Stack Overview/docs/6.8: local|asciidoctor
   Stack Overview/docs/7.0: 58f22b25d4b4e4b4948709e2745a1bf72fc2b338|asciidoctor
   Stack Overview/docs/7.1: 5de1d51c20d32b757b43061d6631b5ab1974477b|asciidoctor
   Stack Overview/docs/7.2: 7264a1bbcfc815427806392208d7c69d6a3d6b74|asciidoctor
@@ -1466,7 +1466,7 @@ elasticsearch:
   Stack Overview/x-pack/docs/6.5: 5770caa0a4f83b15a2a1d5a439036fdca0b126e7|asciidoctor
   Stack Overview/x-pack/docs/6.6: 37fb72694d49928a66cd5a37a854714bac33a836|asciidoctor
   Stack Overview/x-pack/docs/6.7: 997fbde2125c6abebb52b38ab43a1314511ab709|asciidoctor
-  Stack Overview/x-pack/docs/6.8: b506955f8d442c5c1659fd3840d8db14b3f969d1|asciidoctor
+  Stack Overview/x-pack/docs/6.8: local|asciidoctor
   Stack Overview/x-pack/docs/7.0: 58f22b25d4b4e4b4948709e2745a1bf72fc2b338|asciidoctor
   Stack Overview/x-pack/docs/7.1: 5de1d51c20d32b757b43061d6631b5ab1974477b|asciidoctor
   Stack Overview/x-pack/docs/7.2: 7264a1bbcfc815427806392208d7c69d6a3d6b74|asciidoctor
