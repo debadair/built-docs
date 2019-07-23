@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Geo-polygon query
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Geo polygon query
         | Elasticsearch Reference [master]
       | Elastic
     </title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Elasticsearch Reference [master]" /><link rel="up" href="geo-queries.html" title="Geo queries" /><link rel="prev" href="query-dsl-geo-distance-query.html" title="Geo-distance query" /><link rel="next" href="query-dsl-geo-shape-query.html" title="Geo-shape query" /><meta name="description" content="Get started with the documentation for Elasticsearch, Kibana, Logstash, Beats, X-Pack, Elastic Cloud, Elasticsearch for Apache Hadoop, and our language clients." /><meta name="DC.type" content="Learn/Docs/Elasticsearch/Reference/master" /><meta name="DC.subject" content="Elasticsearch" /><meta name="DC.identifier" content="master" />
@@ -271,7 +271,7 @@ Not what you want? See the
 <a href="../current/index.html">current release documentation</a>.
 </div><div class="breadcrumbs"><span class="breadcrumb-link"><a href="index.html">Elasticsearch Reference
       [master]
-    </a></span> » <span class="breadcrumb-link"><a href="query-dsl.html">Query DSL</a></span> » <span class="breadcrumb-link"><a href="geo-queries.html">Geo queries</a></span> » <span class="breadcrumb-node">Geo-polygon query</span></div><div class="navheader"><span class="prev"><a href="query-dsl-geo-distance-query.html">
+    </a></span> » <span class="breadcrumb-link"><a href="query-dsl.html">Query DSL</a></span> » <span class="breadcrumb-link"><a href="geo-queries.html">Geo queries</a></span> » <span class="breadcrumb-node">Geo polygon query</span></div><div class="navheader"><span class="prev"><a href="query-dsl-geo-distance-query.html">
               « 
               Geo-distance query</a>
            
@@ -279,8 +279,31 @@ Not what you want? See the
            
           <a href="query-dsl-geo-shape-query.html">Geo-shape query
                »
-            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="query-dsl-geo-polygon-query"></a>Geo-polygon query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>A query returning hits that only fall within a polygon of
-points. Here is an example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
+            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="query-dsl-geo-polygon-query"></a>Geo polygon query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Returns documents containing a point location, or <a class="link" href="geo-point.html" title="Geo-point datatype">geopoint</a>, within
+a provided polygon.</p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="geo-polygon-query-ex-request"></a>Example request<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="geo-polygon-query-index-setup"></a>Index setup<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>To see how you can set up an index for the <code class="literal">geo_polygon</code> query, try the
+following example.</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p class="simpara">Create an index with a <a class="link" href="geo-point.html" title="Geo-point datatype">geopoint</a> field mapping.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">PUT /my_locations
+{
+    "mappings": {
+        "properties": {
+            "pin": {
+                "properties": {
+                    "location": {
+                        "type": "geo_point"
+                    }
+                }
+            }
+        }
+    }
+}</pre></div><div class="console_widget" data-snippet="snippets/390.console"></div></li><li class="listitem"><p class="simpara">Index a document with a value in the geopoint field.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">PUT /my_locations/_doc/1
+{
+    "pin" : {
+        "location" : {
+            "lat" : 40.12,
+            "lon" : -69.34
+        }
+    }
+}</pre></div><div class="console_widget" data-snippet="snippets/391.console"></div></li></ol></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="geo-polygon-query-ex-query"></a>Example query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The following search uses a <code class="literal">bool</code> query with a nested <code class="literal">geo_polygon</code>
+<a class="link" href="query-dsl-bool-query.html" title="Boolean query">filter</a> to find the indexed geopoint.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /my_locations/_search
 {
     "query": {
         "bool" : {
@@ -289,7 +312,7 @@ points. Here is an example:</p><div class="pre_wrapper"><pre class="programlisti
             },
             "filter" : {
                 "geo_polygon" : {
-                    "person.location" : {
+                    "pin.location" : {
                         "points" : [
                             {"lat" : 40, "lon" : -70},
                             {"lat" : 30, "lon" : -80},
@@ -300,10 +323,17 @@ points. Here is an example:</p><div class="pre_wrapper"><pre class="programlisti
             }
         }
     }
-}</pre></div><div class="console_widget" data-snippet="snippets/390.console"></div><h4><a id="_query_options_2"></a>Query Options<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><div class="informaltable"><table cellpadding="4px" border="1"><colgroup><col class="col_1" /><col class="col_2" /></colgroup><thead><tr><th align="left" valign="top">Option</th><th align="left" valign="top">Description</th></tr></thead><tbody><tr><td align="left" valign="top"><p><code class="literal">_name</code></p></td><td align="left" valign="top"><p>Optional name field to identify the filter</p></td></tr><tr><td align="left" valign="top"><p><code class="literal">validation_method</code></p></td><td align="left" valign="top"><p>Set to <code class="literal">IGNORE_MALFORMED</code> to accept geo points with
-invalid latitude or longitude, <code class="literal">COERCE</code> to try and infer correct latitude
-or longitude, or <code class="literal">STRICT</code> (default is <code class="literal">STRICT</code>).</p></td></tr></tbody></table></div><h4><a id="_allowed_formats"></a>Allowed Formats<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><h5><a id="_lat_long_as_array"></a>Lat Long as Array<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h5><p>Format as <code class="literal">[lon, lat]</code></p><p>Note: the order of lon/lat here must
-conform with <a class="ulink" href="http://geojson.org/" target="_top">GeoJSON</a>.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
+}</pre></div><div class="console_widget" data-snippet="snippets/392.console"></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="geo-polygon-top-level-params"></a>Top-level parameters for <code class="literal">geo_polygon</code><a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">&lt;field&gt;</code></span></dt><dd>(Required, object) <a class="link" href="geo-point.html" title="Geo-point datatype">Geopoint</a> field you wish to search. If this is
+not a <a class="link" href="geo-point.html" title="Geo-point datatype">geopoint</a> field, Elasticsearch returns an error.</dd></dl></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="geo-polygon-field-params"></a>Parameters for <code class="literal">&lt;field&gt;</code><a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">points</code></span></dt><dd><p class="simpara">(Required, array of <a class="link" href="query-dsl-geo-polygon-query.html#geo-polygon-accepted-formats" title="Accepted latitude-longitude formats">latitude-longitude pairs</a>)
+Array of latitude-longitude pairs used to create a polygon. The query returns
+documents containing geopoints in the provided <code class="literal">&lt;field&gt;</code> that are within this
+polygon.</p><p class="simpara">See <a class="xref" href="query-dsl-geo-polygon-query.html#geo-polygon-accepted-formats" title="Accepted latitude-longitude formats">Accepted latitude-longitude formats</a> for a list of supported formats.</p></dd><dt><span class="term"><code class="literal">ignore_unmapped</code></span></dt><dd><p class="simpara">(Optional, boolean) Indicates whether to ignore an unmapped <code class="literal">&lt;field&gt;</code> and not
+return any documents instead of an error. Defaults to <code class="literal">false</code>.</p><p class="simpara">If <code class="literal">false</code>, Elasticsearch returns an error if the <code class="literal">&lt;field&gt;</code> is unmapped.</p><p class="simpara">You can use this parameter to query multiple indices that may not contain the
+<code class="literal">&lt;field&gt;</code>.</p></dd><dt><span class="term"><code class="literal">validation_method</code></span></dt><dd><p class="simpara">(Optional, string) Indicates whether the query accepts invalid
+latitude or longitude values in the <code class="literal">&lt;field&gt;</code> parameter.</p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">STRICT</code> (Default)</span></dt><dd>Do not accept invalid latitude or longitude values.</dd><dt><span class="term"><code class="literal">COERCE</code></span></dt><dd>Accept invalid latitude or longitude values. Attempt to infer the
+correct latitude or longitude.</dd><dt><span class="term"><code class="literal">IGNORE_MALFORMED</code></span></dt><dd>Accept invalid latitude or longitude values. Do not attempt
+to infer the correct latitude or longitude.</dd></dl></div></dd></dl></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="geo-polygon-query-notes"></a>Notes<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="geo-polygon-accepted-formats"></a>Accepted latitude-longitude formats<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The <code class="literal">points</code> parameter accepts the following latitude-longitude formats:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><a class="link" href="query-dsl-geo-polygon-query.html#geo-polygon-format-array" title="Array">Array</a></li><li class="listitem"><a class="link" href="query-dsl-geo-polygon-query.html#geo-polygon-format-geohash" title="Geohash">Geohash</a></li><li class="listitem"><a class="link" href="query-dsl-geo-polygon-query.html#geo-polygon-format-string" title="String">String</a></li></ul></div><div class="section"><div class="titlepage"><div><div><h5 class="title"><a id="geo-polygon-format-array"></a>Array<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h5></div></div></div><p>The following search uses the <code class="literal">[longitude, latitude]</code> array format. Note
+the longitude-latitude order conforms with <a class="ulink" href="http://geojson.org/" target="_top">GeoJSON</a>.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /my_locations/_search
 {
     "query": {
         "bool" : {
@@ -312,7 +342,7 @@ conform with <a class="ulink" href="http://geojson.org/" target="_top">GeoJSON</
             },
             "filter" : {
                 "geo_polygon" : {
-                    "person.location" : {
+                    "pin.location" : {
                         "points" : [
                             [-70, 40],
                             [-80, 30],
@@ -323,7 +353,8 @@ conform with <a class="ulink" href="http://geojson.org/" target="_top">GeoJSON</
             }
         }
     }
-}</pre></div><div class="console_widget" data-snippet="snippets/391.console"></div><h5><a id="_lat_lon_as_string_3"></a>Lat Lon as String<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h5><p>Format in <code class="literal">lat,lon</code>.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
+}</pre></div><div class="console_widget" data-snippet="snippets/393.console"></div></div><div class="section"><div class="titlepage"><div><div><h5 class="title"><a id="geo-polygon-format-geohash"></a>Geohash<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h5></div></div></div><p>The following search uses the <a class="ulink" href="https://en.wikipedia.org/wiki/Geohash" target="_top">geohash</a>
+format.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /my_locations/_search
 {
     "query": {
         "bool" : {
@@ -332,27 +363,7 @@ conform with <a class="ulink" href="http://geojson.org/" target="_top">GeoJSON</
             },
             "filter" : {
                "geo_polygon" : {
-                    "person.location" : {
-                        "points" : [
-                            "40, -70",
-                            "30, -80",
-                            "20, -90"
-                        ]
-                    }
-                }
-            }
-        }
-    }
-}</pre></div><div class="console_widget" data-snippet="snippets/392.console"></div><h5><a id="_geohash_3"></a>Geohash<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h5><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
-{
-    "query": {
-        "bool" : {
-            "must" : {
-                "match_all" : {}
-            },
-            "filter" : {
-               "geo_polygon" : {
-                    "person.location" : {
+                    "pin.location" : {
                         "points" : [
                             "drn5x1g8cu2y",
                             "30, -80",
@@ -363,12 +374,27 @@ conform with <a class="ulink" href="http://geojson.org/" target="_top">GeoJSON</
             }
         }
     }
-}</pre></div><div class="console_widget" data-snippet="snippets/393.console"></div><h4><a id="_geo_point_type_3"></a>geo_point Type<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>The query <span class="strong strong"><strong>requires</strong></span> the <a class="link" href="geo-point.html" title="Geo-point datatype"><code class="literal">geo_point</code></a> type to be set on the
-relevant field.</p><h4><a id="_ignore_unmapped_3"></a>Ignore Unmapped<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>When set to <code class="literal">true</code> the <code class="literal">ignore_unmapped</code> option will ignore an unmapped field
-and will not match any documents for this query. This can be useful when
-querying multiple indexes which might have different mappings. When set to
-<code class="literal">false</code> (the default value) the query will throw an exception if the field
-is not mapped.</p></div><div class="navfooter"><span class="prev"><a href="query-dsl-geo-distance-query.html">
+}</pre></div><div class="console_widget" data-snippet="snippets/394.console"></div></div><div class="section"><div class="titlepage"><div><div><h5 class="title"><a id="geo-polygon-format-string"></a>String<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-polygon-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h5></div></div></div><p>The following search uses the <code class="literal">latitude, longitude</code> string format.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /my_locations/_search
+{
+    "query": {
+        "bool" : {
+            "must" : {
+                "match_all" : {}
+            },
+            "filter" : {
+               "geo_polygon" : {
+                    "pin.location" : {
+                        "points" : [
+                            "40, -70",
+                            "30, -80",
+                            "20, -90"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}</pre></div><div class="console_widget" data-snippet="snippets/395.console"></div></div></div></div></div><div class="navfooter"><span class="prev"><a href="query-dsl-geo-distance-query.html">
               « 
               Geo-distance query</a>
            
