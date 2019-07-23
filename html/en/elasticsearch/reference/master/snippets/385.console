@@ -1,19 +1,9 @@
-GET /my_locations/_search
+PUT /my_locations/_doc/1
 {
-    "query": {
-        "bool" : {
-            "must" : {
-                "match_all" : {}
-            },
-            "filter" : {
-                "geo_distance" : {
-                    "distance" : "200km",
-                    "pin.location" : {
-                        "lat" : 40,
-                        "lon" : -70
-                    }
-                }
-            }
+    "pin" : {
+        "location" : {
+            "lat" : 40.12,
+            "lon" : -71.34
         }
     }
 }

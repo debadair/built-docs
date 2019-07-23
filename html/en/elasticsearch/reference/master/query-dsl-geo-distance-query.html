@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Geo-distance query
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Geo distance query
         | Elasticsearch Reference [master]
       | Elastic
     </title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Elasticsearch Reference [master]" /><link rel="up" href="geo-queries.html" title="Geo queries" /><link rel="prev" href="query-dsl-geo-bounding-box-query.html" title="Geo-bounding box query" /><link rel="next" href="query-dsl-geo-polygon-query.html" title="Geo-polygon query" /><meta name="description" content="Get started with the documentation for Elasticsearch, Kibana, Logstash, Beats, X-Pack, Elastic Cloud, Elasticsearch for Apache Hadoop, and our language clients." /><meta name="DC.type" content="Learn/Docs/Elasticsearch/Reference/master" /><meta name="DC.subject" content="Elasticsearch" /><meta name="DC.identifier" content="master" />
@@ -271,7 +271,7 @@ Not what you want? See the
 <a href="../current/index.html">current release documentation</a>.
 </div><div class="breadcrumbs"><span class="breadcrumb-link"><a href="index.html">Elasticsearch Reference
       [master]
-    </a></span> » <span class="breadcrumb-link"><a href="query-dsl.html">Query DSL</a></span> » <span class="breadcrumb-link"><a href="geo-queries.html">Geo queries</a></span> » <span class="breadcrumb-node">Geo-distance query</span></div><div class="navheader"><span class="prev"><a href="query-dsl-geo-bounding-box-query.html">
+    </a></span> » <span class="breadcrumb-link"><a href="query-dsl.html">Query DSL</a></span> » <span class="breadcrumb-link"><a href="geo-queries.html">Geo queries</a></span> » <span class="breadcrumb-node">Geo distance query</span></div><div class="navheader"><span class="prev"><a href="query-dsl-geo-bounding-box-query.html">
               « 
               Geo-bounding box query</a>
            
@@ -279,9 +279,9 @@ Not what you want? See the
            
           <a href="query-dsl-geo-polygon-query.html">Geo-polygon query
                »
-            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="query-dsl-geo-distance-query"></a>Geo-distance query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Filters documents that include only hits that exists within a specific
-distance from a geo point. Assuming the following mapping and indexed
-document:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">PUT /my_locations
+            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="query-dsl-geo-distance-query"></a>Geo distance query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Returns documents containing a point location, or <a class="link" href="geo-point.html" title="Geo-point datatype">geopoint</a>,
+within a provided distance from another geopoint.</p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="geo-distance-query-ex-request"></a>Example request<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="geo-distance-query-index-setup"></a>Index setup<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>To see how you can set up an index for the <code class="literal">geo_distance</code> query, try the
+following example.</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p class="simpara">Create an index with a <a class="link" href="geo-point.html" title="Geo-point datatype">geopoint</a> field mapping.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">PUT /my_locations
 {
     "mappings": {
         "properties": {
@@ -294,9 +294,7 @@ document:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lan
             }
         }
     }
-}
-
-PUT /my_locations/_doc/1
+}</pre></div><div class="console_widget" data-snippet="snippets/384.console"></div></li><li class="listitem"><p class="simpara">Index a document with a value in the geopoint field.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">PUT /my_locations/_doc/1
 {
     "pin" : {
         "location" : {
@@ -304,8 +302,8 @@ PUT /my_locations/_doc/1
             "lon" : -71.34
         }
     }
-}</pre></div><div class="console_widget" data-snippet="snippets/384.console"></div><p>Then the following simple query can be executed with a <code class="literal">geo_distance</code>
-filter:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /my_locations/_search
+}</pre></div><div class="console_widget" data-snippet="snippets/385.console"></div></li></ol></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="geo-distance-query-ex-query"></a>Example query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The following search uses a <code class="literal">bool</code> query with a nested <code class="literal">geo_distance</code>
+<a class="link" href="query-dsl-bool-query.html" title="Boolean query">filter</a> to find the indexed geopoint.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /my_locations/_search
 {
     "query": {
         "bool" : {
@@ -323,8 +321,50 @@ filter:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-
             }
         }
     }
-}</pre></div><div class="console_widget" data-snippet="snippets/385.console"></div><h4><a id="_accepted_formats_2"></a>Accepted Formats<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>In much the same way the <code class="literal">geo_point</code> type can accept different
-representations of the geo point, the filter can accept it as well:</p><h5><a id="_lat_lon_as_properties_2"></a>Lat Lon As Properties<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h5><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /my_locations/_search
+}</pre></div><div class="console_widget" data-snippet="snippets/386.console"></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="geo-distance-top-level-params"></a>Top-level parameters for <code class="literal">geo_distance</code><a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">&lt;field&gt;</code></span></dt><dd><p class="simpara">(Required, <a class="link" href="geo-point.html" title="Geo-point datatype">geopoint object</a>)
+<a class="link" href="geo-point.html" title="Geo-point datatype">Geopoint</a> field you wish to search. If this is not a
+<a class="link" href="geo-point.html" title="Geo-point datatype">geopoint</a> field, Elasticsearch returns an error.</p><p class="simpara">The value of this parameter is a <a class="link" href="geo-point.html" title="Geo-point datatype">geopoint</a> object. The query
+returns documents containing geopoints within a provided distance of this
+geopoint.</p><p class="simpara">See <a class="xref" href="query-dsl-geo-distance-query.html#geo-distance-accepted-formats" title="Accepted geopoint formats">Accepted geopoint formats</a> for a list of supported formats.</p></dd><dt><span class="term"><code class="literal">distance</code></span></dt><dd>(Required, <a class="link" href="common-options.html#distance-units" title="Distance Units">distance unit</a>) Radius of the circle centered on
+the geopoint provided in the <code class="literal">&lt;field&gt;</code> parameter. The query returns documents
+containing geopoints within this circle.</dd><dt><span class="term"><code class="literal">distance_type</code></span></dt><dd><p class="simpara">(Optional, string) Indicates how to compute the distance. Valid values are:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><code class="literal">ARC</code> (Default)</li><li class="listitem"><code class="literal">PLANE</code></li></ul></div><p class="simpara"><code class="literal">PLANE</code> is faster but inaccurate on long distances and close to the poles.</p></dd><dt><span class="term"><code class="literal">ignore_unmapped</code></span></dt><dd><p class="simpara">(Optional, boolean) Indicates whether to ignore an unmapped <code class="literal">&lt;field&gt;</code> and not
+return any documents instead of an error. Defaults to <code class="literal">false</code>.</p><p class="simpara">If <code class="literal">false</code>, Elasticsearch returns an error if the <code class="literal">&lt;field&gt;</code> is unmapped.</p><p class="simpara">You can use this parameter to query multiple indices that may not contain the
+<code class="literal">&lt;field&gt;</code>.</p></dd><dt><span class="term"><code class="literal">validation_method</code></span></dt><dd><p class="simpara">(Optional, string) Indicates whether the query accepts an invalid geopoint in
+the <code class="literal">&lt;field&gt;</code> parameter.</p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">STRICT</code> (Default)</span></dt><dd>Do not accept an invalid geopoint.</dd><dt><span class="term"><code class="literal">COERCE</code></span></dt><dd>Accept an invalid geopoint. Attempt to infer the correct latitude
+and longitude of the geopoint.</dd><dt><span class="term"><code class="literal">IGNORE_MALFORMED</code></span></dt><dd>Accept an invalid geopoint. Do not attempt to infer the
+correct latitude and longitude of the geopoint.</dd></dl></div></dd></dl></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="geo-distance-query-notes"></a>Notes<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="geo-distance-accepted-formats"></a>Accepted geopoint formats<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>Like the <a class="link" href="geo-point.html" title="Geo-point datatype">geopoint datatype</a>, the <code class="literal">&lt;field&gt;</code> parameter accepts
+the following geopoint formats:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><a class="link" href="query-dsl-geo-distance-query.html#geo-distance-format-array" title="Array">Array</a></li><li class="listitem"><a class="link" href="query-dsl-geo-distance-query.html#geo-distance-format-geohash" title="Geohash">Geohash</a></li><li class="listitem"><a class="link" href="query-dsl-geo-distance-query.html#geo-distance-format-property" title="Property">Property</a></li><li class="listitem"><a class="link" href="query-dsl-geo-distance-query.html#geo-distance-format-string" title="String">String</a></li></ul></div><div class="section"><div class="titlepage"><div><div><h5 class="title"><a id="geo-distance-format-array"></a>Array<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h5></div></div></div><p>The following search uses the <code class="literal">[longitude, latitude]</code> array format. Note the
+longitude-latitude order conforms with <a class="ulink" href="http://geojson.org/" target="_top">GeoJSON</a>.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /my_locations/_search
+{
+    "query": {
+        "bool" : {
+            "must" : {
+                "match_all" : {}
+            },
+            "filter" : {
+                "geo_distance" : {
+                    "distance" : "12km",
+                    "pin.location" : [-70, 40]
+                }
+            }
+        }
+    }
+}</pre></div><div class="console_widget" data-snippet="snippets/387.console"></div></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="geo-distance-format-geohash"></a>Geohash<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The following search uses the geohash format.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /my_locations/_search
+{
+    "query": {
+        "bool" : {
+            "must" : {
+                "match_all" : {}
+            },
+            "filter" : {
+                "geo_distance" : {
+                    "distance" : "12km",
+                    "pin.location" : "drm3btev3e86"
+                }
+            }
+        }
+    }
+}</pre></div><div class="console_widget" data-snippet="snippets/388.console"></div><div class="section"><div class="titlepage"><div><div><h5 class="title"><a id="geo-distance-format-property"></a>Property<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h5></div></div></div><p>The following search uses the property format.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /my_locations/_search
 {
     "query": {
         "bool" : {
@@ -342,23 +382,7 @@ representations of the geo point, the filter can accept it as well:</p><h5><a id
             }
         }
     }
-}</pre></div><div class="console_widget" data-snippet="snippets/386.console"></div><h5><a id="_lat_lon_as_array_2"></a>Lat Lon As Array<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h5><p>Format in <code class="literal">[lon, lat]</code>, note, the order of lon/lat here in order to
-conform with <a class="ulink" href="http://geojson.org/" target="_top">GeoJSON</a>.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /my_locations/_search
-{
-    "query": {
-        "bool" : {
-            "must" : {
-                "match_all" : {}
-            },
-            "filter" : {
-                "geo_distance" : {
-                    "distance" : "12km",
-                    "pin.location" : [-70, 40]
-                }
-            }
-        }
-    }
-}</pre></div><div class="console_widget" data-snippet="snippets/387.console"></div><h5><a id="_lat_lon_as_string_2"></a>Lat Lon As String<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h5><p>Format in <code class="literal">lat,lon</code>.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /my_locations/_search
+}</pre></div><div class="console_widget" data-snippet="snippets/389.console"></div></div><div class="section"><div class="titlepage"><div><div><h5 class="title"><a id="geo-distance-format-string"></a>String<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h5></div></div></div><p>The following search uses the <code class="literal">latitude, longitude</code> string format.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /my_locations/_search
 {
     "query": {
         "bool" : {
@@ -373,49 +397,9 @@ conform with <a class="ulink" href="http://geojson.org/" target="_top">GeoJSON</
             }
         }
     }
-}</pre></div><div class="console_widget" data-snippet="snippets/388.console"></div><h5><a id="_geohash_2"></a>Geohash<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h5><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /my_locations/_search
-{
-    "query": {
-        "bool" : {
-            "must" : {
-                "match_all" : {}
-            },
-            "filter" : {
-                "geo_distance" : {
-                    "distance" : "12km",
-                    "pin.location" : "drm3btev3e86"
-                }
-            }
-        }
-    }
-}</pre></div><div class="console_widget" data-snippet="snippets/389.console"></div><h4><a id="_options_4"></a>Options<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>The following are options allowed on the filter:</p><div class="informaltable"><table cellpadding="4px" border="0"><colgroup><col /><col /></colgroup><tbody valign="top"><tr><td valign="top">
-<p><code class="literal">distance</code></p>
-</td><td valign="top">
-<p>The radius of the circle centred on the specified location. Points which
-fall into this circle are considered to be matches. The <code class="literal">distance</code> can be
-specified in various units. See <a class="xref" href="common-options.html#distance-units" title="Distance Units">Distance Units</a>.</p>
-</td></tr><tr><td valign="top">
-<p><code class="literal">distance_type</code></p>
-</td><td valign="top">
-<p>How to compute the distance. Can either be <code class="literal">arc</code> (default), or <code class="literal">plane</code> (faster, but inaccurate on long distances and close to the poles).</p>
-</td></tr><tr><td valign="top">
-<p><code class="literal">_name</code></p>
-</td><td valign="top">
-<p>Optional name field to identify the query</p>
-</td></tr><tr><td valign="top">
-<p><code class="literal">validation_method</code></p>
-</td><td valign="top">
-<p>Set to <code class="literal">IGNORE_MALFORMED</code> to accept geo points with invalid latitude or
-longitude, set to <code class="literal">COERCE</code> to additionally try and infer correct
-coordinates (default is <code class="literal">STRICT</code>).</p>
-</td></tr></tbody></table></div><h4><a id="_geo_point_type_2"></a>geo_point Type<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>The filter <span class="strong strong"><strong>requires</strong></span> the <code class="literal">geo_point</code> type to be set on the relevant
-field.</p><h4><a id="_multi_location_per_document_2"></a>Multi Location Per Document<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>The <code class="literal">geo_distance</code> filter can work with multiple locations / points per
-document. Once a single location / point matches the filter, the
-document will be included in the filter.</p><h4><a id="_ignore_unmapped_2"></a>Ignore Unmapped<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>When set to <code class="literal">true</code> the <code class="literal">ignore_unmapped</code> option will ignore an unmapped field
-and will not match any documents for this query. This can be useful when
-querying multiple indexes which might have different mappings. When set to
-<code class="literal">false</code> (the default value) the query will throw an exception if the field
-is not mapped.</p></div><div class="navfooter"><span class="prev"><a href="query-dsl-geo-bounding-box-query.html">
+}</pre></div><div class="console_widget" data-snippet="snippets/390.console"></div></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="geo-distance-multi-loc"></a>Multiple locations per document<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/geo-distance-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The <code class="literal">geo_distance</code> query can work with multiple locations / points per document.
+Once a single location / point matches the query, the document will be included
+in the query.</p></div></div></div><div class="navfooter"><span class="prev"><a href="query-dsl-geo-bounding-box-query.html">
               « 
               Geo-bounding box query</a>
            

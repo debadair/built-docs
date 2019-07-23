@@ -12,13 +12,3 @@ PUT /my_locations
         }
     }
 }
-
-PUT /my_locations/_doc/1
-{
-    "pin" : {
-        "location" : {
-            "lat" : 40.12,
-            "lon" : -71.34
-        }
-    }
-}
