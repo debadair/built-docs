@@ -173,6 +173,19 @@
     
     <div id='elastic-nav'></div>
 
+    <!-- Subnav -->
+    <div>
+      <div>
+        <div class="tertiary-nav d-none d-md-block">
+          <div class="container">
+            <div class="p-t-b-15 d-flex justify-content-between nav-container">
+              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -279,23 +292,33 @@ Not what you want? See the
            
           <a href="query-dsl-span-within-query.html">Span within query
                »
-            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="query-dsl-span-term-query"></a>Span term query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-term-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Matches spans containing a term. The span term query maps to Lucene
-<code class="literal">SpanTermQuery</code>. Here is an example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
+            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="query-dsl-span-term-query"></a>Span term query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-term-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Matches spans that contain an <span class="strong strong"><strong>exact</strong></span> term in a provided field.</p><p>You can combine the <code class="literal">span_term</code> query with other <a class="link" href="span-queries.html" title="Span queries">span queries</a>,
+like <code class="literal">span_first</code> and <code class="literal">span_near</code>, to create more complex searches.</p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="span-term-query-ex-request"></a>Example request<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-term-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
 {
     "query": {
-        "span_term" : { "user" : "kimchy" }
+        "span_term" : {
+            "user": {
+                "value": "Kimchy",
+                "boost": 2.0
+            }
+        }
     }
-}</pre></div><div class="console_widget" data-snippet="snippets/420.console"></div><p>A boost can also be associated with the query:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
+}</pre></div><div class="console_widget" data-snippet="snippets/420.console"></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="span-term-top-level-params"></a>Top-level parameters for <code class="literal">span_term</code><a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-term-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">&lt;field&gt;</code></span></dt><dd>(Required, object) Field you wish to search.</dd></dl></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="span-term-field-params"></a>Parameters for <code class="literal">&lt;field&gt;</code><a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-term-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">value</code></span></dt><dd>(Required, string) Term you wish to find in the provided <code class="literal">&lt;field&gt;</code>. To return a
+document, the term must exactly match the field value, including whitespace and
+capitalization.</dd><dt><span class="term"><code class="literal">boost</code></span></dt><dd><p class="simpara">(Optional, float) Floating point number used to decrease or increase the
+<a class="link" href="query-filter-context.html" title="Query and filter context">relevance scores</a> of a query. Defaults to <code class="literal">1.0</code>.</p><div class="warning admon"><div class="icon"><img alt="Warning" src="images/icons/warning.png" /></div><div class="admon_content"><p>When using the <code class="literal">span_term</code> query with compound <a class="link" href="span-queries.html" title="Span queries">span
+queries</a>, like <a class="link" href="query-dsl-span-near-query.html" title="Span near query"><code class="literal">span_near</code></a>, you can only set a
+<code class="literal">boost</code> value for the outermost span query.</p></div></div><p class="simpara">Boost values are relative to the default value of <code class="literal">1.0</code>. A boost value between
+<code class="literal">0</code> and <code class="literal">1.0</code> decreases the relevance score. A value greater than <code class="literal">1.0</code>
+increases the relevance score.</p></dd></dl></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="span-term-query-notes"></a>Notes<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-term-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="span-term-query-short-ex"></a>Short request example<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-term-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>You can simplify the <code class="literal">span_query</code> query syntax by combining the <code class="literal">&lt;field&gt;</code> and
+<code class="literal">value</code> parameters. For example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
 {
     "query": {
-       "span_term" : { "user" : { "value" : "kimchy", "boost" : 2.0 } }
+        "span_term" : {
+            "user" : "kimchy"
+        }
     }
-}</pre></div><div class="console_widget" data-snippet="snippets/421.console"></div><p>Or :</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
-{
-    "query": {
-        "span_term" : { "user" : { "term" : "kimchy", "boost" : 2.0 } }
-    }
-}</pre></div><div class="console_widget" data-snippet="snippets/422.console"></div></div><div class="navfooter"><span class="prev"><a href="query-dsl-span-or-query.html">
+}</pre></div><div class="console_widget" data-snippet="snippets/421.console"></div></div></div></div><div class="navfooter"><span class="prev"><a href="query-dsl-span-or-query.html">
               « 
               Span or query</a>
            

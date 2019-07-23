@@ -173,6 +173,19 @@
     
     <div id='elastic-nav'></div>
 
+    <!-- Subnav -->
+    <div>
+      <div>
+        <div class="tertiary-nav d-none d-md-block">
+          <div class="container">
+            <div class="p-t-b-15 d-flex justify-content-between nav-container">
+              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -286,11 +299,11 @@ that starts with <code class="literal">ki</code>:</p><div class="pre_wrapper"><p
 { "query": {
     "prefix" : { "user" : "ki" }
   }
-}</pre></div><div class="console_widget" data-snippet="snippets/467.console"></div><p>A boost can also be associated with the query:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
+}</pre></div><div class="console_widget" data-snippet="snippets/466.console"></div><p>A boost can also be associated with the query:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
 { "query": {
     "prefix" : { "user" :  { "value" : "ki", "boost" : 2.0 } }
   }
-}</pre></div><div class="console_widget" data-snippet="snippets/468.console"></div><p>This multi term query allows you to control how it gets rewritten using the
+}</pre></div><div class="console_widget" data-snippet="snippets/467.console"></div><p>This multi term query allows you to control how it gets rewritten using the
 <a class="link" href="query-dsl-multi-term-rewrite.html" title="rewrite parameter">rewrite</a>
 parameter.</p></div><div class="navfooter"><span class="prev"><a href="query-dsl-ids-query.html">
               « 

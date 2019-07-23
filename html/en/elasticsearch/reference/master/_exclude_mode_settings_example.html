@@ -173,6 +173,19 @@
     
     <div id='elastic-nav'></div>
 
+    <!-- Subnav -->
+    <div>
+      <div>
+        <div class="tertiary-nav d-none d-md-block">
+          <div class="container">
+            <div class="p-t-b-15 d-flex justify-content-between nav-container">
+              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -298,11 +311,11 @@ Not what you want? See the
             }
         }
     }
-}</pre></div><div class="console_widget" data-snippet="snippets/796.console"></div><p>And we test it like:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">POST /keep_types_exclude_example/_analyze
+}</pre></div><div class="console_widget" data-snippet="snippets/795.console"></div><p>And we test it like:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">POST /keep_types_exclude_example/_analyze
 {
   "analyzer" : "my_analyzer",
   "text" : "hello 101 world"
-}</pre></div><div class="console_widget" data-snippet="snippets/797.console"></div><p>The response will be:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">{
+}</pre></div><div class="console_widget" data-snippet="snippets/796.console"></div><p>The response will be:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">{
   "tokens": [
     {
       "token": "hello",

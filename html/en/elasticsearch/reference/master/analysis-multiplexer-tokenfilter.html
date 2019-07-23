@@ -173,6 +173,19 @@
     
     <div id='elastic-nav'></div>
 
+    <!-- Subnav -->
+    <div>
+      <div>
+        <div class="tertiary-nav d-none d-md-block">
+          <div class="container">
+            <div class="p-t-b-15 d-flex justify-content-between nav-container">
+              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -310,11 +323,11 @@ addition to the filtered tokens</dd></dl></div><h3><a id="_settings_example"></a
             }
         }
     }
-}</pre></div><div class="console_widget" data-snippet="snippets/761.console"></div><p>And test it like:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">POST /multiplexer_example/_analyze
+}</pre></div><div class="console_widget" data-snippet="snippets/760.console"></div><p>And test it like:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">POST /multiplexer_example/_analyze
 {
   "analyzer" : "my_analyzer",
   "text" : "Going HOME"
-}</pre></div><div class="console_widget" data-snippet="snippets/762.console"></div><p>And it’d respond:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">{
+}</pre></div><div class="console_widget" data-snippet="snippets/761.console"></div><p>And it’d respond:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">{
   "tokens": [
     {
       "token": "Going",
