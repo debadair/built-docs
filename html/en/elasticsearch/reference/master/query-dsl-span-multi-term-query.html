@@ -292,30 +292,31 @@ Not what you want? See the
            
           <a href="query-dsl-span-near-query.html">Span near query
                »
-            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="query-dsl-span-multi-term-query"></a>Span multi-term query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-multi-term-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>The <code class="literal">span_multi</code> query allows you to wrap a <code class="literal">multi term query</code> (one of wildcard,
-fuzzy, prefix, range or regexp query) as a <code class="literal">span query</code>, so
-it can be nested. Example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
+            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="query-dsl-span-multi-term-query"></a>Span multi-term query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-multi-term-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Wraps one of the following query types as a <a class="link" href="span-queries.html" title="Span queries">span query</a>:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><a class="link" href="query-dsl-fuzzy-query.html" title="Fuzzy query"><code class="literal">fuzzy</code></a></li><li class="listitem"><a class="link" href="query-dsl-prefix-query.html" title="Prefix query"><code class="literal">prefix</code></a></li><li class="listitem"><a class="link" href="query-dsl-regexp-query.html" title="Regexp query"><code class="literal">regexp</code></a></li><li class="listitem"><a class="link" href="query-dsl-wildcard-query.html" title="Wildcard query"><code class="literal">wildcard</code></a></li></ul></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="span-multi-term-query-ex-request"></a>Example request<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-multi-term-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
 {
     "query": {
         "span_multi":{
             "match":{
-                "prefix" : { "user" :  { "value" : "ki" } }
+                "prefix" : {
+                    "message" : {
+                        "value" : "ki"
+                    }
+                }
             }
         }
     }
-}</pre></div><div class="console_widget" data-snippet="snippets/415.console"></div><p>A boost can also be associated with the query:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
-{
-    "query": {
-        "span_multi":{
-            "match":{
-                "prefix" : { "user" :  { "value" : "ki", "boost" : 1.08 } }
-            }
-        }
-    }
-}</pre></div><div class="console_widget" data-snippet="snippets/416.console"></div><div class="warning admon"><div class="icon"><img alt="Warning" src="images/icons/warning.png" /></div><div class="admon_content"><p><code class="literal">span_multi</code> queries will hit too many clauses failure if the number of terms that match the query exceeds the
-boolean query limit (defaults to 1024).To avoid an unbounded expansion you can set the <a class="link" href="query-dsl-multi-term-rewrite.html" title="rewrite parameter">rewrite method</a> of the multi term query to <code class="literal">top_terms_*</code> rewrite. Or, if you use <code class="literal">span_multi</code> on <code class="literal">prefix</code> query only,
-you can activate the <a class="link" href="index-prefixes.html" title="index_prefixes"><code class="literal">index_prefixes</code></a> field option of the <code class="literal">text</code> field instead. This will
-rewrite any prefix query on the field to a single term query that matches the indexed prefix.</p></div></div></div><div class="navfooter"><span class="prev"><a href="query-dsl-span-first-query.html">
+}</pre></div><div class="console_widget" data-snippet="snippets/415.console"></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="span-multi-top-level-params"></a>Top-level parameters for <code class="literal">span_multi</code><a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-multi-term-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">match</code></span></dt><dd><p class="simpara">(Required, query object) Contains a <a class="link" href="query-dsl-fuzzy-query.html" title="Fuzzy query"><code class="literal">fuzzy</code></a>,
+<a class="link" href="query-dsl-prefix-query.html" title="Prefix query"><code class="literal">prefix</code></a>, <a class="link" href="query-dsl-regexp-query.html" title="Regexp query"><code class="literal">regexp</code></a>, or
+<a class="link" href="query-dsl-wildcard-query.html" title="Wildcard query"><code class="literal">wildcard</code></a> query. Returned documents must match
+this query.</p><div class="warning admon"><div class="icon"><img alt="Warning" src="images/icons/warning.png" /></div><div class="admon_content"><p>The <code class="literal">span_multi</code> query returns an error if the number of matching terms exceeds
+the
+<a class="link" href="search-settings.html#indices-query-bool-max-clause-count"><code class="literal">indices.query.bool.max_clause_count</code></a>
+limit, which defaults to <code class="literal">1024</code>. To avoid this, set the
+<a class="link" href="query-dsl-multi-term-rewrite.html" title="rewrite parameter"><code class="literal">rewrite</code> parameter</a> of the wrapped query to
+<code class="literal">top_terms_N</code>.</p><p>If the <code class="literal">span_multi</code> query wraps a <code class="literal">prefix</code> query, you can use the
+<a class="link" href="index-prefixes.html" title="index_prefixes"><code class="literal">index_prefixes</code></a> parameter for <a class="link" href="text.html" title="Text datatype"><code class="literal">text</code></a> fields
+instead. The <code class="literal">index_prefixes</code> parameter rewrites the <code class="literal">prefix</code> query to a single
+<code class="literal">term</code> query that matches the indexed prefix.</p></div></div></dd></dl></div></div></div><div class="navfooter"><span class="prev"><a href="query-dsl-span-first-query.html">
               « 
               Span first query</a>
            

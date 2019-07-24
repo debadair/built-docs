@@ -3,7 +3,11 @@ GET /_search
     "query": {
         "span_multi":{
             "match":{
-                "prefix" : { "user" :  { "value" : "ki" } }
+                "prefix" : {
+                    "message" : {
+                        "value" : "ki"
+                    }
+                }
             }
         }
     }
