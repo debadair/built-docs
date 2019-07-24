@@ -1759,7 +1759,7 @@ Repo: sense
 
 Repo: stack-docs
 --------------------------------------------------------------------------------
-  Elastic Stack and Google Cloud's Anthos/docs/en/gke-on-prem/master b2d28238   Renames data frame transform overview
+  Elastic Stack and Google Cloud's Anthos/docs/en/gke-on-prem/master local|as   local changes
   Getting Started/docs/en/6.3         b31f9e72   Removes edit_url attributes (#414) (#428)
   Getting Started/docs/en/6.4         7a744496   Removes edit_url attributes (#414) (#427)
   Getting Started/docs/en/6.5         b04f60ac   Removes edit_url attributes (#414)
@@ -1771,8 +1771,8 @@ Repo: stack-docs
   Getting Started/docs/en/7.2         4e04a85a   Renames data frame transform overview
   Getting Started/docs/en/7.3         02398228   Renames data frame transform overview
   Getting Started/docs/en/7.x         8ab59004   Renames data frame transform overview
-  Getting Started/docs/en/master      b2d28238   Renames data frame transform overview
-  Glossary/docs/en/master             b2d28238   Renames data frame transform overview
+  Getting Started/docs/en/master      local|as   local changes
+  Glossary/docs/en/master             local|as   local changes
   Infrastructure Monitoring Guide/docs/en/6.5 b04f60ac   Removes edit_url attributes (#414)
   Infrastructure Monitoring Guide/docs/en/6.6 eb0b5cc5   Removes edit_url attributes (#414) (#426)
   Infrastructure Monitoring Guide/docs/en/6.7 678e332e   Removes edit_url attributes (#414)
@@ -1782,7 +1782,7 @@ Repo: stack-docs
   Infrastructure Monitoring Guide/docs/en/7.2 4e04a85a   Renames data frame transform overview
   Infrastructure Monitoring Guide/docs/en/7.3 02398228   Renames data frame transform overview
   Infrastructure Monitoring Guide/docs/en/7.x 8ab59004   Renames data frame transform overview
-  Infrastructure Monitoring Guide/docs/en/master b2d28238   Renames data frame transform overview
+  Infrastructure Monitoring Guide/docs/en/master local|as   local changes
   Installation and Upgrade Guide/docs/en/5.0 1613c41b   [DOCS] Fix broken Cloud link for 5.0 (#295)
   Installation and Upgrade Guide/docs/en/5.1 835c567c   [DOCS] Fix broken Cloud link for 5.0 (#296)
   Installation and Upgrade Guide/docs/en/5.2 37269784   [DOCS] Fix broken Cloud link for 5.2 (#297)
@@ -1804,11 +1804,11 @@ Repo: stack-docs
   Installation and Upgrade Guide/docs/en/7.2 4e04a85a   Renames data frame transform overview
   Installation and Upgrade Guide/docs/en/7.3 02398228   Renames data frame transform overview
   Installation and Upgrade Guide/docs/en/7.x 8ab59004   Renames data frame transform overview
-  Installation and Upgrade Guide/docs/en/master b2d28238   Renames data frame transform overview
+  Installation and Upgrade Guide/docs/en/master local|as   local changes
   SIEM Guide/docs/en/7.2              4e04a85a   Renames data frame transform overview
   SIEM Guide/docs/en/7.3              02398228   Renames data frame transform overview
   SIEM Guide/docs/en/7.x              8ab59004   Renames data frame transform overview
-  SIEM Guide/docs/en/master           b2d28238   Renames data frame transform overview
+  SIEM Guide/docs/en/master           local|as   local changes
   Stack Overview/docs/en/stack/6.3    b31f9e72   Removes edit_url attributes (#414) (#428)
   Stack Overview/docs/en/stack/6.4    7a744496   Removes edit_url attributes (#414) (#427)
   Stack Overview/docs/en/stack/6.5    b04f60ac   Removes edit_url attributes (#414)
@@ -1820,7 +1820,7 @@ Repo: stack-docs
   Stack Overview/docs/en/stack/7.2    4e04a85a   Renames data frame transform overview
   Stack Overview/docs/en/stack/7.3    02398228   Renames data frame transform overview
   Stack Overview/docs/en/stack/7.x    8ab59004   Renames data frame transform overview
-  Stack Overview/docs/en/stack/master b2d28238   Renames data frame transform overview
+  Stack Overview/docs/en/stack/master local|as   local changes
 
 Repo: swiftype
 --------------------------------------------------------------------------------
