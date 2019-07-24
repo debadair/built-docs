@@ -292,25 +292,27 @@ Not what you want? See the
            
           <a href="query-dsl-span-not-query.html">Span not query
                »
-            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="query-dsl-span-near-query"></a>Span near query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-near-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Matches spans which are near one another. One can specify <span class="emphasis"><em>slop</em></span>, the
-maximum number of intervening unmatched positions, as well as whether
-matches are required to be in-order. The span near query maps to Lucene
-<code class="literal">SpanNearQuery</code>. Here is an example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
+            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="query-dsl-span-near-query"></a>Span near query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-near-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Wraps one or more <a class="link" href="span-queries.html" title="Span queries">span queries</a>, called query clauses or
+clauses. You can set a maximum number of positions between matching spans. You
+also can require these matches to be in a specific order.</p><p>You can use the <code class="literal">span_near</code> query to find documents containing matching spans
+near each other.</p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="span-near-query-ex-request"></a>Example request<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-near-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
 {
     "query": {
         "span_near" : {
             "clauses" : [
-                { "span_term" : { "field" : "value1" } },
-                { "span_term" : { "field" : "value2" } },
-                { "span_term" : { "field" : "value3" } }
+                { "span_term" : { "message" : { "value" : "value1" } } },
+                { "span_term" : { "message" : { "value" : "value2" } } },
+                { "span_term" : { "message" : { "value" : "value3" } } }
             ],
-            "slop" : 12,
-            "in_order" : false
+            "in_order" : false,
+            "slop" : 12
         }
     }
-}</pre></div><div class="console_widget" data-snippet="snippets/417.console"></div><p>The <code class="literal">clauses</code> element is a list of one or more other span type queries
-and the <code class="literal">slop</code> controls the maximum number of intervening unmatched
-positions permitted.</p></div><div class="navfooter"><span class="prev"><a href="query-dsl-span-multi-term-query.html">
+}</pre></div><div class="console_widget" data-snippet="snippets/417.console"></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="span-near-top-level-params"></a>Top-level parameters for <code class="literal">span_near</code><a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-near-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">clauses</code></span></dt><dd>(Required, array of query objects) Array of one or more other
+<a class="link" href="span-queries.html" title="Span queries">span query</a> clauses. Returned documents must match all of these
+queries.</dd><dt><span class="term"><code class="literal">in_order</code></span></dt><dd>(Optional, boolean) Indicates whether matches must occur in the same order as
+query clauses in the <code class="literal">clauses</code> parameter. Defaults to <code class="literal">true</code>.</dd><dt><span class="term"><code class="literal">slop</code></span></dt><dd>(Optional, integer) Maximum number of positions between matching spans.
+Defaults to <code class="literal">0</code>.</dd></dl></div></div></div><div class="navfooter"><span class="prev"><a href="query-dsl-span-multi-term-query.html">
               « 
               Span multi-term query</a>
            
