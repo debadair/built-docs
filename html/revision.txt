@@ -120,7 +120,7 @@ Repo: apm-server
   Installation and Upgrade Guide/docs/guide/7.1 43ca2921   [docs] APM Overview structure and content improvements (#2171) (#2425)
   Installation and Upgrade Guide/docs/guide/7.2 4df713ff   Update changelog for 7.2.1 (#2464) (#2467)
   Installation and Upgrade Guide/docs/guide/7.3 a6b6ca2f   Update beats framework to a081d96 (#2484)
-  Installation and Upgrade Guide/docs/guide/7.x 6aa404b6   Upgrade Go to 1.12.7 (#2483) (#2487)
+  Installation and Upgrade Guide/docs/guide/7.x local|as   local changes
   Installation and Upgrade Guide/docs/guide/master 502f1558   Disable sourcemapping config (#2488)
 
 Repo: azure-marketplace
