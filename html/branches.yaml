@@ -990,7 +990,6 @@ cloud:
   'Elastic Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/shared/2.1': 28a1aaa7be60625e486b59f789f4605c853af6ba
   'Elastic Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/shared/2.2': a64cf1be791473869a97a777d3c6347c892dd54d
   'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/release-ms-24': e2a94c7d0317c16a7b979d9c0d45de97eba68090
-  'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/saas/saas-release-heroku': 066841648ce1390bf109051e1806a0142e2b2a3d
   'Elasticsearch Service - Hosted Elasticsearch and Kibana/docs/shared/release-ms-24': e2a94c7d0317c16a7b979d9c0d45de97eba68090
 cloud-on-k8s:
   Elastic Cloud on Kubernetes/docs/0.8: f9d2b799c05f55988c203572eabe3b9fbc47943b
