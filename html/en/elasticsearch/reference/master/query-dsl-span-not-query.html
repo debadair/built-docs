@@ -292,45 +292,33 @@ Not what you want? See the
            
           <a href="query-dsl-span-or-query.html">Span or query
                »
-            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="query-dsl-span-not-query"></a>Span not query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-not-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Removes matches which overlap with another span query or which are
-within x tokens before (controlled by the parameter <code class="literal">pre</code>) or y tokens
-after (controlled by the parameter <code class="literal">post</code>) another SpanQuery. The span not
-query maps to Lucene <code class="literal">SpanNotQuery</code>. Here is an example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
+            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="query-dsl-span-not-query"></a>Span not query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-not-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Returns documents matching an <code class="literal">include</code> <a class="link" href="span-queries.html" title="Span queries">span query</a> while
+removing overlapping matches from an <code class="literal">exclude</code> span query.</p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="span-not-query-ex-request"></a>Example request<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-not-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><p>The following search returns documents matching <code class="literal">hoya</code>, excluding matches
+for <code class="literal">la hoya</code>.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
 {
     "query": {
         "span_not" : {
             "include" : {
-                "span_term" : { "field1" : "hoya" }
+                "span_term" : { "message" : { "value" : "hoya" } }
             },
             "exclude" : {
                 "span_near" : {
                     "clauses" : [
-                        { "span_term" : { "field1" : "la" } },
-                        { "span_term" : { "field1" : "hoya" } }
+                        { "span_term" : { "message" : { "value" : "la" } } } ,
+                        { "span_term" : { "message" : { "value" : "hoya" } } }
                     ],
-                    "slop" : 0,
-                    "in_order" : true
+                    "in_order" : true,
+                    "slop" : 0
                 }
             }
         }
     }
-}</pre></div><div class="console_widget" data-snippet="snippets/418.console"></div><p>The <code class="literal">include</code> and <code class="literal">exclude</code> clauses can be any span type query. The
-<code class="literal">include</code> clause is the span query whose matches are filtered, and the
-<code class="literal">exclude</code> clause is the span query whose matches must not overlap those
-returned.</p><p>In the above example all documents with the term hoya are filtered except the ones that have <span class="emphasis"><em>la</em></span> preceding them.</p><p>Other top level options:</p><div class="informaltable"><table cellpadding="4px" border="0"><colgroup><col /><col /></colgroup><tbody valign="top"><tr><td valign="top">
-<p><code class="literal">pre</code></p>
-</td><td valign="top">
-<p>If set the amount of tokens before the include span can’t have overlap with the exclude span. Defaults to 0.</p>
-</td></tr><tr><td valign="top">
-<p><code class="literal">post</code></p>
-</td><td valign="top">
-<p>If set the amount of tokens after the include span can’t have overlap with the exclude span. Defaults to 0.</p>
-</td></tr><tr><td valign="top">
-<p><code class="literal">dist</code></p>
-</td><td valign="top">
-<p>If set the amount of tokens from within the include span can’t have overlap with the exclude span. Equivalent
-of setting both <code class="literal">pre</code> and <code class="literal">post</code>.</p>
-</td></tr></tbody></table></div></div><div class="navfooter"><span class="prev"><a href="query-dsl-span-near-query.html">
+}</pre></div><div class="console_widget" data-snippet="snippets/418.console"></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="span-not-top-level-params"></a>Top-level parameters for <code class="literal">span_not</code><a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-not-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">include</code></span></dt><dd>(Required, query object) Contains a <a class="link" href="span-queries.html" title="Span queries">span query</a>. Returned
+documents must match this query.</dd><dt><span class="term"><code class="literal">exclude</code></span></dt><dd>(Required, query object) Contains a <a class="link" href="span-queries.html" title="Span queries">span query</a> used to remove
+matching documents from the <code class="literal">include</code> query.</dd><dt><span class="term"><code class="literal">pre</code></span></dt><dd><p class="simpara">(Optional, integer) Number of tokens <span class="strong strong"><strong>before</strong></span> <code class="literal">include</code> query matches that can’t
+overlap with <code class="literal">exclude</code> query matches. Defaults to <code class="literal">0</code>.</p><p class="simpara">You cannot use the <code class="literal">pre</code> parameter with the <code class="literal">dist</code> parameter.</p></dd><dt><span class="term"><code class="literal">post</code></span></dt><dd><p class="simpara">(Optional, integer) Number of tokens <span class="strong strong"><strong>after</strong></span> <code class="literal">include</code> query matches that can’t
+overlap with <code class="literal">exclude</code> query matches. Defaults to <code class="literal">0</code>.</p><p class="simpara">You cannot use the <code class="literal">post</code> parameter with the <code class="literal">dist</code> parameter.</p></dd><dt><span class="term"><code class="literal">dist</code></span></dt><dd><p class="simpara">(Optional, integer) Number of tokens <span class="strong strong"><strong>before and after</strong></span> <code class="literal">include</code> query matches
+that can’t overlap with <code class="literal">exclude</code> query matches.</p><p class="simpara">You cannot use the <code class="literal">dist</code> parameter with the <code class="literal">pre</code> or <code class="literal">post</code> parameters.</p></dd></dl></div></div></div><div class="navfooter"><span class="prev"><a href="query-dsl-span-near-query.html">
               « 
               Span near query</a>
            
