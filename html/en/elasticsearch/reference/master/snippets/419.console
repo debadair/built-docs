@@ -3,9 +3,9 @@ GET /_search
     "query": {
         "span_or" : {
             "clauses" : [
-                { "span_term" : { "field" : "value1" } },
-                { "span_term" : { "field" : "value2" } },
-                { "span_term" : { "field" : "value3" } }
+                { "span_term" : { "message" : { "value" : "value1" } } },
+                { "span_term" : { "message" : { "value" : "value2" } } },
+                { "span_term" : { "message" : { "value" : "value3" } } }
             ]
         }
     }

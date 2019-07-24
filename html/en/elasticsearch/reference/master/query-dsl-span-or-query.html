@@ -292,19 +292,21 @@ Not what you want? See the
            
           <a href="query-dsl-span-term-query.html">Span term query
                »
-            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="query-dsl-span-or-query"></a>Span or query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-or-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Matches the union of its span clauses. The span or query maps to Lucene
-<code class="literal">SpanOrQuery</code>. Here is an example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
+            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="query-dsl-span-or-query"></a>Span or query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-or-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Wraps one or more <a class="link" href="span-queries.html" title="Span queries">span queries</a>, called query clauses or
+clauses. Returned documents must match <span class="strong strong"><strong>one or more</strong></span> of these queries.</p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="span-or-query-ex-request"></a>Example request<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-or-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
 {
     "query": {
         "span_or" : {
             "clauses" : [
-                { "span_term" : { "field" : "value1" } },
-                { "span_term" : { "field" : "value2" } },
-                { "span_term" : { "field" : "value3" } }
+                { "span_term" : { "message" : { "value" : "value1" } } },
+                { "span_term" : { "message" : { "value" : "value2" } } },
+                { "span_term" : { "message" : { "value" : "value3" } } }
             ]
         }
     }
-}</pre></div><div class="console_widget" data-snippet="snippets/419.console"></div><p>The <code class="literal">clauses</code> element is a list of one or more other span type queries.</p></div><div class="navfooter"><span class="prev"><a href="query-dsl-span-not-query.html">
+}</pre></div><div class="console_widget" data-snippet="snippets/419.console"></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="span-or-top-level-params"></a>Top-level parameters for <code class="literal">span_or</code><a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-or-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">clauses</code></span></dt><dd>(Required, array of query objects) Array of one or more other
+<a class="link" href="span-queries.html" title="Span queries">span query</a> clauses. Returned documents must one or more of
+these queries.</dd></dl></div></div></div><div class="navfooter"><span class="prev"><a href="query-dsl-span-not-query.html">
               « 
               Span not query</a>
            
