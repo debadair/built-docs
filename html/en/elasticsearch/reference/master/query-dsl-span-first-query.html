@@ -292,19 +292,22 @@ Not what you want? See the
            
           <a href="query-dsl-span-multi-term-query.html">Span multi-term query
                »
-            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="query-dsl-span-first-query"></a>Span first query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-first-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Matches spans near the beginning of a field. The span first query maps
-to Lucene <code class="literal">SpanFirstQuery</code>. Here is an example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
+            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="query-dsl-span-first-query"></a>Span first query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-first-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Wraps another <a class="link" href="span-queries.html" title="Span queries">span query</a> whose returned documents must contain
+matches within the first <code class="literal">N</code> positions of the field.</p><p>You can use the <code class="literal">span_first</code> query to find spans near the beginning of a field.</p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="span-first-query-ex-request"></a>Example request<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-first-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
 {
     "query": {
         "span_first" : {
             "match" : {
-                "span_term" : { "user" : "kimchy" }
+                "span_term" : {
+                    "user" : "kimchy"
+                }
             },
             "end" : 3
         }
     }
-}</pre></div><div class="console_widget" data-snippet="snippets/414.console"></div><p>The <code class="literal">match</code> clause can be any other span type query. The <code class="literal">end</code> controls
-the maximum end position permitted in a match.</p></div><div class="navfooter"><span class="prev"><a href="query-dsl-span-field-masking-query.html">
+}</pre></div><div class="console_widget" data-snippet="snippets/414.console"></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="span-first-top-level-params"></a>Top-level parameters for <code class="literal">span_first</code><a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-first-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">match</code></span></dt><dd>(Required, query object) Contains a <a class="link" href="span-queries.html" title="Span queries">span query</a>.</dd><dt><span class="term"><code class="literal">end</code></span></dt><dd><p class="simpara">(Required, integer) Maximum end position for matching spans. This position must
+be a positive integer.</p><p class="simpara">Returned documents must contain matches within the first <code class="literal">N</code> positions of the
+field, with <code class="literal">N</code> being the value of this parameter.</p></dd></dl></div></div></div><div class="navfooter"><span class="prev"><a href="query-dsl-span-field-masking-query.html">
               « 
               Span field masking query</a>
            
