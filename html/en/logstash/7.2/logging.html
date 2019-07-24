@@ -173,19 +173,6 @@
     
     <div id='elastic-nav'></div>
 
-    <!-- Subnav -->
-    <div>
-      <div>
-        <div class="tertiary-nav d-none d-md-block">
-          <div class="container">
-            <div class="p-t-b-15 d-flex justify-content-between nav-container">
-              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -295,15 +282,11 @@ DEB/RPM). The default logging level is <code class="literal">INFO</code>. Logsta
 increasing the logging level to <code class="literal">DEBUG</code> to get more verbose messages. For
 example, if you are debugging issues with Elasticsearch Output, you can increase
 log levels just for that component. This approach reduces noise from
-excessive logging and helps you focus on the problem area.</p><p>You can configure logging using the <code class="literal">log4j2.properties</code> file or the Logstash API.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-<span class="strong strong"><strong><code class="literal">log4j2.properties</code> file.</strong></span>  Changes made through the <code class="literal">log4j2.properties</code>
+excessive logging and helps you focus on the problem area.</p><p>You can configure logging using the <code class="literal">log4j2.properties</code> file or the Logstash API.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><span class="strong strong"><strong><code class="literal">log4j2.properties</code> file.</strong></span>  Changes made through the <code class="literal">log4j2.properties</code>
 file require you to restart Logstash for the changes to take effect.  Changes <span class="strong strong"><strong>persist</strong></span>
-through subsequent restarts.
-</li><li class="listitem">
-<span class="strong strong"><strong>Logging API.</strong></span> Changes made through the Logging API are effective immediately
+through subsequent restarts.</li><li class="listitem"><span class="strong strong"><strong>Logging API.</strong></span> Changes made through the Logging API are effective immediately
 without a restart. The changes <span class="strong strong"><strong>do not persist</strong></span> after Logstash
-is restarted.
-</li></ul></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="log4j2"></a>Log4j2 configuration<a href="https://github.com/elastic/logstash/edit/7.2/docs/static/logging.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><p>Logstash ships with a <code class="literal">log4j2.properties</code> file with out-of-the-box settings. You
+is restarted.</li></ul></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="log4j2"></a>Log4j2 configuration<a href="https://github.com/elastic/logstash/edit/7.2/docs/static/logging.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><p>Logstash ships with a <code class="literal">log4j2.properties</code> file with out-of-the-box settings. You
 can modify this file to change the rotation policy, type, and other
 <a class="ulink" href="https://logging.apache.org/log4j/2.x/manual/configuration.html#Loggers" target="_top">log4j2
 configuration</a>.</p><p>You must restart Logstash to apply any changes that you make to
@@ -356,15 +339,7 @@ units: <code class="literal">nanos</code> (nanoseconds), <code class="literal">m
 (second), <code class="literal">m</code> (minute), <code class="literal">h</code> (hour), <code class="literal">d</code> (day).</p><p>Slowlog becomes more sensitive and logs more events as you raise the log level.</p><p>Example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-yaml">slowlog.threshold.warn: 2s
 slowlog.threshold.info: 1s
 slowlog.threshold.debug: 500ms
-slowlog.threshold.trace: 100ms</pre></div><p>In this example:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-If the log level is set to <code class="literal">warn</code>, the log shows events that took longer than 2 seconds to process.
-</li><li class="listitem">
-If the log level is set to <code class="literal">info</code>, the log shows events that took longer than 1s to process.
-</li><li class="listitem">
-If the log level is set to <code class="literal">trace</code>, the log shows events that took longer than 100ms to process.
-</li><li class="listitem">
-If the log level is set to <code class="literal">debug</code>, the log shows events that took longer than 500ms to process.
-</li></ul></div><p>The logs include the full event and filter configuration that are responsible
+slowlog.threshold.trace: 100ms</pre></div><p>In this example:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">If the log level is set to <code class="literal">warn</code>, the log shows events that took longer than 2 seconds to process.</li><li class="listitem">If the log level is set to <code class="literal">info</code>, the log shows events that took longer than 1s to process.</li><li class="listitem">If the log level is set to <code class="literal">trace</code>, the log shows events that took longer than 100ms to process.</li><li class="listitem">If the log level is set to <code class="literal">debug</code>, the log shows events that took longer than 500ms to process.</li></ul></div><p>The logs include the full event and filter configuration that are responsible
 for the slowness.</p></div></div></div><div class="navfooter"><span class="prev"><a href="running-logstash-windows.html">
               « 
               Running Logstash on Windows</a>

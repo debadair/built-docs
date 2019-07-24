@@ -173,19 +173,6 @@
     
     <div id='elastic-nav'></div>
 
-    <!-- Subnav -->
-    <div>
-      <div>
-        <div class="tertiary-nav d-none d-md-block">
-          <div class="container">
-            <div class="p-t-b-15 d-flex justify-content-between nav-container">
-              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -298,7 +285,7 @@ elsewhere.</p><p>All events have properties. For example, an apache access log w
 like status code (200, 404), request path ("/", "index.html"), HTTP verb
 (GET, POST), client IP address, etc. Logstash calls these properties "fields."</p><p>Some of the configuration options in Logstash require the existence of fields in
 order to function.  Because inputs generate events, there are no fields to
-evaluate within the input block—they do not exist yet!</p><p>Because of their dependency on events and fields, the following configuration
+evaluate within the input block—​they do not exist yet!</p><p>Because of their dependency on events and fields, the following configuration
 options will only work within filter and output blocks.</p><div class="important admon"><div class="icon"><img alt="Important" src="images/icons/important.png" /></div><div class="admon_content"><p>Field references, sprintf format and conditionals, described below,
 will not work in an input block.</p></div></div><h4><a id="logstash-config-field-references"></a>Field References<a href="https://github.com/elastic/logstash/edit/6.0/docs/static/configuration.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>It is often useful to be able to refer to a field by name. To do this,
 you can use the Logstash field reference syntax.</p><p>The syntax to access a field is <code class="literal">[fieldname]</code>. If you are referring to a
@@ -338,17 +325,7 @@ and can be nested.</p><p>The conditional syntax is:</p><div class="pre_wrapper">
   ...
 } else {
   ...
-}</pre></div><p>What’s an expression? Comparison tests, boolean logic, and so on!</p><p>You can use the following comparison operators:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-equality: <code class="literal">==</code>,  <code class="literal">!=</code>,  <code class="literal">&lt;</code>,  <code class="literal">&gt;</code>,  <code class="literal">&lt;=</code>, <code class="literal">&gt;=</code>
-</li><li class="listitem">
-regexp: <code class="literal">=~</code>, <code class="literal">!~</code> (checks a pattern on the right against a string value on the left)
-</li><li class="listitem">
-inclusion: <code class="literal">in</code>, <code class="literal">not in</code>
-</li></ul></div><p>The supported boolean operators are:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-<code class="literal">and</code>, <code class="literal">or</code>, <code class="literal">nand</code>, <code class="literal">xor</code>
-</li></ul></div><p>The supported unary operators are:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-<code class="literal">!</code>
-</li></ul></div><p>Expressions can be long and complex. Expressions can contain other expressions,
+}</pre></div><p>What’s an expression? Comparison tests, boolean logic, and so on!</p><p>You can use the following comparison operators:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">equality: <code class="literal">==</code>,  <code class="literal">!=</code>,  <code class="literal">&lt;</code>,  <code class="literal">&gt;</code>,  <code class="literal">&lt;=</code>, <code class="literal">&gt;=</code></li><li class="listitem">regexp: <code class="literal">=~</code>, <code class="literal">!~</code> (checks a pattern on the right against a string value on the left)</li><li class="listitem">inclusion: <code class="literal">in</code>, <code class="literal">not in</code></li></ul></div><p>The supported boolean operators are:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><code class="literal">and</code>, <code class="literal">or</code>, <code class="literal">nand</code>, <code class="literal">xor</code></li></ul></div><p>The supported unary operators are:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><code class="literal">!</code></li></ul></div><p>Expressions can be long and complex. Expressions can contain other expressions,
 you can negate expressions with <code class="literal">!</code>, and you can group them with parentheses <code class="literal">(...)</code>.</p><p>For example, the following conditional uses the mutate filter to remove the field <code class="literal">secret</code> if the field
 <code class="literal">action</code> has a value of <code class="literal">login</code>:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">filter {
   if [action] == "login" {
@@ -387,13 +364,7 @@ when <code class="literal">grok</code> is successful:</p><div class="pre_wrapper
     elasticsearch { ... }
   }
 }</pre></div><p>You can check for the existence of a specific field, but there’s currently no way to differentiate between a field that
-doesn’t exist versus a field that’s simply false. The expression <code class="literal">if [foo]</code> returns <code class="literal">false</code> when:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-<code class="literal">[foo]</code> doesn’t exist in the event,
-</li><li class="listitem">
-<code class="literal">[foo]</code> exists in the event, but is false, or
-</li><li class="listitem">
-<code class="literal">[foo]</code> exists in the event, but is null
-</li></ul></div><p>For more complex examples, see <a class="link" href="config-examples.html#using-conditionals" title="Using Conditionals">Using Conditionals</a>.</p><h4><a id="metadata"></a>The @metadata field<a href="https://github.com/elastic/logstash/edit/6.0/docs/static/configuration.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>In Logstash 1.5 and later, there is a special field called <code class="literal">@metadata</code>.  The contents
+doesn’t exist versus a field that’s simply false. The expression <code class="literal">if [foo]</code> returns <code class="literal">false</code> when:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><code class="literal">[foo]</code> doesn’t exist in the event,</li><li class="listitem"><code class="literal">[foo]</code> exists in the event, but is false, or</li><li class="listitem"><code class="literal">[foo]</code> exists in the event, but is null</li></ul></div><p>For more complex examples, see <a class="link" href="config-examples.html#using-conditionals" title="Using Conditionals">Using Conditionals</a>.</p><h4><a id="metadata"></a>The @metadata field<a href="https://github.com/elastic/logstash/edit/6.0/docs/static/configuration.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>In Logstash 1.5 and later, there is a special field called <code class="literal">@metadata</code>.  The contents
 of <code class="literal">@metadata</code> will not be part of any of your events at output time, which
 makes it great to use for conditionals, or extending and building event fields
 with field reference and sprintf formatting.</p><p>The following configuration file will yield events from STDIN.  Whatever is

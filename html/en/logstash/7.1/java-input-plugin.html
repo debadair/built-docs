@@ -173,19 +173,6 @@
     
     <div id='elastic-nav'></div>
 
-    <!-- Subnav -->
-    <div>
-      <div>
-        <div class="tertiary-nav d-none d-md-block">
-          <div class="container">
-            <div class="p-t-b-15 d-flex justify-content-between nav-container">
-              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -366,18 +353,10 @@ public class JavaInputExample implements Input {
     public String getId() {
         return this.id;
     }
-}</pre></div><p>Let’s step through and examine each part of that class.</p><h4><a id="_class_declaration"></a>Class declaration<a href="https://github.com/elastic/logstash/edit/7.1/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">@LogstashPlugin(name="java_input_example")
-public class JavaInputExample implements Input {</pre></div><p>Notes about the class declaration:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p class="simpara">
-All Java plugins must be annotated with the <code class="literal">@LogstashPlugin</code> annotation. Additionally:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem">
-The <code class="literal">name</code> property of the annotation must be supplied and defines the name of the plugin as it will be used
-   in the Logstash pipeline definition. For example, this input would be referenced in the input section of the
-   Logstash pipeline defintion as <code class="literal">input { java_input_example =&gt; { .... } }</code>
-</li><li class="listitem">
-The value of the <code class="literal">name</code> property must match the name of the class excluding casing and underscores.
-</li></ul></div></li><li class="listitem">
-The class must implement the <code class="literal">co.elastic.logstash.api.Input</code> interface.
-</li></ul></div><h4><a id="_plugin_settings"></a>Plugin settings<a href="https://github.com/elastic/logstash/edit/7.1/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>The snippet below contains both the setting definition and the method referencing it.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">public static final PluginConfigSpec&lt;Long&gt; EVENT_COUNT_CONFIG =
+}</pre></div><p>Let’s step through and examine each part of that class.</p><h4><a id="_class_declaration_5"></a>Class declaration<a href="https://github.com/elastic/logstash/edit/7.1/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">@LogstashPlugin(name="java_input_example")
+public class JavaInputExample implements Input {</pre></div><p>Notes about the class declaration:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p class="simpara">All Java plugins must be annotated with the <code class="literal">@LogstashPlugin</code> annotation. Additionally:</p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem">The <code class="literal">name</code> property of the annotation must be supplied and defines the name of the plugin as it will be used
+in the Logstash pipeline definition. For example, this input would be referenced in the input section of the
+Logstash pipeline defintion as <code class="literal">input { java_input_example =&gt; { .... } }</code></li><li class="listitem">The value of the <code class="literal">name</code> property must match the name of the class excluding casing and underscores.</li></ul></div></li><li class="listitem">The class must implement the <code class="literal">co.elastic.logstash.api.Input</code> interface.</li></ul></div><h4><a id="_plugin_settings"></a>Plugin settings<a href="https://github.com/elastic/logstash/edit/7.1/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>The snippet below contains both the setting definition and the method referencing it.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">public static final PluginConfigSpec&lt;Long&gt; EVENT_COUNT_CONFIG =
         PluginConfigSpec.numSetting("count", 3);
 
 public static final PluginConfigSpec&lt;String&gt; PREFIX_CONFIG =
@@ -425,18 +404,10 @@ public void start(Consumer&lt;Map&lt;String, Object&gt;&gt; consumer) {
         done.countDown();
     }
 }</pre></div><p>The <code class="literal">start</code> method begins the event-producing loop in an input. Inputs are flexible and may produce events through
-many different mechanisms including:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-a pull mechanism such as periodic queries of external database&lt;/li&gt;
-</li><li class="listitem">
-a push mechanism such as events sent from clients to a local network port&lt;/li&gt;
-</li><li class="listitem">
-a timed computation such as a heartbeat&lt;/li&gt;
-</li><li class="listitem">
-any other mechanism that produces a useful stream of events. Event streams may be either finite or infinite.
+many different mechanisms including:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">a pull mechanism such as periodic queries of external database&lt;/li&gt;</li><li class="listitem">a push mechanism such as events sent from clients to a local network port&lt;/li&gt;</li><li class="listitem">a timed computation such as a heartbeat&lt;/li&gt;</li><li class="listitem">any other mechanism that produces a useful stream of events. Event streams may be either finite or infinite.
 If the input produces an infinite stream of events, this method should loop until a stop request is made through
 the <code class="literal">stop</code> method. If the input produces a finite stream of events, this method should terminate when the last
-event in the stream is produced or a stop request is made, whichever comes first.
-</li></ul></div><p>Events should be constructed as instances of <code class="literal">Map&lt;String, Object&gt;</code> and pushed into the event pipeline via the
+event in the stream is produced or a stop request is made, whichever comes first.</li></ul></div><p>Events should be constructed as instances of <code class="literal">Map&lt;String, Object&gt;</code> and pushed into the event pipeline via the
 <code class="literal">Consumer&lt;Map&lt;String, Object&gt;&gt;.accept()</code> method.</p><h4><a id="_stop_and_awaitstop_methods"></a>Stop and awaitStop methods<a href="https://github.com/elastic/logstash/edit/7.1/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">private final CountDownLatch done = new CountDownLatch(1);
 private volatile boolean stopped;
 
@@ -494,12 +465,8 @@ the Java plugin and are not used during runtime event processing.</p><div class=
   s.add_runtime_dependency 'jar-dependencies'
 
   s.add_development_dependency 'logstash-devutils'
-end</pre></div><p>You can use this file with the following modifications:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-<code class="literal">s.name</code> must follow the <code class="literal">logstash-input-&lt;input-name&gt;</code> pattern
-</li><li class="listitem">
-<code class="literal">s.version</code> must match the <code class="literal">project.version</code> specified in the <code class="literal">build.gradle</code> file.
-Both versions should be set to be read from the <code class="literal">VERSION</code> file in this example.
-</li></ul></div><p><span class="strong strong"><strong><code class="literal">lib/logstash/inputs/&lt;input-name&gt;.rb</code></strong></span></p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-ruby"># encoding: utf-8
+end</pre></div><p>You can use this file with the following modifications:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><code class="literal">s.name</code> must follow the <code class="literal">logstash-input-&lt;input-name&gt;</code> pattern</li><li class="listitem"><code class="literal">s.version</code> must match the <code class="literal">project.version</code> specified in the <code class="literal">build.gradle</code> file.
+Both versions should be set to be read from the <code class="literal">VERSION</code> file in this example.</li></ul></div><p><span class="strong strong"><strong><code class="literal">lib/logstash/inputs/&lt;input-name&gt;.rb</code></strong></span></p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-ruby"># encoding: utf-8
 require "logstash/inputs/base"
 require "logstash/namespace"
 require "logstash-input-java_input_example_jars"
@@ -509,28 +476,14 @@ class LogStash::Inputs::JavaInputExample &lt; LogStash::Inputs::Base
   config_name "java_input_example"
 
   def self.javaClass() org.logstash.javaapi.JavaInputExample.java_class; end
-end</pre></div><p>Modify these items in the file above:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-Change the name to correspond with the input name.
-</li><li class="listitem">
-Change <code class="literal">require "logstash-input-java_input_example_jars"</code> to reference the appropriate "jars" file
-as described below.
-</li><li class="listitem">
-Change <code class="literal">class LogStash::Inputs::JavaInputExample &lt; LogStash::Inputs::Base</code> to provide a unique and
-descriptive Ruby class name.
-</li><li class="listitem">
-Change <code class="literal">config_name "java_input_example"</code> to match the name of the plugin as specified in the <code class="literal">name</code> property of
-the <code class="literal">@LogstashPlugin</code> annotation.
-</li><li class="listitem">
-Change <code class="literal">def self.javaClass() org.logstash.javaapi.JavaInputExample.java_class; end</code> to return the
-class of the Java input.
-</li></ul></div><p><span class="strong strong"><strong><code class="literal">lib/logstash-input-&lt;input-name&gt;_jars.rb</code></strong></span></p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-txt">require 'jar_dependencies'
-require_jar('org.logstash.javaapi', 'logstash-input-java_input_example', '0.0.1')</pre></div><p>In the file above:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-Rename the file to correspond to the input name.
-</li><li class="listitem">
-Change the <code class="literal">require_jar</code> directive to correspond to the <code class="literal">group</code> specified in the
+end</pre></div><p>Modify these items in the file above:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">Change the name to correspond with the input name.</li><li class="listitem">Change <code class="literal">require "logstash-input-java_input_example_jars"</code> to reference the appropriate "jars" file
+as described below.</li><li class="listitem">Change <code class="literal">class LogStash::Inputs::JavaInputExample &lt; LogStash::Inputs::Base</code> to provide a unique and
+descriptive Ruby class name.</li><li class="listitem">Change <code class="literal">config_name "java_input_example"</code> to match the name of the plugin as specified in the <code class="literal">name</code> property of
+the <code class="literal">@LogstashPlugin</code> annotation.</li><li class="listitem">Change <code class="literal">def self.javaClass() org.logstash.javaapi.JavaInputExample.java_class; end</code> to return the
+class of the Java input.</li></ul></div><p><span class="strong strong"><strong><code class="literal">lib/logstash-input-&lt;input-name&gt;_jars.rb</code></strong></span></p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-txt">require 'jar_dependencies'
+require_jar('org.logstash.javaapi', 'logstash-input-java_input_example', '0.0.1')</pre></div><p>In the file above:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">Rename the file to correspond to the input name.</li><li class="listitem">Change the <code class="literal">require_jar</code> directive to correspond to the <code class="literal">group</code> specified in the
 Gradle build file, the name of the input JAR file, and the version as
-specified in both the gemspec and Gradle build file.
-</li></ul></div><p>After you have created the previous files and the plugin JAR file, build the gem using the
+specified in both the gemspec and Gradle build file.</li></ul></div><p>After you have created the previous files and the plugin JAR file, build the gem using the
 following command:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell">gem build logstash-input-&lt;input-name&gt;.gemspec</pre></div><h4><a id="_installing_the_java_plugin_in_logstash"></a>Installing the Java plugin in Logstash<a href="https://github.com/elastic/logstash/edit/7.1/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>After you have packaged your Java plugin as a Ruby gem, you can install it in
 Logstash with this command:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell">bin/logstash-plugin install --no-verify --local /path/to/javaPlugin.gem</pre></div><p>For Windows platforms: Substitute backslashes for forward slashes as appropriate in the command.</p><h3><a id="_running_logstash_with_the_java_input_plugin"></a>Running Logstash with the Java input plugin<a href="https://github.com/elastic/logstash/edit/7.1/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>The following is a minimal Logstash configuration that can be used to test that
 the Java input plugin is correctly installed and functioning.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">input {

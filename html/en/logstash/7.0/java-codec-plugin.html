@@ -173,19 +173,6 @@
     
     <div id='elastic-nav'></div>
 
-    <!-- Subnav -->
-    <div>
-      <div>
-        <div class="tertiary-nav d-none d-md-block">
-          <div class="container">
-            <div class="p-t-b-15 d-flex justify-content-between nav-container">
-              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -405,18 +392,10 @@ public class JavaCodecExample implements Codec {
     public String getId() {
         return this.id;
     }
-}</pre></div><p>Let’s step through and examine each part of that class.</p><h4><a id="_class_declaration_2"></a>Class declaration<a href="https://github.com/elastic/logstash/edit/7.0/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">@LogstashPlugin(name="java_codec_example")
-public class JavaCodecExample implements Codec {</pre></div><p>Notes about the class declaration:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p class="simpara">
-All Java plugins must be annotated with the <code class="literal">@LogstashPlugin</code> annotation. Additionally:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem">
-The <code class="literal">name</code> property of the annotation must be supplied and defines the name of the plugin as it will be used
-   in the Logstash pipeline definition. For example, this codec would be referenced in the codec section of the
-   an appropriate input or output in the Logstash pipeline defintion as <code class="literal">codec =&gt; java_codec_example { }</code>
-</li><li class="listitem">
-The value of the <code class="literal">name</code> property must match the name of the class excluding casing and underscores.
-</li></ul></div></li><li class="listitem">
-The class must implement the <code class="literal">co.elastic.logstash.api.Codec</code> interface.
-</li></ul></div><h5><a id="_plugin_settings_2"></a>Plugin settings<a href="https://github.com/elastic/logstash/edit/7.0/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h5><p>The snippet below contains both the setting definition and the method referencing it:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">public static final PluginConfigSpec&lt;String&gt; DELIMITER_CONFIG =
+}</pre></div><p>Let’s step through and examine each part of that class.</p><h4><a id="_class_declaration_6"></a>Class declaration<a href="https://github.com/elastic/logstash/edit/7.0/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">@LogstashPlugin(name="java_codec_example")
+public class JavaCodecExample implements Codec {</pre></div><p>Notes about the class declaration:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p class="simpara">All Java plugins must be annotated with the <code class="literal">@LogstashPlugin</code> annotation. Additionally:</p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem">The <code class="literal">name</code> property of the annotation must be supplied and defines the name of the plugin as it will be used
+in the Logstash pipeline definition. For example, this codec would be referenced in the codec section of the
+an appropriate input or output in the Logstash pipeline defintion as <code class="literal">codec =&gt; java_codec_example { }</code></li><li class="listitem">The value of the <code class="literal">name</code> property must match the name of the class excluding casing and underscores.</li></ul></div></li><li class="listitem">The class must implement the <code class="literal">co.elastic.logstash.api.Codec</code> interface.</li></ul></div><h5><a id="_plugin_settings_2"></a>Plugin settings<a href="https://github.com/elastic/logstash/edit/7.0/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h5><p>The snippet below contains both the setting definition and the method referencing it:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">public static final PluginConfigSpec&lt;String&gt; DELIMITER_CONFIG =
         PluginConfigSpec.stringSetting("delimiter", ",");
 
 @Override
@@ -592,12 +571,8 @@ the Java plugin and are not used during runtime event processing.</p><div class=
   s.add_runtime_dependency 'jar-dependencies'
 
   s.add_development_dependency 'logstash-devutils'
-end</pre></div><p>You can use this file with the following modifications:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-<code class="literal">s.name</code> must follow the <code class="literal">logstash-codec-&lt;codec-name&gt;</code> pattern
-</li><li class="listitem">
-<code class="literal">s.version</code> must match the <code class="literal">project.version</code> specified in the <code class="literal">build.gradle</code> file.
-Both versions should be set to be read from the <code class="literal">VERSION</code> file in this example.
-</li></ul></div><p><span class="strong strong"><strong><code class="literal">lib/logstash/codecs/&lt;codec-name&gt;.rb</code></strong></span></p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-ruby"># encoding: utf-8
+end</pre></div><p>You can use this file with the following modifications:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><code class="literal">s.name</code> must follow the <code class="literal">logstash-codec-&lt;codec-name&gt;</code> pattern</li><li class="listitem"><code class="literal">s.version</code> must match the <code class="literal">project.version</code> specified in the <code class="literal">build.gradle</code> file.
+Both versions should be set to be read from the <code class="literal">VERSION</code> file in this example.</li></ul></div><p><span class="strong strong"><strong><code class="literal">lib/logstash/codecs/&lt;codec-name&gt;.rb</code></strong></span></p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-ruby"># encoding: utf-8
 require "logstash/codecs/base"
 require "logstash/namespace"
 require "logstash-codec-java_codec_example_jars"
@@ -607,28 +582,14 @@ class LogStash::Codecs::JavaCodecExample &lt; LogStash::Codecs::Base
   config_name "java_codec_example"
 
   def self.javaClass() org.logstash.javaapi.JavaCodecExample.java_class; end
-end</pre></div><p>Modify these items in the file above:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-Change the name to correspond with the codec name.
-</li><li class="listitem">
-Change <code class="literal">require "logstash-codec-java_codec_example_jars"</code> to reference the appropriate "jars" file
-as described below.
-</li><li class="listitem">
-Change <code class="literal">class LogStash::Codecs::JavaCodecExample &lt; LogStash::Codecs::Base</code> to provide a unique and
-descriptive Ruby class name.
-</li><li class="listitem">
-Change <code class="literal">config_name "java_codec_example"</code> to match the name of the plugin as specified in the <code class="literal">name</code> property of
-the <code class="literal">@LogstashPlugin</code> annotation.
-</li><li class="listitem">
-Change <code class="literal">def self.javaClass() org.logstash.javaapi.JavaCodecExample.java_class; end</code> to return the
-class of the Java codec.
-</li></ul></div><p><span class="strong strong"><strong><code class="literal">lib/logstash-codec-&lt;codec-name&gt;_jars.rb</code></strong></span></p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-txt">require 'jar_dependencies'
-require_jar('org.logstash.javaapi', 'logstash-codec-java_codec_example', '0.2.0')</pre></div><p>In the file above:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-Rename the file to correspond to the codec name.
-</li><li class="listitem">
-Change the <code class="literal">require_jar</code> directive to correspond to the <code class="literal">group</code> specified in the
+end</pre></div><p>Modify these items in the file above:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">Change the name to correspond with the codec name.</li><li class="listitem">Change <code class="literal">require "logstash-codec-java_codec_example_jars"</code> to reference the appropriate "jars" file
+as described below.</li><li class="listitem">Change <code class="literal">class LogStash::Codecs::JavaCodecExample &lt; LogStash::Codecs::Base</code> to provide a unique and
+descriptive Ruby class name.</li><li class="listitem">Change <code class="literal">config_name "java_codec_example"</code> to match the name of the plugin as specified in the <code class="literal">name</code> property of
+the <code class="literal">@LogstashPlugin</code> annotation.</li><li class="listitem">Change <code class="literal">def self.javaClass() org.logstash.javaapi.JavaCodecExample.java_class; end</code> to return the
+class of the Java codec.</li></ul></div><p><span class="strong strong"><strong><code class="literal">lib/logstash-codec-&lt;codec-name&gt;_jars.rb</code></strong></span></p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-txt">require 'jar_dependencies'
+require_jar('org.logstash.javaapi', 'logstash-codec-java_codec_example', '0.2.0')</pre></div><p>In the file above:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">Rename the file to correspond to the codec name.</li><li class="listitem">Change the <code class="literal">require_jar</code> directive to correspond to the <code class="literal">group</code> specified in the
 Gradle build file, the name of the codec JAR file, and the version as
-specified in both the gemspec and Gradle build file.
-</li></ul></div><p>After you have created the previous files and the plugin JAR file, build the gem using the
+specified in both the gemspec and Gradle build file.</li></ul></div><p>After you have created the previous files and the plugin JAR file, build the gem using the
 following command:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell">gem build logstash-codec-&lt;codec-name&gt;.gemspec</pre></div><h4><a id="_installing_the_java_plugin_in_logstash_2"></a>Installing the Java plugin in Logstash<a href="https://github.com/elastic/logstash/edit/7.0/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>After you have packaged your Java plugin as a Ruby gem, you can install it in
 Logstash with this command:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell">bin/logstash-plugin install --no-verify --local /path/to/javaPlugin.gem</pre></div><p>For Windows platforms: Substitute backslashes for forward slashes as appropriate in the command.</p><h3><a id="_run_logstash_with_the_java_codec_plugin"></a>Run Logstash with the Java codec plugin<a href="https://github.com/elastic/logstash/edit/7.0/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>To test the plugin, start Logstash with:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">echo "foo,bar" | bin/logstash --java-execution -e 'input { java_stdin { codec =&gt; java_codec_example } } }'</pre></div><div class="note admon"><div class="icon"><img alt="Note" src="images/icons/note.png" /></div><div class="admon_content"><p>The <code class="literal">--java-execution</code> flag to enable the Java execution engine is required as Java plugins are not supported
 in the Ruby execution engine.</p></div></div><p>The expected Logstash output (excluding initialization) with the configuration above is:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-txt">{

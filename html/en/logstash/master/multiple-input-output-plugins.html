@@ -173,19 +173,6 @@
     
     <div id='elastic-nav'></div>
 
-    <!-- Subnav -->
-    <div>
-      <div>
-        <div class="tertiary-nav d-none d-md-block">
-          <div class="container">
-            <div class="p-t-b-15 d-flex justify-content-between nav-container">
-              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -296,17 +283,7 @@ Not what you want? See the
 destinations for your data. Your Logstash pipeline can use multiple input and output plugins to handle these
 requirements.</p><p>In this section, you create a Logstash pipeline that takes input from a Twitter feed and the Filebeat client, then
 sends the information to an Elasticsearch cluster as well as writing the information directly to a file.</p><h4><a id="twitter-configuration"></a>Reading from a Twitter Feed<a href="https://github.com/elastic/logstash/edit/master/docs/static/advanced-pipeline.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>To add a Twitter feed, you use the <a class="ulink" href="http://www.elastic.co/guide/en/logstash/master/plugins-inputs-twitter.html" target="_top"><code class="literal">twitter</code></a> input plugin. To
-configure the plugin, you need several pieces of information:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-A <span class="emphasis"><em>consumer key</em></span>, which uniquely identifies your Twitter app.
-</li><li class="listitem">
-A <span class="emphasis"><em>consumer secret</em></span>, which serves as the password for your Twitter app.
-</li><li class="listitem">
-One or more <span class="emphasis"><em>keywords</em></span> to search in the incoming feed. The example shows using "cloud" as a keyword, but you can use whatever you want.
-</li><li class="listitem">
-An <span class="emphasis"><em>oauth token</em></span>, which identifies the Twitter account using this app.
-</li><li class="listitem">
-An <span class="emphasis"><em>oauth token secret</em></span>, which serves as the password of the Twitter account.
-</li></ul></div><p>Visit <a class="ulink" href="https://dev.twitter.com/apps" target="_top">https://dev.twitter.com/apps</a> to set up a Twitter account and generate your consumer
+configure the plugin, you need several pieces of information:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">A <span class="emphasis"><em>consumer key</em></span>, which uniquely identifies your Twitter app.</li><li class="listitem">A <span class="emphasis"><em>consumer secret</em></span>, which serves as the password for your Twitter app.</li><li class="listitem">One or more <span class="emphasis"><em>keywords</em></span> to search in the incoming feed. The example shows using "cloud" as a keyword, but you can use whatever you want.</li><li class="listitem">An <span class="emphasis"><em>oauth token</em></span>, which identifies the Twitter account using this app.</li><li class="listitem">An <span class="emphasis"><em>oauth token secret</em></span>, which serves as the password of the Twitter account.</li></ul></div><p>Visit <a class="ulink" href="https://dev.twitter.com/apps" target="_top">https://dev.twitter.com/apps</a> to set up a Twitter account and generate your consumer
 key and secret, as well as your access token and secret. See the docs for the <a class="ulink" href="http://www.elastic.co/guide/en/logstash/master/plugins-inputs-twitter.html" target="_top"><code class="literal">twitter</code></a> input plugin if you’re not sure how to generate these keys.</p><p>Like you did earlier when you worked on <a class="xref" href="advanced-pipeline.html" title="Parsing Logs with Logstash">Parsing Logs with Logstash</a>, create a config file (called <code class="literal">second-pipeline.conf</code>) that
 contains the skeleton of a configuration pipeline. If you want, you can reuse the file you created earlier, but make
 sure you pass in the correct config file name when you run Logstash.</p><p>Add the following lines to the <code class="literal">input</code> section of the <code class="literal">second-pipeline.conf</code> file, substituting your values for the
@@ -326,11 +303,7 @@ directory, and replace the contents with the following lines. Make sure <code cl
   fields:
     type: syslog <a id="CO2-2"></a><span><img src="images/icons/callouts/2.png" alt="" /></span>
 output.logstash:
-  hosts: ["localhost:5044"]</pre></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO2-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
-Absolute path to the file or files that Filebeat processes.
-</p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO2-2"><span><img src="images/icons/callouts/2.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
-Adds a field called <code class="literal">type</code> with the value <code class="literal">syslog</code> to the event.
-</p></td></tr></table></div><p>Save your changes.</p><p>To keep the configuration simple, you won’t specify TLS/SSL settings as you would in a real world
+  hosts: ["localhost:5044"]</pre></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO2-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>Absolute path to the file or files that Filebeat processes.</p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO2-2"><span><img src="images/icons/callouts/2.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>Adds a field called <code class="literal">type</code> with the value <code class="literal">syslog</code> to the event.</p></td></tr></table></div><p>Save your changes.</p><p>To keep the configuration simple, you won’t specify TLS/SSL settings as you would in a real world
 scenario.</p><p>Configure your Logstash instance to use the Filebeat input plugin by adding the following lines to the <code class="literal">input</code> section
 of the <code class="literal">second-pipeline.conf</code> file:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-json">    beats {
         port =&gt; "5044"

@@ -173,19 +173,6 @@
     
     <div id='elastic-nav'></div>
 
-    <!-- Subnav -->
-    <div>
-      <div>
-        <div class="tertiary-nav d-none d-md-block">
-          <div class="container">
-            <div class="p-t-b-15 d-flex justify-content-between nav-container">
-              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -296,7 +283,7 @@ Not what you want? See the
 build Logstash configuration files to specify these plugins and discuss what each plugin is doing.</p><p>The Logstash configuration file defines your <span class="emphasis"><em>Logstash pipeline</em></span>. When you start a Logstash instance, use the
 <code class="literal">-f &lt;path/to/file&gt;</code> option to specify the configuration file that defines that instance’s pipeline.</p><p>A Logstash pipeline has two required elements, <code class="literal">input</code> and <code class="literal">output</code>, and one optional element, <code class="literal">filter</code>. The input
 plugins consume data from a source, the filter plugins modify the data as you specify, and the output plugins write
-the data to a destination.</p><div class="informalfigure"><div class="mediaobject"><img src="static/images/basic_logstash_pipeline.png" alt="static/images/basic_logstash_pipeline.png" /></div></div><p>The following text represents the skeleton of a configuration pipeline:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell"># The # character at the beginning of a line indicates a comment. Use
+the data to a destination.</p><div class="informalfigure"><div class="mediaobject"><img src="static/images/basic_logstash_pipeline.png" alt="basic logstash pipeline" /></div></div><p>The following text represents the skeleton of a configuration pipeline:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell"># The # character at the beginning of a line indicates a comment. Use
 # comments to describe your configuration.
 input {
 }
@@ -316,13 +303,9 @@ named fields from the logs, and writes the parsed data to an Elasticsearch clust
         start_position =&gt; beginning <a id="CO1-1"></a><span><img src="images/icons/callouts/1.png" alt="" /></span>
         ignore_older =&gt; 0 <a id="CO1-2"></a><span><img src="images/icons/callouts/2.png" alt="" /></span>
     }
-}</pre></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO1-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
-The default behavior of the file input plugin is to monitor a file for new information, in a manner similar to the
+}</pre></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO1-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>The default behavior of the file input plugin is to monitor a file for new information, in a manner similar to the
 UNIX <code class="literal">tail -f</code> command. To change this default behavior and process the entire file, we need to specify the position
-where Logstash starts processing the file.
-</p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO1-2"><span><img src="images/icons/callouts/2.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
-The default behavior of the file input plugin is to ignore files whose last modification is greater than 86400s. To change this default behavior and process the tutorial file (which date can be much older than a day), we need to specify to not ignore old files.
-</p></td></tr></table></div><p>Replace <code class="literal">/path/to/</code> with the actual path to the location of <code class="literal">logstash-tutorial.log</code> in your file system.</p><h5><a id="configuring-grok-filter"></a>Parsing Web Logs with the Grok Filter Plugin<a href="https://github.com/elastic/logstash/edit/master/docs/static/advanced-pipeline.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h5><p>The <a class="ulink" href="https://www.elastic.co/guide/en/logstash/2.2/plugins-filters-grok.html" target="_top"><code class="literal">grok</code></a> filter plugin is one of several plugins that are available by default in
+where Logstash starts processing the file.</p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO1-2"><span><img src="images/icons/callouts/2.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>The default behavior of the file input plugin is to ignore files whose last modification is greater than 86400s. To change this default behavior and process the tutorial file (which date can be much older than a day), we need to specify to not ignore old files.</p></td></tr></table></div><p>Replace <code class="literal">/path/to/</code> with the actual path to the location of <code class="literal">logstash-tutorial.log</code> in your file system.</p><h5><a id="configuring-grok-filter"></a>Parsing Web Logs with the Grok Filter Plugin<a href="https://github.com/elastic/logstash/edit/master/docs/static/advanced-pipeline.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h5><p>The <a class="ulink" href="https://www.elastic.co/guide/en/logstash/2.2/plugins-filters-grok.html" target="_top"><code class="literal">grok</code></a> filter plugin is one of several plugins that are available by default in
 Logstash. For details on how to manage Logstash plugins, see the <a class="link" href="working-with-plugins.html" title="Working with plugins">reference documentation</a> for
 the plugin manager.</p><p>Because the <code class="literal">grok</code> filter plugin looks for patterns in the incoming log data, configuration requires you to make
 decisions about how to identify the patterns that are of interest to your use case. A representative line from the web
@@ -330,101 +313,53 @@ server log sample looks like this:</p><div class="pre_wrapper"><pre class="progr
 HTTP/1.1" 200 203023 "http://semicomplete.com/presentations/logstash-monitorama-2013/" "Mozilla/5.0 (Macintosh; Intel
 Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36"</pre></div><p>The IP address at the beginning of the line is easy to identify, as is the timestamp in brackets. In this tutorial, use
 the <code class="literal">%{COMBINEDAPACHELOG}</code> grok pattern, which structures lines from the Apache log using the following schema:</p><div class="informaltable"><table cellpadding="4px" border="0"><colgroup><col /><col /></colgroup><tbody valign="top"><tr><td valign="top">
-<p>
-<span class="strong strong"><strong>Information</strong></span>
-</p>
+<p><span class="strong strong"><strong>Information</strong></span></p>
 </td><td valign="top">
-<p>
-<span class="strong strong"><strong>Field Name</strong></span>
-</p>
+<p><span class="strong strong"><strong>Field Name</strong></span></p>
 </td></tr><tr><td valign="top">
-<p>
-IP Address
-</p>
+<p>IP Address</p>
 </td><td valign="top">
-<p>
-<code class="literal">clientip</code>
-</p>
+<p><code class="literal">clientip</code></p>
 </td></tr><tr><td valign="top">
-<p>
-User ID
-</p>
+<p>User ID</p>
 </td><td valign="top">
-<p>
-<code class="literal">ident</code>
-</p>
+<p><code class="literal">ident</code></p>
 </td></tr><tr><td valign="top">
-<p>
-User Authentication
-</p>
+<p>User Authentication</p>
 </td><td valign="top">
-<p>
-<code class="literal">auth</code>
-</p>
+<p><code class="literal">auth</code></p>
 </td></tr><tr><td valign="top">
-<p>
-timestamp
-</p>
+<p>timestamp</p>
 </td><td valign="top">
-<p>
-<code class="literal">timestamp</code>
-</p>
+<p><code class="literal">timestamp</code></p>
 </td></tr><tr><td valign="top">
-<p>
-HTTP Verb
-</p>
+<p>HTTP Verb</p>
 </td><td valign="top">
-<p>
-<code class="literal">verb</code>
-</p>
+<p><code class="literal">verb</code></p>
 </td></tr><tr><td valign="top">
-<p>
-Request body
-</p>
+<p>Request body</p>
 </td><td valign="top">
-<p>
-<code class="literal">request</code>
-</p>
+<p><code class="literal">request</code></p>
 </td></tr><tr><td valign="top">
-<p>
-HTTP Version
-</p>
+<p>HTTP Version</p>
 </td><td valign="top">
-<p>
-<code class="literal">httpversion</code>
-</p>
+<p><code class="literal">httpversion</code></p>
 </td></tr><tr><td valign="top">
-<p>
-HTTP Status Code
-</p>
+<p>HTTP Status Code</p>
 </td><td valign="top">
-<p>
-<code class="literal">response</code>
-</p>
+<p><code class="literal">response</code></p>
 </td></tr><tr><td valign="top">
-<p>
-Bytes served
-</p>
+<p>Bytes served</p>
 </td><td valign="top">
-<p>
-<code class="literal">bytes</code>
-</p>
+<p><code class="literal">bytes</code></p>
 </td></tr><tr><td valign="top">
-<p>
-Referrer URL
-</p>
+<p>Referrer URL</p>
 </td><td valign="top">
-<p>
-<code class="literal">referrer</code>
-</p>
+<p><code class="literal">referrer</code></p>
 </td></tr><tr><td valign="top">
-<p>
-User agent
-</p>
+<p>User agent</p>
 </td><td valign="top">
-<p>
-<code class="literal">agent</code>
-</p>
+<p><code class="literal">agent</code></p>
 </td></tr></tbody></table></div><p>Edit the <code class="literal">first-pipeline.conf</code> file to add the following text:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-json">filter {
     grok {
         match =&gt; { "message" =&gt; "%{COMBINEDAPACHELOG}"}
@@ -554,17 +489,7 @@ the configuration test, start Logstash with the following command:</p><div class
 }</pre></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="multiple-input-output-plugins"></a>Multiple Input and Output Plugins<a href="https://github.com/elastic/logstash/edit/master/docs/static/advanced-pipeline.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><p>The information you need to manage often comes from several disparate sources, and use cases can require multiple
 destinations for your data. Your Logstash pipeline can use multiple input and output plugins to handle these
 requirements.</p><p>This example creates a Logstash pipeline that takes input from a Twitter feed and the Filebeat client, then
-sends the information to an Elasticsearch cluster as well as writing the information directly to a file.</p><h4><a id="twitter-configuration"></a>Reading from a Twitter feed<a href="https://github.com/elastic/logstash/edit/master/docs/static/advanced-pipeline.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>To add a Twitter feed, you need several pieces of information:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-A <span class="emphasis"><em>consumer</em></span> key, which uniquely identifies your Twitter app, which is Logstash in this case.
-</li><li class="listitem">
-A <span class="emphasis"><em>consumer secret</em></span>, which serves as the password for your Twitter app.
-</li><li class="listitem">
-One or more <span class="emphasis"><em>keywords</em></span> to search in the incoming feed.
-</li><li class="listitem">
-An <span class="emphasis"><em>oauth token</em></span>, which identifies the Twitter account using this app.
-</li><li class="listitem">
-An <span class="emphasis"><em>oauth token secret</em></span>, which serves as the password of the Twitter account.
-</li></ul></div><p>Visit <a class="ulink" href="https://dev.twitter.com/apps" target="_top">https://dev.twitter.com/apps</a> to set up a Twitter account and generate your consumer key and secret, as well as
+sends the information to an Elasticsearch cluster as well as writing the information directly to a file.</p><h4><a id="twitter-configuration"></a>Reading from a Twitter feed<a href="https://github.com/elastic/logstash/edit/master/docs/static/advanced-pipeline.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>To add a Twitter feed, you need several pieces of information:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">A <span class="emphasis"><em>consumer</em></span> key, which uniquely identifies your Twitter app, which is Logstash in this case.</li><li class="listitem">A <span class="emphasis"><em>consumer secret</em></span>, which serves as the password for your Twitter app.</li><li class="listitem">One or more <span class="emphasis"><em>keywords</em></span> to search in the incoming feed.</li><li class="listitem">An <span class="emphasis"><em>oauth token</em></span>, which identifies the Twitter account using this app.</li><li class="listitem">An <span class="emphasis"><em>oauth token secret</em></span>, which serves as the password of the Twitter account.</li></ul></div><p>Visit <a class="ulink" href="https://dev.twitter.com/apps" target="_top">https://dev.twitter.com/apps</a> to set up a Twitter account and generate your consumer key and secret, as well as
 your OAuth token and secret.</p><p>Use this information to add the following lines to the <code class="literal">input</code> section of the <code class="literal">first-pipeline.conf</code> file:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-json">twitter {
     consumer_key =&gt;
     consumer_secret =&gt;
@@ -596,18 +521,14 @@ output:
     certificate_authorities: /path/to/ssl-certificate.crt
     timeout: 15
 
-<a id="CO2-3"></a><span><img src="images/icons/callouts/3.png" alt="" /></span> Path to the file or files that Filebeat processes.
-<a id="CO2-4"></a><span><img src="images/icons/callouts/4.png" alt="" /></span> Path to the SSL certificate for the Logstash instance.</pre></div><p>Save this configuration file as <code class="literal">filebeat.yml</code>.</p><p>Configure your Logstash instance to use the Filebeat input plugin by adding the following lines to the <code class="literal">input</code> section
+&lt;1&gt; Path to the file or files that Filebeat processes.
+&lt;2&gt; Path to the SSL certificate for the Logstash instance.</pre></div><p>Save this configuration file as <code class="literal">filebeat.yml</code>.</p><p>Configure your Logstash instance to use the Filebeat input plugin by adding the following lines to the <code class="literal">input</code> section
 of the <code class="literal">first-pipeline.conf</code> file:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-json">beats {
     port =&gt; "5043"
     ssl =&gt; true
-    ssl_certificate =&gt; "/path/to/ssl-cert" <a id="CO2-5"></a><span><img src="images/icons/callouts/1.png" alt="" /></span>
-    ssl_key =&gt; "/path/to/ssl-key" <a id="CO2-6"></a><span><img src="images/icons/callouts/2.png" alt="" /></span>
-}</pre></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO2-3"><span><img src="images/icons/callouts/3.png" alt="" /></span></a> <a href="#CO2-5"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
-Path to the SSL certificate that the Logstash instance uses to authenticate itself to Filebeat.
-</p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO2-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> <a href="#CO2-2"><span><img src="images/icons/callouts/2.png" alt="" /></span></a> <a href="#CO2-4"><span><img src="images/icons/callouts/4.png" alt="" /></span></a> <a href="#CO2-6"><span><img src="images/icons/callouts/2.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
-Path to the key for the SSL certificate.
-</p></td></tr></table></div><h4><a id="logstash-file-output"></a>Writing Logstash Data to a File<a href="https://github.com/elastic/logstash/edit/master/docs/static/advanced-pipeline.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>You can configure your Logstash pipeline to write data directly to a file with the
+    ssl_certificate =&gt; "/path/to/ssl-cert" <a id="CO2-3"></a><span><img src="images/icons/callouts/1.png" alt="" /></span>
+    ssl_key =&gt; "/path/to/ssl-key" <a id="CO2-4"></a><span><img src="images/icons/callouts/2.png" alt="" /></span>
+}</pre></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO2-3"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>Path to the SSL certificate that the Logstash instance uses to authenticate itself to Filebeat.</p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO2-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> <a href="#CO2-2"><span><img src="images/icons/callouts/2.png" alt="" /></span></a> <a href="#CO2-4"><span><img src="images/icons/callouts/2.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>Path to the key for the SSL certificate.</p></td></tr></table></div><h4><a id="logstash-file-output"></a>Writing Logstash Data to a File<a href="https://github.com/elastic/logstash/edit/master/docs/static/advanced-pipeline.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>You can configure your Logstash pipeline to write data directly to a file with the
 <a class="ulink" href="https://www.elastic.co/guide/en/logstash/2.2/plugins-outputs-file.html" target="_top"><code class="literal">file</code></a> output plugin.</p><p>Configure your Logstash instance to use the <code class="literal">file</code> output plugin by adding the following lines to the <code class="literal">output</code> section
 of the <code class="literal">first-pipeline.conf</code> file:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-json">file {
     path =&gt; /path/to/target/file

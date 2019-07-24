@@ -173,19 +173,6 @@
     
     <div id='elastic-nav'></div>
 
-    <!-- Subnav -->
-    <div>
-      <div>
-        <div class="tertiary-nav d-none d-md-block">
-          <div class="container">
-            <div class="p-t-b-15 d-flex justify-content-between nav-container">
-              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -298,9 +285,9 @@ before you upgrade. In addition, the following steps needs to be performed after
 leave the template as is. Even if you don’t have a custom template, Logstash will not overwrite an existing
 template by default.</p><p>There is one known issue (removal of <a class="ulink" href="https://www.elastic.co/guide/en/elasticsearch/reference/1.4/mapping-object-type.html#_path_3" target="_top">path</a>) with using GeoIP filter that needs a manual update to the template.</p><p>Note: If you have custom template changes, please make sure to save it and merge any changes. You can
 get the existing template by running:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell">curl -XGET localhost:9200/_template/logstash</pre></div><p>Add the following option to your Logstash config:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-json">output {
-        elasticsearch {
-                template_overwrite =&gt; true
-        }
+	elasticsearch {
+		template_overwrite =&gt; true
+	}
 }</pre></div><p>Restart Logstash.</p><p><span class="strong strong"><strong>Dots in fields:</strong></span> Elasticsearch 2.0 does not allow field names to contain the <code class="literal">.</code> character.
 Further details about this change <a class="ulink" href="https://www.elastic.co/guide/en/elasticsearch/reference/2.0/breaking_20_mapping_changes.html#_field_names_may_not_contain_dots" target="_top">here</a>. Some plugins already have been updated to compensate
 for this breaking change, including logstash-filter-metrics and logstash-filter-elapsed.

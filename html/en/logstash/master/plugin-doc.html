@@ -173,19 +173,6 @@
     
     <div id='elastic-nav'></div>
 
-    <!-- Subnav -->
-    <div>
-      <div>
-        <div class="tertiary-nav d-none d-md-block">
-          <div class="container">
-            <div class="p-t-b-15 d-flex justify-content-between nav-container">
-              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -320,31 +307,9 @@ Don’t include the hashmarks in your asciidoc file.</p><div class="pre_wrapper"
   "field1" =&gt; "value1"
   "field2" =&gt; "value2"
   ...
-}</pre></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="_where_8217_s_my_doc"></a>Where’s my doc?<a href="https://github.com/elastic/logstash/edit/master/docs/static/doc-for-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><p>Plugin documentation goes through several steps before it gets published in the
-<a class="ulink" href="https://www.elastic.co/guide/en/logstash-versioned-plugins/current" target="_top">Logstash Versioned Plugin Reference</a> and the <a class="ulink" href="http://www.elastic.co/guide/en/logstash/master/index.html" target="_top">Logstash Reference</a>.</p><p>Here’s an overview of the workflow:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-Be sure that you have signed the CLI and have all necessary approvals and sign offs.
-</li><li class="listitem">
-Merge the pull request for your plugin (including the <code class="literal">index.asciidoc</code> file, the <code class="literal">changelog.md</code> file, and the gemspec).
-</li><li class="listitem">
-Wait for the continuous integration build to complete successfully.
-</li><li class="listitem">
-Publish the plugin to <a class="ulink" href="https://rubygems.org" target="_top">https://rubygems.org</a>.
-</li><li class="listitem">
-A script detects the new or changed version, and picks up the <code class="literal">index.asciidoc</code> file for inclusion in the doc build.
-</li><li class="listitem">
-The documentation for your new plugin is published in the <a class="ulink" href="https://www.elastic.co/guide/en/logstash-versioned-plugins/current" target="_top">Logstash Versioned Plugin Reference</a>.
-</li></ul></div><p>We’re not done yet.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-For each release, we package the new and changed documentation files into a pull request to add or update content.
-(We sometimes package plugin docs between releases if we make significant changes to plugin documentation or add a new plugin.)
-</li><li class="listitem">
-The script detects the new or changed version, and picks up the <code class="literal">index.asciidoc</code> file for inclusion in the doc build.
-</li><li class="listitem">
-We create a pull request, and merge the new and changed content into the appropriate version branches.
-</li><li class="listitem">
-For a new plugin, we add a link to the list of plugins in the <a class="ulink" href="http://www.elastic.co/guide/en/logstash/master/index.html" target="_top">Logstash Reference</a>.
-</li><li class="listitem">
-The documentation for your new (or changed) plugin is published in the <a class="ulink" href="http://www.elastic.co/guide/en/logstash/master/index.html" target="_top">Logstash Reference</a>.
-</li></ul></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_documentation_or_plugin_updates"></a>Documentation or plugin updates<a href="https://github.com/elastic/logstash/edit/master/docs/static/doc-for-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>When you make updates to your plugin or the documentation, consider
+}</pre></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="_wheres_my_doc"></a>Where’s my doc?<a href="https://github.com/elastic/logstash/edit/master/docs/static/doc-for-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><p>Plugin documentation goes through several steps before it gets published in the
+<a class="ulink" href="https://www.elastic.co/guide/en/logstash-versioned-plugins/current" target="_top">Logstash Versioned Plugin Reference</a> and the <a class="ulink" href="http://www.elastic.co/guide/en/logstash/master/index.html" target="_top">Logstash Reference</a>.</p><p>Here’s an overview of the workflow:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">Be sure that you have signed the CLI and have all necessary approvals and sign offs.</li><li class="listitem">Merge the pull request for your plugin (including the <code class="literal">index.asciidoc</code> file, the <code class="literal">changelog.md</code> file, and the gemspec).</li><li class="listitem">Wait for the continuous integration build to complete successfully.</li><li class="listitem">Publish the plugin to <a class="ulink" href="https://rubygems.org" target="_top">https://rubygems.org</a>.</li><li class="listitem">A script detects the new or changed version, and picks up the <code class="literal">index.asciidoc</code> file for inclusion in the doc build.</li><li class="listitem">The documentation for your new plugin is published in the <a class="ulink" href="https://www.elastic.co/guide/en/logstash-versioned-plugins/current" target="_top">Logstash Versioned Plugin Reference</a>.</li></ul></div><p>We’re not done yet.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">For each release, we package the new and changed documentation files into a pull request to add or update content.
+(We sometimes package plugin docs between releases if we make significant changes to plugin documentation or add a new plugin.)</li><li class="listitem">The script detects the new or changed version, and picks up the <code class="literal">index.asciidoc</code> file for inclusion in the doc build.</li><li class="listitem">We create a pull request, and merge the new and changed content into the appropriate version branches.</li><li class="listitem">For a new plugin, we add a link to the list of plugins in the <a class="ulink" href="http://www.elastic.co/guide/en/logstash/master/index.html" target="_top">Logstash Reference</a>.</li><li class="listitem">The documentation for your new (or changed) plugin is published in the <a class="ulink" href="http://www.elastic.co/guide/en/logstash/master/index.html" target="_top">Logstash Reference</a>.</li></ul></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_documentation_or_plugin_updates"></a>Documentation or plugin updates<a href="https://github.com/elastic/logstash/edit/master/docs/static/doc-for-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>When you make updates to your plugin or the documentation, consider
 bumping the version number in the changelog and gemspec (or version file). The
 version change triggers the doc build to pick up your changes for publishing.</p></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="_resources"></a>Resources<a href="https://github.com/elastic/logstash/edit/master/docs/static/doc-for-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><p>For more asciidoc formatting tips, see the excellent reference at
 <a class="ulink" href="https://github.com/elastic/docs#asciidoc-guide" target="_top">https://github.com/elastic/docs#asciidoc-guide</a>.</p><p>For tips on contributing and changelog guidelines, see

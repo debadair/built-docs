@@ -173,19 +173,6 @@
     
     <div id='elastic-nav'></div>
 
-    <!-- Subnav -->
-    <div>
-      <div>
-        <div class="tertiary-nav d-none d-md-block">
-          <div class="container">
-            <div class="p-t-b-15 d-flex justify-content-between nav-container">
-              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -354,7 +341,7 @@ output {
 98.83.179.51 - - [18/May/2011:19:35:08 -0700] "GET /css/main.css HTTP/1.1" 200 1837 "http://www.safesand.com/information.htm" "Mozilla/5.0 (Windows NT 6.0; WOW64; rv:2.0.1) Gecko/20100101 Firefox/4.0.1"</pre></div><p>Now, run Logstash with the -f flag to pass in the configuration file:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">bin/logstash -f logstash-apache.conf</pre></div><p>Now you should see your apache log data in Elasticsearch! Logstash opened and read the specified input file, processing each event it encountered. Any additional lines logged to this file will also be captured, processed by Logstash as events, and stored in Elasticsearch. As an added bonus, they are stashed with the field "type" set to "apache_access" (this is done by the type ⇒ "apache_access" line in the input configuration).</p><p>In this configuration, Logstash is only watching the apache access_log, but it’s easy enough to watch both the access_log and the error_log (actually, any file matching <code class="literal">*log</code>), by changing one line in the above configuration:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">input {
   file {
     path =&gt; "/tmp/*_log"
-...</pre></div><p>When you restart Logstash, it will process both the error and access logs. However, if you inspect your data (using elasticsearch-kopf, perhaps), you’ll see that the access_log is broken up into discrete fields, but the error_log isn’t. That’s because we used a <code class="literal">grok</code> filter to match the standard combined apache log format and automatically split the data into separate fields. Wouldn’t it be nice <span class="strong strong"><strong>if</strong></span> we could control how a line was parsed, based on its format? Well, we can…</p><p>Note that Logstash did not reprocess the events that were already seen in the access_log file. When reading from a file, Logstash saves its position and only processes new lines as they are added. Neat!</p><h4><a id="using-conditionals"></a>Using Conditionals<a href="https://github.com/elastic/logstash/edit/7.0/docs/static/configuration.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>You use conditionals to control what events are processed by a filter or output. For example, you could label each event according to which file it appeared in (access_log, error_log, and other random files that end with "log").</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-ruby">input {
+...</pre></div><p>When you restart Logstash, it will process both the error and access logs. However, if you inspect your data (using elasticsearch-kopf, perhaps), you’ll see that the access_log is broken up into discrete fields, but the error_log isn’t. That’s because we used a <code class="literal">grok</code> filter to match the standard combined apache log format and automatically split the data into separate fields. Wouldn’t it be nice <span class="strong strong"><strong>if</strong></span> we could control how a line was parsed, based on its format? Well, we can…​</p><p>Note that Logstash did not reprocess the events that were already seen in the access_log file. When reading from a file, Logstash saves its position and only processes new lines as they are added. Neat!</p><h4><a id="using-conditionals"></a>Using Conditionals<a href="https://github.com/elastic/logstash/edit/7.0/docs/static/configuration.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>You use conditionals to control what events are processed by a filter or output. For example, you could label each event according to which file it appeared in (access_log, error_log, and other random files that end with "log").</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-ruby">input {
   file {
     path =&gt; "/tmp/*_log"
   }
@@ -379,13 +366,7 @@ filter {
 output {
   elasticsearch { hosts =&gt; ["localhost:9200"] }
   stdout { codec =&gt; rubydebug }
-}</pre></div><p>This example labels all events using the <code class="literal">type</code> field, but doesn’t actually parse the <code class="literal">error</code> or <code class="literal">random</code> files. There are so many types of error logs that how they should be labeled really depends on what logs you’re working with.</p><p>Similarly, you can use conditionals to direct events to particular outputs. For example, you could:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-alert nagios of any apache events with status 5xx
-</li><li class="listitem">
-record any 4xx status to Elasticsearch
-</li><li class="listitem">
-record all status code hits via statsd
-</li></ul></div><p>To tell nagios about any http event that has a 5xx status code, you
+}</pre></div><p>This example labels all events using the <code class="literal">type</code> field, but doesn’t actually parse the <code class="literal">error</code> or <code class="literal">random</code> files. There are so many types of error logs that how they should be labeled really depends on what logs you’re working with.</p><p>Similarly, you can use conditionals to direct events to particular outputs. For example, you could:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">alert nagios of any apache events with status 5xx</li><li class="listitem">record any 4xx status to Elasticsearch</li><li class="listitem">record all status code hits via statsd</li></ul></div><p>To tell nagios about any http event that has a 5xx status code, you
 first need to check the value of the <code class="literal">type</code> field. If it’s apache, then you can
 check to see if the <code class="literal">status</code> field contains a 5xx error. If it is, send it to nagios. If it isn’t
 a 5xx error, check to see if the <code class="literal">status</code> field contains a 4xx error. If so, send it to Elasticsearch.

@@ -173,19 +173,6 @@
     
     <div id='elastic-nav'></div>
 
-    <!-- Subnav -->
-    <div>
-      <div>
-        <div class="tertiary-nav d-none d-md-block">
-          <div class="container">
-            <div class="p-t-b-15 d-flex justify-content-between nav-container">
-              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -343,24 +330,18 @@ output {
   stdout {
     codec =&gt; rubydebug { metadata =&gt; true }
   }
-}</pre></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO14-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
-The path to the top-level directory containing the dead letter queue. This
+}</pre></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO14-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>The path to the top-level directory containing the dead letter queue. This
 directory contains a separate folder for each pipeline that writes to the dead
 letter queue. To find the path to this directory, look at the <code class="literal">logstash.yml</code>
 <a class="link" href="logstash-settings-file.html" title="logstash.yml">settings file</a>. By default, Logstash creates the
 <code class="literal">dead_letter_queue</code> directory under the location used for persistent
 storage (<code class="literal">path.data</code>), for example, <code class="literal">LOGSTASH_HOME/data/dead_letter_queue</code>.
-However, if <code class="literal">path.dead_letter_queue</code> is set, it uses that location instead.
-</p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO14-2"><span><img src="images/icons/callouts/2.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
-When <code class="literal">true</code>, saves the offset. When the pipeline restarts, it will continue
+However, if <code class="literal">path.dead_letter_queue</code> is set, it uses that location instead.</p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO14-2"><span><img src="images/icons/callouts/2.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>When <code class="literal">true</code>, saves the offset. When the pipeline restarts, it will continue
 reading from the position where it left off rather than reprocessing all the
 items in the queue. You can set <code class="literal">commit_offsets</code> to <code class="literal">false</code> when you are
 exploring events in the dead letter queue and want to iterate over the events
-multiple times.
-</p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO14-3"><span><img src="images/icons/callouts/3.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
-The ID of the pipeline that’s writing to the dead letter queue. The default
-is <code class="literal">"main"</code>.
-</p></td></tr></table></div><p>For another example, see <a class="xref" href="dead-letter-queues.html#dlq-example" title="Example: Processing Data That Has Mapping Errors">Example: Processing Data That Has Mapping Errors</a>.</p><p>When the pipeline has finished processing all the events in the dead letter
+multiple times.</p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO14-3"><span><img src="images/icons/callouts/3.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>The ID of the pipeline that’s writing to the dead letter queue. The default
+is <code class="literal">"main"</code>.</p></td></tr></table></div><p>For another example, see <a class="xref" href="dead-letter-queues.html#dlq-example" title="Example: Processing Data That Has Mapping Errors">Example: Processing Data That Has Mapping Errors</a>.</p><p>When the pipeline has finished processing all the events in the dead letter
 queue, it will continue to run and process new events as they stream into the
 queue. This means that you do not need to stop your production system to handle
 events in the dead letter queue.</p><div class="note admon"><div class="icon"><img alt="Note" src="images/icons/note.png" /></div><div class="admon_content"><p>Events emitted from the
@@ -412,14 +393,8 @@ output {
   elasticsearch{
     hosts =&gt; [ "localhost:9200" ] <a id="CO15-3"></a><span><img src="images/icons/callouts/3.png" alt="" /></span>
   }
-}</pre></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO15-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
-The <a class="link" href="plugins-inputs-dead_letter_queue.html" title="Dead_letter_queue input plugin"><code class="literal">dead_letter_queue</code> input</a> reads from the dead letter queue.
-</p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO15-2"><span><img src="images/icons/callouts/2.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
-The <code class="literal">mutate</code> filter removes the problem field called <code class="literal">location</code>.
-</p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO15-3"><span><img src="images/icons/callouts/3.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
-The clean event is sent to Elasticsearch, where it can be indexed because
-the mapping issue is resolved.
-</p></td></tr></table></div></div></div><div class="navfooter"><span class="prev"><a href="persistent-queues.html">
+}</pre></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO15-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>The <a class="link" href="plugins-inputs-dead_letter_queue.html" title="Dead_letter_queue input plugin"><code class="literal">dead_letter_queue</code> input</a> reads from the dead letter queue.</p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO15-2"><span><img src="images/icons/callouts/2.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>The <code class="literal">mutate</code> filter removes the problem field called <code class="literal">location</code>.</p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO15-3"><span><img src="images/icons/callouts/3.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>The clean event is sent to Elasticsearch, where it can be indexed because
+the mapping issue is resolved.</p></td></tr></table></div></div></div><div class="navfooter"><span class="prev"><a href="persistent-queues.html">
               « 
               Persistent Queues</a>
            

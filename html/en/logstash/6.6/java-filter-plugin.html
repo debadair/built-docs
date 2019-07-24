@@ -173,19 +173,6 @@
     
     <div id='elastic-nav'></div>
 
-    <!-- Subnav -->
-    <div>
-      <div>
-        <div class="tertiary-nav d-none d-md-block">
-          <div class="container">
-            <div class="p-t-b-15 d-flex justify-content-between nav-container">
-              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -341,18 +328,10 @@ public class JavaFilterExample implements Filter {
     public Collection&lt;PluginConfigSpec&lt;?&gt;&gt; configSchema() {
         return Collections.singletonList(SOURCE_CONFIG);
     }
-}</pre></div><p>Let’s step through and examine each part of that class.</p><h4><a id="_class_declaration_2"></a>Class declaration<a href="https://github.com/elastic/logstash/edit/6.6/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">@LogstashPlugin(name = "java_filter_example")
-public class JavaFilterExample implements Filter {</pre></div><p>Notes about the class declaration:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p class="simpara">
-All Java plugins must be annotated with the <code class="literal">@LogstashPlugin</code> annotation. Additionally:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem">
-The <code class="literal">name</code> property of the annotation must be supplied and defines the name of the plugin as it will be used
-   in the Logstash pipeline definition. For example, this filter would be referenced in the filter section of the
-   Logstash pipeline defintion as <code class="literal">filter { java_filter_example =&gt; { .... } }</code>
-</li><li class="listitem">
-The value of the <code class="literal">name</code> property must match the name of the class excluding casing and underscores.
-</li></ul></div></li><li class="listitem">
-The class must implement the <code class="literal">co.elastic.logstash.api.v0.Filter</code> interface.
-</li></ul></div><h4><a id="_plugin_settings_2"></a>Plugin settings<a href="https://github.com/elastic/logstash/edit/6.6/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>The snippet below contains both the setting definition and the method referencing it:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">public static final PluginConfigSpec&lt;String&gt; SOURCE_CONFIG =
+}</pre></div><p>Let’s step through and examine each part of that class.</p><h4><a id="_class_declaration_6"></a>Class declaration<a href="https://github.com/elastic/logstash/edit/6.6/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">@LogstashPlugin(name = "java_filter_example")
+public class JavaFilterExample implements Filter {</pre></div><p>Notes about the class declaration:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p class="simpara">All Java plugins must be annotated with the <code class="literal">@LogstashPlugin</code> annotation. Additionally:</p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem">The <code class="literal">name</code> property of the annotation must be supplied and defines the name of the plugin as it will be used
+in the Logstash pipeline definition. For example, this filter would be referenced in the filter section of the
+Logstash pipeline defintion as <code class="literal">filter { java_filter_example =&gt; { .... } }</code></li><li class="listitem">The value of the <code class="literal">name</code> property must match the name of the class excluding casing and underscores.</li></ul></div></li><li class="listitem">The class must implement the <code class="literal">co.elastic.logstash.api.v0.Filter</code> interface.</li></ul></div><h4><a id="_plugin_settings_2"></a>Plugin settings<a href="https://github.com/elastic/logstash/edit/6.6/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>The snippet below contains both the setting definition and the method referencing it:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">public static final PluginConfigSpec&lt;String&gt; SOURCE_CONFIG =
         Configuration.stringSetting("source", "message");
 
 @Override
@@ -375,7 +354,7 @@ in each event is retrieved from its setting and stored in a local variable so
 that it can be used later in the <code class="literal">filter</code> method.</p><p>Any additional initialization may occur in the constructor as well. If there are
 any unrecoverable errors encountered in the configuration or initialization of
 the filter plugin, a descriptive exception should be thrown. The exception will
-be logged and will prevent Logstash from starting.</p><h4><a id="_filter_method"></a>Filter method<a href="https://github.com/elastic/logstash/edit/6.6/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">@Override
+be logged and will prevent Logstash from starting.</p><h4><a id="_filter_method_2"></a>Filter method<a href="https://github.com/elastic/logstash/edit/6.6/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">@Override
 public Collection&lt;Event&gt; filter(Collection&lt;Event&gt; events) {
     for (Event e : events) {
         Object f = e.getField(sourceField);
@@ -387,27 +366,19 @@ public Collection&lt;Event&gt; filter(Collection&lt;Event&gt; events) {
 execution engine on batches of events as they flow through the event processing
 pipeline. The events to be filtered are supplied in the <code class="literal">events</code> argument and
 the method should return a collection of filtered events. Filters may perform a
-variety of actions on events as they flow through the pipeline including:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-Mutation — Fields in events may be added, removed, or changed by a filter. This
+variety of actions on events as they flow through the pipeline including:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">Mutation — Fields in events may be added, removed, or changed by a filter. This
 is the most common scenario for  filters that perform various kinds of
 enrichment on events. In this scenario, the incoming <code class="literal">events</code> collection may be
-returned unmodified since the events in the collection are mutated in place.
-</li><li class="listitem">
-Deletion — Events may be removed from the event pipeline by a filter so that
+returned unmodified since the events in the collection are mutated in place.</li><li class="listitem">Deletion — Events may be removed from the event pipeline by a filter so that
 subsequent filters and outputs  do not receive them. In this scenario, the
 events to be deleted must be removed from the collection of filtered events
-before it is returned.
-</li><li class="listitem">
-Creation — A filter may insert new events into the event pipeline that will be
+before it is returned.</li><li class="listitem">Creation — A filter may insert new events into the event pipeline that will be
 seen only by subsequent filters and outputs. In this scenario, the new events
-must be added to the collection of filtered events before it is returned.
-</li><li class="listitem">
-Observation — Events may pass unchanged by a filter through the event pipeline.
+must be added to the collection of filtered events before it is returned.</li><li class="listitem">Observation — Events may pass unchanged by a filter through the event pipeline.
 This may be useful in scenarios where a filter performs external actions (e.g.,
 updating an external cache) based on the events observed in the event pipeline.
 In this scenario, the incoming <code class="literal">events</code> collection may be returned unmodified
-since no changes were made.
-</li></ul></div><p>In the example above, the value of the <code class="literal">source</code> field is retrieved from each
+since no changes were made.</li></ul></div><p>In the example above, the value of the <code class="literal">source</code> field is retrieved from each
 event and reversed if it is a string value. Because each event is mutated in
 place, the incoming <code class="literal">events</code> collection can be returned.</p><h4><a id="_unit_tests_2"></a>Unit tests<a href="https://github.com/elastic/logstash/edit/6.6/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>Lastly, but certainly not least importantly, unit tests are strongly encouraged.
 The example filter plugin includes an
@@ -445,11 +416,7 @@ the Java plugin and are not used during runtime event processing.</p><div class=
   s.add_runtime_dependency 'jar-dependencies'
 
   s.add_development_dependency 'logstash-devutils'
-end</pre></div><p>You can use this file with the following modifications:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-<code class="literal">s.name</code> must follow the <code class="literal">logstash-filter-&lt;filter-name&gt;</code> pattern
-</li><li class="listitem">
-<code class="literal">s.version</code> must match the <code class="literal">project.version</code> specified in the <code class="literal">build.gradle</code> file.
-</li></ul></div><p><span class="strong strong"><strong><code class="literal">lib/logstash/filters/&lt;filter-name&gt;.rb</code></strong></span></p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-ruby"># encoding: utf-8
+end</pre></div><p>You can use this file with the following modifications:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><code class="literal">s.name</code> must follow the <code class="literal">logstash-filter-&lt;filter-name&gt;</code> pattern</li><li class="listitem"><code class="literal">s.version</code> must match the <code class="literal">project.version</code> specified in the <code class="literal">build.gradle</code> file.</li></ul></div><p><span class="strong strong"><strong><code class="literal">lib/logstash/filters/&lt;filter-name&gt;.rb</code></strong></span></p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-ruby"># encoding: utf-8
 require "logstash/filters/base"
 require "logstash/namespace"
 require "logstash-filter-java_filter_example_jars"
@@ -459,28 +426,14 @@ class LogStash::Filters::JavaFilterExample &lt; LogStash::Filters::Base
   config_name "java_filter_example"
 
   def self.javaClass() org.logstash.javaapi.JavaFilterExample.java_class; end
-end</pre></div><p>Modify these items in the file above:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-Change the name to correspond with the filter name.
-</li><li class="listitem">
-Change <code class="literal">require "logstash-filter-java_filter_example_jars"</code> to reference the appropriate "jars" file
-as described below.
-</li><li class="listitem">
-Change <code class="literal">class LogStash::Filters::JavaFilterExample &lt; LogStash::Filters::Base</code> to provide a unique and
-descriptive Ruby class name.
-</li><li class="listitem">
-Change <code class="literal">config_name "java_filter_example"</code> to match the name of the plugin as specified in the <code class="literal">name</code> property of
-the <code class="literal">@LogstashPlugin</code> annotation.
-</li><li class="listitem">
-Change <code class="literal">def self.javaClass() org.logstash.javaapi.JavaFilterExample.java_class; end</code> to return the
-class of the Java filter.
-</li></ul></div><p><span class="strong strong"><strong><code class="literal">lib/logstash-filter-&lt;filter-name&gt;_jars.rb</code></strong></span></p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-txt">require 'jar_dependencies'
-require_jar('org.logstash.javaapi', 'logstash-filter-java_filter_example', '0.0.1')</pre></div><p>In the file above:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-Rename the file to correspond to the filter name.
-</li><li class="listitem">
-Change the <code class="literal">require_jar</code> directive to correspond to the <code class="literal">group</code> specified in the
+end</pre></div><p>Modify these items in the file above:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">Change the name to correspond with the filter name.</li><li class="listitem">Change <code class="literal">require "logstash-filter-java_filter_example_jars"</code> to reference the appropriate "jars" file
+as described below.</li><li class="listitem">Change <code class="literal">class LogStash::Filters::JavaFilterExample &lt; LogStash::Filters::Base</code> to provide a unique and
+descriptive Ruby class name.</li><li class="listitem">Change <code class="literal">config_name "java_filter_example"</code> to match the name of the plugin as specified in the <code class="literal">name</code> property of
+the <code class="literal">@LogstashPlugin</code> annotation.</li><li class="listitem">Change <code class="literal">def self.javaClass() org.logstash.javaapi.JavaFilterExample.java_class; end</code> to return the
+class of the Java filter.</li></ul></div><p><span class="strong strong"><strong><code class="literal">lib/logstash-filter-&lt;filter-name&gt;_jars.rb</code></strong></span></p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-txt">require 'jar_dependencies'
+require_jar('org.logstash.javaapi', 'logstash-filter-java_filter_example', '0.0.1')</pre></div><p>In the file above:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">Rename the file to correspond to the filter name.</li><li class="listitem">Change the <code class="literal">require_jar</code> directive to correspond to the <code class="literal">group</code> specified in the
 Gradle build file, the name of the filter JAR file, and the version as
-specified in both the gemspec and Gradle build file.
-</li></ul></div><p>After you have created the previous files and the plugin JAR file, build the gem using the
+specified in both the gemspec and Gradle build file.</li></ul></div><p>After you have created the previous files and the plugin JAR file, build the gem using the
 following command:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell">gem build logstash-filter-&lt;filter-name&gt;.gemspec</pre></div><h4><a id="_installing_the_java_plugin_in_logstash_2"></a>Installing the Java plugin in Logstash<a href="https://github.com/elastic/logstash/edit/6.6/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>After you have packaged your Java plugin as a Ruby gem, you can install it in
 Logstash with this command:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell">bin/logstash-plugin install --no-verify --local /path/to/javaPlugin.gem</pre></div><p>For Windows platforms: Substitute backslashes for forward slashes as appropriate in the command.</p><h3><a id="_run_logstash_with_the_java_filter_plugin"></a>Run Logstash with the Java filter plugin<a href="https://github.com/elastic/logstash/edit/6.6/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>The following is a minimal Logstash configuration that can be used to test that
 the Java filter plugin is correctly installed and functioning.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">input {

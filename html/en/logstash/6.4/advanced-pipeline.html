@@ -173,19 +173,6 @@
     
     <div id='elastic-nav'></div>
 
-    <!-- Subnav -->
-    <div>
-      <div>
-        <div class="tertiary-nav d-none d-md-block">
-          <div class="container">
-            <div class="p-t-b-15 d-flex justify-content-between nav-container">
-              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -314,9 +301,7 @@ directory, and replace the contents with the following lines. Make sure <code cl
   paths:
     - /path/to/file/logstash-tutorial.log <a id="CO1-1"></a><span><img src="images/icons/callouts/1.png" alt="" /></span>
 output.logstash:
-  hosts: ["localhost:5044"]</pre></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO1-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
-Absolute path to the file or files that Filebeat processes.
-</p></td></tr></table></div><p>Save your changes.</p><p>To keep the configuration simple, you won’t specify TLS/SSL settings as you would in a real world
+  hosts: ["localhost:5044"]</pre></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO1-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>Absolute path to the file or files that Filebeat processes.</p></td></tr></table></div><p>Save your changes.</p><p>To keep the configuration simple, you won’t specify TLS/SSL settings as you would in a real world
 scenario.</p><p>At the data source machine, run Filebeat with the following command:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell">sudo ./filebeat -e -c filebeat.yml -d "publish"</pre></div><div class="note admon"><div class="icon"><img alt="Note" src="images/icons/note.png" /></div><div class="admon_content"><p>If you run Filebeat as root, you need to change ownership of the configuration file (see
 <a class="ulink" href="https://www.elastic.co/guide/en/beats/libbeat/6.4/config-file-permissions.html" target="_top">Config File Ownership and Permissions</a>
 in the <span class="emphasis"><em>Beats Platform Reference</em></span>).</p></div></div><p>Filebeat will attempt to connect on port 5044. Until Logstash starts with an active Beats plugin, there
@@ -379,101 +364,53 @@ make decisions about how to identify the patterns that are of interest to your u
 web server log sample looks like this:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell">83.149.9.216 - - [04/Jan/2015:05:13:42 +0000] "GET /presentations/logstash-monitorama-2013/images/kibana-search.png
 HTTP/1.1" 200 203023 "http://semicomplete.com/presentations/logstash-monitorama-2013/" "Mozilla/5.0 (Macintosh; Intel
 Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36"</pre></div><p>The IP address at the beginning of the line is easy to identify, as is the timestamp in brackets. To parse the data, you can use the <code class="literal">%{COMBINEDAPACHELOG}</code> grok pattern, which structures lines from the Apache log using the following schema:</p><div class="informaltable"><table cellpadding="4px" border="0"><colgroup><col /><col /></colgroup><tbody valign="top"><tr><td valign="top">
-<p>
-<span class="strong strong"><strong>Information</strong></span>
-</p>
+<p><span class="strong strong"><strong>Information</strong></span></p>
 </td><td valign="top">
-<p>
-<span class="strong strong"><strong>Field Name</strong></span>
-</p>
+<p><span class="strong strong"><strong>Field Name</strong></span></p>
 </td></tr><tr><td valign="top">
-<p>
-IP Address
-</p>
+<p>IP Address</p>
 </td><td valign="top">
-<p>
-<code class="literal">clientip</code>
-</p>
+<p><code class="literal">clientip</code></p>
 </td></tr><tr><td valign="top">
-<p>
-User ID
-</p>
+<p>User ID</p>
 </td><td valign="top">
-<p>
-<code class="literal">ident</code>
-</p>
+<p><code class="literal">ident</code></p>
 </td></tr><tr><td valign="top">
-<p>
-User Authentication
-</p>
+<p>User Authentication</p>
 </td><td valign="top">
-<p>
-<code class="literal">auth</code>
-</p>
+<p><code class="literal">auth</code></p>
 </td></tr><tr><td valign="top">
-<p>
-timestamp
-</p>
+<p>timestamp</p>
 </td><td valign="top">
-<p>
-<code class="literal">timestamp</code>
-</p>
+<p><code class="literal">timestamp</code></p>
 </td></tr><tr><td valign="top">
-<p>
-HTTP Verb
-</p>
+<p>HTTP Verb</p>
 </td><td valign="top">
-<p>
-<code class="literal">verb</code>
-</p>
+<p><code class="literal">verb</code></p>
 </td></tr><tr><td valign="top">
-<p>
-Request body
-</p>
+<p>Request body</p>
 </td><td valign="top">
-<p>
-<code class="literal">request</code>
-</p>
+<p><code class="literal">request</code></p>
 </td></tr><tr><td valign="top">
-<p>
-HTTP Version
-</p>
+<p>HTTP Version</p>
 </td><td valign="top">
-<p>
-<code class="literal">httpversion</code>
-</p>
+<p><code class="literal">httpversion</code></p>
 </td></tr><tr><td valign="top">
-<p>
-HTTP Status Code
-</p>
+<p>HTTP Status Code</p>
 </td><td valign="top">
-<p>
-<code class="literal">response</code>
-</p>
+<p><code class="literal">response</code></p>
 </td></tr><tr><td valign="top">
-<p>
-Bytes served
-</p>
+<p>Bytes served</p>
 </td><td valign="top">
-<p>
-<code class="literal">bytes</code>
-</p>
+<p><code class="literal">bytes</code></p>
 </td></tr><tr><td valign="top">
-<p>
-Referrer URL
-</p>
+<p>Referrer URL</p>
 </td><td valign="top">
-<p>
-<code class="literal">referrer</code>
-</p>
+<p><code class="literal">referrer</code></p>
 </td></tr><tr><td valign="top">
-<p>
-User agent
-</p>
+<p>User agent</p>
 </td><td valign="top">
-<p>
-<code class="literal">agent</code>
-</p>
+<p><code class="literal">agent</code></p>
 </td></tr></tbody></table></div><div class="tip admon"><div class="icon"><img alt="Tip" src="images/icons/tip.png" /></div><div class="admon_content"><p>If you need help building grok patterns, try out the
 <a class="ulink" href="https://www.elastic.co/guide/en/kibana/6.4/xpack-grokdebugger.html" target="_top">Grok Debugger</a>. The Grok Debugger is an
 X-Pack feature under the Basic License and is therefore <span class="strong strong"><strong>free to use</strong></span>.</p></div></div><p>Edit the <code class="literal">first-pipeline.conf</code> file and replace the entire <code class="literal">filter</code> section with the following text:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-json">filter {

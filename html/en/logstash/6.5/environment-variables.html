@@ -173,19 +173,6 @@
     
     <div id='elastic-nav'></div>
 
-    <!-- Subnav -->
-    <div>
-      <div>
-        <div class="tertiary-nav d-none d-md-block">
-          <div class="container">
-            <div class="p-t-b-15 d-flex justify-content-between nav-container">
-              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -292,22 +279,8 @@ Not what you want? See the
            
           <a href="config-examples.html">Logstash Configuration Examples
                »
-            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="environment-variables"></a>Using Environment Variables in the Configuration<a href="https://github.com/elastic/logstash/edit/6.5/docs/static/configuration.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="_overview"></a>Overview<a href="https://github.com/elastic/logstash/edit/6.5/docs/static/configuration.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-You can set environment variable references in the configuration for Logstash plugins by using <code class="literal">${var}</code>.
-</li><li class="listitem">
-At Logstash startup, each reference will be replaced by the value of the environment variable.
-</li><li class="listitem">
-The replacement is case-sensitive.
-</li><li class="listitem">
-References to undefined variables raise a Logstash configuration error.
-</li><li class="listitem">
-You can give a default value by using the form <code class="literal">${var:default value}</code>. Logstash uses the default value if the
-environment variable is undefined.
-</li><li class="listitem">
-You can add environment variable references in any plugin option type : string, number, boolean, array, or hash.
-</li><li class="listitem">
-Environment variables are immutable. If you update the environment variable, you’ll have to restart Logstash to pick up the updated value.
-</li></ul></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="_examples"></a>Examples<a href="https://github.com/elastic/logstash/edit/6.5/docs/static/configuration.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><p>The following examples show you how to use environment variables to set the values of some commonly used
+            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="environment-variables"></a>Using Environment Variables in the Configuration<a href="https://github.com/elastic/logstash/edit/6.5/docs/static/configuration.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="_overview"></a>Overview<a href="https://github.com/elastic/logstash/edit/6.5/docs/static/configuration.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">You can set environment variable references in the configuration for Logstash plugins by using <code class="literal">${var}</code>.</li><li class="listitem">At Logstash startup, each reference will be replaced by the value of the environment variable.</li><li class="listitem">The replacement is case-sensitive.</li><li class="listitem">References to undefined variables raise a Logstash configuration error.</li><li class="listitem">You can give a default value by using the form <code class="literal">${var:default value}</code>. Logstash uses the default value if the
+environment variable is undefined.</li><li class="listitem">You can add environment variable references in any plugin option type : string, number, boolean, array, or hash.</li><li class="listitem">Environment variables are immutable. If you update the environment variable, you’ll have to restart Logstash to pick up the updated value.</li></ul></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="_examples"></a>Examples<a href="https://github.com/elastic/logstash/edit/6.5/docs/static/configuration.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><p>The following examples show you how to use environment variables to set the values of some commonly used
 configuration options.</p><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_setting_the_tcp_port"></a>Setting the TCP Port<a href="https://github.com/elastic/logstash/edit/6.5/docs/static/configuration.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>Here’s an example that uses an environment variable to set the TCP port:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-ruby">input {
   tcp {
     port =&gt; "${TCP_PORT}"

@@ -173,19 +173,6 @@
     
     <div id='elastic-nav'></div>
 
-    <!-- Subnav -->
-    <div>
-      <div>
-        <div class="tertiary-nav d-none d-md-block">
-          <div class="container">
-            <div class="p-t-b-15 d-flex justify-content-between nav-container">
-              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -336,38 +323,23 @@ for variables that can be mapped to Logstash settings. Settings that are found
 in the environment are merged into <code class="literal">logstash.yml</code> as the container starts up.</p><p>For compatibility with container orchestration systems, these environment
 variables are written in all capitals, with underscores as word
 separators</p><p>Some example translations are shown here:</p><div class="table"><a id="id-1.5.10.8.5"></a><p class="title"><strong>Table 1. Example Docker Environment Variables</strong></p><div class="table-contents"><table summary="Example Docker Environment Variables" cellpadding="4px" border="0"><colgroup><col /><col /></colgroup><tbody valign="top"><tr><td valign="top">
-<p>
-<span class="strong strong"><strong>Environment Variable</strong></span>
-</p>
+<p><span class="strong strong"><strong>Environment Variable</strong></span></p>
 </td><td valign="top">
-<p>
-<span class="strong strong"><strong>Logstash Setting</strong></span>
-</p>
+<p><span class="strong strong"><strong>Logstash Setting</strong></span></p>
 </td></tr><tr><td valign="top">
-<p>
-<code class="literal">PIPELINE_WORKERS</code>
-</p>
+<p><code class="literal">PIPELINE_WORKERS</code></p>
 </td><td valign="top">
-<p>
-<code class="literal">pipeline.workers</code>
-</p>
+<p><code class="literal">pipeline.workers</code></p>
 </td></tr><tr><td valign="top">
-<p>
-<code class="literal">LOG_LEVEL</code>
-</p>
+<p><code class="literal">LOG_LEVEL</code></p>
 </td><td valign="top">
-<p>
-<code class="literal">log.level</code>
-</p>
+<p><code class="literal">log.level</code></p>
 </td></tr><tr><td valign="top">
-<p>
-<code class="literal">XPACK_MONITORING_ENABLED</code>
-</p>
+<p><code class="literal">XPACK_MONITORING_ENABLED</code></p>
 </td><td valign="top">
-<p>
-<code class="literal">xpack.monitoring.enabled</code>
-</p>
-</td></tr></tbody></table></div></div><br class="table-break" /><p>In general, any setting listed in the <a class="link" href="logstash-settings-file.html" title="Settings File">settings documentation</a> can be configured with this technique.</p><div class="note admon"><div class="icon"><img alt="Note" src="images/icons/note.png" /></div><div class="admon_content"><p>Defining settings with environment variables causes <code class="literal">logstash.yml</code> to
+<p><code class="literal">xpack.monitoring.enabled</code></p>
+</td></tr></tbody></table></div></div><br class="table-break" /><p>In general, any setting listed in the <a class="link" href="logstash-settings-file.html" title="Settings File">settings
+documentation</a> can be configured with this technique.</p><div class="note admon"><div class="icon"><img alt="Note" src="images/icons/note.png" /></div><div class="admon_content"><p>Defining settings with environment variables causes <code class="literal">logstash.yml</code> to
 be modified in place. This behaviour is likely undesirable if <code class="literal">logstash.yml</code> was
 bind-mounted from the host system. Thus, it is not reccomended to
 combine the bind-mount technique with the environment variable technique. It

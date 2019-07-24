@@ -173,19 +173,6 @@
     
     <div id='elastic-nav'></div>
 
-    <!-- Subnav -->
-    <div>
-      <div>
-        <div class="tertiary-nav d-none d-md-block">
-          <div class="container">
-            <div class="p-t-b-15 d-flex justify-content-between nav-container">
-              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -366,21 +353,11 @@ public class JavaInputExample implements Input {
     public String getId() {
         return this.id;
     }
-}</pre></div><p>Let’s step through and examine each part of that class.</p><h4><a id="_class_declaration"></a>Class declaration<a href="https://github.com/elastic/logstash/edit/7.x/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">@LogstashPlugin(name="java_input_example")
-public class JavaInputExample implements Input {</pre></div><p>Notes about the class declaration:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p class="simpara">
-All Java plugins must be annotated with the <code class="literal">@LogstashPlugin</code> annotation. Additionally:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem">
-The <code class="literal">name</code> property of the annotation must be supplied and defines the name of the plugin as it will be used
-   in the Logstash pipeline definition. For example, this input would be referenced in the input section of the
-   Logstash pipeline defintion as <code class="literal">input { java_input_example =&gt; { .... } }</code>
-</li><li class="listitem">
-The value of the <code class="literal">name</code> property must match the name of the class excluding casing and underscores.
-</li></ul></div></li><li class="listitem">
-The class must implement the <code class="literal">co.elastic.logstash.api.Input</code> interface.
-</li><li class="listitem">
-Java plugins may not be created in the <code class="literal">org.logstash</code> or <code class="literal">co.elastic.logstash</code> packages to prevent potential
-clashes with classes in Logstash itself.
-</li></ul></div><h4><a id="_plugin_settings"></a>Plugin settings<a href="https://github.com/elastic/logstash/edit/7.x/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>The snippet below contains both the setting definition and the method referencing it.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">public static final PluginConfigSpec&lt;Long&gt; EVENT_COUNT_CONFIG =
+}</pre></div><p>Let’s step through and examine each part of that class.</p><h4><a id="_class_declaration_5"></a>Class declaration<a href="https://github.com/elastic/logstash/edit/7.x/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">@LogstashPlugin(name="java_input_example")
+public class JavaInputExample implements Input {</pre></div><p>Notes about the class declaration:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p class="simpara">All Java plugins must be annotated with the <code class="literal">@LogstashPlugin</code> annotation. Additionally:</p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem">The <code class="literal">name</code> property of the annotation must be supplied and defines the name of the plugin as it will be used
+in the Logstash pipeline definition. For example, this input would be referenced in the input section of the
+Logstash pipeline defintion as <code class="literal">input { java_input_example =&gt; { .... } }</code></li><li class="listitem">The value of the <code class="literal">name</code> property must match the name of the class excluding casing and underscores.</li></ul></div></li><li class="listitem">The class must implement the <code class="literal">co.elastic.logstash.api.Input</code> interface.</li><li class="listitem">Java plugins may not be created in the <code class="literal">org.logstash</code> or <code class="literal">co.elastic.logstash</code> packages to prevent potential
+clashes with classes in Logstash itself.</li></ul></div><h4><a id="_plugin_settings"></a>Plugin settings<a href="https://github.com/elastic/logstash/edit/7.x/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>The snippet below contains both the setting definition and the method referencing it.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">public static final PluginConfigSpec&lt;Long&gt; EVENT_COUNT_CONFIG =
         PluginConfigSpec.numSetting("count", 3);
 
 public static final PluginConfigSpec&lt;String&gt; PREFIX_CONFIG =
@@ -428,18 +405,10 @@ public void start(Consumer&lt;Map&lt;String, Object&gt;&gt; consumer) {
         done.countDown();
     }
 }</pre></div><p>The <code class="literal">start</code> method begins the event-producing loop in an input. Inputs are flexible and may produce events through
-many different mechanisms including:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-a pull mechanism such as periodic queries of external database
-</li><li class="listitem">
-a push mechanism such as events sent from clients to a local network port
-</li><li class="listitem">
-a timed computation such as a heartbeat
-</li><li class="listitem">
-any other mechanism that produces a useful stream of events. Event streams may be either finite or infinite.
+many different mechanisms including:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">a pull mechanism such as periodic queries of external database</li><li class="listitem">a push mechanism such as events sent from clients to a local network port</li><li class="listitem">a timed computation such as a heartbeat</li><li class="listitem">any other mechanism that produces a useful stream of events. Event streams may be either finite or infinite.
 If the input produces an infinite stream of events, this method should loop until a stop request is made through
 the <code class="literal">stop</code> method. If the input produces a finite stream of events, this method should terminate when the last
-event in the stream is produced or a stop request is made, whichever comes first.
-</li></ul></div><p>Events should be constructed as instances of <code class="literal">Map&lt;String, Object&gt;</code> and pushed into the event pipeline via the
+event in the stream is produced or a stop request is made, whichever comes first.</li></ul></div><p>Events should be constructed as instances of <code class="literal">Map&lt;String, Object&gt;</code> and pushed into the event pipeline via the
 <code class="literal">Consumer&lt;Map&lt;String, Object&gt;&gt;.accept()</code> method. To reduce allocations and GC pressure, inputs may reuse the same
 map instance by modifying its fields between calls to <code class="literal">Consumer&lt;Map&lt;String, Object&gt;&gt;.accept()</code> because the event
 pipeline will create events based on a copy of the map’s data.</p><h4><a id="_stop_and_awaitstop_methods"></a>Stop and awaitStop methods<a href="https://github.com/elastic/logstash/edit/7.x/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><div class="pre_wrapper"><pre class="programlisting prettyprint lang-java">private final CountDownLatch done = new CountDownLatch(1);
@@ -489,17 +458,11 @@ pluginInfo.homepage        = "http://www.elastic.co/guide/en/logstash/current/in
 pluginInfo.pluginType      = "filter"
 pluginInfo.pluginClass     = "JavaFilterExample"
 pluginInfo.pluginName      = "java_filter_example"
-// ===========================================================================</pre></div><p>You should configure the values above for your plugin.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-The <code class="literal">version</code> value will be automatically read from the <code class="literal">VERSION</code> file in the
-root of your plugin’s codebase.
-</li><li class="listitem">
-<code class="literal">pluginInfo.pluginType</code> should be set to one of <code class="literal">input</code>, <code class="literal">filter</code>, <code class="literal">codec</code>,
-or <code class="literal">output</code>.
-</li><li class="listitem">
-<code class="literal">pluginInfo.pluginName</code> must match the name specified on the <code class="literal">@LogstashPlugin</code>
+// ===========================================================================</pre></div><p>You should configure the values above for your plugin.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">The <code class="literal">version</code> value will be automatically read from the <code class="literal">VERSION</code> file in the
+root of your plugin’s codebase.</li><li class="listitem"><code class="literal">pluginInfo.pluginType</code> should be set to one of <code class="literal">input</code>, <code class="literal">filter</code>, <code class="literal">codec</code>,
+or <code class="literal">output</code>.</li><li class="listitem"><code class="literal">pluginInfo.pluginName</code> must match the name specified on the <code class="literal">@LogstashPlugin</code>
 annotation on the main plugin class. The Gradle packaging task will validate
-that and return an error if they do not match.
-</li></ul></div><h4><a id="_running_the_gradle_packaging_task"></a>Running the Gradle packaging task<a href="https://github.com/elastic/logstash/edit/7.x/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>Several Ruby source files along with a <code class="literal">gemspec</code> file and a <code class="literal">Gemfile</code> are
+that and return an error if they do not match.</li></ul></div><h4><a id="_running_the_gradle_packaging_task"></a>Running the Gradle packaging task<a href="https://github.com/elastic/logstash/edit/7.x/docs/static/contributing-java-plugin.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>Several Ruby source files along with a <code class="literal">gemspec</code> file and a <code class="literal">Gemfile</code> are
 required to package the plugin as a Ruby gem. These Ruby files are used only
 for defining the Ruby gem structure or at Logstash startup time to register
 the Java plugin. They are not used during runtime event processing. The
