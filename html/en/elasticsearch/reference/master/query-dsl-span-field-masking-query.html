@@ -173,19 +173,6 @@
     
     <div id='elastic-nav'></div>
 
-    <!-- Subnav -->
-    <div>
-      <div>
-        <div class="tertiary-nav d-none d-md-block">
-          <div class="container">
-            <div class="p-t-b-15 d-flex justify-content-between nav-container">
-              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
 
     <style> 
@@ -292,24 +279,29 @@ Not what you want? See the
            
           <a href="query-dsl-span-first-query.html">Span first query
                »
-            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="query-dsl-span-field-masking-query"></a>Span field masking query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-field-masking-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Wrapper to allow span queries to participate in composite single-field span queries by <span class="emphasis"><em>lying</em></span> about their search field. The span field masking query maps to Lucene’s <code class="literal">SpanFieldMaskingQuery</code></p><p>This can be used to support queries like <code class="literal">span-near</code> or <code class="literal">span-or</code> across different fields, which is not ordinarily permitted.</p><p>Span field masking query is invaluable in conjunction with <span class="strong strong"><strong>multi-fields</strong></span> when same content is indexed with multiple analyzers. For instance we could index a field with the standard analyzer which breaks text up into words, and again with the english analyzer which stems words into their root form.</p><p>Example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
+            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="query-dsl-span-field-masking-query"></a>Span field masking query<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-field-masking-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Wraps a <a class="link" href="span-queries.html" title="Span queries">span query</a>, letting you use queries like <code class="literal">span_near</code> or
+<code class="literal">span_or</code> to search across different fields.</p><p>Queries like <code class="literal">span_near</code> or <code class="literal">span_or</code> require their wrapped queries to search
+the same field. With the <code class="literal">field_masking_span</code> query, you can use the <code class="literal">field</code>
+parameter to meet that requirement but search a different field instead. This is
+particularly useful for searching <a class="link" href="multi-fields.html#multi-fields-multiple-analyzers" title="Multi-fields with multiple analyzers">multi-fields
+with multiple analyzers</a>.</p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="span-mask-query-ex-request"></a>Example request<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-field-masking-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">GET /_search
 {
   "query": {
     "span_near": {
       "clauses": [
         {
           "span_term": {
-            "text": "quick brown"
+            "message": { "value": "quick brown" }
           }
         },
         {
           "field_masking_span": {
             "query": {
               "span_term": {
-                "text.stems": "fox"
+                "message.stems": { "value": "fox" }
               }
             },
-            "field": "text"
+            "field": "message"
           }
         }
       ],
@@ -317,7 +309,9 @@ Not what you want? See the
       "in_order": false
     }
   }
-}</pre></div><div class="console_widget" data-snippet="snippets/413.console"></div><p>Note: as span field masking query returns the masked field, scoring will be done using the norms of the field name supplied. This may lead to unexpected scoring behaviour.</p></div><div class="navfooter"><span class="prev"><a href="query-dsl-span-containing-query.html">
+}</pre></div><div class="console_widget" data-snippet="snippets/413.console"></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="span-mask-top-level-params"></a>Top-level parameters for <code class="literal">field_masking_span</code><a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/query-dsl/span-field-masking-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">query</code></span></dt><dd><p class="simpara">(Required, query object) Contains a <a class="link" href="span-queries.html" title="Span queries">span query</a>.</p><p class="simpara">While returned results are based on this query, the <code class="literal">field_masking_span</code> query
+calculates <a class="link" href="query-filter-context.html" title="Query and filter context">relevance scores</a> using norms of the field
+in the <code class="literal">field</code> parameter. This can result in unexpected relevance scoring.</p></dd><dt><span class="term"><code class="literal">field</code></span></dt><dd>(Required, string) Field used to meet search field requirements.</dd></dl></div></div></div><div class="navfooter"><span class="prev"><a href="query-dsl-span-containing-query.html">
               « 
               Span containing query</a>
            
