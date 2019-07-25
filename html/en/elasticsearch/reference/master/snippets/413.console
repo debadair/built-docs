@@ -5,17 +5,17 @@ GET /_search
       "clauses": [
         {
           "span_term": {
-            "text": "quick brown"
+            "message": { "value": "quick brown" }
           }
         },
         {
           "field_masking_span": {
             "query": {
               "span_term": {
-                "text.stems": "fox"
+                "message.stems": { "value": "fox" }
               }
             },
-            "field": "text"
+            "field": "message"
           }
         }
       ],
