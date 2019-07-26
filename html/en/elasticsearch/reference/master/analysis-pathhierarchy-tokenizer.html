@@ -294,7 +294,9 @@ Not what you want? See the
                »
             </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="analysis-pathhierarchy-tokenizer"></a>Path Hierarchy Tokenizer<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/analysis/tokenizers/pathhierarchy-tokenizer.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>The <code class="literal">path_hierarchy</code> tokenizer takes a hierarchical value like a filesystem
 path, splits on the path separator, and emits a term for each component in the
-tree.</p><h3><a id="_example_output_20"></a>Example output<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/analysis/tokenizers/pathhierarchy-tokenizer.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">POST _analyze
+tree. <code class="literal">path_hierarcy</code> tokenizer uses Lucene’s
+<a class="ulink" href="https://lucene.apache.org/core/8_0_0/analyzers-common/org/apache/lucene/analysis/path/PathHierarchyTokenizer.html" target="_top">PathHierarchyTokenizer</a>
+underneath.</p><h3><a id="_example_output_20"></a>Example output<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/analysis/tokenizers/pathhierarchy-tokenizer.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">POST _analyze
 {
   "tokenizer": "path_hierarchy",
   "text": "/one/two/three"
@@ -316,7 +318,9 @@ text has been consumed.  It is advisable not to change this setting.</p>
 </td></tr><tr><td valign="top">
 <p><code class="literal">reverse</code></p>
 </td><td valign="top">
-<p>If set to <code class="literal">true</code>, emits the tokens in reverse order.  Defaults to <code class="literal">false</code>.</p>
+<p>If set to <code class="literal">true</code>, uses Lucene’s
+<a class="ulink" href="http://lucene.apache.org/core/8_0_0/analyzers-common/org/apache/lucene/analysis/path/ReversePathHierarchyTokenizer.html" target="_top">ReversePathHierarchyTokenizer</a>,
+which is suitable for domain–like hierarchies. Defaults to <code class="literal">false</code>.</p>
 </td></tr><tr><td valign="top">
 <p><code class="literal">skip</code></p>
 </td><td valign="top">
