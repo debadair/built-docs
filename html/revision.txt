@@ -34,7 +34,7 @@ Repo: apm-agent-ruby
 --------------------------------------------------------------------------------
   APM Ruby Agent/docs/1.x             dcce7440   docs: version cross doc links (#270)
   APM Ruby Agent/docs/2.x             198ebf2c   v2.9.1
-  APM Ruby Agent/docs/master          62bfc666   ci: docs stage is handled within the elasticsearch-ci/docs (#477)
+  APM Ruby Agent/docs/master          local|as   local changes
 
 Repo: apm-agent-rum-js
 --------------------------------------------------------------------------------
