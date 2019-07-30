@@ -56,7 +56,7 @@ Repo: apm-server
   APM Overview/docs/6.6               20fa095b   docs: backport #1940 (#2067)
   APM Overview/docs/6.7               459b2720   [docs][6.7] doc backports (#2217)
   APM Overview/docs/6.8               8feef2c1   docs: 6.8.2 release (#2468)
-  APM Overview/docs/7.0               82d252ed   [docs] APM Overview structure and content improvements (#2171) (#2426)
+  APM Overview/docs/7.0               local|as   local changes
   APM Overview/docs/7.1               43ca2921   [docs] APM Overview structure and content improvements (#2171) (#2425)
   APM Overview/docs/7.2               e12387aa   docs: 7.2.1 version bump (#2460)
   APM Overview/docs/7.3               a6b6ca2f   Update beats framework to a081d96 (#2484)
@@ -69,7 +69,7 @@ Repo: apm-server
   APM Overview/docs/guide/6.6         20fa095b   docs: backport #1940 (#2067)
   APM Overview/docs/guide/6.7         459b2720   [docs][6.7] doc backports (#2217)
   APM Overview/docs/guide/6.8         8feef2c1   docs: 6.8.2 release (#2468)
-  APM Overview/docs/guide/7.0         82d252ed   [docs] APM Overview structure and content improvements (#2171) (#2426)
+  APM Overview/docs/guide/7.0         local|as   local changes
   APM Overview/docs/guide/7.1         43ca2921   [docs] APM Overview structure and content improvements (#2171) (#2425)
   APM Overview/docs/guide/7.2         e12387aa   docs: 7.2.1 version bump (#2460)
   APM Overview/docs/guide/7.3         a6b6ca2f   Update beats framework to a081d96 (#2484)
@@ -84,7 +84,7 @@ Repo: apm-server
   APM Server Reference/CHANGELOG.asciidoc/6.6 20fa095b   docs: backport #1940 (#2067)
   APM Server Reference/CHANGELOG.asciidoc/6.7 459b2720   [docs][6.7] doc backports (#2217)
   APM Server Reference/CHANGELOG.asciidoc/6.8 8feef2c1   docs: 6.8.2 release (#2468)
-  APM Server Reference/CHANGELOG.asciidoc/7.0 82d252ed   [docs] APM Overview structure and content improvements (#2171) (#2426)
+  APM Server Reference/CHANGELOG.asciidoc/7.0 local   local changes
   APM Server Reference/CHANGELOG.asciidoc/7.1 43ca2921   [docs] APM Overview structure and content improvements (#2171) (#2425)
   APM Server Reference/CHANGELOG.asciidoc/7.2 e12387aa   docs: 7.2.1 version bump (#2460)
   APM Server Reference/CHANGELOG.asciidoc/7.3 a6b6ca2f   Update beats framework to a081d96 (#2484)
@@ -97,7 +97,7 @@ Repo: apm-server
   APM Server Reference/changelogs/6.6 20fa095b   docs: backport #1940 (#2067)
   APM Server Reference/changelogs/6.7 459b2720   [docs][6.7] doc backports (#2217)
   APM Server Reference/changelogs/6.8 8feef2c1   docs: 6.8.2 release (#2468)
-  APM Server Reference/changelogs/7.0 82d252ed   [docs] APM Overview structure and content improvements (#2171) (#2426)
+  APM Server Reference/changelogs/7.0 local   local changes
   APM Server Reference/changelogs/7.1 43ca2921   [docs] APM Overview structure and content improvements (#2171) (#2425)
   APM Server Reference/changelogs/7.2 e12387aa   docs: 7.2.1 version bump (#2460)
   APM Server Reference/changelogs/7.3 a6b6ca2f   Update beats framework to a081d96 (#2484)
@@ -111,12 +111,12 @@ Repo: apm-server
   APM Server Reference/docs/6.6       20fa095b   docs: backport #1940 (#2067)
   APM Server Reference/docs/6.7       459b2720   [docs][6.7] doc backports (#2217)
   APM Server Reference/docs/6.8       8feef2c1   docs: 6.8.2 release (#2468)
-  APM Server Reference/docs/7.0       82d252ed   [docs] APM Overview structure and content improvements (#2171) (#2426)
+  APM Server Reference/docs/7.0       local   local changes
   APM Server Reference/docs/7.1       43ca2921   [docs] APM Overview structure and content improvements (#2171) (#2425)
   APM Server Reference/docs/7.2       e12387aa   docs: 7.2.1 version bump (#2460)
   APM Server Reference/docs/7.3       a6b6ca2f   Update beats framework to a081d96 (#2484)
   APM Server Reference/docs/master    e3888a8e   ci: move to use new windows-2019-immutable workers (#2503)
-  Installation and Upgrade Guide/docs/guide/7.0 82d252ed   [docs] APM Overview structure and content improvements (#2171) (#2426)
+  Installation and Upgrade Guide/docs/guide/7.0 local|as   local changes
   Installation and Upgrade Guide/docs/guide/7.1 43ca2921   [docs] APM Overview structure and content improvements (#2171) (#2425)
   Installation and Upgrade Guide/docs/guide/7.2 e12387aa   docs: 7.2.1 version bump (#2460)
   Installation and Upgrade Guide/docs/guide/7.3 a6b6ca2f   Update beats framework to a081d96 (#2484)
