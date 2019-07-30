@@ -1712,7 +1712,7 @@ logstash-docs:
 sense:
   Sense Editor for 4.x/docs/master: e4b27640c79c102d1e09941c4430092522338cff|asciidoctor
 stack-docs:
-  Elastic Stack and Google Cloud's Anthos/docs/en/gke-on-prem/master: 41ff5afc45b8b90cbfca713ec5de70094b3dabc6|asciidoctor
+  Elastic Stack and Google Cloud's Anthos/docs/en/gke-on-prem/master: local|asciidoctor
   Getting Started/docs/en/6.3: b31f9e72b84db8c58f0757c486a15e0c7797355a|asciidoctor
   Getting Started/docs/en/6.4: 7a7444963ac4b5c4b8d71d3e156e8cb2fa7ca4d2|asciidoctor
   Getting Started/docs/en/6.5: b04f60ac6c6107412cd89ef0ab102cc7937013a5|asciidoctor
@@ -1724,8 +1724,8 @@ stack-docs:
   Getting Started/docs/en/7.2: 79b34d3a68534db14cc85b30c80361882031589b|asciidoctor
   Getting Started/docs/en/7.3: bec224c758134c6347b1e66b5f291dbd7ae754c3|asciidoctor
   Getting Started/docs/en/7.x: faa4320d7831a2b6c27dbf0f8fdfc13248224aec|asciidoctor
-  Getting Started/docs/en/master: b9a35c98e3813c3094268e74eac25ba87b1d15c0|asciidoctor
-  Glossary/docs/en/master: b9a35c98e3813c3094268e74eac25ba87b1d15c0|asciidoctor
+  Getting Started/docs/en/master: local|asciidoctor
+  Glossary/docs/en/master: local|asciidoctor
   Infrastructure Monitoring Guide/docs/en/6.5: b04f60ac6c6107412cd89ef0ab102cc7937013a5|asciidoctor
   Infrastructure Monitoring Guide/docs/en/6.6: eb0b5cc56ffdab9b87fa409a8337fb79ffaa9393|asciidoctor
   Infrastructure Monitoring Guide/docs/en/6.7: 678e332e6b1aad0b4429a3983040826c85614834|asciidoctor
@@ -1735,7 +1735,7 @@ stack-docs:
   Infrastructure Monitoring Guide/docs/en/7.2: 79b34d3a68534db14cc85b30c80361882031589b|asciidoctor
   Infrastructure Monitoring Guide/docs/en/7.3: bec224c758134c6347b1e66b5f291dbd7ae754c3|asciidoctor
   Infrastructure Monitoring Guide/docs/en/7.x: faa4320d7831a2b6c27dbf0f8fdfc13248224aec|asciidoctor
-  Infrastructure Monitoring Guide/docs/en/master: b9a35c98e3813c3094268e74eac25ba87b1d15c0|asciidoctor
+  Infrastructure Monitoring Guide/docs/en/master: local|asciidoctor
   Installation and Upgrade Guide/docs/en/5.0: 1613c41b448eec18272e02f708bff28c2f98e105|asciidoctor
   Installation and Upgrade Guide/docs/en/5.1: 835c567c1b7980618c7f758dc9cd6e94bde8f05e|asciidoctor
   Installation and Upgrade Guide/docs/en/5.2: 3726978415f81fe1f1b304049145ee8b3e0efcac|asciidoctor
@@ -1757,11 +1757,11 @@ stack-docs:
   Installation and Upgrade Guide/docs/en/7.2: 79b34d3a68534db14cc85b30c80361882031589b|asciidoctor
   Installation and Upgrade Guide/docs/en/7.3: bec224c758134c6347b1e66b5f291dbd7ae754c3|asciidoctor
   Installation and Upgrade Guide/docs/en/7.x: faa4320d7831a2b6c27dbf0f8fdfc13248224aec|asciidoctor
-  Installation and Upgrade Guide/docs/en/master: b9a35c98e3813c3094268e74eac25ba87b1d15c0|asciidoctor
+  Installation and Upgrade Guide/docs/en/master: local|asciidoctor
   SIEM Guide/docs/en/7.2: 79b34d3a68534db14cc85b30c80361882031589b|asciidoctor
   SIEM Guide/docs/en/7.3: bec224c758134c6347b1e66b5f291dbd7ae754c3|asciidoctor
   SIEM Guide/docs/en/7.x: faa4320d7831a2b6c27dbf0f8fdfc13248224aec|asciidoctor
-  SIEM Guide/docs/en/master: b9a35c98e3813c3094268e74eac25ba87b1d15c0|asciidoctor
+  SIEM Guide/docs/en/master: local|asciidoctor
   Stack Overview/docs/en/stack/6.3: b31f9e72b84db8c58f0757c486a15e0c7797355a|asciidoctor
   Stack Overview/docs/en/stack/6.4: 7a7444963ac4b5c4b8d71d3e156e8cb2fa7ca4d2|asciidoctor
   Stack Overview/docs/en/stack/6.5: b04f60ac6c6107412cd89ef0ab102cc7937013a5|asciidoctor
@@ -1773,7 +1773,7 @@ stack-docs:
   Stack Overview/docs/en/stack/7.2: 79b34d3a68534db14cc85b30c80361882031589b|asciidoctor
   Stack Overview/docs/en/stack/7.3: bec224c758134c6347b1e66b5f291dbd7ae754c3|asciidoctor
   Stack Overview/docs/en/stack/7.x: faa4320d7831a2b6c27dbf0f8fdfc13248224aec|asciidoctor
-  Stack Overview/docs/en/stack/master: b9a35c98e3813c3094268e74eac25ba87b1d15c0|asciidoctor
+  Stack Overview/docs/en/stack/master: local|asciidoctor
 swiftype:
   App Search Reference/docs/master: 0f5d915010123a7266545bd45e2a38e375ad6df2
   Site Search Reference/docs/master: 0f5d915010123a7266545bd45e2a38e375ad6df2
