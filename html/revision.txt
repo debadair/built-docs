@@ -28,7 +28,7 @@ Repo: apm-agent-python
   APM Python Agent/docs/2.x           87131809   docs: version links to 6.4 (#357)
   APM Python Agent/docs/3.x           77622366   bumped version to 3.0.5
   APM Python Agent/docs/4.x           0b47d61d   fix: user error step, allow empty junit results (#525)
-  APM Python Agent/docs/master        68b8835c   ci: enable pre-commit stage within the Jenkins pipeline (#534)
+  APM Python Agent/docs/master        local|as   local changes
 
 Repo: apm-agent-ruby
 --------------------------------------------------------------------------------
