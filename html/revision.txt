@@ -13,7 +13,7 @@ Repo: apm-agent-java
   APM Java Agent/docs/0.6             34da1ec2   pin docs to compatible apm-server version
   APM Java Agent/docs/0.7             c4388689   pin docs to compatible apm-server version
   APM Java Agent/docs/1.x             cebeef9d   [maven-release-plugin] prepare release v1.7.0
-  APM Java Agent/docs/master          5684e98d   Automatic instrumentation should not override manual results (#752)
+  APM Java Agent/docs/master          local|as   local changes
 
 Repo: apm-agent-nodejs
 --------------------------------------------------------------------------------
