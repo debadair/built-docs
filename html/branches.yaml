@@ -106,7 +106,7 @@ apm-server:
   Installation and Upgrade Guide/docs/guide/7.1: 43ca2921a6786c3793b38423d19253d80a5d87e1|asciidoctor
   Installation and Upgrade Guide/docs/guide/7.2: e12387aa0a44e4c0f53ac800ffe25e97d7c1e58d|asciidoctor
   Installation and Upgrade Guide/docs/guide/7.3: a6b6ca2f36a7b3fd3dfe74840fed0ef9d67cb046|asciidoctor
-  Installation and Upgrade Guide/docs/guide/7.x: 7e8d4874cf06515792590376a300cdc6f853884f|asciidoctor
+  Installation and Upgrade Guide/docs/guide/7.x: local|asciidoctor
   Installation and Upgrade Guide/docs/guide/master: e3888a8ec475a58540ae13bbebc29a522fe125de|asciidoctor
 azure-marketplace:
   Azure Marketplace and Resource Manager (ARM) template/docs/6.3: 633c9f5044df0acd25bc42b1a2d8acef126bba39|asciidoctor
