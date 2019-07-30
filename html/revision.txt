@@ -6,7 +6,7 @@ Repo: apm-agent-go
 --------------------------------------------------------------------------------
   APM Go Agent/docs/0.5               6cd2ec73   Merge pull request #237 from axw/0.5
   APM Go Agent/docs/1.x               c497b72e   Bump version to v1.4.0
-  APM Go Agent/docs/master            8e7b8e68   Merge pull request #603 from axw/fix-module-deps
+  APM Go Agent/docs/master            local|as   local changes
 
 Repo: apm-agent-java
 --------------------------------------------------------------------------------
