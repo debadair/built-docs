@@ -59,8 +59,8 @@ apm-server:
   APM Overview/docs/guide/7.1: 43ca2921a6786c3793b38423d19253d80a5d87e1|asciidoctor
   APM Overview/docs/guide/7.2: 4df713ff7c9fc62d8628d97a698fe8be0b39959e|asciidoctor
   APM Overview/docs/guide/7.3: a6b6ca2f36a7b3fd3dfe74840fed0ef9d67cb046|asciidoctor
-  APM Overview/docs/guide/master: 7b716ad540a68d0f95060340651d4ec5dbfdc017|asciidoctor
-  APM Overview/docs/master: 7b716ad540a68d0f95060340651d4ec5dbfdc017|asciidoctor
+  APM Overview/docs/guide/master: local|asciidoctor
+  APM Overview/docs/master: local|asciidoctor
   APM Server Reference/CHANGELOG.asciidoc/6.0: ae191ba5dd9c07cd567cf3f55e7e1433902fb9fc
   APM Server Reference/CHANGELOG.asciidoc/6.1: e5bfd57830cfe07435a1ad057fc61116e6357a06
   APM Server Reference/CHANGELOG.asciidoc/6.2: 9cdb11b74e761c7b5b0a6faae0195f591f57f106
@@ -74,7 +74,7 @@ apm-server:
   APM Server Reference/CHANGELOG.asciidoc/7.1: 43ca2921a6786c3793b38423d19253d80a5d87e1
   APM Server Reference/CHANGELOG.asciidoc/7.2: 4df713ff7c9fc62d8628d97a698fe8be0b39959e
   APM Server Reference/CHANGELOG.asciidoc/7.3: a6b6ca2f36a7b3fd3dfe74840fed0ef9d67cb046
-  APM Server Reference/CHANGELOG.asciidoc/master: 7b716ad540a68d0f95060340651d4ec5dbfdc017
+  APM Server Reference/CHANGELOG.asciidoc/master: local
   APM Server Reference/changelogs/6.1: e5bfd57830cfe07435a1ad057fc61116e6357a06
   APM Server Reference/changelogs/6.2: 9cdb11b74e761c7b5b0a6faae0195f591f57f106
   APM Server Reference/changelogs/6.3: 9b9c8653e8ee566398a306a1ee4e006504f7e6c1
@@ -87,7 +87,7 @@ apm-server:
   APM Server Reference/changelogs/7.1: 43ca2921a6786c3793b38423d19253d80a5d87e1
   APM Server Reference/changelogs/7.2: 4df713ff7c9fc62d8628d97a698fe8be0b39959e
   APM Server Reference/changelogs/7.3: a6b6ca2f36a7b3fd3dfe74840fed0ef9d67cb046
-  APM Server Reference/changelogs/master: 7b716ad540a68d0f95060340651d4ec5dbfdc017
+  APM Server Reference/changelogs/master: local
   APM Server Reference/docs/6.0: ae191ba5dd9c07cd567cf3f55e7e1433902fb9fc
   APM Server Reference/docs/6.1: e5bfd57830cfe07435a1ad057fc61116e6357a06
   APM Server Reference/docs/6.2: 9cdb11b74e761c7b5b0a6faae0195f591f57f106
@@ -101,13 +101,13 @@ apm-server:
   APM Server Reference/docs/7.1: 43ca2921a6786c3793b38423d19253d80a5d87e1
   APM Server Reference/docs/7.2: 4df713ff7c9fc62d8628d97a698fe8be0b39959e
   APM Server Reference/docs/7.3: a6b6ca2f36a7b3fd3dfe74840fed0ef9d67cb046
-  APM Server Reference/docs/master: 7b716ad540a68d0f95060340651d4ec5dbfdc017
+  APM Server Reference/docs/master: local
   Installation and Upgrade Guide/docs/guide/7.0: 82d252edaed3af8d7a8d34a142c599ebb8828f97|asciidoctor
   Installation and Upgrade Guide/docs/guide/7.1: 43ca2921a6786c3793b38423d19253d80a5d87e1|asciidoctor
   Installation and Upgrade Guide/docs/guide/7.2: 4df713ff7c9fc62d8628d97a698fe8be0b39959e|asciidoctor
   Installation and Upgrade Guide/docs/guide/7.3: a6b6ca2f36a7b3fd3dfe74840fed0ef9d67cb046|asciidoctor
   Installation and Upgrade Guide/docs/guide/7.x: 7e8d4874cf06515792590376a300cdc6f853884f|asciidoctor
-  Installation and Upgrade Guide/docs/guide/master: 7b716ad540a68d0f95060340651d4ec5dbfdc017|asciidoctor
+  Installation and Upgrade Guide/docs/guide/master: local|asciidoctor
 azure-marketplace:
   Azure Marketplace and Resource Manager (ARM) template/docs/6.3: 633c9f5044df0acd25bc42b1a2d8acef126bba39|asciidoctor
   Azure Marketplace and Resource Manager (ARM) template/docs/6.4: 2f890bdfb227d2220732388463a076d76c6f8669|asciidoctor
