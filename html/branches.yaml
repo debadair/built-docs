@@ -40,7 +40,7 @@ apm-server:
   APM Overview/docs/6.4: ab6f4cad77e2d7347d094c5994f7b9f90dbbe4d8|asciidoctor
   APM Overview/docs/6.5: 50278ba2ce294650e96a9914ea9999e141754162|asciidoctor
   APM Overview/docs/6.6: 20fa095b6aee61d6470075540432d10025c75cff|asciidoctor
-  APM Overview/docs/6.7: 459b272058f821b38992f0c8c714e3299d92d568|asciidoctor
+  APM Overview/docs/6.7: local|asciidoctor
   APM Overview/docs/6.8: 8feef2c1b97869596310572f60618c020d89c3f9|asciidoctor
   APM Overview/docs/7.0: 82d252edaed3af8d7a8d34a142c599ebb8828f97|asciidoctor
   APM Overview/docs/7.1: 43ca2921a6786c3793b38423d19253d80a5d87e1|asciidoctor
@@ -53,7 +53,7 @@ apm-server:
   APM Overview/docs/guide/6.4: ab6f4cad77e2d7347d094c5994f7b9f90dbbe4d8|asciidoctor
   APM Overview/docs/guide/6.5: 50278ba2ce294650e96a9914ea9999e141754162|asciidoctor
   APM Overview/docs/guide/6.6: 20fa095b6aee61d6470075540432d10025c75cff|asciidoctor
-  APM Overview/docs/guide/6.7: 459b272058f821b38992f0c8c714e3299d92d568|asciidoctor
+  APM Overview/docs/guide/6.7: local|asciidoctor
   APM Overview/docs/guide/6.8: 8feef2c1b97869596310572f60618c020d89c3f9|asciidoctor
   APM Overview/docs/guide/7.0: 82d252edaed3af8d7a8d34a142c599ebb8828f97|asciidoctor
   APM Overview/docs/guide/7.1: 43ca2921a6786c3793b38423d19253d80a5d87e1|asciidoctor
@@ -68,7 +68,7 @@ apm-server:
   APM Server Reference/CHANGELOG.asciidoc/6.4: ab6f4cad77e2d7347d094c5994f7b9f90dbbe4d8
   APM Server Reference/CHANGELOG.asciidoc/6.5: 50278ba2ce294650e96a9914ea9999e141754162
   APM Server Reference/CHANGELOG.asciidoc/6.6: 20fa095b6aee61d6470075540432d10025c75cff
-  APM Server Reference/CHANGELOG.asciidoc/6.7: 459b272058f821b38992f0c8c714e3299d92d568
+  APM Server Reference/CHANGELOG.asciidoc/6.7: local
   APM Server Reference/CHANGELOG.asciidoc/6.8: 8feef2c1b97869596310572f60618c020d89c3f9
   APM Server Reference/CHANGELOG.asciidoc/7.0: 82d252edaed3af8d7a8d34a142c599ebb8828f97
   APM Server Reference/CHANGELOG.asciidoc/7.1: 43ca2921a6786c3793b38423d19253d80a5d87e1
@@ -81,7 +81,7 @@ apm-server:
   APM Server Reference/changelogs/6.4: ab6f4cad77e2d7347d094c5994f7b9f90dbbe4d8
   APM Server Reference/changelogs/6.5: 50278ba2ce294650e96a9914ea9999e141754162
   APM Server Reference/changelogs/6.6: 20fa095b6aee61d6470075540432d10025c75cff
-  APM Server Reference/changelogs/6.7: 459b272058f821b38992f0c8c714e3299d92d568
+  APM Server Reference/changelogs/6.7: local
   APM Server Reference/changelogs/6.8: 8feef2c1b97869596310572f60618c020d89c3f9
   APM Server Reference/changelogs/7.0: 82d252edaed3af8d7a8d34a142c599ebb8828f97
   APM Server Reference/changelogs/7.1: 43ca2921a6786c3793b38423d19253d80a5d87e1
@@ -95,7 +95,7 @@ apm-server:
   APM Server Reference/docs/6.4: ab6f4cad77e2d7347d094c5994f7b9f90dbbe4d8
   APM Server Reference/docs/6.5: 50278ba2ce294650e96a9914ea9999e141754162
   APM Server Reference/docs/6.6: 20fa095b6aee61d6470075540432d10025c75cff
-  APM Server Reference/docs/6.7: 459b272058f821b38992f0c8c714e3299d92d568
+  APM Server Reference/docs/6.7: local
   APM Server Reference/docs/6.8: 8feef2c1b97869596310572f60618c020d89c3f9
   APM Server Reference/docs/7.0: 82d252edaed3af8d7a8d34a142c599ebb8828f97
   APM Server Reference/docs/7.1: 43ca2921a6786c3793b38423d19253d80a5d87e1
