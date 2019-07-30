@@ -1052,7 +1052,7 @@ Repo: ecs
 
 Repo: elasticsearch
 --------------------------------------------------------------------------------
-  Community Contributed Clients/docs/community-clients/master 781fbffc   Geo: fix geo query decomposition (#44924)
+  Community Contributed Clients/docs/community-clients/master local|as   local changes
   Elasticsearch Reference/docs/Versions.asciidoc/5.0 0ae0b29c   [DOCS] Add missing endif conditional for Asciidoctor
   Elasticsearch Reference/docs/Versions.asciidoc/5.1 2fe6b7b8   [DOCS] Add missing endif conditional for Asciidoctor
   Elasticsearch Reference/docs/Versions.asciidoc/5.2 0f50f120   [DOCS] Add missing endif conditional for Asciidoctor
@@ -1074,7 +1074,7 @@ Repo: elasticsearch
   Elasticsearch Reference/docs/Versions.asciidoc/7.2 19434441   Mute testParallelRestoreOperations in 7.2 (#44962) (#44965)
   Elasticsearch Reference/docs/Versions.asciidoc/7.3 19c7d38a   [DOCS] Updates to data frame transforms release highlight (#44907)
   Elasticsearch Reference/docs/Versions.asciidoc/7.x 0914c04b   [DOCS] Updates to data frame transforms release highlight (#44907)
-  Elasticsearch Reference/docs/Versions.asciidoc/master 781fbffc   Geo: fix geo query decomposition (#44924)
+  Elasticsearch Reference/docs/Versions.asciidoc/master local|as   local changes
   Elasticsearch Reference/docs/painless/5.5 30580944   [DOCS] Add missing endif conditional for Asciidoctor
   Elasticsearch Reference/docs/painless/5.6 674f7dc4   Add breaking change about analyze_wildcard (#42706)
   Elasticsearch Reference/docs/painless/6.0 c20fdbfc   [DOCS] Clarify array is not a field datatype (#43931)
@@ -1091,7 +1091,7 @@ Repo: elasticsearch
   Elasticsearch Reference/docs/painless/7.2 19434441   Mute testParallelRestoreOperations in 7.2 (#44962) (#44965)
   Elasticsearch Reference/docs/painless/7.3 19c7d38a   [DOCS] Updates to data frame transforms release highlight (#44907)
   Elasticsearch Reference/docs/painless/7.x 0914c04b   [DOCS] Updates to data frame transforms release highlight (#44907)
-  Elasticsearch Reference/docs/painless/master 781fbffc   Geo: fix geo query decomposition (#44924)
+  Elasticsearch Reference/docs/painless/master local|as   local changes
   Elasticsearch Reference/docs/reference/0.90 d6287897   [DOCS] Set explicit anchors in 1.7 for Asciidoctor (#42470) (Fixup)
   Elasticsearch Reference/docs/reference/1.3 628c18f4   [DOCS] Set literal anchors in 5.0 for Asciidoctor (#42475)
   Elasticsearch Reference/docs/reference/1.4 383e525e   [DOCS] Set literal anchors in 5.0 for Asciidoctor (#42475)
@@ -1124,7 +1124,7 @@ Repo: elasticsearch
   Elasticsearch Reference/docs/reference/7.2 19434441   Mute testParallelRestoreOperations in 7.2 (#44962) (#44965)
   Elasticsearch Reference/docs/reference/7.3 19c7d38a   [DOCS] Updates to data frame transforms release highlight (#44907)
   Elasticsearch Reference/docs/reference/7.x 0914c04b   [DOCS] Updates to data frame transforms release highlight (#44907)
-  Elasticsearch Reference/docs/reference/master 781fbffc   Geo: fix geo query decomposition (#44924)
+  Elasticsearch Reference/docs/reference/master local|as   local changes
   Elasticsearch Reference/docs/src/test/cluster/config/5.3 b6691a11   [DOCS] Add missing endif conditional for Asciidoctor
   Elasticsearch Reference/docs/src/test/cluster/config/5.4 c1096458   [DOCS] Add missing endif conditional for Asciidoctor
   Elasticsearch Reference/docs/src/test/cluster/config/5.5 30580944   [DOCS] Add missing endif conditional for Asciidoctor
@@ -1143,7 +1143,7 @@ Repo: elasticsearch
   Elasticsearch Reference/docs/src/test/cluster/config/7.2 19434441   Mute testParallelRestoreOperations in 7.2 (#44962) (#44965)
   Elasticsearch Reference/docs/src/test/cluster/config/7.3 19c7d38a   [DOCS] Updates to data frame transforms release highlight (#44907)
   Elasticsearch Reference/docs/src/test/cluster/config/7.x 0914c04b   [DOCS] Updates to data frame transforms release highlight (#44907)
-  Elasticsearch Reference/docs/src/test/cluster/config/master 781fbffc   Geo: fix geo query decomposition (#44924)
+  Elasticsearch Reference/docs/src/test/cluster/config/master local|as   local changes
   Elasticsearch Reference/plugins/examples/5.5 30580944   [DOCS] Add missing endif conditional for Asciidoctor
   Elasticsearch Reference/plugins/examples/5.6 674f7dc4   Add breaking change about analyze_wildcard (#42706)
   Elasticsearch Reference/plugins/examples/6.0 c20fdbfc   [DOCS] Clarify array is not a field datatype (#43931)
@@ -1160,7 +1160,7 @@ Repo: elasticsearch
   Elasticsearch Reference/plugins/examples/7.2 19434441   Mute testParallelRestoreOperations in 7.2 (#44962) (#44965)
   Elasticsearch Reference/plugins/examples/7.3 19c7d38a   [DOCS] Updates to data frame transforms release highlight (#44907)
   Elasticsearch Reference/plugins/examples/7.x 0914c04b   [DOCS] Updates to data frame transforms release highlight (#44907)
-  Elasticsearch Reference/plugins/examples/master 781fbffc   Geo: fix geo query decomposition (#44924)
+  Elasticsearch Reference/plugins/examples/master local|as   local changes
   Elasticsearch Reference/x-pack/docs/6.3 92ee784f   [DOCS] Adds allow no datafeeds query param to the GET, GET stats and STOP datafeed APIs (7.1-6.1) (#44895)
   Elasticsearch Reference/x-pack/docs/6.4 cb5a7313   [DOCS] Adds allow no datafeeds query param to the GET, GET stats and STOP datafeed APIs (7.1-6.1) (#44895)
   Elasticsearch Reference/x-pack/docs/6.5 85266d73   [DOCS] Adds allow no datafeeds query param to the GET, GET stats and STOP datafeed APIs (7.1-6.1) (#44895)
@@ -1172,7 +1172,7 @@ Repo: elasticsearch
   Elasticsearch Reference/x-pack/docs/7.2 19434441   Mute testParallelRestoreOperations in 7.2 (#44962) (#44965)
   Elasticsearch Reference/x-pack/docs/7.3 19c7d38a   [DOCS] Updates to data frame transforms release highlight (#44907)
   Elasticsearch Reference/x-pack/docs/7.x 0914c04b   [DOCS] Updates to data frame transforms release highlight (#44907)
-  Elasticsearch Reference/x-pack/docs/master 781fbffc   Geo: fix geo query decomposition (#44924)
+  Elasticsearch Reference/x-pack/docs/master local|as   local changes
   Elasticsearch Reference/x-pack/plugin/sql/qa/6.6 c5052d5d   [DOCS] Adds allow no datafeeds query param to the GET, GET stats and STOP datafeed APIs (7.1-6.1) (#44895)
   Elasticsearch Reference/x-pack/plugin/sql/qa/6.7 1cfe8457   [DOCS] Adds allow no datafeeds query param to the GET, GET stats and STOP datafeed APIs (7.1-6.1) (#44895)
   Elasticsearch Reference/x-pack/plugin/sql/qa/6.8 d5fca1e9   Mute testParallelRestoreOperations in 6.8 (#44962) (#44966)
@@ -1181,11 +1181,11 @@ Repo: elasticsearch
   Elasticsearch Reference/x-pack/plugin/sql/qa/7.2 19434441   Mute testParallelRestoreOperations in 7.2 (#44962) (#44965)
   Elasticsearch Reference/x-pack/plugin/sql/qa/7.3 19c7d38a   [DOCS] Updates to data frame transforms release highlight (#44907)
   Elasticsearch Reference/x-pack/plugin/sql/qa/7.x 0914c04b   [DOCS] Updates to data frame transforms release highlight (#44907)
-  Elasticsearch Reference/x-pack/plugin/sql/qa/master 781fbffc   Geo: fix geo query decomposition (#44924)
+  Elasticsearch Reference/x-pack/plugin/sql/qa/master local|as   local changes
   Elasticsearch Reference/x-pack/qa/sql/6.3 92ee784f   [DOCS] Adds allow no datafeeds query param to the GET, GET stats and STOP datafeed APIs (7.1-6.1) (#44895)
   Elasticsearch Reference/x-pack/qa/sql/6.4 cb5a7313   [DOCS] Adds allow no datafeeds query param to the GET, GET stats and STOP datafeed APIs (7.1-6.1) (#44895)
   Elasticsearch Reference/x-pack/qa/sql/6.5 85266d73   [DOCS] Adds allow no datafeeds query param to the GET, GET stats and STOP datafeed APIs (7.1-6.1) (#44895)
-  Elasticsearch Resiliency Status/docs/resiliency/master 781fbffc   Geo: fix geo query decomposition (#44924)
+  Elasticsearch Resiliency Status/docs/resiliency/master local|as   local changes
   Elasticsearch 참조/docs/5.3           b6691a11   [DOCS] Add missing endif conditional for Asciidoctor
   Elasticsearch 참조/docs/5.4           c1096458   [DOCS] Add missing endif conditional for Asciidoctor
   Elasticsearch 참조/docs/kr/reference/5.3 b6691a11   [DOCS] Add missing endif conditional for Asciidoctor
@@ -1194,7 +1194,7 @@ Repo: elasticsearch
   Elasticsearchリファレンス/docs/5.4        c1096458   [DOCS] Add missing endif conditional for Asciidoctor
   Elasticsearchリファレンス/docs/jp/reference/5.3 b6691a11   [DOCS] Add missing endif conditional for Asciidoctor
   Elasticsearchリファレンス/docs/jp/reference/5.4 c1096458   [DOCS] Add missing endif conditional for Asciidoctor
-  Go API/docs/go/master               781fbffc   Geo: fix geo query decomposition (#44924)
+  Go API/docs/go/master               local|as   local changes
   Groovy API/docs/groovy-api/0.90     d6287897   [DOCS] Set explicit anchors in 1.7 for Asciidoctor (#42470) (Fixup)
   Groovy API/docs/groovy-api/1.3      628c18f4   [DOCS] Set literal anchors in 5.0 for Asciidoctor (#42475)
   Groovy API/docs/groovy-api/1.4      383e525e   [DOCS] Set literal anchors in 5.0 for Asciidoctor (#42475)
@@ -1227,7 +1227,7 @@ Repo: elasticsearch
   Installation and Upgrade Guide/docs/7.2 19434441   Mute testParallelRestoreOperations in 7.2 (#44962) (#44965)
   Installation and Upgrade Guide/docs/7.3 e51cf139   [7.3][ML] Catch any error thrown while closing data frame analytics process (#44958) (#44969)
   Installation and Upgrade Guide/docs/7.x 598c4e72   [7.x] Rename indexlifecycle to ilm and snapshotlifecycle to sl… (#44977)
-  Installation and Upgrade Guide/docs/master 82643262   Fix JodaCompatibleZonedDateTime casts in Painless (#44874)
+  Installation and Upgrade Guide/docs/master local|as   local changes
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/6.0 c20fdbfc   [DOCS] Clarify array is not a field datatype (#43931)
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/6.1 329c6281   [DOCS] Clarify array is not a field datatype (#43931)
   Java API/client/rest-high-level/src/test/java/org/elasticsearch/client/6.2 d3096c2d   [DOCS] Clarify array is not a field datatype (#43931)
@@ -1339,7 +1339,7 @@ Repo: elasticsearch
   Java REST Client/client/7.2         19434441   Mute testParallelRestoreOperations in 7.2 (#44962) (#44965)
   Java REST Client/client/7.3         a2ea200e   Mute testParallelRestoreOperations in 7.3 (#44962)
   Java REST Client/client/7.x         598c4e72   [7.x] Rename indexlifecycle to ilm and snapshotlifecycle to sl… (#44977)
-  Java REST Client/client/master      ea933280   Rename indexlifecycle to ilm and snapshotlifecycle to slm (#44917)
+  Java REST Client/client/master      local|as   local changes
   Java REST Client/docs/Versions.asciidoc/5.0 0ae0b29c   [DOCS] Add missing endif conditional for Asciidoctor
   Java REST Client/docs/Versions.asciidoc/5.1 2fe6b7b8   [DOCS] Add missing endif conditional for Asciidoctor
   Java REST Client/docs/Versions.asciidoc/5.2 0f50f120   [DOCS] Add missing endif conditional for Asciidoctor
@@ -1361,7 +1361,7 @@ Repo: elasticsearch
   Java REST Client/docs/Versions.asciidoc/7.2 19434441   Mute testParallelRestoreOperations in 7.2 (#44962) (#44965)
   Java REST Client/docs/Versions.asciidoc/7.3 a2ea200e   Mute testParallelRestoreOperations in 7.3 (#44962)
   Java REST Client/docs/Versions.asciidoc/7.x 598c4e72   [7.x] Rename indexlifecycle to ilm and snapshotlifecycle to sl… (#44977)
-  Java REST Client/docs/Versions.asciidoc/master ea933280   Rename indexlifecycle to ilm and snapshotlifecycle to slm (#44917)
+  Java REST Client/docs/Versions.asciidoc/master local|as   local changes
   Java REST Client/docs/java-rest/5.0 0ae0b29c   [DOCS] Add missing endif conditional for Asciidoctor
   Java REST Client/docs/java-rest/5.1 2fe6b7b8   [DOCS] Add missing endif conditional for Asciidoctor
   Java REST Client/docs/java-rest/5.2 0f50f120   [DOCS] Add missing endif conditional for Asciidoctor
@@ -1383,7 +1383,7 @@ Repo: elasticsearch
   Java REST Client/docs/java-rest/7.2 19434441   Mute testParallelRestoreOperations in 7.2 (#44962) (#44965)
   Java REST Client/docs/java-rest/7.3 a2ea200e   Mute testParallelRestoreOperations in 7.3 (#44962)
   Java REST Client/docs/java-rest/7.x 598c4e72   [7.x] Rename indexlifecycle to ilm and snapshotlifecycle to sl… (#44977)
-  Java REST Client/docs/java-rest/master ea933280   Rename indexlifecycle to ilm and snapshotlifecycle to slm (#44917)
+  Java REST Client/docs/java-rest/master local|as   local changes
   Painless Scripting Language/docs/Versions.asciidoc/5.5 30580944   [DOCS] Add missing endif conditional for Asciidoctor
   Painless Scripting Language/docs/Versions.asciidoc/5.6 674f7dc4   Add breaking change about analyze_wildcard (#42706)
   Painless Scripting Language/docs/Versions.asciidoc/6.0 c20fdbfc   [DOCS] Clarify array is not a field datatype (#43931)
@@ -1400,7 +1400,7 @@ Repo: elasticsearch
   Painless Scripting Language/docs/Versions.asciidoc/7.2 19434441   Mute testParallelRestoreOperations in 7.2 (#44962) (#44965)
   Painless Scripting Language/docs/Versions.asciidoc/7.3 a2ea200e   Mute testParallelRestoreOperations in 7.3 (#44962)
   Painless Scripting Language/docs/Versions.asciidoc/7.x 9dd52732   [ML] Outlier detection should only fetch docs that have the analyzed … (#44944) (#44959)
-  Painless Scripting Language/docs/Versions.asciidoc/master 781fbffc   Geo: fix geo query decomposition (#44924)
+  Painless Scripting Language/docs/Versions.asciidoc/master local|as   local changes
   Painless Scripting Language/docs/painless/5.5 30580944   [DOCS] Add missing endif conditional for Asciidoctor
   Painless Scripting Language/docs/painless/5.6 674f7dc4   Add breaking change about analyze_wildcard (#42706)
   Painless Scripting Language/docs/painless/6.0 c20fdbfc   [DOCS] Clarify array is not a field datatype (#43931)
@@ -1417,8 +1417,8 @@ Repo: elasticsearch
   Painless Scripting Language/docs/painless/7.2 19434441   Mute testParallelRestoreOperations in 7.2 (#44962) (#44965)
   Painless Scripting Language/docs/painless/7.3 a2ea200e   Mute testParallelRestoreOperations in 7.3 (#44962)
   Painless Scripting Language/docs/painless/7.x 9dd52732   [ML] Outlier detection should only fetch docs that have the analyzed … (#44944) (#44959)
-  Painless Scripting Language/docs/painless/master 781fbffc   Geo: fix geo query decomposition (#44924)
-  Perl API/docs/perl/master           781fbffc   Geo: fix geo query decomposition (#44924)
+  Painless Scripting Language/docs/painless/master local|as   local changes
+  Perl API/docs/perl/master           local|as   local changes
   Plugins and Integrations/buildSrc/src/main/resources/6.2 d3096c2d   [DOCS] Clarify array is not a field datatype (#43931)
   Plugins and Integrations/buildSrc/src/main/resources/6.3 92ee784f   [DOCS] Adds allow no datafeeds query param to the GET, GET stats and STOP datafeed APIs (7.1-6.1) (#44895)
   Plugins and Integrations/buildSrc/src/main/resources/6.4 cb5a7313   [DOCS] Adds allow no datafeeds query param to the GET, GET stats and STOP datafeed APIs (7.1-6.1) (#44895)
@@ -1431,7 +1431,7 @@ Repo: elasticsearch
   Plugins and Integrations/buildSrc/src/main/resources/7.2 19434441   Mute testParallelRestoreOperations in 7.2 (#44962) (#44965)
   Plugins and Integrations/buildSrc/src/main/resources/7.3 a2ea200e   Mute testParallelRestoreOperations in 7.3 (#44962)
   Plugins and Integrations/buildSrc/src/main/resources/7.x 9dd52732   [ML] Outlier detection should only fetch docs that have the analyzed … (#44944) (#44959)
-  Plugins and Integrations/buildSrc/src/main/resources/master 781fbffc   Geo: fix geo query decomposition (#44924)
+  Plugins and Integrations/buildSrc/src/main/resources/master local|as   local changes
   Plugins and Integrations/docs/Versions.asciidoc/5.0 0ae0b29c   [DOCS] Add missing endif conditional for Asciidoctor
   Plugins and Integrations/docs/Versions.asciidoc/5.1 2fe6b7b8   [DOCS] Add missing endif conditional for Asciidoctor
   Plugins and Integrations/docs/Versions.asciidoc/5.2 0f50f120   [DOCS] Add missing endif conditional for Asciidoctor
@@ -1453,7 +1453,7 @@ Repo: elasticsearch
   Plugins and Integrations/docs/Versions.asciidoc/7.2 19434441   Mute testParallelRestoreOperations in 7.2 (#44962) (#44965)
   Plugins and Integrations/docs/Versions.asciidoc/7.3 a2ea200e   Mute testParallelRestoreOperations in 7.3 (#44962)
   Plugins and Integrations/docs/Versions.asciidoc/7.x 9dd52732   [ML] Outlier detection should only fetch docs that have the analyzed … (#44944) (#44959)
-  Plugins and Integrations/docs/Versions.asciidoc/master 781fbffc   Geo: fix geo query decomposition (#44924)
+  Plugins and Integrations/docs/Versions.asciidoc/master local|as   local changes
   Plugins and Integrations/docs/plugins/1.7 e7e6ed5f   [DOCS] Set literal anchors in 5.0 for Asciidoctor (#42475)
   Plugins and Integrations/docs/plugins/2.0 647abae7   [DOCS] Set literal anchors in 5.0 for Asciidoctor (#42475)
   Plugins and Integrations/docs/plugins/2.1 00f468fe   [DOCS] Set literal anchors in 5.0 for Asciidoctor (#42475)
@@ -1481,9 +1481,9 @@ Repo: elasticsearch
   Plugins and Integrations/docs/plugins/7.2 19434441   Mute testParallelRestoreOperations in 7.2 (#44962) (#44965)
   Plugins and Integrations/docs/plugins/7.3 a2ea200e   Mute testParallelRestoreOperations in 7.3 (#44962)
   Plugins and Integrations/docs/plugins/7.x 9dd52732   [ML] Outlier detection should only fetch docs that have the analyzed … (#44944) (#44959)
-  Plugins and Integrations/docs/plugins/master 781fbffc   Geo: fix geo query decomposition (#44924)
-  Python API/docs/python/master       781fbffc   Geo: fix geo query decomposition (#44924)
-  Ruby API/docs/ruby/master           781fbffc   Geo: fix geo query decomposition (#44924)
+  Plugins and Integrations/docs/plugins/master local|as   local changes
+  Python API/docs/python/master       local|as   local changes
+  Ruby API/docs/ruby/master           local|as   local changes
   Stack Overview/docs/6.3             92ee784f   [DOCS] Adds allow no datafeeds query param to the GET, GET stats and STOP datafeed APIs (7.1-6.1) (#44895)
   Stack Overview/docs/6.4             cb5a7313   [DOCS] Adds allow no datafeeds query param to the GET, GET stats and STOP datafeed APIs (7.1-6.1) (#44895)
   Stack Overview/docs/6.5             85266d73   [DOCS] Adds allow no datafeeds query param to the GET, GET stats and STOP datafeed APIs (7.1-6.1) (#44895)
@@ -1495,7 +1495,7 @@ Repo: elasticsearch
   Stack Overview/docs/7.2             19434441   Mute testParallelRestoreOperations in 7.2 (#44962) (#44965)
   Stack Overview/docs/7.3             e51cf139   [7.3][ML] Catch any error thrown while closing data frame analytics process (#44958) (#44969)
   Stack Overview/docs/7.x             0914c04b   [DOCS] Updates to data frame transforms release highlight (#44907)
-  Stack Overview/docs/master          82643262   Fix JodaCompatibleZonedDateTime casts in Painless (#44874)
+  Stack Overview/docs/master          local|as   local changes
   Stack Overview/x-pack/docs/6.3      92ee784f   [DOCS] Adds allow no datafeeds query param to the GET, GET stats and STOP datafeed APIs (7.1-6.1) (#44895)
   Stack Overview/x-pack/docs/6.4      cb5a7313   [DOCS] Adds allow no datafeeds query param to the GET, GET stats and STOP datafeed APIs (7.1-6.1) (#44895)
   Stack Overview/x-pack/docs/6.5      85266d73   [DOCS] Adds allow no datafeeds query param to the GET, GET stats and STOP datafeed APIs (7.1-6.1) (#44895)
@@ -1507,7 +1507,7 @@ Repo: elasticsearch
   Stack Overview/x-pack/docs/7.2      19434441   Mute testParallelRestoreOperations in 7.2 (#44962) (#44965)
   Stack Overview/x-pack/docs/7.3      e51cf139   [7.3][ML] Catch any error thrown while closing data frame analytics process (#44958) (#44969)
   Stack Overview/x-pack/docs/7.x      0914c04b   [DOCS] Updates to data frame transforms release highlight (#44907)
-  Stack Overview/x-pack/docs/master   82643262   Fix JodaCompatibleZonedDateTime casts in Painless (#44874)
+  Stack Overview/x-pack/docs/master   local|as   local changes
 
 Repo: elasticsearch-hadoop
 --------------------------------------------------------------------------------
