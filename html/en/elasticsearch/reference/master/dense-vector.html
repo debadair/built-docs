@@ -296,7 +296,7 @@ Not what you want? See the
 The maximum number of dimensions that can be in a vector should
 not exceed 1024. A <code class="literal">dense_vector</code> field is a single-valued field.</p><p>These vectors can be used for <a class="link" href="query-dsl-script-score-query.html#vector-functions" title="Functions for vector fields">document scoring</a>.
 For example, a document score can represent a distance between
-a given query vector and the indexed document vector.</p><p>You index a dense vector as an array of floats.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">PUT my_index
+a given query vector and the indexed document vector.</p><p>You index a dense vector as an array of floats.</p><div class="pre_wrapper  lang-console"><pre class="programlisting prettyprint lang-console">PUT my_index
 {
   "mappings": {
     "properties": {
@@ -321,7 +321,7 @@ PUT my_index/_doc/2
 {
   "my_text" : "text2",
   "my_vector" : [-0.5, 10, 10]
-}</pre></div><div class="console_widget" data-snippet="snippets/519.console"></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO159-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>dims—the number of dimensions in the vector, required parameter.</p></td></tr></table></div><p>Internally, each document’s dense vector is encoded as a binary
+}</pre></div><div class="console_widget " data-snippet="snippets/519.console"></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO159-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>dims—the number of dimensions in the vector, required parameter.</p></td></tr></table></div><p>Internally, each document’s dense vector is encoded as a binary
 doc value. Its size in bytes is equal to
 <code class="literal">4 * dims</code>, where <code class="literal">dims</code>—the number of the vector’s dimensions.</p></div><div class="navfooter"><span class="prev"><a href="date_nanos.html">
               « 

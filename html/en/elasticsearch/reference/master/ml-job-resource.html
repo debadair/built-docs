@@ -433,7 +433,7 @@ token filters, specify <code class="literal">"tokenizer": "ml_classic"</code> in
 <a class="link" href="analysis-tokenfilters.html" title="Token Filters">token filters</a>. In addition to the built-in token
 filters, other plugins can provide more token filters. This property is
 optional. If it is not specified, no token filters are applied prior to
-categorization.</dd></dl></div><p>If you omit the <code class="literal">categorization_analyzer</code>, the following default values are used:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">POST _ml/anomaly_detectors/_validate
+categorization.</dd></dl></div><p>If you omit the <code class="literal">categorization_analyzer</code>, the following default values are used:</p><div class="pre_wrapper  lang-console"><pre class="programlisting prettyprint lang-console">POST _ml/anomaly_detectors/_validate
 {
   "analysis_config" : {
     "categorization_analyzer" : {
@@ -456,7 +456,7 @@ categorization.</dd></dl></div><p>If you omit the <code class="literal">categori
   },
   "data_description" : {
   }
-}</pre></div><div class="console_widget" data-snippet="snippets/1808.console"></div><p>If you specify any part of the <code class="literal">categorization_analyzer</code>, however, any omitted
+}</pre></div><div class="console_widget " data-snippet="snippets/1808.console"></div><p>If you specify any part of the <code class="literal">categorization_analyzer</code>, however, any omitted
 sub-properties are <span class="emphasis"><em>not</em></span> set to default values.</p><p>If you are categorizing non-English messages in a language where words are
 separated by spaces, you might get better results if you change the day or month
 words in the stop token filter to the appropriate words in your language. If you

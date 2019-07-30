@@ -1564,6 +1564,7 @@ Repo: elasticsearch-net
 
 Repo: elasticsearch-php
 --------------------------------------------------------------------------------
+  Elasticsearch Reference/examples/doc-examples 5a440cef   Switch index examples for current implementation
   PHP API/docs/0.4                    ecd9be4f   Docs: Fixed broken link.
   PHP API/docs/1.0                    eaf6e4ab   Update travis
   PHP API/docs/2.0                    546332c9   Update Changelog

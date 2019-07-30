@@ -315,7 +315,7 @@ efficiently compressed.</p><p>By default, global ordinals are loaded at search-t
 trade-off if you are optimizing for indexing speed. However, if you are more
 interested in search speed, it could be beneficial to set
 <code class="literal">eager_global_ordinals: true</code> on fields that you plan to use in terms
-aggregations:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">PUT my_index/_mapping
+aggregations:</p><div class="pre_wrapper  lang-console"><pre class="programlisting prettyprint lang-console">PUT my_index/_mapping
 {
   "properties": {
     "tags": {
@@ -323,7 +323,7 @@ aggregations:</p><div class="pre_wrapper"><pre class="programlisting prettyprint
       "eager_global_ordinals": true
     }
   }
-}</pre></div><div class="console_widget" data-snippet="snippets/626.console"></div><p>This will shift the cost of building the global ordinals from search-time to
+}</pre></div><div class="console_widget " data-snippet="snippets/626.console"></div><p>This will shift the cost of building the global ordinals from search-time to
 refresh-time. Elasticsearch will make sure that global ordinals are built
 before exposing to searches any changes to the content of the index.
 Elasticsearch will also eagerly build global ordinals when starting a new copy
@@ -339,7 +339,7 @@ be used on frozen indices. Instead, force-merge an index to a single segment
 before freezing it so that global ordinals need not be built separately on each
 search.</p><p>If you ever decide that you do not need to run <code class="literal">terms</code> aggregations on this
 field anymore, then you can disable eager loading of global ordinals at any
-time:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">PUT my_index/_mapping
+time:</p><div class="pre_wrapper  lang-console"><pre class="programlisting prettyprint lang-console">PUT my_index/_mapping
 {
   "properties": {
     "tags": {
@@ -347,7 +347,7 @@ time:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-co
       "eager_global_ordinals": false
     }
   }
-}</pre></div><div class="console_widget" data-snippet="snippets/627.console"></div></div><div class="navfooter"><span class="prev"><a href="enabled.html">
+}</pre></div><div class="console_widget " data-snippet="snippets/627.console"></div></div><div class="navfooter"><span class="prev"><a href="enabled.html">
               « 
               <code class="literal">enabled</code></a>
            

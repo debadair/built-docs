@@ -317,7 +317,7 @@ Positions can be used for
 offsets (which map the term back to the original string) are indexed.
 Offsets are used by the <a class="link" href="search-request-body.html#unified-highlighter" title="Unified highlighter">unified highlighter</a> to speed up highlighting.</p>
 </td></tr></tbody></table></div><div class="note admon"><div class="icon"><img alt="Note" src="images/icons/note.png" /></div><div class="admon_content"><p><a class="link" href="number.html" title="Numeric datatypes">Numeric fields</a> don’t support the <code class="literal">index_options</code> parameter any longer.</p></div></div><p><a class="link" href="mapping-index.html" title="index">Analyzed</a> string fields use <code class="literal">positions</code> as the default, and
-all other fields use <code class="literal">docs</code> as the default.</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-console">PUT my_index
+all other fields use <code class="literal">docs</code> as the default.</p><div class="pre_wrapper  lang-console"><pre class="programlisting prettyprint lang-console">PUT my_index
 {
   "mappings": {
     "properties": {
@@ -346,7 +346,7 @@ GET my_index/_search
       "text": {} <a id="CO213-1"></a><span><img src="images/icons/callouts/1.png" alt="" /></span>
     }
   }
-}</pre></div><div class="console_widget" data-snippet="snippets/635.console"></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO213-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>The <code class="literal">text</code> field will use the postings for the highlighting by default because <code class="literal">offsets</code> are indexed.</p></td></tr></table></div></div><div class="navfooter"><span class="prev"><a href="mapping-index.html">
+}</pre></div><div class="console_widget " data-snippet="snippets/635.console"></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO213-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>The <code class="literal">text</code> field will use the postings for the highlighting by default because <code class="literal">offsets</code> are indexed.</p></td></tr></table></div></div><div class="navfooter"><span class="prev"><a href="mapping-index.html">
               « 
               <code class="literal">index</code></a>
            
