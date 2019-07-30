@@ -1,6 +1,6 @@
 Repo: apm-agent-dotnet
 --------------------------------------------------------------------------------
-  APM .NET Agent/docs/master          6fb3ca96   Revert to tag in doc links to fix doc build errors
+  APM .NET Agent/docs/master          local|as   local changes
 
 Repo: apm-agent-go
 --------------------------------------------------------------------------------

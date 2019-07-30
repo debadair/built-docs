@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Metrics
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Performance Tuning
         | APM .NET Agent Reference
       | Elastic
-    </title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="APM .NET Agent Reference" /><link rel="up" href="index.html" title="APM .NET Agent Reference" /><link rel="prev" href="supported-technologies.html" title="Supported Technologies" /><link rel="next" href="configuration.html" title="Configuration" /><meta name="description" content="Get started with the documentation for Elasticsearch, Kibana, Logstash, Beats, X-Pack, Elastic Cloud, Elasticsearch for Apache Hadoop, and our language clients." /><meta name="DC.type" content="Learn/Docs/APM .NET Agent/Reference" /><meta name="DC.subject" content="APM" /><meta name="DC.identifier" content="master" />
+    </title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="APM .NET Agent Reference" /><link rel="up" href="index.html" title="APM .NET Agent Reference" /><link rel="prev" href="public-api.html" title="Public API" /><link rel="next" href="release-notes.html" title="Release notes" /><meta name="description" content="Get started with the documentation for Elasticsearch, Kibana, Logstash, Beats, X-Pack, Elastic Cloud, Elasticsearch for Apache Hadoop, and our language clients." /><meta name="DC.type" content="Learn/Docs/APM .NET Agent/Reference" /><meta name="DC.subject" content="APM" /><meta name="DC.identifier" content="master" />
     
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -279,24 +279,43 @@
                 
             <div class="col-xs-12 col-sm-8 col-md-8 guide-section">
             <!-- start body -->
-<div class="page_header">This project is currently in beta. Use it at your own risk.</div><div class="breadcrumbs"><span class="breadcrumb-link"><a href="index.html">APM .NET Agent Reference</a></span> » <span class="breadcrumb-node">Metrics</span></div><div class="navheader"><span class="prev"><a href="supported-technologies.html">
+<div class="page_header">This project is currently in beta. Use it at your own risk.</div><div class="breadcrumbs"><span class="breadcrumb-link"><a href="index.html">APM .NET Agent Reference</a></span> » <span class="breadcrumb-node">Performance Tuning</span></div><div class="navheader"><span class="prev"><a href="public-api.html">
               « 
-              Supported Technologies</a>
+              Public API</a>
            
         </span><span class="next">
            
-          <a href="configuration.html">Configuration
+          <a href="release-notes.html">Release notes
                »
-            </a></span></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="metrics"></a>Metrics<a href="https://github.com/elastic/apm-agent-dotnet/edit/master/docs/metrics.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h1></div></div></div><p>The .NET agent tracks certain system and application metrics.
-Some of them have built-in visualizations and some can only be visualized with custom Kibana dashboards.</p><p>These metrics will be sent regularly to the APM Server and from there to Elasticsearch.
-You can adjust the interval with the setting <a class="link" href="config-reporter.html#config-metrics-interval" title="MetricsInterval ( )"><code class="literal">MetricsInterval</code></a>.</p><p>The metrics will be stored in the <code class="literal">apm-*</code> index and have the <code class="literal">processor.event</code> property set to <code class="literal">metric</code>.</p><p>"Platform: all" means that the metric is available on every platform where .NET Core is supported.</p><h3><a id="metrics-system"></a>System metrics<a href="https://github.com/elastic/apm-agent-dotnet/edit/master/docs/metrics.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>As of APM version 6.6, these metrics will be visualized in the APM UI.</p><p>For more system metrics, consider installing <a class="ulink" href="https://www.elastic.co/guide/en/beats/metricbeat/current/index.html" target="_top">metricbeat</a> on your hosts.</p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><span class="strong strong"><strong><code class="literal">system.cpu.total.norm.pct</code></strong></span></span></dt><dd><p class="simpara">type: scaled_float</p><p class="simpara">format: percent</p><p class="simpara">platform: Windows and Linux only</p><p class="simpara">The percentage of CPU time in states other than Idle and IOWait, normalized by the number of cores.</p></dd><dt><span class="term"><span class="strong strong"><strong><code class="literal">system.process.cpu.total.norm.pct</code></strong></span></span></dt><dd><p class="simpara">type: scaled_float</p><p class="simpara">format: percent</p><p class="simpara">platform: all</p><p class="simpara">The percentage of CPU time spent by the process since the last event.
-This value is normalized by the number of CPU cores and it ranges from 0 to 100%.</p></dd><dt><span class="term"><span class="strong strong"><strong><code class="literal">system.memory.total</code></strong></span></span></dt><dd><p class="simpara">type: long</p><p class="simpara">format: bytes</p><p class="simpara">Platform: Windows and Linux only.</p><p class="simpara">Total memory.</p></dd><dt><span class="term"><span class="strong strong"><strong><code class="literal">system.memory.actual.free</code></strong></span></span></dt><dd><p class="simpara">type: long</p><p class="simpara">format: bytes</p><p class="simpara">Platform: Windows and Linux only.</p><p class="simpara">Actual free memory.</p></dd><dt><span class="term"><span class="strong strong"><strong><code class="literal">system.process.memory.size</code></strong></span></span></dt><dd><p class="simpara">type: long</p><p class="simpara">format: bytes</p><p class="simpara">platform: all</p><p class="simpara">The total virtual memory the process has.</p></dd><dt><span class="term"><span class="strong strong"><strong><code class="literal">system.process.memory.rss.bytes</code></strong></span></span></dt><dd><p class="simpara">type: long</p><p class="simpara">format: bytes</p><p class="simpara">platform: all</p><p class="simpara">The total physical memory the process has.</p></dd></dl></div></div><div class="navfooter"><span class="prev"><a href="supported-technologies.html">
+            </a></span></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="performance-tuning"></a>Performance Tuning<a href="https://github.com/elastic/apm-agent-dotnet/edit/master/docs/performance-tuning.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h1></div></div></div><p>There are many options available to tune agent performance.
+Which option to adjust depends on whether you are optimizing for speed, memory usage, bandwidth or storage.</p><h3><a id="performance-tuning-sampling"></a>Sampling<a href="https://github.com/elastic/apm-agent-dotnet/edit/master/docs/performance-tuning.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>The first knob to reach for when tuning the performance of the agent is <a class="xref" href="config-core.html#config-transaction-sample-rate" title="TransactionSampleRate"><code class="literal">TransactionSampleRate</code></a>.
+Adjusting the sample rate controls what percent of requests are traced.
+By default, the sample rate is set at <code class="literal">1.0</code>, meaning <span class="emphasis"><em>all</em></span> requests are traced.</p><p>The sample rate will impact all four performance categories,
+so simply turning down the sample rate is an easy way to improve performance.</p><p>Here’s an example of setting the sample rate to 20% using <a class="xref" href="configuration-on-asp-net-core.html" title="Configuration on ASP.NET Core">Configuration on ASP.NET Core</a>:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">{
+    "ElasticApm": {
+        "TransactionSampleRate": 0.2
+    }
+}</pre></div><h3><a id="performance-tuning-stack-traces"></a>Stack Traces<a href="https://github.com/elastic/apm-agent-dotnet/edit/master/docs/performance-tuning.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>In a complex application,
+a request may produce many spans.
+Capturing a stack trace for every span can result in significant memory usage.
+Stack traces are also captured for every error.
+There are several settings to adjust how stack traces are captured.</p><h4><a id="performance-tuning-disable-capturing-stack-traces"></a>Disable capturing stack traces<a href="https://github.com/elastic/apm-agent-dotnet/edit/master/docs/performance-tuning.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>To disable capturing stack traces (for both spans and errors),
+set <a class="link" href="config-stacktrace.html#config-stack-trace-limit" title="StackTraceLimit (performance)"><code class="literal">StackTraceLimit</code></a> to <code class="literal">0</code>.</p><h4><a id="performance-tuning-stack-traces-for-long-running-spans"></a>Capture stack traces only for long running spans<a href="https://github.com/elastic/apm-agent-dotnet/edit/master/docs/performance-tuning.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>In its default settings,
+the APM agent collects a stack trace for every recorded span with duration longer than 5ms.
+To increase the duration threshold,
+set <a class="link" href="config-stacktrace.html#config-span-frames-min-duration" title="SpanFramesMinDuration (performance)"><code class="literal">SpanFramesMinDuration</code></a>.</p><h4><a id="performance-tuning-stack-frame-limit"></a>Reduce number of captured stack trace frames<a href="https://github.com/elastic/apm-agent-dotnet/edit/master/docs/performance-tuning.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>The <a class="link" href="config-stacktrace.html#config-stack-trace-limit" title="StackTraceLimit (performance)"><code class="literal">StackTraceLimit</code></a> controls how many stack frames should be collected
+when a capturing stack trace.</p><h3><a id="performance-tuning-disable-capture-headers"></a>Disable capturing HTTP request and response headers<a href="https://github.com/elastic/apm-agent-dotnet/edit/master/docs/performance-tuning.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>Capturing HTTP request and response headers increases memory allocations,
+network bandwidth and disk space used by Elasticsearch.
+To disable capturing HTTP request and response headers,
+set <a class="link" href="config-http.html#config-capture-headers" title="CaptureHeaders (performance)"><code class="literal">CaptureHeaders</code></a> to <code class="literal">false</code>.</p><h3><a id="performance-tuning-increase-metrics-collection-interval"></a>Increase metrics collection interval<a href="https://github.com/elastic/apm-agent-dotnet/edit/master/docs/performance-tuning.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>The .NET agent tracks certain system and application metrics.
+These metrics are regularly collected and sent to the APM Server and from there to Elasticsearch.
+You can adjust the interval for metrics collection with the setting <a class="link" href="config-reporter.html#config-metrics-interval" title="MetricsInterval ( )"><code class="literal">MetricsInterval</code></a>.</p></div><div class="navfooter"><span class="prev"><a href="public-api.html">
               « 
-              Supported Technologies</a>
+              Public API</a>
            
         </span><span class="next">
            
-          <a href="configuration.html">Configuration
+          <a href="release-notes.html">Release notes
                »
             </a></span></div>
 <!-- end body -->

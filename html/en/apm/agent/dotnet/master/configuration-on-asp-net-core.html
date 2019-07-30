@@ -287,7 +287,7 @@
            
           <a href="config-core.html">Core configuration options
                »
-            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="_configuration_on_asp_net_core"></a>Configuration on ASP.NET Core<a href="https://github.com/elastic/apm-agent-dotnet/edit/master/docs/configuration.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>The <code class="literal">UseElasticApm()</code> extension method offers an overload to pass an <code class="literal">IConfiguration</code> instance to the APM Agent. By using this overload in a typical ASP.NET Core application, the <code class="literal">Startup.cs</code> file would contain code similar to the following:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-csharp">public class Startup
+            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="configuration-on-asp-net-core"></a>Configuration on ASP.NET Core<a href="https://github.com/elastic/apm-agent-dotnet/edit/master/docs/configuration.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>The <code class="literal">UseElasticApm()</code> extension method offers an overload to pass an <code class="literal">IConfiguration</code> instance to the APM Agent. By using this overload in a typical ASP.NET Core application, the <code class="literal">Startup.cs</code> file would contain code similar to the following:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-csharp">public class Startup
 {
     public Startup(IConfiguration configuration)
     {
