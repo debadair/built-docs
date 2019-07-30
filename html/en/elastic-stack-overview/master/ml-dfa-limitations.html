@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Cross-cluster replication
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Data frame analytics limitations
         | Elastic Stack Overview [master]
       | Elastic
-    </title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Elastic Stack Overview [master]" /><link rel="up" href="index.html" title="Elastic Stack Overview [master]" /><link rel="prev" href="ml-dfa-limitations.html" title="Data frame analytics limitations" /><link rel="next" href="ccr-overview.html" title="Overview" /><meta name="description" content="Get started with the documentation for Elasticsearch, Kibana, Logstash, Beats, X-Pack, Elastic Cloud, Elasticsearch for Apache Hadoop, and our language clients." /><meta name="DC.type" content="Learn/Docs/Elastic Stack/Overview/master" /><meta name="DC.subject" content="Elastic Stack" /><meta name="DC.identifier" content="master" />
+    </title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Elastic Stack Overview [master]" /><link rel="up" href="ml-dfanalytics.html" title="Machine learning data frame analytics" /><link rel="prev" href="ml-dfanalytics-apis.html" title="API quick reference" /><link rel="next" href="xpack-ccr.html" title="Cross-cluster replication" /><meta name="description" content="Get started with the documentation for Elasticsearch, Kibana, Logstash, Beats, X-Pack, Elastic Cloud, Elasticsearch for Apache Hadoop, and our language clients." /><meta name="DC.type" content="Learn/Docs/Elastic Stack/Overview/master" /><meta name="DC.subject" content="Elastic Stack" /><meta name="DC.identifier" content="master" />
     
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -284,24 +284,32 @@ Not what you want? See the
 <a href="../current/index.html">current release documentation</a>.
 </div><div class="breadcrumbs"><span class="breadcrumb-link"><a href="index.html">Elastic Stack Overview
       [master]
-    </a></span> » <span class="breadcrumb-node">Cross-cluster replication</span></div><div class="navheader"><span class="prev"><a href="ml-dfa-limitations.html">
+    </a></span> » <span class="breadcrumb-link"><a href="ml-dfanalytics.html">Machine learning data frame analytics</a></span> » <span class="breadcrumb-node">Data frame analytics limitations</span></div><div class="navheader"><span class="prev"><a href="ml-dfanalytics-apis.html">
               « 
-              Data frame analytics limitations</a>
+              API quick reference</a>
            
         </span><span class="next">
            
-          <a href="ccr-overview.html">Overview
+          <a href="xpack-ccr.html">Cross-cluster replication
                »
-            </a></span></div><div class="xpack part"><div class="titlepage"><div><div><h1 class="title"><a id="xpack-ccr"></a>Cross-cluster replication<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/ccr/index.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a><a class="xpack_tag" href="/subscriptions"></a></h1></div></div></div><div class="partintro"><div></div><p>The cross-cluster replication (CCR) feature enables replication of indices in remote clusters to a
-local cluster. This functionality can be used in some common production use
-cases:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">Disaster recovery in case a primary cluster fails. A secondary cluster can
-serve as a hot backup</li><li class="listitem">Geo-proximity so that reads can be served locally</li></ul></div><p>This guide provides an overview of cross-cluster replication:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><a class="xref" href="ccr-overview.html" title="Overview"><em>Overview</em></a></li><li class="listitem"><a class="xref" href="ccr-requirements.html" title="Requirements for leader indices">Requirements for leader indices</a></li><li class="listitem"><a class="xref" href="ccr-auto-follow.html" title="Automatically following indices">Automatically following indices</a></li><li class="listitem"><a class="xref" href="ccr-getting-started.html" title="Getting started with cross-cluster replication"><em>Getting started with cross-cluster replication</em></a></li><li class="listitem"><a class="xref" href="ccr-upgrading.html" title="Upgrading clusters"><em>Upgrading clusters</em></a></li></ul></div></div></div><div class="navfooter"><span class="prev"><a href="ml-dfa-limitations.html">
+            </a></span></div><div class="xpack chapter"><div class="titlepage"><div><div><h2 class="title"><a id="ml-dfa-limitations"></a>Data frame analytics limitations<a href="https://github.com/elastic/stack-docs/edit/master/docs/en/stack/ml/df-analytics/dfanalytics-limitations.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a><a class="xpack_tag" href="/subscriptions"></a></h2></div></div></div><div class="warning admon"><div class="icon"><img alt="Warning" src="images/icons/warning.png" /></div><div class="admon_content"><p>This functionality is experimental and may be changed or removed completely in a future release. Elastic will take a best effort approach to fix any issues, but experimental features are not subject to the support SLA of official GA features.</p></div></div><p>The following limitations and known problems apply to the 7.3 release of
+the Elastic data frame analytics feature:</p><h3><a id="dfa-ccs-limitations"></a>Cross-cluster search limitation<a href="https://github.com/elastic/stack-docs/edit/master/docs/en/stack/ml/df-analytics/dfanalytics-limitations.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>Cross-cluster search is not supported in 7.3 for data frame analytics.</p><h3><a id="dfa-deletion-limitations"></a>Deleting a data frame analytics job does not delete the data frame destination index<a href="https://github.com/elastic/stack-docs/edit/master/docs/en/stack/ml/df-analytics/dfanalytics-limitations.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>When deleting a data frame analytics job using
+<code class="literal">DELETE _ml/data_frame/analytics/&lt;data_frame_analytics_id&gt;</code> the data frame
+destination index won’t be deleted. This object must be deleted separately.</p><h3><a id="dfa-update-limitations"></a>Cannot update a data frame analytics job<a href="https://github.com/elastic/stack-docs/edit/master/docs/en/stack/ml/df-analytics/dfanalytics-limitations.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>Data frame analytics configurations cannot be updated. Please delete and
+then create a new data frame analytics job instead.</p><h3><a id="dfa-dataframe-size-limitations"></a>Data frame memory limitation<a href="https://github.com/elastic/stack-docs/edit/master/docs/en/stack/ml/df-analytics/dfanalytics-limitations.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>Data frame analytics can analyze data frames that fit into the memory limit
+dedicated for machine learning processes. For general machine learning settings, see
+<a class="ulink" href="https://www.elastic.co/guide/en/elasticsearch/reference/master/ml-settings.html" target="_top">Machine learning settings in Elasticsearch</a>.</p><h3><a id="dfa-field-limitations"></a>Field limitations in data frame analytics<a href="https://github.com/elastic/stack-docs/edit/master/docs/en/stack/ml/df-analytics/dfanalytics-limitations.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>Currently, categorical fields are not considered as feature fields for
+outlier detection, so they cannot be used during the analysis. Data frame analytics
+only support numeric fields and don’t support fields that contain arrays. The
+analysis will skip every document that has such fields.</p><h3><a id="dfa-missing-fields-limitations"></a>Missing values in analyzed fields<a href="https://github.com/elastic/stack-docs/edit/master/docs/en/stack/ml/df-analytics/dfanalytics-limitations.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>If there are missing values in feature fields (fields that are subjects of the
+data frame analytics), then the document that contains the fields with the missing
+values will be skipped during the analysis.</p></div><div class="navfooter"><span class="prev"><a href="ml-dfanalytics-apis.html">
               « 
-              Data frame analytics limitations</a>
+              API quick reference</a>
            
         </span><span class="next">
            
-          <a href="ccr-overview.html">Overview
+          <a href="xpack-ccr.html">Cross-cluster replication
                »
             </a></span></div>
 <!-- end body -->
